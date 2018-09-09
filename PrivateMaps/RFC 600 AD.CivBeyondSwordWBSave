@@ -4178,7 +4178,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=53
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -4533,6 +4532,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=53
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -22347,6 +22347,17 @@ BeginPlot
 	x=58,y=42
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=45, (Independent2)
+	EndUnit
+	BeginCity
+		CityOwner=45, (Independent2)
+		CityName=Carales
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		ReligionType=RELIGION_CATHOLICISM
+	EndCity
 EndPlot
 BeginPlot
 	x=58,y=43
@@ -26053,7 +26064,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=40
-	BonusType=BONUS_CLAM
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -26497,7 +26508,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=68,y=41
-	BonusType=BONUS_FISH
+	BonusType=BONUS_CLAM
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
@@ -26951,6 +26962,17 @@ BeginPlot
 	x=69,y=39
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=14, (Byzantium)
+	EndUnit
+	BeginCity
+		CityOwner=14, (Byzantium)
+		CityName=Chandax
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		ReligionType=RELIGION_ORTHODOXY
+		Player14Culture=10, (Byzantium)
+	EndCity
 EndPlot
 BeginPlot
 	x=69,y=40
@@ -26959,6 +26981,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=41
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -27665,6 +27688,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=71,y=30
+	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -29759,6 +29783,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=76,y=46
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -30140,6 +30165,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=45
+	BonusType=BONUS_WINE
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -33955,6 +33982,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=87,y=49
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot

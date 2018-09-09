@@ -4206,7 +4206,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=53
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -4561,6 +4560,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=53
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -24970,6 +24970,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=40
+	BonusType=BONUS_MARBLE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -25380,7 +25381,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=40
-	BonusType=BONUS_MARBLE
+	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -25792,7 +25793,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=40
-	BonusType=BONUS_CLAM
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25814,6 +25815,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=44
+	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -26209,7 +26211,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=68,y=41
-	BonusType=BONUS_FISH
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -26557,18 +26559,18 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_MILITIA, UnitOwner=0, (Egypt)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER, UnitOwner=0, (Egypt)
-	EndUnit
 EndPlot
 BeginPlot
 	x=69,y=34
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_MILITIA, UnitOwner=0, (Egypt)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER, UnitOwner=0, (Egypt)
+	EndUnit
 EndPlot
 BeginPlot
 	x=69,y=35
@@ -26608,6 +26610,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=41
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -26931,13 +26934,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=70,y=31
-	BonusType=BONUS_GOLD
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=70,y=32
-	BonusType=BONUS_INCENSE
+	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -27305,6 +27308,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=71,y=30
+	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -29302,12 +29306,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=76,y=45
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=76,y=46
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -29677,6 +29683,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=45
+	BonusType=BONUS_WINE
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -32970,7 +32978,7 @@ BeginPlot
 	x=86,y=39
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_MARBLE
+	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -33404,6 +33412,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=87,y=49
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -38334,18 +38343,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-EndPlot
-BeginPlot
-	x=100,y=44
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
 	BeginUnit
 		UnitType=UNIT_ARCHER, UnitOwner=1, (China)
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_SETTLER, UnitOwner=1, (China)
 	EndUnit
+EndPlot
+BeginPlot
+	x=100,y=44
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=100,y=45

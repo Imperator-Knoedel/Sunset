@@ -4219,7 +4219,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=53
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -4578,6 +4577,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=53
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25828,6 +25828,30 @@ BeginPlot
 	x=58,y=42
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_MUSKETMAN, UnitOwner=44, (Independent)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MUSKETMAN, UnitOwner=44, (Independent)
+	EndUnit
+	BeginCity
+		CityOwner=44, (Independent)
+		CityName=Ajaccio
+		CityPopulation=3
+		BuildingType=BUILDING_WALLS
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		ReligionType=RELIGION_CATHOLICISM
+		HolyCityReligionType=RELIGION_CATHOLICISM
+		Player44Culture=20, (Independent)
+	EndCity
 	TeamReveal=16,21,22,24,25,35,38,44,45,
 EndPlot
 BeginPlot
@@ -26906,6 +26930,7 @@ BeginPlot
 	x=60,y=44
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_SILK
 	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -30794,7 +30819,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=40
-	BonusType=BONUS_CLAM
+	BonusType=BONUS_FISH
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
@@ -31364,7 +31389,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=68,y=41
-	BonusType=BONUS_FISH
+	BonusType=BONUS_CLAM
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
@@ -31393,6 +31418,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=68,y=45
+	BonusType=BONUS_SILK
 	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -31957,6 +31983,24 @@ BeginPlot
 	x=69,y=39
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_OTTOMAN_JANISSARY, UnitOwner=35, (Turkey)
+	EndUnit
+	BeginCity
+		CityOwner=35, (Turkey)
+		CityName=Kandiye
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_ORTHODOX_TEMPLE
+		BuildingType=BUILDING_ISLAMIC_TEMPLE
+		BuildingType=BUILDING_ISLAMIC_MONASTERY
+		ReligionType=RELIGION_ORTHODOXY
+		ReligionType=RELIGION_ISLAM
+		Player35Culture=10, (Turkey)
+	EndCity
 	TeamReveal=35,44,
 EndPlot
 BeginPlot
@@ -31967,6 +32011,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=41
+	BonusType=BONUS_FISH
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=35,44,
@@ -32901,6 +32947,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=71,y=30
+	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=35,44,45,
@@ -35593,6 +35640,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=76,y=46
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,26,35,44,45,
@@ -36049,6 +36097,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=45
+	BonusType=BONUS_WINE
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,35,44,45,
@@ -40600,6 +40650,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=87,y=49
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 	TeamReveal=44,
