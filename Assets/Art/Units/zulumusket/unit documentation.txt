@@ -1,6 +1,0 @@
-PolyCount for Militia Musketman:
-705
-
-Uses Musketman Animation.
-
-Made by taking a reskinned Settler with the Longbowman's head on the musketman's animation.
