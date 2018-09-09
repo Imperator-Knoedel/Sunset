@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Improvements -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_OCEAN_FISHERY</Tag>
+		<English>Ocean Fishery</English>
+		<German>Hochsee-Fischerei</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_SLAVE_PLANTATION</Tag>
+		<English>Slave Plantation</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_ORCHARD</Tag>
+		<English>Orchard</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_NATURE_RESERVE</Tag>
+		<English>Nature Reserve</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_MARINE_RESERVE</Tag>
+		<English>Marine Reserve</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_PADDY_FIELD</Tag>
+		<English>Paddy Field</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_ROMAN_ROAD</Tag>
+		<English>Roman Road</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_HIGHWAY</Tag>
+		<English>Highway</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_TRIBAL_VILLAGE</Tag>
+		<English>Tribal Village</English>
+		<French>
+			<Text>Village tribal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Stammesdorf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Villaggio tribale:Villaggi tribali</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Aldea tribal:Aldeas tribales</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+</Civ4GameText>

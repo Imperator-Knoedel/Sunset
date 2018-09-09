@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- pyrrh: This file contains only in-game text added or changed by the mod. -->
+<Civ4GameText>
+
+    <!-- Shown along with combat odds.
+         Similar (unmodded) text elements are defined in CIV4GameTextInfos.xml. -->
+    <TEXT>
+        <Tag>TXT_KEY_PYRRH_RETREAT</Tag>
+        <English>(Else retreat)</English>
+        <French>(Sinon retraite)</French>
+        <German>(Sonst Flucht)</German>
+        <Italian>(Se no, arretramento)</Italian>
+        <Spanish>(Si no, repliegue)</Spanish>
+    </TEXT>
+
+    <!-- Unmodded, it says Retreat Odds, which is misleading
+         because the mod distinguishes retreats from withdrawals.
+         The polyglot replacement text I copied from
+         TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_SHORT in CIV4GameTextInfos.xml.-->
+    <TEXT>
+        <Tag>TXT_KEY_COMBAT_PLOT_ODDS_RETREAT</Tag>
+        <English>Withdrawal Odds: %s1%%</English>
+        <French>Chances de rompre le combat : %s1%%</French>
+        <German>R&#252;ckzugschance: %s1%%</German>
+        <Italian>Probabilit&#224; di ritirata: %s1%%</Italian>
+        <Spanish>Probabilidad de retirarse: %s1%%</Spanish>
+    </TEXT>
+
+    <!-- Retreat and withdrawal messages. The foreign language
+         withdrawal messages from CIV4GameTextInfos.xml needed
+         changing to distinguish the two types of standoff
+         terminologically. -->
+    <TEXT>
+        <Tag>TXT_KEY_PYRRH_YOU_UNIT_RETREAT</Tag>
+        <English>Your %s1_UnitName has retreated from combat with a %s2_EnUName!</English>
+        <French>Votre %s1_UnitName a battu en retraite face &#224; [NUM2:un:une:des:des] %s2_EnUName !</French>
+        <German>Eure Einheit %s1_UnitName hat im Kampf gegen eine Einheit %s2_EnUName die Flucht ergriffen!</German>
+        <Italian>La tua unit&#224; %s1_UnitName arretrava dal combattimento contro l'unit&#224; nemica %s2_EnUName!</Italian>
+        <Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] replegado del combate contra [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PYRRH_ENEMY_UNIT_RETREAT</Tag>
+        <English>A %s1_EnUName has retreated from combat with your %s2_UnitName!</English>
+        <French>L'unit&#233; de combat ennemie (%s1_EnUName) a retrait&#233; face &#224; votre %s2_UnitName !</French>
+        <German>Eine Einheit %s1_EnUName hat im Kampf gegen Eure Einheit %s2_UnitName die Flucht ergriffen!</German>
+        <Italian>L'unit&#224; nemica %s1_EnUName arretrava dal combattimento contro l'unit&#224; nemica %s2_UnitName!</Italian>
+        <Spanish>[NUM1:Un:Una:Unos:Unas] %s1_EnUName [NUM1:ha:ha:han:han] replegado del combate contra [NUM2:vuestro:vuestra:vuestros:vuestras] %s2_UnitName.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_YOU_UNIT_WITHDRAW</Tag>
+        <English>Your %s1_UnitName has withdrawn from combat with a %s2_EnUName!</English>
+        <French>Votre %s1_UnitName a battu en fuite face &#224; [NUM2:un:une:des:des] %s2_EnUName !</French>
+        <German>Eure Einheit %s1_UnitName hat im Kampf gegen eine Einheit %s2_EnUName den R&#252;ckzug angetreten!</German>
+        <Italian>La tua unit&#224; %s1_UnitName si &#232; ritirata dal combattimento contro l'unit&#224; nemica %s2_EnUName!</Italian>
+        <Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName se [NUM1:ha:ha:han:han] retirado del combate contra [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ENEMY_UNIT_WITHDRAW</Tag>
+        <English>A %s1_EnUName has withdrawn from combat with your %s2_UnitName!</English>
+        <French>L'unit&#233; de combat ennemie (%s1_EnUName) a fui le combat face &#224; votre %s2_UnitName !</French>
+        <German>Eine Einheit %s1_EnUName hat im Kampf gegen Eure Einheit %s2_UnitName den R&#252;ckzug angetreten!</German>
+        <Italian>L'unit&#224; nemica %s1_EnUName si &#232; ritirata dal combattimento contro l'unit&#224; nemica %s2_UnitName!</Italian>
+        <Spanish>[NUM1:Un:Una:Unos:Unas] %s1_EnUName se [NUM1:ha:ha:han:han] retirado del combate contra [NUM2:vuestro:vuestra:vuestros:vuestras] %s2_UnitName.</Spanish>
+    </TEXT>
+
+</Civ4GameText>
