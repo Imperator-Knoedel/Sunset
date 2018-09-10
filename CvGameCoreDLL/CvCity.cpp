@@ -267,7 +267,17 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	if (lResult == 1)
 	{
 		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != (FeatureTypes)GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS")) //Leoreth: flood plains are not removed by cities
-		{
+		{	//KNOEDELstart
+			CvWString szBuffer;
+			int iProduction;
+
+			iProduction = pPlot->getFeatureType() == (FeatureTypes)GC.getInfoTypeForString("FEATURE_FOREST") ? 30 : 40;
+
+			this->changeFeatureProduction(iProduction);
+
+			szBuffer = gDLL->getText("TXT_KEY_MISC_CLEARING_FEATURE_BONUS", GC.getFeatureInfo(pPlot->getFeatureType()).getTextKeyWide(), iProduction, this->getNameKey());
+			gDLL->getInterfaceIFace()->addMessage(this->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), MESSAGE_TYPE_INFO, GC.getFeatureInfo(pPlot->getFeatureType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+//KNOEDELend
 			pPlot->setFeatureType(NO_FEATURE);
 		}
 	}
@@ -2205,8 +2215,18 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 
 	// Leoreth: pagan buildings require no religion in the city
 	if (GC.getBuildingInfo(eBuilding).isPagan())
-	{
-		if ((!isHasReligion(JUDAISM) && !GET_PLAYER(getOwnerINLINE()).getStateReligion() == JUDAISM && getReligionCount() > 0) || getReligionCount() > 1)
+	{	//KNOEDELstart
+		if ((!(isHasReligion(JUDAISM) || isHasReligion(ZOROASTRIANISM)) && 
+			GET_PLAYER(getOwnerINLINE()).getStateReligion() != JUDAISM && 
+			GET_PLAYER(getOwnerINLINE()).getStateReligion() != ZOROASTRIANISM && 
+			getReligionCount() > 0) || 
+
+			(!(isHasReligion(JUDAISM) && isHasReligion(ZOROASTRIANISM)) && 
+			GET_PLAYER(getOwnerINLINE()).getStateReligion() != JUDAISM && 
+			GET_PLAYER(getOwnerINLINE()).getStateReligion() != ZOROASTRIANISM && 
+			getReligionCount() > 1) || 
+
+			getReligionCount() > 2)	//KNOEDELend
 		{
 			return false;
 		}

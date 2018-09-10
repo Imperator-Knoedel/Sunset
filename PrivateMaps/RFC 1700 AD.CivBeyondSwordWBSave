@@ -21475,7 +21475,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=60
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=16,24,38,44,45,
 EndPlot
@@ -26801,7 +26801,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=25
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=22,24,29,38,
@@ -41604,6 +41604,7 @@ BeginPlot
 	x=89,y=51
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_CAMEL
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 	TeamReveal=44,

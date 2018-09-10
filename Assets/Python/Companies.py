@@ -179,6 +179,7 @@ class Companies:
 		
 		# various bonuses
 		if iCompany == iSilkRoute:
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iWeaver)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iMarket)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iStable)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1

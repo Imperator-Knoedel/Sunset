@@ -17443,7 +17443,15 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 		szBuffer.append(NEWLINE);
 		iModifier += iBuildingMod;
 	}
-
+//KNOEDELstart
+	int iCultureMod = city.getCultureLevel() * city.getCultureCommerceRateModifier(eCommerceType);
+	if (iCultureMod != 0)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_CULTURE", iCultureMod, info.getChar()));
+		szBuffer.append(NEWLINE);
+		iModifier += iCultureMod;
+	}
+//KNOEDELend
 	// Power
 	if (city.isPower())
 	{
