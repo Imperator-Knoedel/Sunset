@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!--
+-->	
+<!-- Game Text Objects -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_MISC_CULTURAL_GOLDEN_AGE_PROGRESS</Tag>
+        <English>Golden Age: %d1_Progress/%d2_Threshold (%D3[ICON_CULTURE] this turn)</English>
+        <French>Golden Age: %d1_Progress/%d2_Threshold (%D3[ICON_CULTURE] this turn)</French>
+        <German>Goldenes Zeitalter: %d1_Progress/%d2_Threshold (%D3[ICON_CULTURE] in dieser Runde)</German>
+        <Italian>Golden Age: %d1_Progress/%d2_Threshold (%D3[ICON_CULTURE] this turn)</Italian>
+        <Spanish>Golden Age: %d1_Progress/%d2_Threshold (%D3[ICON_CULTURE] this turn)</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_SUNSET</Tag>
+		<English>Odds and Ends in Sunset</English>
+		<French>Odds and Ends in Sunset</French>
+		<German>Odds and Ends in Sunset</German>
+		<Italian>Odds and Ends in Sunset</Italian>
+		<Spanish>Odds and Ends in Sunset</Spanish>
+	</TEXT>
+</Civ4GameText>

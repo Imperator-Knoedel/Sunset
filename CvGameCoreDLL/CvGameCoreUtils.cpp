@@ -1396,7 +1396,7 @@ bool PUF_canDefend(const CvUnit* pUnit, int iData1, int iData2)
 bool PUF_canDefendAgainst(const CvUnit* pUnit, int iData1, int iData2)
 {
 	// Leoreth: Turkic UP
-	if (pUnit->getOwnerINLINE() == BARBARIAN && iData1 == TURKS && GET_TEAM(GET_PLAYER((PlayerTypes)iData1).getTeam()).isAtWarWithMajorPlayer())
+	if (pUnit->getOwnerINLINE() == BARBARIAN && iData1 == SELJUKS && GET_TEAM(GET_PLAYER((PlayerTypes)iData1).getTeam()).isAtWarWithMajorPlayer())	//KNOEDEL
 	{
 		if (pUnit->getUnitCombatType() == 2 || pUnit->getUnitCombatType() == 3)
 		{

@@ -32,7 +32,7 @@
 TOOLKIT=C:\Microsoft Visual C++ Toolkit 2003
 PSDK=C:\WindowsSDK
 ## Uncomment to have newly compiled dlls copied to your mod's Assets directory
-YOURMOD=C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset of Civilization
+YOURMOD=C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset
 
 ## Civ install path
 ## Path to the directory where boost and python is stored

@@ -85,6 +85,8 @@ class CvPediaReligion:
 
 		if self.iReligion == iBuddhism:
 			screen.attachImageButton(panel, "", gc.getBuildingInfo(iHinduTemple).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iHinduTemple, 1, False)
+		elif self.iReligion == iTaoism:
+			screen.attachImageButton(panel, "", gc.getBuildingInfo(iConfucianTemple).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iConfucianTemple, 1, False)
 		elif self.iReligion == iCatholicism:
 			screen.attachImageButton(panel, "", gc.getReligionInfo(iOrthodoxy).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_RELIGION, iOrthodoxy, 1, False)
 			screen.attachImageButton(panel, "", gc.getBuildingInfo(iOrthodoxCathedral).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iOrthodoxCathedral, 1, False)

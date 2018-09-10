@@ -494,4 +494,8 @@
         <DefineName>PYRRH_BASE-XP-GAIN_BRAVE-DEFENDER</DefineName>
         <iDefineIntVal>2</iDefineIntVal>
     </Define>
+	<Define>
+		<DefineName>CULTURE_GOLDEN_AGE_THRESHOLD</DefineName>
+		<iDefineIntVal>500</iDefineIntVal>
+	</Define>
 </Civ4Defines>

@@ -569,6 +569,9 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	updateTeamType();
 	updateHuman();
 
+
+	m_iCultureGoldenAgeProgress = 0;	//KNOEDEL
+	m_iCultureGoldenAgesStarted = 2;	//KNOEDEL
 	if (m_eID != NO_PLAYER)
 	{
 		m_ePersonalityType = GC.getInitCore().getLeader(m_eID); //??? Is this repeated data???
@@ -2949,6 +2952,18 @@ void CvPlayer::doTurn()
 	{
 		changeAnarchyTurns(-1);
 	}
+
+//KNOEDELstart
+//	if (isMiriam())
+//	{
+		if (getCultureGoldenAgeProgress() >= getCultureGoldenAgeThreshold())
+		{
+			changeCultureGoldenAgeProgress(-getCultureGoldenAgeThreshold());
+			incrementCultureGoldenAgeStarted();
+			changeGoldenAgeTurns(getGoldenAgeLength());
+		}
+//	}
+//KNOEDELend
 
 	verifyCivics();
 
@@ -18611,6 +18626,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iPopRushHurryCount);
 	pStream->Read(&m_iInflationModifier);
+
+	pStream->Read(&m_iCultureGoldenAgeProgress);	//KNOEDEL
+	pStream->Read(&m_iCultureGoldenAgesStarted);	//KNOEDEL
 }
 
 //
@@ -19113,6 +19131,10 @@ void CvPlayer::write(FDataStreamBase* pStream)
 
 	pStream->Write(m_iPopRushHurryCount);
 	pStream->Write(m_iInflationModifier);
+
+
+	pStream->Write(m_iCultureGoldenAgeProgress);	//KNOEDEL
+	pStream->Write(m_iCultureGoldenAgesStarted);	//KNOEDEL
 }
 
 void CvPlayer::createGreatPeople(UnitTypes eGreatPersonUnit, bool bIncrementThreshold, bool bIncrementExperience, int iX, int iY)
@@ -24395,6 +24417,48 @@ bool CvPlayer::hasSpaceshipArrived() const
 
 	return false;
 }
+
+//KNOEDELstart
+int CvPlayer::getCultureGoldenAgeProgress() const
+{
+	return m_iCultureGoldenAgeProgress;
+}
+
+void CvPlayer::changeCultureGoldenAgeProgress(int iChange)
+{
+	m_iCultureGoldenAgeProgress = (m_iCultureGoldenAgeProgress + iChange);
+	FAssert(getCultureGoldenAgeProgress() >= 0);
+}
+
+int CvPlayer::getCultureGoldenAgesStarted() const
+{
+	return m_iCultureGoldenAgesStarted;
+}
+
+
+void CvPlayer::incrementCultureGoldenAgeStarted()
+{
+	if (m_iCultureGoldenAgesStarted > 100)
+	{
+			m_iCultureGoldenAgesStarted = 200;
+	}
+	else
+	{
+			m_iCultureGoldenAgesStarted *= 2;
+	}
+}
+
+int CvPlayer::getCultureGoldenAgeThreshold() const
+{
+	int iThreshold;
+
+	iThreshold = (GC.getDefineINT("CULTURE_GOLDEN_AGE_THRESHOLD") * std::max(0, (getCultureGoldenAgesStarted())));
+
+	iThreshold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGreatPeoplePercent();
+	iThreshold /= 100;
+
+	return std::max(1, iThreshold);
+}//KNOEDELend
 
 //Leoreth - get if this civ is reborn (int value for arrays: 1 -> reborn, 0 -> not reborn)
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by XMLSPY 2004 Professional Ed. Release 2, Installed Multi + SMP for 3 users (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_ARE_ATTACKED_BY_AIR</Tag>
+		<English>Your %s1_UnitName was attacked by an enemy %s2_EnUName! (%d3_Damage%% Damage)</English>
+		<French>Votre %s1_UnitName [NUM1:a &#233;t&#233; attaqu&#233;:a &#233;t&#233; attaqu&#233;e:ont &#233;t&#233; attaqu&#233;s:a &#233;t&#233; attaqu&#233;es] par [NUM2:un:une:des:des] %s2_EnUName ! (%d3_Damage%% de d&#233;g&#226;ts)</French>
+		<German>Eure Einheit %s1_UnitName wurde von einer feindlichen Einheit %s2_EnUName angegriffen!</German>
+		<Italian>La tua unit&#224; di %s1_UnitName &#232; stata attaccata dall'unit&#224; nemica di %s2_EnUName!</Italian>
+		<Spanish>[NUM2:Un:Una:Unos:Unas] %s2_EnUName del enemigo [NUM2:ha:ha:han:han] atacado a [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName (%d3_Damage%% de da&#241;o)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_ARE_ATTACKED_BY_AIR_MISS</Tag>
+		<English>An enemy %s2_EnUName attacked but missed your %s1_UnitName!</English>
+		<French>An enemy %s2_EnUName attacked but missed your %s1_UnitName!</French>
+		<German>An enemy %s2_EnUName attacked but missed your %s1_UnitName!</German>
+		<Italian>An enemy %s2_EnUName attacked but missed your %s1_UnitName!</Italian>
+		<Spanish>An enemy %s2_EnUName attacked but missed your %s1_UnitName!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_ARE_RETURN_ATTACKED_BY_AIR</Tag>
+		<English>The %s2_EnUName returned fire and hit your %s1_UnitName! (%d3_Damage%% Damage)</English>
+		<French>The %s2_EnUName returned fire and hit your %s1_UnitName! (%d3_Damage%% Damage)</French>
+		<German>The %s2_EnUName returned fire and hit your %s1_UnitName! (%d3_Damage%% Damage)</German>
+		<Italian>The %s2_EnUName returned fire and hit your %s1_UnitName!(%d3_Damage%% Damage)</Italian>
+		<Spanish>The %s2_EnUName returned fire and hit your %s1_UnitName! (%d3_Damage%% Damage)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_ARE_RETURN_ATTACKED_BY_AIR_MISS</Tag>
+		<English>The %s2_EnUName returned fire but missed your %s1_UnitName!</English>
+		<French>The %s2_EnUName returned fire but missed your %s1_UnitName!</French>
+		<German>The %s2_EnUName returned fire but missed your %s1_UnitName!</German>
+		<Italian>The %s2_EnUName returned fire but missed your %s1_UnitName!</Italian>
+		<Spanish>The %s2_EnUName returned fire but missed your %s1_UnitName!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_ATTACK_BY_AIR</Tag>
+		<English>Your %s1_UnitName has attacked an enemy %s2_EnUName! (%d3_Damage%% Damage)</English>
+		<French>Votre %s1_UnitName a attaqu&#233; [NUM2:un:une:des:des] %s2_EnUName ! (%d3_Damage%% de d&#233;g&#226;ts)</French>
+		<German>Eure Einheit %s1_UnitName hat eine feindliche Einheit %s2_EnUName angegriffen!</German>
+		<Italian>La tua unit&#224; di %s1_UnitName ha attaccato un'unit&#224; nemica di %s2_EnUName!</Italian>
+		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] atacado a [NUM2:un:una:unos:unas] %s2_EnUName del enemigo. (%d3_Damage%% de da&#241;o)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_ATTACK_BY_AIR_MISS</Tag>
+		<English>Your %s1_UnitName has attacked but missed an enemy %s2_EnUName!</English>
+		<French>Your %s1_UnitName has attacked but missed an enemy %s2_EnUName!</French>
+		<German>Your %s1_UnitName has attacked but missed an enemy %s2_EnUName!</German>
+		<Italian>Your %s1_UnitName has attacked but missed an enemy %s2_EnUName!</Italian>
+		<Spanish>Your %s1_UnitName has attacked but missed an enemy %s2_EnUName!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_RETURN_ATTACK_BY_AIR</Tag>
+		<English>Your %s1_UnitName has returned fire on an enemy %s2_EnUName! (%d3_Damage%% Damage)</English>
+		<French>Your %s1_UnitName has returned fire on an enemy %s2_EnUName! (%d3_Damage%% Damage)</French>
+		<German>Your %s1_UnitName has returned fire on an enemy %s2_EnUName! (%d3_Damage%% Damage)</German>
+		<Italian>Your %s1_UnitName has returned fire on an enemy %s2_EnUName! (%d3_Damage%% Damage)</Italian>
+		<Spanish>Your %s1_UnitName has returned fire on an enemy %s2_EnUName! (%d3_Damage%% Damage)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_RETURN_ATTACK_BY_AIR_MISS</Tag>
+		<English>Your %s1_UnitName has returned fire but missed the %s2_EnUName!</English>
+		<French>Your %s1_UnitName has returned fire but missed the %s2_EnUName!</French>
+		<German>Your %s1_UnitName has returned fire but missed the %s2_EnUName!</German>
+		<Italian>Your %s1_UnitName has returned fire but missed the %s2_EnUName!</Italian>
+		<Spanish>Your %s1_UnitName has returned fire but missed the %s2_EnUName!</Spanish>
+	</TEXT>
+
+</Civ4GameText>

@@ -14252,7 +14252,7 @@ void CvCity::doGrowth()
 
 void CvCity::doCulture()
 {
-	if 	(getCommerceRate(COMMERCE_CULTURE) <= 4)
+	if 	(getCommerceRate(COMMERCE_CULTURE) <= 0)	//KNOEDEL changed 4 to 0
 	{
 		changeCultureTimes100(getOwnerINLINE(), getCommerceRateTimes100(COMMERCE_CULTURE), false, true);
 		return;
@@ -14279,6 +14279,13 @@ void CvCity::doCulture()
 			changeCultureTimes100(ePlayer, -iChange, false, true);
 		}
 	}
+	
+//KNOEDELstart
+//	if (GET_PLAYER(getOwnerINLINE()).isMiriam())
+//	{
+		GET_PLAYER(getOwnerINLINE()).changeCultureGoldenAgeProgress(getCommerceRate(COMMERCE_CULTURE));
+//	}
+//KNOEDELend
 }
 
 
@@ -17662,7 +17669,7 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 	}
 
 	// Leoreth: Steppe Empires (use this for Steppe and Semidesert terrain later)
-	if (getOwnerINLINE() == TURKS || getOwnerINLINE() == MONGOLIA)
+	if (getOwnerINLINE() == MONGOLIA)
 	{
 		if (pPlot->getTerrainType() == TERRAIN_DESERT) iCost -= GC.getTerrainInfo(TERRAIN_DESERT).getCultureCostModifier();
 		if (pPlot->getTerrainType() == TERRAIN_PLAINS) iCost -= 5;

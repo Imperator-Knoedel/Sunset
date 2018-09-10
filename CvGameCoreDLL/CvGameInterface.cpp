@@ -218,29 +218,45 @@ void CvGame::updateColoredPlots()
 				}
 			}
 		}
-		else if(pHeadSelectedUnit->airRange() > 0) //other ranged units
+//Vincentz Rangestrike start	//KNOEDELstart
+		else if (pHeadSelectedUnit->airRange() > 0) //other ranged units
 		{
-			int iRange = pHeadSelectedUnit->airRange();
-			for (iDX = -(iRange); iDX <= iRange; iDX++)
-			{
-				for (iDY = -(iRange); iDY <= iRange; iDY++)
-				{
-					CvPlot* pTargetPlot = plotXY(pHeadSelectedUnit->getX_INLINE(), pHeadSelectedUnit->getY_INLINE(), iDX, iDY);
+			iMaxAirRange = 0;
 
-					if (pTargetPlot != NULL && pTargetPlot->isVisible(pHeadSelectedUnit->getTeam(), false))
+			pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
+
+			while (pSelectedUnitNode != NULL)
+			{
+				pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
+				pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
+
+				if (pSelectedUnit != NULL)
+				{
+					iMaxAirRange = std::max(iMaxAirRange, pSelectedUnit->airRange());
+				}
+			}
+
+			if (iMaxAirRange > 0)
 					{
-						if (plotDistance(pHeadSelectedUnit->getX_INLINE(), pHeadSelectedUnit->getY_INLINE(), pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE()) <= iRange)
+				for (iDX = -(iMaxAirRange); iDX <= iMaxAirRange; iDX++)
 						{
-							if (pHeadSelectedUnit->plot()->canSeePlot(pTargetPlot, pHeadSelectedUnit->getTeam(), iRange, pHeadSelectedUnit->getFacingDirection(true)))
+					for (iDY = -(iMaxAirRange); iDY <= iMaxAirRange; iDY++)
 							{
-								NiColorA color(GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW")).getColor());
+						pLoopPlot = plotXY(pHeadSelectedUnit->getX_INLINE(), pHeadSelectedUnit->getY_INLINE(), iDX, iDY);
+
+						if (pLoopPlot != NULL)
+						{
+							if (plotDistance(pHeadSelectedUnit->getX_INLINE(), pHeadSelectedUnit->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) <= iMaxAirRange)
+							{
+								NiColorA color(GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_RED")).getColor());
 								color.a = 0.5f;
-								gDLL->getEngineIFace()->fillAreaBorderPlot(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), color, AREA_BORDER_LAYER_RANGED);
+								gDLL->getEngineIFace()->fillAreaBorderPlot(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), color, AREA_BORDER_LAYER_RANGED);
 							}
 						}
 					}
 				}
 			}
+//Vincentz Rangestrike end	//KNOEDELend
 		}
 
 		FAssert(getActivePlayer() != NO_PLAYER);

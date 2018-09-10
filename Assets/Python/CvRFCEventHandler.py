@@ -154,9 +154,6 @@ class CvRFCEventHandler:
 		else:
 			utils.freeSlaves(city, iPlayer)
 			
-		if city.isCapital():
-			if city.isHasRealBuilding(iAdministrativeCenter): 
-				city.setHasRealBuilding(iAdministrativeCenter, False)	
 							
 		# kill Seljuks
 		#if iOwner == iSeljuks and gc.getPlayer(iSeljuks).isAlive() and gc.getGame().getGameTurnYear() >= 1250:

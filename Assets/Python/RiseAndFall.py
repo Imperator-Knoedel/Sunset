@@ -761,7 +761,7 @@ class RiseAndFall:
 			if plot.isCity():
 				city = plot.getPlotCity()
 				if city.getPopulation() > 14:
-					city.changePopulation(-3)
+					city.changePopulation(-2)
 				
 		if iGameTurn == getTurnForYear(1040):	# Leoreth: first Seljuk wave (flips independents, spawns armies for players)
 			tEsfahan = utils.getFreePlot((81, 41))
@@ -772,7 +772,8 @@ class RiseAndFall:
 			else:
 				pSeljuks.found(x, y)
 				esfahan.getPlotCity().setName('Isfahan', False)
-			utils.makeUnitAI(iLongbowman, iSeljuks, tEsfahan, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
+			utils.makeUnitAI(iLongbowman, iSeljuks, tEsfahan, UnitAITypes.UNITAI_CITY_DEFENSE, 4)
+			utils.makeUnitAI(iGhulamWarrior, iSeljuks, tEsfahan, UnitAITypes.UNITAI_ATTACK_CITY, 4)
 			utils.makeUnit(iIslamicMissionary, iSeljuks, tEsfahan, 1)
 			utils.makeUnit(iWorker, iSeljuks, tEsfahan, 3)
 			utils.cultureManager(tEsfahan, 100, iSeljuks, esfahan.getOwner(), True, False, False)
@@ -783,8 +784,8 @@ class RiseAndFall:
 						
 			utils.updateMinorTechs(iSeljuks, iBarbarian)
 
-			tSeljukAreaTL = (78, 37)
-			tSeljukAreaBR = (85, 46)
+			tSeljukAreaTL = (78, 38)
+			tSeljukAreaBR = (84, 45)
 			targetCityList = []
 			targetPlayerList = []
 			lCityPlotList = utils.squareSearch(tSeljukAreaTL, tSeljukAreaBR, utils.cityPlots, -1)
@@ -809,10 +810,10 @@ class RiseAndFall:
 				iExtra = 0
 				if gc.getMap().plot(x, y).getPlotCity().getOwner() == iArabia and utils.getHumanID() != iArabia: iExtra = 1
 				
-				utils.makeUnitAI(iGhulamWarrior, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3 + iExtra)
-				utils.makeUnitAI(iTrebuchet, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + 2*iExtra)
-				utils.makeUnitAI(iHeavySwordsman, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iExtra)
-				utils.makeUnitAI(iLongbowman, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
+				utils.makeUnitAI(iGhulamWarrior, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iExtra)
+				utils.makeUnitAI(iTrebuchet, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1 + 2*iExtra)
+				utils.makeUnitAI(iHeavySwordsman, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1 + iExtra)
+				utils.makeUnitAI(iLongbowman, iSeljuks, tSpawnPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			
 			for iPlayer in targetPlayerList:
 				teamSeljuks.declareWar(iPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
@@ -820,7 +821,7 @@ class RiseAndFall:
 				CyInterface().addMessage(CyGame().getActivePlayer(), True , iDuration, CyTranslator().getText("TXT_KEY_SELJUK_HORDES", ()), "", 1 , "", ColorTypes(iRed),0,0,False,False)
 
 		if iGameTurn == getTurnForYear(1070 + data.iSeed % 10 - 5): #Linkman226- Seljuks
-			lSpawnPlots = [(77,41), (74, 43), (72, 44), (74, 39)]
+			lSpawnPlots = [(78,42), (77, 45), (78, 44), (78, 43)]
 			for tPlot in lSpawnPlots:
 				spawnPlot = utils.getFreePlot(tPlot)
 				utils.makeUnitAI(iGhulamWarrior, iSeljuks, spawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)

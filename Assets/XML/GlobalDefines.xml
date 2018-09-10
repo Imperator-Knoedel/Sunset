@@ -299,7 +299,7 @@
 	</Define>
 	<Define>
 		<DefineName>NUM_CORPORATION_PREREQ_BONUSES</DefineName>
-		<iDefineIntVal>6</iDefineIntVal>
+		<iDefineIntVal>9</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NUM_ROUTE_PREREQ_OR_BONUSES</DefineName>
@@ -319,7 +319,7 @@
 	</Define>
 	<Define>
 		<DefineName>MAX_NATIONAL_WONDERS_PER_CITY_FOR_OCC</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>6</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MAX_BUILDINGS_PER_CITY</DefineName>
@@ -359,7 +359,7 @@
 	</Define>
 	<Define>
 		<DefineName>CONSCRIPT_MIN_CULTURE_PERCENT</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
+		<iDefineIntVal>25</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>FRESH_WATER_HEALTH_CHANGE</DefineName>
@@ -383,7 +383,7 @@
 	</Define>
 	<Define>
 		<DefineName>MAX_TRADE_ROUTES</DefineName>
-		<iDefineIntVal>8</iDefineIntVal>
+		<iDefineIntVal>12</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MIN_TIMER_UNIT_DOUBLE_MOVES</DefineName>
@@ -415,7 +415,7 @@
 	</Define>
 	<Define>
 		<DefineName>RANGE_COMBAT_DAMAGE</DefineName>
-		<iDefineIntVal>30</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>COLLATERAL_COMBAT_DAMAGE</DefineName>

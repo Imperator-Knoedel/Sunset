@@ -142,7 +142,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 38
+iNumMinorCities = 41
 
 # scripted conquerors
 iNumConquests = 10

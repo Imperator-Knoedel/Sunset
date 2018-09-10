@@ -265,6 +265,10 @@
 				<BonusType>BONUS_GEMS</BonusType>
 				<BonusType>BONUS_PEARL</BonusType>
 				<BonusType>BONUS_SILVER</BonusType>
+				<BonusType>BONUS_STONE</BonusType>
+				<BonusType>BONUS_HIT_FOOTBALL_EVENT</BonusType>
+				<BonusType>BONUS_HIT_SINGLES</BonusType>
+				<BonusType>BONUS_HIT_MOVIES</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>
 				<iHeadquarterCommerce>0</iHeadquarterCommerce>
@@ -273,9 +277,9 @@
 			</HeadquarterCommerces>
 			<BonusProduced>NONE</BonusProduced>
 			<CommercesProduced>
-				<iCommerceProduced>150</iCommerceProduced>
+				<iCommerceProduced>50</iCommerceProduced>
 				<iCommerceProduced>0</iCommerceProduced>
-				<iCommerceProduced>200</iCommerceProduced>
+				<iCommerceProduced>150</iCommerceProduced>
 			</CommercesProduced>
 			<YieldsProduced>
 				<iYieldProduced>0</iYieldProduced>

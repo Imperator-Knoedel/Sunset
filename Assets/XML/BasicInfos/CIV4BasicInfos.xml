@@ -106,5 +106,10 @@
 			<Description>TXT_KEY_CONCEPT_EXTENDED_WORLDBUILDER</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_EXTENDED_WORLDBUILDER_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_SUNSET</Type>
+			<Description>TXT_KEY_CONCEPT_SUNSET</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_SUNSET_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

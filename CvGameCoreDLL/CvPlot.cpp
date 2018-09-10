@@ -3182,6 +3182,63 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bIgnoreBuilding, bool bHel
 	return iModifier;
 }
 
+//KNOEDELstart
+// byFra
+bool CvPlot::isCrossRiverMovement(const CvUnit* pUnit, const CvPlot* pFromPlot, bool bDebug) const
+{
+	if (bDebug)
+	{
+		CvWString szDebug;
+		szDebug.Format(L"isCrossRiverMovement, from (%d,%d) to (%d,%d)", pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), getX_INLINE(), getY_INLINE());
+		gDLL->getInterfaceIFace()->addMessage((PlayerTypes)0, false, GC.getEVENT_MESSAGE_TIME(), szDebug, "AS2D_WELOVEKING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+	}
+
+	if (!isRiver() && !pFromPlot->isRiver())
+	{
+		if (bDebug) gDLL->getInterfaceIFace()->addMessage((PlayerTypes)0, false, GC.getEVENT_MESSAGE_TIME(), L"false 1", "AS2D_WELOVEKING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+
+		return false;
+	}
+
+	if (isWater() || pFromPlot->isWater())
+	{
+		if (bDebug) gDLL->getInterfaceIFace()->addMessage((PlayerTypes)0, false, GC.getEVENT_MESSAGE_TIME(), L"false 2", "AS2D_WELOVEKING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+	
+		return false;
+	}
+
+	if (pFromPlot->isRiverCrossing(directionXY(pFromPlot, this)))
+	{
+		if (getOwnerINLINE() == NO_PLAYER || pFromPlot->getOwnerINLINE() == NO_PLAYER
+			|| getTeam() == NO_TEAM || pFromPlot->getTeam() == NO_TEAM)
+		{
+			if (bDebug) gDLL->getInterfaceIFace()->addMessage((PlayerTypes)0, false, GC.getEVENT_MESSAGE_TIME(), L"true 3", "AS2D_WELOVEKING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+		
+			return true;
+		}
+		if (getRouteType() != NO_ROUTE && pFromPlot->getRouteType() != NO_ROUTE)
+		{
+			if ((pUnit->getTeam() == getTeam() || GET_TEAM(pUnit->getTeam()).isOpenBorders(getTeam())) && GET_TEAM(getTeam()).isBridgeBuilding())
+			{
+				if (getTeam() == pFromPlot->getTeam() || (pUnit->getTeam() == pFromPlot->getTeam() || GET_TEAM(pUnit->getTeam()).isOpenBorders(pFromPlot->getTeam()) && GET_TEAM(pFromPlot->getTeam()).isBridgeBuilding()))
+				{
+					if (bDebug) gDLL->getInterfaceIFace()->addMessage((PlayerTypes)0, false, GC.getEVENT_MESSAGE_TIME(), L"false 4", "AS2D_WELOVEKING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+				
+					return false;
+				}
+			}
+		}
+
+		if (bDebug) gDLL->getInterfaceIFace()->addMessage((PlayerTypes)0, false, GC.getEVENT_MESSAGE_TIME(), L"true 5", "AS2D_WELOVEKING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+
+		return true;
+	}
+
+	if (bDebug) gDLL->getInterfaceIFace()->addMessage((PlayerTypes)0, false, GC.getEVENT_MESSAGE_TIME(), L"false 6", "AS2D_WELOVEKING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+
+	return false;
+}
+//KNOEDELend
 
 int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 {
@@ -3261,6 +3318,17 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			iRegularCost = std::max(1, (iRegularCost - pUnit->getExtraMoveDiscount()));
 		}
 	}
+
+//KNOEDELstart
+	// byFra
+	if (!pUnit->ignoreTerrainCost())
+	{
+		if (isCrossRiverMovement(pUnit, pFromPlot))
+		{
+			return pUnit->maxMoves();
+		}
+	}
+//KNOEDELend
 
 	bool bHasTerrainCost = (iRegularCost > 1);
 

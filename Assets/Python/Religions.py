@@ -85,7 +85,7 @@ class Religions:
 				
 		self.checkJudaism(iGameTurn)
 		
-		#self.checkBuddhism(iGameTurn)
+		self.checkBuddhism(iGameTurn)
 
 		self.checkChristianity(iGameTurn)
 						
@@ -336,6 +336,10 @@ class Religions:
 	def foundBuddhism(self, city):
 		gc.getPlayer(city.getOwner()).foundReligion(iBuddhism, iBuddhism, True)
 		
+##TAOISM
+
+	def foundTaoism(self, city):
+		gc.getPlayer(city.getOwner()).foundReligion(iTaoism, iTaoism, True)		
 		
 ## CATHOLICISM
 
@@ -444,6 +448,10 @@ class Religions:
 			if gc.getGame().isReligionFounded(iBuddhism): return
 			self.foundBuddhism(city)
 			
+		if iBuilding == iConfucianTemple:
+			if gc.getGame().isReligionFounded(iTaoism): return
+			self.foundTaoism(city)
+
 		if iBuilding == iOrthodoxCathedral:
 			if gc.getGame().isReligionFounded(iCatholicism): return
 		

@@ -4352,6 +4352,28 @@ void CvDLLWidgetData::parseCultureHelp(CvWidgetDataStruct &widgetDataStruct, CvW
 
 		szBuffer.append(L"\n=======================\n");
 		GAMETEXT.setCommerceHelp(szBuffer, *pHeadSelectedCity, COMMERCE_CULTURE);
+		//KNOEDELstart ************************
+		// Added for Planetfall
+		// ************************
+		//szBuffer.append(L"\n=======================\n");
+		/*int iFungalBlooms = std::max(0, (pHeadSelectedCity->getCulture(pHeadSelectedCity->getOwnerINLINE()) / 50) - pHeadSelectedCity->getNumFungalBlooms());
+		szBuffer.append(gDLL->getText("TXT_KEY_FUNGAL_BLOOM_PREVENTION1"));
+		if (iFungalBlooms == 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_FUNGAL_BLOOM_PREVENTION2"));
+		}
+		else
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_FUNGAL_BLOOM_PREVENTION3", iFungalBlooms));
+		}
+		if (GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isMiriam())
+		{*/
+			szBuffer.append(L"\n=======================\n");
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_CULTURAL_GOLDEN_AGE_PROGRESS", GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCultureGoldenAgeProgress(), GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCultureGoldenAgeThreshold(), GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCommerceRate(COMMERCE_CULTURE)));
+//		}
+		// ************************
+		// End Added for Planetfall
+		//KNOEDELend ************************
 	}
 }
 

@@ -1,5 +1,5 @@
-﻿Build started 08.09.2018 19:34:26.
-     1>Project "C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset of Civilization\CvGameCoreDLL\CvGameCoreDLL.vcxproj" on node 2 (build target(s)).
+﻿Build started 10.09.2018 13:32:45.
+     1>Project "C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset\CvGameCoreDLL\CvGameCoreDLL.vcxproj" on node 2 (build target(s)).
      1>Build:
          set TARGET=Release
          nmake source_list
@@ -20,119 +20,18 @@
          Microsoft (R) Program Maintenance Utility Version 10.00.30319.01
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
-         _precompile.cpp
          
          jom 1.1.0 - empower your cores
          
-         CvArea.cpp
-         CvBugOptions.cpp
-         CvArtFileMgr.cpp
-         CvCity.cpp
-         CvCityAI.cpp
-         CvDeal.cpp
-         CvDiploParameters.cpp
-         CvDLLButtonPopup.cpp
-         CvDLLEntity.cpp
-         CvDLLPython.cpp
-         CvDllPythonEvents.cpp
-         CvDllTranslator.cpp
-         CvDLLWidgetData.cpp
-         CvEventReporter.cpp
-         CvFractal.cpp
-         CvGame.cpp
-         CvGameAI.cpp
-         CvGameCoreDLL.cpp
-         CvGameCoreUtils.cpp
-     1>c:\games\sid meier's civilization 4 complete\beyond the sword\mods\sunset of civilization\cvgamecoredll\cvdllwidgetdata.cpp(2652): warning C4700: local variable 'iSecondResearchLeft' used without having been initialized
-         CvGameInterface.cpp
-         CvGameTextMgr.cpp
-         CvGlobals.cpp
-         CvHallOfFameInfo.cpp
-         CvInfos.cpp
-         CvInfoWater.cpp
-         CvInitCore.cpp
-         CvMap.cpp
-         CvMapGenerator.cpp
-         CvMessageControl.cpp
-         CvMessageData.cpp
-         CvPlayer.cpp
-         CvPlayerAI.cpp
-         CvPlot.cpp
-         CvPlotGroup.cpp
-         CvPopupInfo.cpp
-         CvPopupReturn.cpp
-         CvRandom.cpp
-         CvReplayInfo.cpp
-         CvReplayMessage.cpp
-         CvSelectionGroup.cpp
-         CvSelectionGroupAI.cpp
-         CvStatistics.cpp
-         CvStructs.cpp
-         CvTalkingHeadMessage.cpp
-         CvTeam.cpp
-         CvTeamAI.cpp
          CvUnit.cpp
-         CvUnitAI.cpp
-         CvXMLLoadUtility.cpp
-         CvXMLLoadUtilityGet.cpp
-         CvXMLLoadUtilityInit.cpp
-         CvXMLLoadUtilitySet.cpp
-         CyArea.cpp
-         CyAreaInterface.cpp
-         CyArgsList.cpp
-         CyArtFileMgr.cpp
-         CyArtFileMgrInterface.cpp
-         CyCity.cpp
-         CyCityInterface1.cpp
-         CyCityInterface2.cpp
-         CyDeal.cpp
-         CyEnumsInterface.cpp
-         CyGame.cpp
-         CyGameCoreUtils.cpp
-         CyGameCoreUtilsInterface.cpp
-         CyGameInterface.cpp
-         CyGameTextMgr.cpp
-         CyGameTextMgrInterface.cpp
-         CyGlobalContext.cpp
-         CyGlobalContextInterface1.cpp
-         CyGlobalContextInterface2.cpp
-         CyGlobalContextInterface3.cpp
-         CyGlobalContextInterface4.cpp
-         CyHallOfFameInfo.cpp
-         CyHallOfFameInterface.cpp
-         CyInfoInterface1.cpp
-         CyInfoInterface2.cpp
-         CyInfoInterface3.cpp
-         CyMap.cpp
-         CyMapGenerator.cpp
-         CyMapGeneratorInterface.cpp
-         CyMapInterface.cpp
-         CyMessageControl.cpp
-         CyMessageControlInterface.cpp
-         CyPlayer.cpp
-         CyPlayerInterface1.cpp
-         CyPlayerInterface2.cpp
-         CyPlot.cpp
-         CyPlotInterface1.cpp
-         CyRandomInterface.cpp
-         CyReplayInfo.cpp
-         CySelectionGroup.cpp
-         CySelectionGroupInterface.cpp
-         CyStructsInterface1.cpp
-         CyTeam.cpp
-         CyTeamInterface.cpp
-         CyUnit.cpp
-         CyUnitInterface1.cpp
-         FAssert.cpp
-         FDialogTemplate.cpp
          Linking DLL
             Creating library temp_files\Release\CvGameCoreDLL.lib and object temp_files\Release\CvGameCoreDLL.exp
          	COPY "temp_files\Release\CvGameCoreDLL.dll" "Release\CvGameCoreDLL.dll"
                  1 Datei(en) kopiert.
-         	COPY "Release\CvGameCoreDLL.dll" "C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset of Civilization\Assets\."
+         	COPY "Release\CvGameCoreDLL.dll" "C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset\Assets\."
                  1 Datei(en) kopiert.
-     1>Done Building Project "C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset of Civilization\CvGameCoreDLL\CvGameCoreDLL.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Games\Sid Meier's Civilization 4 Complete\Beyond the Sword\Mods\Sunset\CvGameCoreDLL\CvGameCoreDLL.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:02:21.52
+Time Elapsed 00:01:04.52

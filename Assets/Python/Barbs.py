@@ -18,11 +18,14 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 tMinorCities = (
 (-3000, (73, 38), iIndependent, 'Yerushalayim', 2, iArcher, 3),	# Jerusalem
 (-3000, (79, 40), iIndependent2, 'Shushan', 1, iArcher, 1), 	# Susa
+(-2800, (69, 39), iIndependent2, 'Knossos', 2, iArcher, 1), 	# Knossos
 (-2000, (85, 47), iIndependent, 'Afrasiyab', 1, iArcher, 1), 	# Samarkand
 #(-2000, (92, 39), iIndependent, 'Varanasi', 1, iMilitia, 1), 	# Varanasi
 (-1600, (90, 40), iIndependent, 'Indraprastha', 1, iMilitia, 1),	# Delhi
+(-1700, (70, 43), iIndependent2, 'Ephesos', 2, iArcher, 1), 	# Troy but I don't know how to dynamic names and I'm not willing to learn!
+(-1600, (72, 44), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara
 (-1000, (102, 47), iIndependent, 'Zhongdu', 2, iSpearman, 1),	# Beijing
-(-1000, (72, 44), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara
+(-800, (58, 42), iIndependent2, 'Carales', 2, iArcher, 1), 	# Carales
 (-760, (59, 47), iCeltia, 'Melpum', 2, iArcher, 2),			# Milan
 (-350, (56, 47), iCeltia, 'Lugodunon', 2, -1, -1),			# Lyon
 (-325, (92, 33), iIndependent, 'Kanchipuram', 2, iArcher, 1),	# Madras
@@ -177,8 +180,8 @@ class Barbs:
 			self.checkSpawn(iBarbarian, iHeavyGalley, 1, (72, 20), (91, 36), self.spawnPirates, iGameTurn, 10, 0)
 
 		# Leoreth: Barbarians in Anatolia (Hittites), replace Hattusas spawn
-		if utils.isYearIn(-2000, -800):
-			self.checkSpawn(iBarbarian, iHuluganni, 1 + iHandicap, (68, 42), (74, 45), self.spawnInvaders, iGameTurn, 16, 0, ["TXT_KEY_ADJECTIVE_HITTITE"])
+		if utils.isYearIn(-1600, -800):
+			self.checkSpawn(iBarbarian, iHuluganni, 1 + iHandicap, (69, 42), (74, 45), self.spawnInvaders, iGameTurn, 16, 0, ["TXT_KEY_ADJECTIVE_HITTITE"])
 
 		#barbarians in europe
 		if utils.isYearIn(-210, 470):
@@ -249,11 +252,11 @@ class Barbs:
 				self.checkSpawn(iNative, iImpi, 2 + iHandicap, (60, 10), (72, 27), self.spawnNatives, iGameTurn, 10, 4)
 			else:
 				self.checkSpawn(iNative, iImpi, 2 + iHandicap, (60, 10), (72, 27), self.spawnNatives, iGameTurn, 15, 4)
-		elif utils.isYearIn(1600, 1800):
+		elif utils.isYearIn(1500, 1700):
 			self.checkSpawn(iNative, iPombos, 2 + iHandicap, (60, 10), (72, 27), self.spawnNatives, iGameTurn, 10, 4)
 			
 		#west africa
-		if utils.isYearIn(450, 1700):
+		if utils.isYearIn(450, 1900):
 			if iGameTurn < getTurnForYear(1300):
 				sAdj = ["TXT_KEY_ADJECTIVE_GHANAIAN"]
 			else:

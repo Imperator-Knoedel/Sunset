@@ -59,7 +59,7 @@
 			<Commerces>
 				<iCommerce>1</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
 			</Commerces>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
@@ -77,6 +77,7 @@
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
+			<iHappiness>1</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -98,8 +99,8 @@
 			<Yields/>
 			<Commerces>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1</iCommerce>
-				<iCommerce>4</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>3</iCommerce>
 			</Commerces>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
@@ -118,6 +119,7 @@
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
+			<iHappiness>1</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -258,7 +260,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>2</iYield>
+				<iYield>1</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
@@ -283,6 +285,7 @@
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
+			<iHappiness>1</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
