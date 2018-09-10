@@ -1163,7 +1163,13 @@ void CvUnitAI::AI_settleMove()
 			return;
 		}
 	}
-
+//KNOEDELstart
+	if (!plot()->isCity() && canFound(plot()) && plot()->getPlotType() != PLOT_OCEAN && GC.getMap().getArea(getArea())->getNumTiles() == 1)
+	{
+		getGroup()->pushMission(MISSION_FOUND);
+		return;
+	}
+//KNOEDELend
 	//Rhye - don't be so shy (restored Warlords settings)
 	/*int iDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 3);
 
@@ -2058,6 +2064,13 @@ void CvUnitAI::AI_attackMove()
 					return;
 				}
 			}
+			if (area()->getCitiesPerPlayer((PlayerTypes)SELJUKS) > 0)
+			{
+				if (AI_targetMinorCity(SELJUKS))
+				{
+					return;
+				}
+			}
 			if (area()->getCitiesPerPlayer((PlayerTypes)INDEPENDENT) > 0)
 			{
 				if (AI_targetMinorCity(INDEPENDENT))
@@ -2389,6 +2402,7 @@ void CvUnitAI::AI_attackCityMove()
 	//Rhye - start
 	bool bHuntNatives = false;
 	bool bHuntCelts = false;
+	bool bHuntSeljuks = false;
 	bool bHuntIndependents = false;
 	bool bHuntIndependents2 = false;
 	if (area()->getCitiesPerPlayer((PlayerTypes)NATIVE) > 0)
@@ -2403,6 +2417,13 @@ void CvUnitAI::AI_attackCityMove()
 		if ((area()->getAreaAIType(getTeam()) != AREAAI_OFFENSIVE) && (area()->getAreaAIType(getTeam()) != AREAAI_DEFENSIVE))
 		{
 			bool bHuntCelts = true;
+		}
+	}
+	if (area()->getCitiesPerPlayer((PlayerTypes)SELJUKS) > 0)
+	{
+		if ((area()->getAreaAIType(getTeam()) != AREAAI_OFFENSIVE) && (area()->getAreaAIType(getTeam()) != AREAAI_DEFENSIVE))
+		{
+			bool bHuntSeljuks = true;
 		}
 	}
 	if (area()->getCitiesPerPlayer((PlayerTypes)INDEPENDENT) > 0)
@@ -2420,6 +2441,12 @@ void CvUnitAI::AI_attackCityMove()
 		}
 	}
 	//Rhye - end
+
+	// Leoreth: Mughals should not target Seljuks
+	if (getOwnerINLINE() == MUGHALS)
+	{
+		bHuntSeljuks = false;
+	}
 
 	bool bReadyToAttack = ((getGroup()->getNumUnits() >= (bHuntBarbs ? 3 : AI_stackOfDoomExtra())));
 	if (plot()->getOwnerINLINE() == getOwnerINLINE())
@@ -2518,6 +2545,10 @@ void CvUnitAI::AI_attackCityMove()
 			return;
 		}
 		else if (bHuntCelts && AI_targetMinorCity(CELTIA))
+		{
+			return;
+		}
+		else if (bHuntSeljuks && AI_targetMinorCity(SELJUKS))
 		{
 			return;
 		}

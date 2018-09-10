@@ -580,8 +580,6 @@ public:
 	int getHappinessYield(int eYield);
 	void triggerMeltdown(int eBuilding);
 	bool isColony();
-	bool hasBonusEffect(int iBonus);
-	int getCultureRank();
 
 private:
 	CvCity* m_pCity;

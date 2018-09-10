@@ -496,6 +496,6 @@
     </Define>
 	<Define>
 		<DefineName>CULTURE_GOLDEN_AGE_THRESHOLD</DefineName>
-		<iDefineIntVal>500</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 </Civ4Defines>

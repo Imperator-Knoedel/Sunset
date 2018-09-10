@@ -128,6 +128,13 @@ class CvRFCEventHandler:
 		if bConquest:
 			sta.onCityAcquired(city, iOwner, iPlayer)
 			
+		for iI in range(gc.getNumBuildingClassInfos()):
+			player = gc.getPlayer(iPlayer)
+			building = gc.getBuildingInfo(iI)
+			if building != BuildingTypes.NO_BUILDING and city.canConstruct(iI, False, False, False):
+				if (building.getFreeStartEra() != -1 and player.getCurrentEra() >= building.getFreeStartEra()) and (building.getMaxStartEra() == -1 or player.getCurrentEra() < building.getMaxStartEra()) and (building.getObsoleteTech() == -1 or not gc.getTeam(iPlayer).isHasTech(building.getObsoleteTech())):
+					city.setHasRealBuilding(iI, True)
+		
 		if iPlayer == iArabia:
 			self.up.arabianUP(city)
 		# elif iPlayer == iMughals and utils.getHumanID() != iMughals:

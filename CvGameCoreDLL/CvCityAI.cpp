@@ -2382,6 +2382,8 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	switch (getOwnerINLINE())
 	{
 	case EGYPT:
+		aiUnitAIVal[UNITAI_ATTACK] *= 2;	//KNOEDEL
+		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 2;	//KNOEDEL
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
 		if (GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)FEUDALISM))
@@ -3782,7 +3784,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 
 				for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
 				{
-					if (hasBonusEffect((BonusTypes)iI))
+					if (hasBonus((BonusTypes)iI))
 					{
 						int iBonusHappinessChange = kBuilding.getBonusHappinessChanges(iI);
 						iValue += (std::min(iBonusHappinessChange, iAngryPopulation) * 8)
@@ -3841,7 +3843,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 
 				for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
 				{
-					if (hasBonusEffect((BonusTypes)iI))
+					if (hasBonus((BonusTypes)iI))
 					{
 						int iBonusHealthChange = kBuilding.getBonusHealthChanges(iI);
 						iValue += (std::min(iBonusHealthChange, iBadHealth) * 12)

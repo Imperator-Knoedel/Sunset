@@ -2879,6 +2879,12 @@ int CvPlot::getBuildTime(BuildTypes eBuild) const
 	iTime *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getBuildPercent();
 	iTime /= 100;
 
+//KNOEDELstart
+	if (getFeatureType() != NO_FEATURE)
+		if (GC.getGame().getActivePlayer() == KHMER && GC.getBuildInfo(eBuild).getImprovement() == GC.getInfoTypeForString("IMPROVEMENT_FARM") && getFeatureType() == GC.getInfoTypeForString("FEATURE_RAINFOREST"))
+			iTime /= 2;
+//KNOEDELend
+
 	return iTime;
 }
 
@@ -3321,7 +3327,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 
 //KNOEDELstart
 	// byFra
-	if (!pUnit->ignoreTerrainCost())
+	if (!pUnit->ignoreTerrainCost() || !pUnit->isRiver())
 	{
 		if (isCrossRiverMovement(pUnit, pFromPlot))
 		{
@@ -3378,8 +3384,23 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 		iRouteFlatCost /= 2;
 	}*/
 	//Rhye - end UP
+//KNOEDELstart: extra movement along rivers
+	if ((!pUnit->isEnemy(getTeam(), this) || pUnit->isEnemyRoute()) && !pFromPlot->isRiverCrossing(directionXY(pFromPlot, this)) && pFromPlot->isRiverSide() && isRiverSide() && GET_TEAM(pUnit->getTeam()).isRiverTrade())
+    {
+        if (pUnit->baseMoves() < 4)
+        {
+            iRegularCost /= 4;
+            iRegularCost *= pUnit->baseMoves();
+        }
+        else
+        {
+            iRegularCost /= 10;
+            iRegularCost *= 9;
+        }
+    }
 
 	return std::max(1, std::min(iRegularCost, std::min(iRouteCost, iRouteFlatCost)));
+//KNOEDELend
 }
 
 int CvPlot::getExtraMovePathCost() const
@@ -4047,7 +4068,7 @@ int CvPlot::getNumDefenders(PlayerTypes ePlayer) const
 
 int CvPlot::getNumVisibleEnemyDefenders(const CvUnit* pUnit) const
 {
-	return plotCount(PUF_canDefendAgainstEnemy, pUnit->getOwnerINLINE(), pUnit->isAlwaysHostile(this), NO_PLAYER, NO_TEAM, PUF_isVisible, pUnit->getOwnerINLINE());
+	return plotCount(PUF_canDefendEnemy, pUnit->getOwnerINLINE(), pUnit->isAlwaysHostile(this), NO_PLAYER, NO_TEAM, PUF_isVisible, pUnit->getOwnerINLINE());
 }
 
 
@@ -6916,7 +6937,24 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 			iYield += GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eBonus, eYield);
 		}
 	}
+//KNOEDELstart
+	// Mayan UP: Cottages and Farms give 1 and 2 extra Food, respectively
+	if (eYield == YIELD_FOOD && ePlayer == MAYA && GET_PLAYER(ePlayer).getCurrentEra() < ERA_RENAISSANCE)
+	{
+		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_COTTAGE") ||
+			eImprovement == GC.getInfoTypeForString("IMPROVEMENT_VILLAGE") ||
+			eImprovement == GC.getInfoTypeForString("IMPROVEMENT_HAMLET") ||
+			eImprovement == GC.getInfoTypeForString("IMPROVEMENT_TOWN"))
+		{
+			iYield += 1;
+		}
 
+		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FARM"))
+		{
+			iYield += 2;
+		}
+	}
+//KNOEDELend
 	// Leoreth: Moorish UP: +1 food on plains for all improvements that add food until the Renaissance
 	if (ePlayer == MOORS && GET_PLAYER(ePlayer).getCurrentEra() < ERA_RENAISSANCE)
 	{

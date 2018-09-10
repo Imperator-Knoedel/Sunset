@@ -2739,16 +2739,17 @@ int CvTeam::getCivilizationResearchModifier() const
 	iCivModifier = GET_PLAYER(getLeaderID()).getModifier(MODIFIER_RESEARCH_COST);
 
 	// Maya UP
-	if (GET_PLAYER(getLeaderID()).getCurrentEra() <= ERA_CLASSICAL)
+/*	if (GET_PLAYER(getLeaderID()).getCurrentEra() <= ERA_CLASSICAL)
 	{
 		if (getLeaderID() == MAYA) iCivModifier -= 50; // Maya UP
-	}
+	}*/
+//KNOEDEL: Maya now have extra food from some improvements as new UP
 
 	// nerf late game China
 	if (getLeaderID() == CHINA)
 	{
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() == ERA_MEDIEVAL) iCivModifier += 20;
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_RENAISSANCE) iCivModifier += 30;
+		if (GET_PLAYER(getLeaderID()).getCurrentEra() == ERA_MEDIEVAL) iCivModifier += 10;	//KNOEDEL
+		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_RENAISSANCE) iCivModifier += 20;	//KNOEDEL
 	}
 
 	return iCivModifier;
@@ -5334,10 +5335,13 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 	CvWString szBuffer;
 	CivicOptionTypes eCivicOptionType;
 	CivicTypes eCivicType;
+	PlayerTypes eBestPlayer;
 	BonusTypes eBonus;
 	UnitTypes eFreeUnit;
 	bool bReligionFounded;
 	bool bFirstBonus;
+	int iValue;
+	int iBestValue;
 	int iI, iJ, iK;
 
 	if (eIndex == NO_TECH)

@@ -944,16 +944,6 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 		}
 	}*/
 
-	// Leoreth: Turkic UP
-/*	if (getOwner() == BARBARIAN && eCapturingPlayer == TURKS && GET_TEAM(GET_PLAYER(eCapturingPlayer).getTeam()).isAtWarWithMajorPlayer())
-	{
-		// mounted units
-		if (getUnitCombatType() == 2 || getUnitCombatType() == 3)
-		{
-			eCaptureUnitType = getUnitType();
-		}
-	}*/
-
 // BUG - Unit Captured Event - start
 	PlayerTypes eFromPlayer = getOwner();
 	UnitTypes eCapturedUnitType = getUnitType();
@@ -1118,13 +1108,6 @@ void CvUnit::doTurn()
 	setReconPlot(NULL);
 
 	setMoves(0);
-
-/*	// Leoreth: Turkic UP for the AI
-	if (getOwnerINLINE() == BARBARIAN && plot()->getOwnerINLINE() == TURKS && GC.getGame().getActivePlayer() != TURKS)
-	{
-		setCapturingPlayer(TURKS);
-		kill(false);
-	}*/
 
 	m_iStuckLoopCount = 0;
 }
@@ -1731,8 +1714,7 @@ void CvUnit::updateCombat(bool bQuick)
 		FAssertMsg(plot()->isFighting(), "Current unit instance plot is not fighting as expected");
 		FAssertMsg(pPlot->isFighting(), "pPlot is not fighting as expected");
 
-		// Leoreth: includes Turkic UP
-		if (!pDefender->canDefendAgainst(this))
+		if (!pDefender->canDefend())
 		{
 			if (!bVisible)
 			{
@@ -1896,7 +1878,7 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 			else
 			{
-				bAdvance = canAdvance(pPlot, ((pDefender->canDefendAgainst(this) ) ? 1 : 0));
+				bAdvance = canAdvance(pPlot, ((pDefender->canDefend()) ? 1 : 0));
 
 				if (bAdvance)
 				{
@@ -2656,12 +2638,6 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 	{
 		return true;
 	}
-
-/*	// Leoreth: Turkic UP
-	if (getOwnerINLINE() == BARBARIAN && eTeam == TURKS && !GET_TEAM(eTeam).isAtWarWithMajorPlayer())
-	{
-		return false;
-	}*/
 
 	if (isEnemy(eTeam))
 	{
@@ -5253,6 +5229,7 @@ bool CvUnit::pillage()
 		}
 
 		pPlot->setImprovementType((ImprovementTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementPillage()));
+		changeDamage(-(getDamage() / 2));	//KNOEDEL
 	}
 	else if (pPlot->isRoute())
 	{
@@ -6782,6 +6759,8 @@ bool CvUnit::greatWork()
 		{
 			pCity->changeCultureTimes100(getOwnerINLINE(), iCultureToAdd % iNumTurnsApplied, false, true);
 		}
+
+		GET_PLAYER(getOwnerINLINE()).changeCultureGoldenAgeProgress(getGreatWorkCulture(plot()));	//KNOEDEL
 	}
 
 	if (plot()->isActiveVisible(false))
@@ -6947,7 +6926,7 @@ bool CvUnit::awardSpyExperience(TeamTypes eTargetTeam, int iCost, int iModifier)
 	if (iDifficulty >= 90) iExperience += 4;
 	else if (iDifficulty >= 80) iExperience += 3;
 	else if (iDifficulty >= 65) iExperience += 2;
-	else if (iDifficulty >= 50) iExperience += 1;
+	else iExperience += 1;	//KNOEDEL
 
 	if (iExperience == 0)
 	{
@@ -9157,22 +9136,6 @@ bool CvUnit::canDefend(const CvPlot* pPlot) const
 }
 
 
-// Leoreth
-bool CvUnit::canDefendAgainst(const CvUnit* pAttacker, const CvPlot* pPlot) const
-{
-	// Leoreth: Turkic UP
-	if (getOwnerINLINE() == BARBARIAN && pAttacker->getOwnerINLINE() == SELJUKS && GET_TEAM(pAttacker->getTeam()).isAtWarWithMajorPlayer())	//KNOEDEL
-	{
-		if (getUnitCombatType() == 2 || getUnitCombatType() == 3)
-		{
-			return false;
-		}
-	}
-
-	return canDefend(pPlot);
-}
-
-
 bool CvUnit::canSiege(TeamTypes eTeam) const
 {
 	if (!canDefend())
@@ -10352,7 +10315,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 					{
 						if (!pLoopUnit->canCoexistWithEnemyUnit(getTeam()))
 						{
-							if (NO_UNITCLASS == pLoopUnit->getUnitInfo().getUnitCaptureClassType() && pLoopUnit->canDefendAgainst(this, pNewPlot))
+							if (NO_UNITCLASS == pLoopUnit->getUnitInfo().getUnitCaptureClassType() && pLoopUnit->canDefend(pNewPlot))
 							{
 								pLoopUnit->jumpToNearestValidPlot(); // can kill unit
 							}

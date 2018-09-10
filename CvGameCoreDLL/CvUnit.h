@@ -381,7 +381,6 @@ public:
 	bool canAttack() const;																														// Exposed to Python
 	bool canAttack(const CvUnit& defender) const;
 	bool canDefend(const CvPlot* pPlot = NULL) const;																	// Exposed to Python
-	bool canDefendAgainst(const CvUnit* pAttacker, const CvPlot* pPlot = NULL) const; // Leoreth
 	bool canSiege(TeamTypes eTeam) const;																							// Exposed to Python
 
 	int airBaseCombatStr() const;																						// Exposed to Python
@@ -683,10 +682,10 @@ public:
 	int getDropRange() const;
 
 	bool isMadeAttack() const;																																// Exposed to Python
-	void setMadeAttack(bool bNewValue);																							// Exposed to Python
-
+	void setMadeAttack(bool bNewValue);
+																				// Exposed to Python
 	bool isMadeInterception() const;																													// Exposed to Python
-	void setMadeInterception(bool bNewValue);																				// Exposed to Python
+	void setMadeInterception(bool bNewValue);	
 
 	DllExport bool isPromotionReady() const;																									// Exposed to Python
 	void setPromotionReady(bool bNewValue);																					// Exposed to Python

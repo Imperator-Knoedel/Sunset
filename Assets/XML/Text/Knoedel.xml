@@ -23,4 +23,12 @@
 		<Italian>Odds and Ends in Sunset</Italian>
 		<Spanish>Odds and Ends in Sunset</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RIVER_ATTACK_TEXT</Tag>
+		<English>[ICON_BULLET]No Combat or Movement Penalty for Crossing River</English>
+		<French>[ICON_BULLET]Aucune p&#233;nalit&#233; de combat en franchissant une rivi&#232;re</French>
+		<German>[ICON_BULLET]Keine Kampf- oder Bewegungsstrafe f&#252;r Fluss&#252;berquerung</German>
+		<Italian>[ICON_BULLET]Nessuna penalit&#224; nel guado di un fiume</Italian>
+		<Spanish>[ICON_BULLET]No sufre penalizaci&#243;n al combate por cruzar un r&#237;o</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -2730,13 +2730,3 @@ bool CyCity::isColony()
 {
 	return m_pCity ? m_pCity->isColony() : false;
 }
-
-bool CyCity::hasBonusEffect(int eBonus)
-{
-	return m_pCity ? m_pCity->hasBonusEffect((BonusTypes)eBonus) : false;
-}
-
-int CyCity::getCultureRank()
-{
-	return m_pCity ? m_pCity->getCultureRank() : -1;
-}

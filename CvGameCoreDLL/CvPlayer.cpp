@@ -1386,8 +1386,6 @@ CvCity* CvPlayer::initCity(int iX, int iY, bool bBumpUnits, bool bUpdatePlotGrou
 
 	pCity->init(pCity->getID(), getID(), iX, iY, bBumpUnits, bUpdatePlotGroups);
 
-	updateCultureRanks();
-
 	return pCity;
 }
 
@@ -1715,7 +1713,15 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 	// Leoreth: log game turn of losing this city for previous owner
 	pNewCity->setGameTurnPlayerLost(eOldOwner, GC.getGameINLINE().getGameTurn());
 
+	//Leoreth: protect middle eastern cities from Seljuk invasions
+	if (pNewCity->isMiddleEast() && pNewCity->getOwnerINLINE() == SELJUKS)
+	{
+		pNewCity->setPopulation((bConquest && !bRecapture) ? std::max(1, (iPopulation)) : iPopulation);
+	}
+	else
+	{
 	pNewCity->setPopulation((bConquest && !bRecapture) ? std::max(1, (iPopulation - 1)) : iPopulation);
+	}
 
 	pNewCity->setHighestPopulation(iHighestPopulation);
 	pNewCity->setName(szName);
@@ -2940,8 +2946,6 @@ void CvPlayer::doTurn()
 		pLoopCity->doTurn();
 	}
 
-	updateCultureRanks();
-
 	// Leoreth: anarchy doesn't cost golden age turns
 	if (getGoldenAgeTurns() > 0 && !isAnarchy())
 	{
@@ -3951,6 +3955,12 @@ bool CvPlayer::canContact(PlayerTypes ePlayer) const
 		return false;
 	}
 
+	//Leoreth: Seljuks should be covered by minors but make sure here anyway
+	if (getID() == SELJUKS || ePlayer == (PlayerTypes)SELJUKS)
+	{
+		return false;
+	}
+
 	if (getTeam() != GET_PLAYER(ePlayer).getTeam())
 	{
 		if (!(GET_TEAM(getTeam()).isHasMet(GET_PLAYER(ePlayer).getTeam())))
@@ -4693,11 +4703,6 @@ bool CvPlayer::canTradeNetworkWith(PlayerTypes ePlayer) const
 
 int CvPlayer::getNumAvailableBonuses(BonusTypes eBonus) const
 {
-	if (eBonus == NO_BONUS)
-	{
-		return 0;
-	}
-
 	CvPlotGroup* pPlotGroup;
 
 	pPlotGroup = ((getCapitalCity() != NULL) ? getCapitalCity()->plot()->getOwnerPlotGroup() : NULL);
@@ -11432,6 +11437,9 @@ void CvPlayer::verifyAlive()
 
 	if (isAlive())
 	{
+		// Leoreth: keep Seljuks alive early on to avoid exploits
+		if (getID() == SELJUKS && GC.getGameINLINE().getGameTurnYear() < 1250) return;
+
 		bKill = false;
 
 		if (!bKill)
@@ -23029,6 +23037,12 @@ bool CvPlayer::canHaveTradeRoutesWith(PlayerTypes ePlayer) const
 		return true;
 	}
 
+	// Porcelain Tower effect: no open borders required for trade
+	if (isHasBuildingEffect((BuildingTypes)PORCELAIN_TOWER))
+	{
+		return true;
+	}
+
 	if (GET_TEAM(getTeam()).isFreeTrade(kOtherPlayer.getTeam()))
 	{
 		if (GET_TEAM(getTeam()).isVassal(kOtherPlayer.getTeam()))
@@ -24438,9 +24452,13 @@ int CvPlayer::getCultureGoldenAgesStarted() const
 
 void CvPlayer::incrementCultureGoldenAgeStarted()
 {
-	if (m_iCultureGoldenAgesStarted > 100)
+	if (m_iCultureGoldenAgesStarted > 1000)
 	{
-			m_iCultureGoldenAgesStarted = 200;
+			m_iCultureGoldenAgesStarted = 2000;
+	}
+	else if (m_iCultureGoldenAgesStarted == 2)
+	{
+			m_iCultureGoldenAgesStarted = 20;
 	}
 	else
 	{
@@ -24456,6 +24474,8 @@ int CvPlayer::getCultureGoldenAgeThreshold() const
 
 	iThreshold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGreatPeoplePercent();
 	iThreshold /= 100;
+
+	iThreshold += (getCurrentEra() * 100);
 
 	return std::max(1, iThreshold);
 }//KNOEDELend
@@ -25718,46 +25738,4 @@ bool CvPlayer::canUseSlaves() const
 	if (isNoSlavery()) return false;
 
 	return true;
-}
-
-struct cultureRankCompare
-{
-	bool operator() (CvCity* left, CvCity* right)
-	{
-		return left->getCulture(left->getOwnerINLINE()) > right->getCulture(right->getOwnerINLINE());
-	}
-};
-
-void CvPlayer::updateCultureRanks() const
-{
-	int iLoop;
-	CvPlotGroup* pPlotGroup;
-	for (pPlotGroup = firstPlotGroup(&iLoop); pPlotGroup != NULL; pPlotGroup = nextPlotGroup(&iLoop))
-	{
-		updateCultureRanks(pPlotGroup);
-	}
-}
-
-void CvPlayer::updateCultureRanks(CvPlotGroup* pPlotGroup) const
-{
-	std::vector<CvCity*> cities;
-
-	int iLoop;
-	CvCity* pLoopCity;
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		if (pLoopCity->plot()->getPlotGroup(getID()) == pPlotGroup)
-		{
-			cities.push_back(pLoopCity);
-		}
-	}
-
-	cultureRankCompare cmp;
-	std::sort(cities.begin(), cities.end(), cmp);
-
-	int iCount = 0;
-	for (std::vector<CvCity*>::iterator it = cities.begin(); it != cities.end(); ++it)
-	{
-		(*it)->setCultureRank(iCount++);
-	}
 }
