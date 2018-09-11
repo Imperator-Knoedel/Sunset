@@ -266,6 +266,23 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	if (lResult == 1)
 	{
+//KNOEDELstart
+		if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+		{
+			if (pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CITY_RUINS") || pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FORT") || pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_HAMLET"))
+			{
+				changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + 1);
+			}
+			else if (pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_VILLAGE"))
+			{
+				changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + 2);
+			}
+			else if (pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TOWN"))
+			{
+				changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + 3);
+			}
+			else changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION"));
+		}	//KNOEDELend
 		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != (FeatureTypes)GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS")) //Leoreth: flood plains are not removed by cities
 		{	//KNOEDELstart
 			CvWString szBuffer;

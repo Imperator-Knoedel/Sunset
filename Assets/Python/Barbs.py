@@ -146,6 +146,10 @@ class Barbs:
 		if utils.isYearIn(-210, 700):
 			self.checkSpawn(iBarbarian, iWarElephant, 1, (86, 31), (100, 41), self.spawnInvaders, iGameTurn, 8-iHandicap, 4)
 
+		#Scythians
+		if utils.isYearIn(-600, -300):
+			self.checkSpawn(iBarbarian, iHorseman, 1, (68, 46), (77, 50), self.spawnNomads, iGameTurn, 8-iHandicap, 4, ["TXT_KEY_ADJECTIVE_SCYTHIAN"])
+
 		#Indo-Scythians
 		if utils.isYearIn(-200, 400):
 			self.checkSpawn(iBarbarian, iHorseman, 2, (84, 40), (89, 43), self.spawnNomads, iGameTurn, 8-iHandicap, 4, ["TXT_KEY_ADJECTIVE_INDO_SCYTHIAN"])

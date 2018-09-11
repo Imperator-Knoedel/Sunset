@@ -1701,8 +1701,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAN_CAPTURE_WORKERS</Tag>
-		<English>[ICON_BULLET]Can Capture Workers</English>
-		<German>[ICON_BULLET]Kann Arbeiter gefangen nehmen</German>
+		<English>[ICON_BULLET]Can Capture Defeated Units as Workers</English>
+		<German>[ICON_BULLET]Kann besiegte Einheiten als Arbeiter gefangen nehmen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAN_USE_SLAVES_IN_COLONIES</Tag>

@@ -600,7 +600,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_69</Tag>
-		<English>Enemy workers cannot be captured unless enabled by a civic.</English>
+		<English>If running Slavery, defeated enemy units can be captured as Workers. If they are Native or the winning unit is Aztec they get captured as slaves instead.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_70</Tag>

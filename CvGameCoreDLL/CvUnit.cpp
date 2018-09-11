@@ -964,20 +964,20 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 
 		bool bCanCapture = true;
 
-		if (bCanCapture && GET_PLAYER(eCapturingPlayer).isBarbarian()) 
+/*		if (bCanCapture && GET_PLAYER(eCapturingPlayer).isBarbarian())	//KNOEDELstart
 		{
 			bCanCapture = false;
-		}
+		}	//KNOEDELend	*/
 
 		if (bCanCapture && !GET_PLAYER(eCapturingPlayer).canTrain(eOwnCaptureUnitType))
 		{
 			bCanCapture = false;
 		}
 
-		if (bCanCapture && GC.getUnitInfo(eCaptureUnitType).getCombat() == 0 && !GET_PLAYER(eCapturingPlayer).isSlavery())
+/*		if (bCanCapture && GC.getUnitInfo(eCaptureUnitType).getCombat() == 0 && !GET_PLAYER(eCapturingPlayer).isSlavery())	//KNOEDELstart
 		{
 			bCanCapture = false;
-		}
+		}	//KNOEDELend	*/
 
 		if (bCanCapture && !GET_PLAYER(eCapturingPlayer).isHuman() && !GET_PLAYER(eCapturingPlayer).AI_captureUnit(eOwnCaptureUnitType, pPlot) && 0 != GC.getDefineINT("AI_CAN_DISBAND_UNITS"))
 		{
@@ -5898,7 +5898,59 @@ bool CvUnit::found()
 	{
 		gDLL->getInterfaceIFace()->lookAt(plot()->getPoint(), CAMERALOOKAT_NORMAL);
 	}
+//KNOEDELstart
+	CvWString szBuffer;
+	int iPillageGold = 0;
+	long lPillageGold;
+	ImprovementTypes eTempImprovement = NO_IMPROVEMENT;
+	RouteTypes eTempRoute = NO_ROUTE;
 
+	CvPlot* pPlot = plot();
+
+	if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+	{
+		eTempImprovement = pPlot->getImprovementType();
+
+		// Use python to determine pillage amounts...
+		lPillageGold = 0;
+
+		CyPlot* pyPlot = new CyPlot(pPlot);
+		CyUnit* pyUnit = new CyUnit(this);
+
+		CyArgsList argsList;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));	// pass in plot class
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
+
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "doPillageGold", argsList.makeFunctionArgs(),&lPillageGold);
+
+		delete pyPlot;	// python fxn must not hold on to this pointer
+		delete pyUnit;	// python fxn must not hold on to this pointer
+
+		iPillageGold = (int)lPillageGold;
+
+		if (iPillageGold > 0)
+		{
+			GET_PLAYER(getOwnerINLINE()).changeGold(iPillageGold);
+
+			szBuffer = gDLL->getText("TXT_KEY_MISC_PLUNDERED_GOLD_FROM_IMP", iPillageGold, GC.getImprovementInfo(pPlot->getImprovementType()).getTextKeyWide());
+			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGE", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+
+			if (pPlot->isOwned())
+			{
+				szBuffer = gDLL->getText("TXT_KEY_MISC_IMP_DESTROYED", GC.getImprovementInfo(pPlot->getImprovementType()).getTextKeyWide(), getNameKey(), getVisualCivAdjective(pPlot->getTeam()));
+				gDLL->getInterfaceIFace()->addMessage(pPlot->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGED", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
+			}
+		}
+	}
+
+	if (eTempImprovement != NO_IMPROVEMENT || eTempRoute != NO_ROUTE)
+	{
+	    if (iPillageGold > 0)
+	    {
+            CvEventReporter::getInstance().unitPillage(this, eTempImprovement, eTempRoute, getOwnerINLINE(), iPillageGold);
+	    }
+	}
+//KNOEDELend
 	GET_PLAYER(getOwnerINLINE()).found(getX_INLINE(), getY_INLINE());
 
 	if (plot()->isActiveVisible(false))

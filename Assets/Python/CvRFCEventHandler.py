@@ -395,13 +395,19 @@ class CvRFCEventHandler:
 		
 		# capture slaves
 		if iWinningPlayer == iAztecs and not pAztecs.isReborn():
-			utils.captureUnit(pLosingUnit, pWinningUnit, iAztecSlave, 35)
-			
+			if gc.getPlayer(iWinningPlayer).isSlavery():
+				utils.captureUnit(pLosingUnit, pWinningUnit, iAztecSlave, 70)
+			else:
+				utils.captureUnit(pLosingUnit, pWinningUnit, iAztecSlave, 35)
+
 		elif iLosingPlayer == iNative:
 			if iWinningPlayer not in lCivBioNewWorld or True in data.lFirstContactConquerors:
 				if gc.getPlayer(iWinningPlayer).isSlavery() or gc.getPlayer(iWinningPlayer).isColonialSlavery():
 					utils.captureUnit(pLosingUnit, pWinningUnit, iSlave, 35)
-		
+
+		elif gc.getPlayer(iWinningPlayer).isSlavery():
+			utils.captureUnit(pLosingUnit, pWinningUnit, iWorker, 35)
+
 		# Maya Holkans give food to closest city on victory
 		if pWinningUnit.getUnitType() == iHolkan:
 			iOwner = pWinningUnit.getOwner()

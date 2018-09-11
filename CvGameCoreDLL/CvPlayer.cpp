@@ -10214,6 +10214,15 @@ int CvPlayer::getExtraHappiness() const
 
 		return m_iExtraHappiness + iCivicHappiness;
 	}
+	//KNOEDELstart: Aztec UP
+	else if (getID() == AZTECS)
+	{
+		int iCivicHappiness = 0;
+
+		if (getCivics(CIVICOPTION_SOCIETY) == CIVIC_SLAVERY) iCivicHappiness += 2;
+
+		return m_iExtraHappiness + iCivicHappiness;
+	}	//KNOEDELend
 
 	return m_iExtraHappiness;
 }
