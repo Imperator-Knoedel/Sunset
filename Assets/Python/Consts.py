@@ -142,7 +142,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 41
+iNumMinorCities = 42
 
 # scripted conquerors
 iNumConquests = 10
@@ -348,7 +348,7 @@ tFall = (
 2020)					# Canada
 
 dVictoryYears = {
-iCivEgypt : (-850, -100, 170),
+iCivEgypt : (-1070, -245, -30),
 iCivChina : (1000, -1, 1800),
 iCivBabylonia : (-1, -850, -700),
 iCivHarappa : (-1600, -1500, -800),

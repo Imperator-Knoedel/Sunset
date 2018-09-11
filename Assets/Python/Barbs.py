@@ -26,6 +26,7 @@ tMinorCities = (
 (-1600, (72, 44), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara
 (-1000, (102, 47), iIndependent, 'Zhongdu', 2, iSpearman, 1),	# Beijing
 (-800, (58, 42), iIndependent2, 'Carales', 2, iArcher, 1), 	# Carales
+(-800, (68, 31), iIndependent2, 'Meroë', 2, iArcher, 2), 	# Meroë
 (-760, (59, 47), iCeltia, 'Melpum', 2, iArcher, 2),			# Milan
 (-350, (56, 47), iCeltia, 'Lugodunon', 2, -1, -1),			# Lyon
 (-325, (92, 33), iIndependent, 'Kanchipuram', 2, iArcher, 1),	# Madras

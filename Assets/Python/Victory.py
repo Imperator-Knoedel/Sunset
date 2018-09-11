@@ -148,6 +148,9 @@ tBaghdad = (77, 40)
 lEasternMediterranean = [(58, 39), (58, 38), (58, 37), (59, 37), (60, 37), (61, 37), (61, 36), (62, 36), (63, 36), (64, 36), (65, 36), (66, 36), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36), (65, 37), (66, 37), (72, 37), (73, 37), (73, 38), (73, 39), (73, 40), (73, 41), (73, 42), (70, 42), (71, 42), (72, 42), (69, 43), (70, 43), (69, 44), (68, 45), (67, 44), (67, 45), (66, 44), (65, 43), (66, 43), (65, 42), (66, 42), (67, 42), (67, 41), (65, 40), (66, 40)]
 lBlackSea = [(69, 44), (70, 44), (71, 44), (71, 45), (72, 45), (73, 45), (73, 44), (74, 44), (75, 44), (76, 44), (76, 45), (76, 46), (76, 47), (75, 47), (74, 48), (75, 48), (72, 48), (74, 49), (73, 49), (71, 49), (69, 49), (69, 50), (70, 50), (71, 50), (72, 50), (73, 50), (68, 49), (68, 48), (67, 45), (67, 46), (67, 47), (67, 48), (68, 45)]
 
+#first Egyptian goal: control Jerusalem in 1070 BC
+tJerusalem = (73, 38)
+
 # third Thai goal: allow no foreign powers in South Asia in 1900 AD
 tSouthAsiaTL = (88, 24)
 tSouthAsiaBR = (110, 38)
@@ -202,7 +205,7 @@ dTechGoals = {
 dEraGoals = {}
 
 dWonderGoals = {
-	iEgypt: (1, [iPyramids, iGreatLibrary, iGreatLighthouse], True),
+	iEgypt: (1, [iPyramids, iGreatSphinx, iGreatLibrary, iGreatLighthouse], True),
 	iGreece: (2, [iColossus, iParthenon, iStatueOfZeus, iTempleOfArtemis], True),
 	iCarthage: (0, [iGreatCothon], False),
 	iPolynesia: (2, [iMoaiStatues], True),
@@ -271,19 +274,19 @@ def checkTurn(iGameTurn, iPlayer):
 	
 	if iPlayer == iEgypt:
 	
-		# first goal: have 500 culture in 850 BC
-		if iGameTurn == getTurnForYear(-850):
-			if pEgypt.countTotalCulture() >= utils.getTurns(500):
+		# first goal: have 500 culture and control Jerusalem in 1070 BC
+		if iGameTurn == getTurnForYear(-1070):
+			if pEgypt.countTotalCulture() >= utils.getTurns(500) and controlsCity(iEgypt, tJerusalem):
 				win(iEgypt, 0)
 			else:
 				lose(iEgypt, 0)
 				
-		# first goal: build the Pyramids, the Great Lighthouse and the Great Library by 100 BC
-		if iGameTurn == getTurnForYear(-100):
+		# first goal: build the Pyramids, the Great Sphinx, the Great Lighthouse and the Great Library by 245 BC
+		if iGameTurn == getTurnForYear(-245):
 			expire(iEgypt, 1)
 				
-		# third goal: have 5000 culture in 170 AD
-		if iGameTurn == getTurnForYear(170):
+		# third goal: have 5000 culture in 30 BC
+		if iGameTurn == getTurnForYear(-30):
 			if pEgypt.countTotalCulture() >= utils.getTurns(5000):
 				win(iEgypt, 2)
 			else:
@@ -3286,12 +3289,15 @@ def getUHVHelp(iPlayer, iGoal):
 	if iPlayer == iEgypt:
 		if iGoal == 0:
 			iCulture = pEgypt.countTotalCulture()
+			bJerusalem = controlsCity(iEgypt, tJerusalem)
+			aHelp.append(getIcon(bJerusalem) + localText.getText("TXT_KEY_VICTORY_JERUSALEM", ()))
 			aHelp.append(getIcon(iCulture >= utils.getTurns(500)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(500))))
 		elif iGoal == 1:
 			bPyramids = data.getWonderBuilder(iPyramids) == iEgypt
+			bSphinx = data.getWonderBuilder(iGreatSphinx) == iEgypt
 			bLibrary = data.getWonderBuilder(iGreatLibrary) == iEgypt
 			bLighthouse = data.getWonderBuilder(iGreatLighthouse) == iEgypt
-			aHelp.append(getIcon(bPyramids) + localText.getText("TXT_KEY_BUILDING_PYRAMIDS", ()) + getIcon(bLibrary) + localText.getText("TXT_KEY_BUILDING_GREAT_LIBRARY", ()) + getIcon(bLighthouse) + localText.getText("TXT_KEY_BUILDING_GREAT_LIGHTHOUSE", ()))
+			aHelp.append(getIcon(bPyramids) + localText.getText("TXT_KEY_BUILDING_PYRAMIDS", ()) + getIcon(bSphinx) + localText.getText("TXT_KEY_BUILDING_GREAT_SPHINX", ()) + getIcon(bLibrary) + localText.getText("TXT_KEY_BUILDING_GREAT_LIBRARY", ()) + getIcon(bLighthouse) + localText.getText("TXT_KEY_BUILDING_GREAT_LIGHTHOUSE", ()))
 		elif iGoal == 2:
 			iCulture = pEgypt.countTotalCulture()
 			aHelp.append(getIcon(iCulture >= utils.getTurns(5000)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(5000))))
