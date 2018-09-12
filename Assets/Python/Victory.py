@@ -206,7 +206,7 @@ dEraGoals = {}
 
 dWonderGoals = {
 	iEgypt: (1, [iPyramids, iGreatSphinx, iGreatLibrary, iGreatLighthouse], True),
-	iGreece: (2, [iColossus, iParthenon, iStatueOfZeus, iTempleOfArtemis], True),
+	iGreece: (2, [iOracle, iParthenon, iStatueOfZeus, iTempleOfArtemis, iColossus], True),
 	iCarthage: (0, [iGreatCothon], False),
 	iPolynesia: (2, [iMoaiStatues], True),
 	iMaya: (1, [iTempleOfKukulkan], True),
@@ -294,36 +294,36 @@ def checkTurn(iGameTurn, iPlayer):
 				
 	elif iPlayer == iChina:
 	
-		# first goal: build two Confucian and Taoist Cathedrals by 1000 AD
-		if iGameTurn == getTurnForYear(1000):
+		# first goal: build two Confucian and Taoist Cathedrals by 1270 AD
+		if iGameTurn == getTurnForYear(1270):
 			expire(iChina, 0)
 			
 		# second goal: be first to discover Compass, Gunpowder, Paper and Printing Press
 		
-		# third goal: experience four golden ages by 1800 AD
+		# third goal: experience eight golden ages by 1840 AD
 		if isPossible(iChina, 2):
-			if data.iChineseGoldenAgeTurns >= utils.getTurns(32):
+			if data.iChineseGoldenAgeTurns >= utils.getTurns(64):
 				win(iChina, 2)
 				
 			if pChina.isGoldenAge() and not pChina.isAnarchy():
 				data.iChineseGoldenAgeTurns += 1
 				
-		if iGameTurn == getTurnForYear(1800):
+		if iGameTurn == getTurnForYear(1840):
 			expire(iChina, 2)
 				
 	elif iPlayer == iBabylonia:
 	
 		# first goal: be the first to discover Construction, Arithmetics, Writing, Calendar and Contract
 		
-		# second goal: make Babylon the most populous city in the world in 850 BC
-		if iGameTurn == getTurnForYear(-850):
+		# second goal: make Babylon the most populous city in the world in 690 BC
+		if iGameTurn == getTurnForYear(-690):
 			if isBestCity(iBabylonia, (76, 40), cityPopulation):
 				win(iBabylonia, 1)
 			else:
 				lose(iBabylonia, 1)
 			
-		# third goal: make Babylon the most cultured city in the world in 700 BC
-		if iGameTurn == getTurnForYear(-700):
+		# third goal: make Babylon the most cultured city in the world in 540 BC
+		if iGameTurn == getTurnForYear(-540):
 			if isBestCity(iBabylonia, (76, 40), cityCulture):
 				win(iBabylonia, 2)
 			else:
@@ -331,32 +331,32 @@ def checkTurn(iGameTurn, iPlayer):
 				
 	elif iPlayer == iHarappa:
 	
-		# first goal: establish a trade connection with another civilization by 1600 BC
+		# first goal: establish a trade connection with another civilization by 1900 BC
 		if isPossible(iHarappa, 0):
 			if isTradeConnected(iHarappa):
 				win(iHarappa, 0)
 				
-		if iGameTurn == getTurnForYear(-1600):
+		if iGameTurn == getTurnForYear(-1900):
 			expire(iHarappa, 0)
 			
-		# second goal: build three Baths and two Walls by 1500 BC
-		if iGameTurn == getTurnForYear(-1500):
+		# second goal: build three Baths and two Walls by 1700 BC
+		if iGameTurn == getTurnForYear(-1700):
 			expire(iHarappa, 1)
 			
-		# third goal: have a total population of 30 by 800 BC
+		# third goal: have a total population of 25 by 1300 BC
 		if isPossible(iHarappa, 2):
-			if pHarappa.getTotalPopulation() >= 30:
+			if pHarappa.getTotalPopulation() >= 25:
 				win(iHarappa, 2)
 				
-		if iGameTurn == getTurnForYear(-800):
+		if iGameTurn == getTurnForYear(-1300):
 			expire(iHarappa, 2)
 			
 	elif iPlayer == iGreece:
 	
 		# first goal: be the first to discover Mathematics, Literature, Aesthetics, Medicine and Philosophy
 			
-		# second goal: control Egypt, Phoenicia, Babylonia and Persia in 330 BC
-		if iGameTurn == getTurnForYear(-330):
+		# second goal: control Egypt, Phoenicia, Babylonia and Persia in 325 BC
+		if iGameTurn == getTurnForYear(-325):
 			bEgypt = checkOwnedCiv(iGreece, iEgypt)
 			bPhoenicia = checkOwnedCiv(iGreece, iCarthage)
 			bBabylonia = checkOwnedCiv(iGreece, iBabylonia)
@@ -366,8 +366,8 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iGreece, 1)
 		
-		# third goal: build the Parthenon, the Colossus, the Statue of Zeus and the Temple of Artemis by 250 BC
-		if iGameTurn == getTurnForYear(-250):
+		# third goal: build the Parthenon, the Colossus, the Statue of Zeus and the Temple of Artemis by 280 BC
+		if iGameTurn == getTurnForYear(-280):
 			expire(iGreece, 2)
 				
 	elif iPlayer == iIndia:
@@ -1676,7 +1676,7 @@ def onBuildingBuilt(iPlayer, iBuilding):
 	
 	if not gc.getPlayer(iPlayer).isAlive(): return
 	
-	# first Chinese goal: build two Confucian and Taoist Cathedrals by 1000 AD
+	# first Chinese goal: build two Confucian and Taoist Cathedrals by 1270 AD
 	if iPlayer == iChina:
 		if isPossible(iChina, 0):
 			if iBuilding in [iConfucianCathedral, iTaoistCathedral]:
@@ -1685,7 +1685,7 @@ def onBuildingBuilt(iPlayer, iBuilding):
 				if iConfucian >= 2 and iTaoist >= 2:
 					win(iChina, 0)
 					
-	# second Harappan goal: build three Baths, two Granaries and two Smokehouses by 1500 BC
+	# second Harappan goal: build three Baths, two Granaries and two Smokehouses by 1700 BC
 	elif iPlayer == iHarappa:
 		if isPossible(iHarappa, 1):
 			if iBuilding in [iReservoir, iGranary, iSmokehouse]:
@@ -3315,7 +3315,7 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(bCompass) + localText.getText("TXT_KEY_TECH_COMPASS", ()) + ' ' + getIcon(bPaper) + localText.getText("TXT_KEY_TECH_PAPER", ()) + ' ' + getIcon(bGunpowder) + localText.getText("TXT_KEY_TECH_GUNPOWDER", ()) + ' ' + getIcon(bPrintingPress) + localText.getText("TXT_KEY_TECH_PRINTING", ()))
 		elif iGoal == 2:
 			iGoldenAgeTurns = data.iChineseGoldenAgeTurns
-			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(32)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 4)))
+			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(64)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 8)))
 
 	elif iPlayer == iHarappa:
 		if iGoal == 1:
@@ -3325,7 +3325,7 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(iNumReservoirs >= 3) + localText.getText("TXT_KEY_VICTORY_NUM_RESERVOIRS", (iNumReservoirs, 3)) + ' ' + getIcon(iNumGranaries >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_GRANARIES", (iNumGranaries, 2)) + ' ' + getIcon(iNumSmokehouses >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_SMOKEHOUSES", (iNumSmokehouses, 2)))
 		elif iGoal == 2:
 			iNumPopulation = pHarappa.getTotalPopulation()
-			aHelp.append(getIcon(iNumPopulation >= 30) + localText.getText("TXT_KEY_VICTORY_TOTAL_POPULATION", (iNumPopulation, 30)))
+			aHelp.append(getIcon(iNumPopulation >= 25) + localText.getText("TXT_KEY_VICTORY_TOTAL_POPULATION", (iNumPopulation, 25)))
 			
 	elif iPlayer == iBabylonia:
 		if iGoal == 0:
@@ -3361,11 +3361,12 @@ def getUHVHelp(iPlayer, iGoal):
 			bPersia = checkOwnedCiv(iGreece, iPersia)
 			aHelp.append(getIcon(bEgypt) + localText.getText("TXT_KEY_CIV_EGYPT_SHORT_DESC", ()) + ' ' + getIcon(bPhoenicia) + localText.getText("TXT_KEY_CIV_PHOENICIA_SHORT_DESC", ()) + ' ' + getIcon(bBabylonia) + localText.getText("TXT_KEY_CIV_BABYLONIA_SHORT_DESC", ()) + ' ' + getIcon(bPersia) + localText.getText("TXT_KEY_CIV_PERSIA_SHORT_DESC", ()))
 		elif iGoal == 2:
+			bOracle = (getNumBuildings(iGreece, iOracle) > 0)
 			bParthenon = (getNumBuildings(iGreece, iParthenon) > 0)
 			bColossus = (getNumBuildings(iGreece, iColossus) > 0)
 			bStatueOfZeus = (getNumBuildings(iGreece, iStatueOfZeus) > 0)
 			bArtemis = (getNumBuildings(iGreece, iTempleOfArtemis) > 0)
-			aHelp.append(getIcon(bParthenon) + localText.getText("TXT_KEY_BUILDING_PARTHENON", ()) + ' ' + getIcon(bColossus) + localText.getText("TXT_KEY_BUILDING_COLOSSUS", ()) + ' ' + getIcon(bStatueOfZeus) + localText.getText("TXT_KEY_BUILDING_STATUE_OF_ZEUS", ()) + ' ' + getIcon(bArtemis) + localText.getText("TXT_KEY_BUILDING_TEMPLE_OF_ARTEMIS", ()))
+			aHelp.append(getIcon(bOracle) + localText.getText("TXT_KEY_BUILDING_ORACLE", ()) + ' ' + getIcon(bParthenon) + localText.getText("TXT_KEY_BUILDING_PARTHENON", ()) + ' ' + getIcon(bColossus) + localText.getText("TXT_KEY_BUILDING_COLOSSUS", ()) + ' ' + getIcon(bStatueOfZeus) + localText.getText("TXT_KEY_BUILDING_STATUE_OF_ZEUS", ()) + ' ' + getIcon(bArtemis) + localText.getText("TXT_KEY_BUILDING_TEMPLE_OF_ARTEMIS", ()))
 
 	elif iPlayer == iIndia:
 		if iGoal == 0:

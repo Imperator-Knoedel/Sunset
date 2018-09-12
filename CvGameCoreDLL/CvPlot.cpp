@@ -3387,10 +3387,14 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 //KNOEDELstart: extra movement along rivers
 	if ((!pUnit->isEnemy(getTeam(), this) || pUnit->isEnemyRoute()) && !pFromPlot->isRiverCrossing(directionXY(pFromPlot, this)) && pFromPlot->isRiverSide() && isRiverSide() && GET_TEAM(pUnit->getTeam()).isRiverTrade())
     {
-        if (pUnit->baseMoves() < 4)
+        if (pUnit->baseMoves() == 1)
+        {
+            iRegularCost /= 2;
+        }
+		else if (pUnit->baseMoves() == 2)
         {
             iRegularCost /= 4;
-            iRegularCost *= pUnit->baseMoves();
+            iRegularCost *= 3;
         }
         else
         {

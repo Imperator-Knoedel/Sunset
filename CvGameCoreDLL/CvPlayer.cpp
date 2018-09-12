@@ -7941,7 +7941,7 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	// Egyptian UP: starts with Monarchy, Redistribution and Deification
 	if (getID() == EGYPT)
 	{
-		if (eCivic == CIVIC_MONARCHY || eCivic == CIVIC_REDISTRIBUTION || eCivic == CIVIC_DEIFICATION)
+		if (eCivic == CIVIC_MONARCHY || eCivic == CIVIC_CASTE_SYSTEM || eCivic == CIVIC_REDISTRIBUTION || eCivic == CIVIC_DEIFICATION)	//KNOEDEL: let's also add Caste System
 		{
 			return true;
 		}

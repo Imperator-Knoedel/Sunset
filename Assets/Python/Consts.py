@@ -349,11 +349,11 @@ tFall = (
 
 dVictoryYears = {
 iCivEgypt : (-1070, -245, -30),
-iCivChina : (1000, -1, 1800),
-iCivBabylonia : (-1, -850, -700),
-iCivHarappa : (-1600, -1500, -800),
-iCivGreece : (-1, -330, -250),
-iCivIndia : (-100, 700, 1200),
+iCivChina : (1270, -1, 1840),
+iCivBabylonia : (-1, -690, -540),
+iCivHarappa : (-1900, -1700, -1300),
+iCivGreece : (-1, -325, -280),
+iCivIndia : (-230, 700, 1200),
 iCivCarthage : (-300, -100, 200),
 iCivPolynesia : (800, 1000, 1200),
 iCivPersia : (140, 350, 350),
