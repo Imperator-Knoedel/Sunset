@@ -13445,12 +13445,12 @@ bool CvUnit::canRangeStrikeAt(const CvPlot* pPlot, int iX, int iY) const
 	{
 		return false;
 	}
-
+/* Vincentz Rangestrike off	//KNOEDEL
 	if (!pPlot->canSeePlot(pTargetPlot, getTeam(), airRange(), getFacingDirection(true)))
 	{
 		return false;
 	}
-
+*/	//KNOEDEL
 	return true;
 }
 

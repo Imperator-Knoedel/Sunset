@@ -372,8 +372,8 @@ def checkTurn(iGameTurn, iPlayer):
 				
 	elif iPlayer == iIndia:
 	
-		# first goal: control the Hindu and Buddhist shrine in 100 BC
-		if iGameTurn == getTurnForYear(-100):
+		# first goal: control the Hindu and Buddhist shrine in 230 BC
+		if iGameTurn == getTurnForYear(-230):
 			bBuddhistShrine = getNumBuildings(iIndia, iBuddhistShrine) > 0
 			bHinduShrine = getNumBuildings(iIndia, iHinduShrine) > 0
 			if bHinduShrine and bBuddhistShrine:
@@ -381,13 +381,13 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iIndia, 0)
 				
-		# second goal: build 20 temples by 700 AD
-		if iGameTurn == getTurnForYear(700):
+		# second goal: build 18 temples by 650 AD
+		if iGameTurn == getTurnForYear(650):
 			expire(iIndia, 1)
 			
-		# third goal: control 20% of the world's population in 1200 AD
+		# third goal: control 18% of the world's population in 1200 AD
 		if iGameTurn == getTurnForYear(1200):
-			if getPopulationPercent(iIndia) >= 20.0:
+			if getPopulationPercent(iIndia) >= 18.0:
 				win(iIndia, 2)
 			else:
 				lose(iIndia, 2)
@@ -1695,7 +1695,7 @@ def onBuildingBuilt(iPlayer, iBuilding):
 				if iNumBaths >= 3 and iNumGranaries >= 2 and iNumSmokehouses >= 2:
 					win(iHarappa, 1)
 					
-	# second Indian goal: build 20 temples by 700 AD
+	# second Indian goal: build 18 temples by 650 AD
 	elif iPlayer == iIndia:
 		if isPossible(iIndia, 1):
 			lTemples = [iTemple + i*4 for i in range(iNumReligions)]
@@ -1703,7 +1703,7 @@ def onBuildingBuilt(iPlayer, iBuilding):
 				iCounter = 0
 				for iGoalTemple in lTemples:
 					iCounter += getNumBuildings(iIndia, iGoalTemple)
-				if iCounter >= 20:
+				if iCounter >= 18:
 					win(iIndia, 1)
 	
 	# first Roman goal: build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 100 AD
@@ -3378,10 +3378,10 @@ def getUHVHelp(iPlayer, iGoal):
 			iCounter = 0
 			for iGoalTemple in lTemples:
 				iCounter += getNumBuildings(iIndia, iGoalTemple)
-			aHelp.append(getIcon(iCounter >= 20) + localText.getText("TXT_KEY_VICTORY_TEMPLES_BUILT", (iCounter, 20)))
+			aHelp.append(getIcon(iCounter >= 18) + localText.getText("TXT_KEY_VICTORY_TEMPLES_BUILT", (iCounter, 18)))
 		elif iGoal == 2:
 			popPercent = getPopulationPercent(iIndia)
-			aHelp.append(getIcon(popPercent >= 20.0) + localText.getText("TXT_KEY_VICTORY_PERCENTAGE_WORLD_POPULATION", (str(u"%.2f%%" % popPercent), str(20))))
+			aHelp.append(getIcon(popPercent >= 18.0) + localText.getText("TXT_KEY_VICTORY_PERCENTAGE_WORLD_POPULATION", (str(u"%.2f%%" % popPercent), str(18))))
 
 	elif iPlayer == iCarthage:
 		if iGoal == 0:
