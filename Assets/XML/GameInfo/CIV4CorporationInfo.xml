@@ -21,6 +21,7 @@
 				<BonusType>BONUS_COTTON</BonusType>
 				<BonusType>BONUS_INCENSE</BonusType>
 				<BonusType>BONUS_SILK</BonusType>
+				<BonusType>BONUS_CAMEL</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>
 				<iHeadquarterCommerce>0</iHeadquarterCommerce>

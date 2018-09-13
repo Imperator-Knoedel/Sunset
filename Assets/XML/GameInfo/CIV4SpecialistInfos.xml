@@ -31,6 +31,14 @@
 						<iYield>1</iYield>
 					</CultureLevelYields>
 				</CultureLevelYieldChange>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
 			</CultureLevelYieldChanges>
 			<iExperience>0</iExperience>
 			<Flavors/>
@@ -61,10 +69,21 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
 					<CultureLevelCommerces>
+						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 					</CultureLevelCommerces>
@@ -74,6 +93,10 @@
 				<CultureLevelGreatPeopleRateChange>
 					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
 					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
@@ -102,13 +125,23 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
 					<CultureLevelCommerces>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
-						<iCommerce>2</iCommerce>
+						<iCommerce>1</iCommerce>
 					</CultureLevelCommerces>
 				</CultureLevelCommerceChange>
 			</CultureLevelCommerceChanges>
@@ -116,6 +149,10 @@
 				<CultureLevelGreatPeopleRateChange>
 					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
 					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
@@ -144,6 +181,16 @@
 				<iCommerce>3</iCommerce>
 				<iCommerce>0</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
@@ -157,6 +204,10 @@
 				<CultureLevelGreatPeopleRateChange>
 					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
 					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
@@ -184,6 +235,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
@@ -196,6 +257,10 @@
 				<CultureLevelGreatPeopleRateChange>
 					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
 					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
@@ -231,11 +296,23 @@
 						<iYield>1</iYield>
 					</CultureLevelYields>
 				</CultureLevelYieldChange>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
 			</CultureLevelYieldChanges>
 			<CultureLevelGreatPeopleRateChanges>
 				<CultureLevelGreatPeopleRateChange>
 					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
 					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
@@ -277,11 +354,23 @@
 						<iYield>1</iYield>
 					</CultureLevelYields>
 				</CultureLevelYieldChange>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
 			</CultureLevelYieldChanges>
 			<CultureLevelGreatPeopleRateChanges>
 				<CultureLevelGreatPeopleRateChange>
 					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
 					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 				</CultureLevelGreatPeopleRateChange>
 			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
@@ -302,19 +391,57 @@
 			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/Great_Priest.dds</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>2</iYield>
 				<iYield>0</iYield>
 			</Yields>
 			<Commerces>
-				<iCommerce>5</iCommerce>
+				<iCommerce>2</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
+				<iCommerce>3</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
+			<CultureLevelCommerceChanges>
+				<CultureLevelCommerceChange>
+					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
+					<CultureLevelCommerces>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+					</CultureLevelCommerces>
+				</CultureLevelCommerceChange>
+			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
+			<iHappiness>2</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -331,26 +458,50 @@
 			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/Great_Artist.dds</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
-			<Yields/>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</Yields>
 			<Commerces>
-				<iCommerce>3</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>12</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
 					<CultureLevelCommerces>
-						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
-						<iCommerce>6</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>3</iCommerce>
 					</CultureLevelCommerces>
 				</CultureLevelCommerceChange>
 			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
-			<iHappiness>1</iHappiness>
+			<iHappiness>2</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -367,8 +518,8 @@
 			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/Great_Scientist.dds</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
@@ -379,6 +530,16 @@
 				<iCommerce>6</iCommerce>
 				<iCommerce>0</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
@@ -388,6 +549,16 @@
 					</CultureLevelCommerces>
 				</CultureLevelCommerceChange>
 			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
 			<Flavors/>
 			<HotKey/>
@@ -405,8 +576,8 @@
 			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/Great_Merchant.dds</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>1</iYield>
 				<iYield>0</iYield>
@@ -417,6 +588,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</Commerces>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
@@ -425,6 +606,16 @@
 					</CultureLevelCommerces>
 				</CultureLevelCommerceChange>
 			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
 			<Flavors/>
 			<HotKey/>
@@ -442,16 +633,16 @@
 			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/Great_Engineer.dds</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>3</iYield>
 				<iYield>0</iYield>
 			</Yields>
 			<Commerces>
-				<iCommerce>0</iCommerce>
-				<iCommerce>3</iCommerce>
+				<iCommerce>1</iCommerce>
+				<iCommerce>2</iCommerce>
 				<iCommerce>0</iCommerce>
 			</Commerces>
 			<CultureLevelYieldChanges>
@@ -462,16 +653,34 @@
 						<iYield>1</iYield>
 					</CultureLevelYields>
 				</CultureLevelYieldChange>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
 			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
 					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
 					<CultureLevelCommerces>
-						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
 					</CultureLevelCommerces>
 				</CultureLevelCommerceChange>
 			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
 			<Flavors/>
 			<HotKey/>
@@ -489,12 +698,12 @@
 			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/Great_Statesman.dds</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>4</iYield>
+				<iYield>3</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
@@ -511,6 +720,14 @@
 						<iYield>1</iYield>
 					</CultureLevelYields>
 				</CultureLevelYieldChange>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
 			</CultureLevelYieldChanges>
 			<CultureLevelCommerceChanges>
 				<CultureLevelCommerceChange>
@@ -523,7 +740,18 @@
 					</CultureLevelCommerces>
 				</CultureLevelCommerceChange>
 			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
 			<iExperience>0</iExperience>
+			<iHappiness>2</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -540,8 +768,8 @@
 			<Help/>
 			<Texture>,Art/Interface/MainScreen/CityScreen/Great_Engineer.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,2,6</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -552,7 +780,38 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</Commerces>
-			<iExperience>2</iExperience>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
+			<CultureLevelCommerceChanges>
+				<CultureLevelCommerceChange>
+					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
+					<CultureLevelCommerces>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+					</CultureLevelCommerces>
+				</CultureLevelCommerceChange>
+			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
+			<iExperience>3</iExperience>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -569,16 +828,47 @@
 			<Help/>
 			<Texture>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,6,14</Texture>
 			<bVisible>0</bVisible>
-			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields/>
 			<Commerces>
 				<iCommerce>0</iCommerce>
-				<iCommerce>3</iCommerce>
+				<iCommerce>1</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>12</iCommerce>
+				<iCommerce>8</iCommerce>
 			</Commerces>
-			<iExperience>0</iExperience>
+			<CultureLevelYieldChanges>
+				<CultureLevelYieldChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<CultureLevelYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</CultureLevelYields>
+				</CultureLevelYieldChange>
+			</CultureLevelYieldChanges>
+			<CultureLevelCommerceChanges>
+				<CultureLevelCommerceChange>
+					<CultureLevelType>CULTURELEVEL_INFLUENTIAL</CultureLevelType>
+					<CultureLevelCommerces>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>2</iCommerce>
+					</CultureLevelCommerces>
+				</CultureLevelCommerceChange>
+			</CultureLevelCommerceChanges>
+			<CultureLevelGreatPeopleRateChanges>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_REFINED</CultureLevelType>
+					<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+				<CultureLevelGreatPeopleRateChange>
+					<CultureLevelType>CULTURELEVEL_LEGENDARY</CultureLevelType>
+					<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+				</CultureLevelGreatPeopleRateChange>
+			</CultureLevelGreatPeopleRateChanges>
+			<iExperience>1</iExperience>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
