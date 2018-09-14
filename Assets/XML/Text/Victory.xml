@@ -642,18 +642,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1</Tag>
-		<English>Have 25000 culture in Paris in 1700 AD</English>
-		<German>Haben Sie im Jahr 1700 n. Chr. 25.000 Kulturpunkte in Paris</German>
+		<English>Have 30000 culture in Paris in 1790 AD</English>
+		<German>Haben Sie im Jahr 1790 n. Chr. 30.000 Kulturpunkte in Paris</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1_EPIC</Tag>
-		<English>Have 37500 culture in Paris in 1700 AD</English>
-		<German>Haben Sie im Jahr 1700 n. Chr. 37.500 Kulturpunkte in Paris</German>
+		<English>Have 45000 culture in Paris in 1790 AD</English>
+		<German>Haben Sie im Jahr 1790 n. Chr. 45.000 Kulturpunkte in Paris</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1_MARATHON</Tag>
-		<English>Have 75000 culture in Paris in 1700 AD</English>
-		<German>Haben Sie im Jahr 1700 n. Chr. 75.000 Kulturpunkte in Paris</German>
+		<English>Have 90000 culture in Paris in 1790 AD</English>
+		<German>Haben Sie im Jahr 1790 n. Chr. 90.000 Kulturpunkte in Paris</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA2_TITLE</Tag>
@@ -662,8 +662,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA2</Tag>
-		<English>Control or vassalize 40% of Europe and North America in 1800 AD</English>
-		<German>Kontrollieren oder vassalisieren Sie im Jahr 1800 n. Chr. 40% von Europa und Nordamerika</German>
+		<English>Control or vassalize 40% of Europe and North America in 1815 AD</English>
+		<German>Kontrollieren oder vassalisieren Sie im Jahr 1815 n. Chr. 40% von Europa und Nordamerika</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA3_TITLE</Tag>
@@ -672,8 +672,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA3</Tag>
-		<English>Build Notre Dame, Versailles, the Statue of Liberty and the Eiffel Tower by 1900 AD</English>
-		<German>Bauen Sie bis zum Jahr 1900 n. Chr. Notre Dame, Versailles, die Freiheitsstatue und den Eiffelturm</German>
+		<English>Build Notre Dame, Versailles, the Statue of Liberty and the Eiffel Tower by 1890 AD</English>
+		<German>Bauen Sie bis zum Jahr 1890 n. Chr. Notre Dame, Versailles, die Freiheitsstatue und den Eiffelturm</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GER1_TITLE</Tag>
@@ -941,8 +941,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO1</Tag>
-		<English>Have the largest population in the world in 1300 AD</English>
-		<German>Haben Sie die gr&#246;&#223;te Bev&#246;lkerung der Welt im Jahr 1300 n. Chr.</German>
+		<English>Have the largest population in the world in 1390 AD</English>
+		<German>Haben Sie die gr&#246;&#223;te Bev&#246;lkerung der Welt im Jahr 1390 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO2_TITLE</Tag>
@@ -951,8 +951,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO2</Tag>
-		<English>Acquire 10 different happiness resources by 1500 AD</English>
-		<German>Erwerben Sie 10 verschiedene Zufriedenheitsressourcen bis zum Jahr 1500 n. Chr.</German>
+		<English>Acquire 10 different happiness resources by 1510 AD</English>
+		<German>Erwerben Sie 10 verschiedene Zufriedenheitsressourcen bis zum Jahr 1510 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO3_TITLE</Tag>
@@ -961,8 +961,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INO3</Tag>
-		<English>Control 9% of the world's population in 1940 AD</English>
-		<German>Kontrollieren Sie 9% der Weltbev&#246;lkerung im Jahr 1940 n. Chr.</German>
+		<English>Control 9% of the world's population in 1950 AD</English>
+		<German>Kontrollieren Sie 9% der Weltbev&#246;lkerung im Jahr 1950 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_IRA1_TITLE</Tag>
@@ -1336,23 +1336,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MOO1_TITLE</Tag>
-		<English>Caliphate of Al-Andalus</English>
-		<German>Kaliphat von Al-Andalus</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_MOO1</Tag>
-		<English>Control three cities in the Maghreb and conquer two cities in Iberia and West Africa in 1200 AD</English>
-		<German>Kontrollieren Sie im Jahr 1200 n. Chr. drei St&#228;dte im Maghreb und erobern Sie zwei Städte in Iberien und Westafrika</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_MOO2_TITLE</Tag>
 		<English>Jewel of the World</English>
 		<German>Juwel der Welt</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UHV_MOO1</Tag>
+		<English>Build La Mezquita and settle a total of three great prophets, scientists or engineers in Cordoba by 1030 AD</English>
+		<German>Errichten Sie bis zum Jahr 1030 n. Chr. La Mezquita und siedeln Sie insgesamt drei gro&#223;e Propheten, Wissenschaftler und Ingenieure in Cordoba an</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MOO2_TITLE</Tag>
+		<English>Caliphate of Al-Andalus</English>
+		<German>Kaliphat von Al-Andalus</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UHV_MOO2</Tag>
-		<English>Build La Mezquita and settle a total of four great prophets, scientists or engineers in Cordoba by 1300 AD</English>
-		<German>Errichten Sie bis zum Jahr 1300 n. Chr. La Mezquita und siedeln Sie insgesamt vier gro&#223;e Propheten, Wissenschaftler und Ingenieure in Cordoba an</German>
+		<English>Control three cities in the Maghreb and conquer two cities in Iberia and West Africa in 1210 AD</English>
+		<German>Kontrollieren Sie im Jahr 1210 n. Chr. drei St&#228;dte im Maghreb und erobern Sie zwei Städte in Iberien und Westafrika</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MOO3_TITLE</Tag>
@@ -1361,18 +1361,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MOO3</Tag>
-		<English>Acquire 3000 gold through piracy by 1650 AD</English>
-		<German>Erwerben Sie bis zum Jahr 1650 n. Chr. 3000 Gold durch Piraterie</German>
+		<English>Acquire 3000 gold through piracy by 1680 AD</English>
+		<German>Erwerben Sie bis zum Jahr 1680 n. Chr. 3000 Gold durch Piraterie</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MOO3_EPIC</Tag>
-		<English>Acquire 4500 gold through piracy by 1650 AD</English>
-		<German>Erwerben Sie bis zum Jahr 1650 n. Chr. 4500 Gold durch Piraterie</German>
+		<English>Acquire 4500 gold through piracy by 1680 AD</English>
+		<German>Erwerben Sie bis zum Jahr 1680 n. Chr. 4500 Gold durch Piraterie</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MOO3_MARATHON</Tag>
-		<English>Acquire 9000 gold through piracy by 1650 AD</English>
-		<German>Erwerben Sie bis zum Jahr 1650 n. Chr. 9000 Gold durch Piraterie</German>
+		<English>Acquire 9000 gold through piracy by 1680 AD</English>
+		<German>Erwerben Sie bis zum Jahr 1680 n. Chr. 9000 Gold durch Piraterie</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MUG1_TITLE</Tag>
@@ -1721,8 +1721,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_SPA2</Tag>
-		<English>Secure a total of 10 silver and gold resources by 1650 AD</English>
-		<German>Erschlie&#223;en Sie bis zum Jahr 1650 n. Chr. insgesamt 10 Silber- und Goldvorkommen</German>
+		<English>Secure a total of 10 silver and gold resources by 1600 AD</English>
+		<German>Erschlie&#223;en Sie bis zum Jahr 1600 n. Chr. insgesamt 10 Silber- und Goldvorkommen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_SPA3_TITLE</Tag>
@@ -1821,8 +1821,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB1</Tag>
-		<English>Acquire 5 cities by 1000 AD</English>
-		<German>Erlangen Sie bis zum Jahr 1000 n. Chr. 5 St&#228;dte</German>
+		<English>Acquire 4 cities by 840 AD</English>
+		<German>Erlangen Sie bis zum Jahr 840 n. Chr. 4 St&#228;dte</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB2_TITLE</Tag>
@@ -1830,8 +1830,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB2</Tag>
-		<English>Spread Buddhism to 25% by 1400 AD</English>
-		<German>Verbreiten Sie bis zum Jahr 1400 n. Chr. den Buddhismus auf 25%</German>
+		<English>Spread Buddhism to 30% by 1685 AD</English>
+		<German>Verbreiten Sie bis zum Jahr 1685 n. Chr. den Buddhismus auf 30%</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB3_TITLE</Tag>
@@ -1840,8 +1840,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TIB3</Tag>
-		<English>Settle 5 great prophets in Lhasa by 1700 AD</English>
-		<German>Siedeln Sie bis zum Jahr 1700 n. Chr. 5 gro&#223;e Propheten in Lhasa an</German>
+		<English>Settle 5 great prophets in Lhasa by 1685 AD</English>
+		<German>Siedeln Sie bis zum Jahr 1685 n. Chr. 5 gro&#223;e Propheten in Lhasa an</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TUR1_TITLE</Tag>

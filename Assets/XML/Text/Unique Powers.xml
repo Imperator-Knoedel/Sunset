@@ -445,17 +445,17 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY_TITLE</Tag>
-		<English>The Power of Astronomy:</English>
+		<English>The Power of Urbanization:</English>
 		<French>Le Pouvoir de l'Astronomie :</French>
-		<German>Die Macht der Astronomie:</German>
+		<German>Die Macht der Urbanisierung:</German>
 		<Italian>Il potere dell'astronomia:</Italian>
 		<Spanish>El poder de la astronom&#237;a:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY</Tag>
-		<English>-50% research cost until beginning of the Middle Ages</English>
+		<English>Cottages, Hamlets, Villages and Towns produce extra food and production until the beginning of the Renaissance Era</English>
 		<French>-50% sur les co&#251;ts de recherche jusqu'&#224; la fin du Moyen Age</French>
-		<German>-50% Forschungskosten bis zum Anfang des Mittelalters</German>
+		<German>Hütten, Weiler, Dörfer und Gemeinden gewähren extra Nahrung und Produktion bis zum Beginn der Renaissance Ära</German>
 		<Italian>-50% ai costi di ricerca fino alla fine del Medioevo</Italian>
 		<Spanish>-50% al coste de investigaci&#243;n hasta el final de la Edad Media</Spanish>
 	</TEXT>

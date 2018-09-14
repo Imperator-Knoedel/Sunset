@@ -6942,8 +6942,8 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 //KNOEDELstart
-	// Mayan UP: Cottages and Farms give 1 and 2 extra Food, respectively
-	if (eYield == YIELD_FOOD && ePlayer == MAYA && GET_PLAYER(ePlayer).getCurrentEra() < ERA_RENAISSANCE)
+	// Mayan UP: Cottages give 1 extra Food and Production
+	if (eYield != YIELD_COMMERCE && ePlayer == MAYA && GET_PLAYER(ePlayer).getCurrentEra() < ERA_RENAISSANCE)
 	{
 		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_COTTAGE") ||
 			eImprovement == GC.getInfoTypeForString("IMPROVEMENT_VILLAGE") ||
@@ -6951,11 +6951,6 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 			eImprovement == GC.getInfoTypeForString("IMPROVEMENT_TOWN"))
 		{
 			iYield += 1;
-		}
-
-		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FARM"))
-		{
-			iYield += 2;
 		}
 	}
 //KNOEDELend

@@ -210,7 +210,7 @@ dWonderGoals = {
 	iCarthage: (0, [iGreatCothon], False),
 	iPolynesia: (2, [iMoaiStatues], True),
 	iMaya: (1, [iTempleOfKukulkan], True),
-	iMoors: (1, [iMezquita], False),
+	iMoors: (0, [iMezquita], False),
 	iKhmer: (0, [iWatPreahPisnulok], False),
 	iFrance: (2, [iNotreDame, iVersailles, iStatueOfLiberty, iEiffelTower], True),
 	iMali: (1, [iUniversityOfSankore], False),
@@ -234,7 +234,7 @@ def setup():
 			loseAll(iPlayer)
 			
 		win(iPersia, 0)
-		win(iFrance, 0)
+
 		win(iCongo, 0)
 		
 		# French goal needs to be winnable
@@ -757,65 +757,54 @@ def checkTurn(iGameTurn, iPlayer):
 
 	elif iPlayer == iTibet:
 	
-		# first goal: acquire five cities by 1000 AD
-		if iGameTurn == getTurnForYear(1000):
+		# first goal: acquire four cities by 840 AD
+		if iGameTurn == getTurnForYear(840):
 			expire(iTibet, 0)
 			
-		# second goal: spread Buddhism to 25% by 1400 AD
+		# second goal: spread Buddhism to 30% by 1685 AD
 		if isPossible(iTibet, 1):
-			if gc.getGame().calculateReligionPercent(iBuddhism) >= 25.0:
+			if gc.getGame().calculateReligionPercent(iBuddhism) >= 30.0:
 				win(iTibet, 1)
 				
-		if iGameTurn == getTurnForYear(1400):
+		if iGameTurn == getTurnForYear(1685):
 			expire(iTibet, 1)
 			
-		# third goal: settle five great prophets in Lhasa by 1700 AD
+		# third goal: settle five great prophets in Lhasa by 1685 AD
 		if isPossible(iTibet, 2):
 			if countCitySpecialists(iTibet, Areas.getCapital(iPlayer), iSpecialistGreatProphet) >= 5:
 				win(iTibet, 2)
 				
-		if iGameTurn == getTurnForYear(1700):
+		if iGameTurn == getTurnForYear(1685):
 			expire(iTibet, 2)
 			
 	elif iPlayer == iIndonesia:
 	
-		# first goal: have the largest population in the world in 1300 AD
-		if iGameTurn == getTurnForYear(1300):
+		# first goal: have the largest population in the world in 1390 AD
+		if iGameTurn == getTurnForYear(1390):
 			if isBestPlayer(iIndonesia, playerRealPopulation):
 				win(iIndonesia, 0)
 			else:
 				lose(iIndonesia, 0)
 				
-		# second goal: acquire 10 different happiness resources by 1500 AD
+		# second goal: acquire 10 different happiness resources by 1510 AD
 		if isPossible(iIndonesia, 1):
 			if countHappinessResources(iIndonesia) >= 10:
 				win(iIndonesia, 1)
 				
-		if iGameTurn == getTurnForYear(1500):
+		if iGameTurn == getTurnForYear(1510):
 			expire(iIndonesia, 1)
 		
-		# third goal: control 9% of the world's population in 1940 AD
-		if iGameTurn == getTurnForYear(1940):
+		# third goal: control 9% of the world's population in 1950 AD
+		if iGameTurn == getTurnForYear(1950):
 			if calculatePopulationPercent(iIndonesia) >= 9.0:
 				win(iIndonesia, 2)
 			else:
 				lose(iIndonesia, 2)
 				
 	elif iPlayer == iMoors:
-	
-		# first goal: control three cities in the Maghreb and conquer two cities in Iberia and West Africa
-		if iGameTurn == getTurnForYear(1200):
-			bIberia = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tIberiaTL, tIberiaBR)) >= 2
-			bMaghreb = getNumCitiesInArea(iMoors, utils.getPlotList(tMaghrebTL, tMaghrebBR)) >= 3
-			bWestAfrica = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tWestAfricaTL, tWestAfricaBR)) >= 2
-			
-			if bIberia and bMaghreb and bWestAfrica:
-				win(iMoors, 0)
-			else:
-				lose(iMoors, 0)
-				
-		# second goal: build La Mezquita and settle four great prophets, scientists or engineers in Cordoba by 1300 AD
-		if isPossible(iMoors, 1):
+		
+		# first goal: build La Mezquita and settle three great prophets, scientists or engineers in Cordoba by 1030 AD
+		if isPossible(iMoors, 0):
 			bMezquita = data.getWonderBuilder(iMezquita) == iMoors
 		
 			iCounter = 0
@@ -823,25 +812,36 @@ def checkTurn(iGameTurn, iPlayer):
 			iCounter += countCitySpecialists(iMoors, (51, 41), iSpecialistGreatScientist)
 			iCounter += countCitySpecialists(iMoors, (51, 41), iSpecialistGreatEngineer)
 			
-			if bMezquita and iCounter >= 4:
+			if bMezquita and iCounter >= 3:
+				win(iMoors, 0)
+				
+		if iGameTurn == getTurnForYear(1030):
+			expire(iMoors, 0)
+		
+		# second goal: control three cities in the Maghreb and conquer two cities in Iberia and West Africa
+		if iGameTurn == getTurnForYear(1210):
+			bIberia = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tIberiaTL, tIberiaBR)) >= 2
+			bMaghreb = getNumCitiesInArea(iMoors, utils.getPlotList(tMaghrebTL, tMaghrebBR)) >= 3
+			bWestAfrica = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tWestAfricaTL, tWestAfricaBR)) >= 2
+			
+			if bIberia and bMaghreb and bWestAfrica:
 				win(iMoors, 1)
-				
-		if iGameTurn == getTurnForYear(1300):
-			expire(iMoors, 1)
-				
-		# third goal: acquire 3000 gold through piracy by 1650 AD
+			else:
+				lose(iMoors, 1)
+					
+		# third goal: acquire 3000 gold through piracy by 1680 AD
 		if isPossible(iMoors, 2):
 			if data.iMoorishGold >= utils.getTurns(3000):
 				win(iMoors, 2)
 				
-		if iGameTurn == getTurnForYear(1650):
+		if iGameTurn == getTurnForYear(1680):
 			expire(iMoors, 2)
 			
 	elif iPlayer == iSpain:
 	
 		# first goal: be the first to found a colony in America
 		
-		# second goal: secure 10 gold or silver resources by 1650 AD
+		# second goal: secure 10 gold or silver resources by 1600 AD
 		if isPossible(iSpain, 1):
 			iNumGold = countResources(iSpain, iGold)
 			iNumSilver = countResources(iSpain, iSilver)
@@ -849,7 +849,7 @@ def checkTurn(iGameTurn, iPlayer):
 			if iNumGold + iNumSilver >= 10:
 				win(iSpain, 1)
 				
-		if iGameTurn == getTurnForYear(1650):
+		if iGameTurn == getTurnForYear(1600):
 			expire(iSpain, 1)
 			
 		# third goal: spread Catholicism to 30% and allow no Protestant civilizations in Europe in 1650 AD
@@ -866,15 +866,15 @@ def checkTurn(iGameTurn, iPlayer):
 				
 	elif iPlayer == iFrance:
 	
-		# first goal: have 25000 culture in Paris in 1700 AD
-		if iGameTurn == getTurnForYear(1700):
-			if getCityCulture(iFrance, (55, 50)) >= utils.getTurns(25000):
+		# first goal: have 30000 culture in Paris in 1790 AD
+		if iGameTurn == getTurnForYear(1790):
+			if getCityCulture(iFrance, (55, 50)) >= utils.getTurns(30000):
 				win(iFrance, 0)
 			else:
 				lose(iFrance, 0)
 				
-		# second goal: control 40% of Europe and North America in 1800 AD
-		if iGameTurn == getTurnForYear(1800):
+		# second goal: control 40% of Europe and North America in 1815 AD
+		if iGameTurn == getTurnForYear(1815):
 			iEurope, iTotalEurope = countControlledTiles(iFrance, tEuropeTL, tEuropeBR, True)
 			iEasternEurope, iTotalEasternEurope = countControlledTiles(iFrance, tEasternEuropeTL, tEasternEuropeBR, True)
 			iNorthAmerica, iTotalNorthAmerica = countControlledTiles(iFrance, tNorthAmericaTL, tNorthAmericaBR, True)
@@ -887,8 +887,8 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iFrance, 1)
 				
-		# third goal: build Notre Dame, Versailles, the Statue of Liberty and the Eiffel Tower by 1900 AD
-		if iGameTurn == getTurnForYear(1900):
+		# third goal: build Notre Dame, Versailles, the Statue of Liberty and the Eiffel Tower by 1890 AD
+		if iGameTurn == getTurnForYear(1890):
 			expire(iFrance, 2)
 			
 	elif iPlayer == iKhmer:
@@ -1518,10 +1518,10 @@ def onCityBuilt(iPlayer, city):
 			if iCount >= 4:
 				win(iPolynesia, 1)
 				
-	# first Tibetan goal: acquire five cities by 1000 AD
+	# first Tibetan goal: acquire four cities by 840 AD
 	elif iPlayer == iTibet:
 		if isPossible(iTibet, 0):
-			if pTibet.getNumCities() >= 5:
+			if pTibet.getNumCities() >= 4:
 				win(iTibet, 0)
 					
 	# first English goal: colonize every continent by 1730 AD
@@ -1545,10 +1545,10 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 	
 	if utils.getHumanID() != iPlayer and data.bIgnoreAI: return
 				
-	# first Tibetan goal: acquire five cities by 1000 AD
+	# first Tibetan goal: acquire five cities by 840 AD
 	if iPlayer == iTibet:
 		if isPossible(iTibet, 0):
-			if pTibet.getNumCities() >= 5:
+			if pTibet.getNumCities() >= 4:
 				win(iTibet, 0)
 					
 	# first English goal: colonize every continent by 1730 AD
@@ -1933,7 +1933,7 @@ def onPeaceBrokered(iBroker, iPlayer1, iPlayer2):
 			
 def onBlockade(iPlayer, iGold):
 
-	# third Moorish goal: acquire 3000 gold through piracy by 1650 AD
+	# third Moorish goal: acquire 3000 gold through piracy by 1680 AD
 	if iPlayer == iMoors:
 		if isPossible(iMoors, 2):
 			data.iMoorishGold += iGold
@@ -3571,10 +3571,10 @@ def getUHVHelp(iPlayer, iGoal):
 	elif iPlayer == iTibet:
 		if iGoal == 0:
 			iNumCities = pTibet.getNumCities()
-			aHelp.append(getIcon(iNumCities >= 5) + localText.getText("TXT_KEY_VICTORY_CITIES_ACQUIRED", (iNumCities, 5)))
+			aHelp.append(getIcon(iNumCities >= 4) + localText.getText("TXT_KEY_VICTORY_CITIES_ACQUIRED", (iNumCities, 4)))
 		elif iGoal == 1:
 			fReligionPercent = gc.getGame().calculateReligionPercent(iBuddhism)
-			aHelp.append(getIcon(fReligionPercent >= 25.0) + localText.getText("TXT_KEY_VICTORY_SPREAD_RELIGION_PERCENT", (gc.getReligionInfo(iBuddhism).getTextKey(), str(u"%.2f%%" % fReligionPercent), str(25))))
+			aHelp.append(getIcon(fReligionPercent >= 30.0) + localText.getText("TXT_KEY_VICTORY_SPREAD_RELIGION_PERCENT", (gc.getReligionInfo(iBuddhism).getTextKey(), str(u"%.2f%%" % fReligionPercent), str(30))))
 		elif iGoal == 2:
 			iCounter = countCitySpecialists(iTibet, Areas.getCapital(iTibet), iSpecialistGreatProphet)
 			aHelp.append(getIcon(iCounter >= 5) + localText.getText("TXT_KEY_VICTORY_GREAT_PROPHETS_SETTLED", ("Lhasa", iCounter, 5)))
@@ -3593,17 +3593,17 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iMoors:
 		if iGoal == 0:
-			iIberia = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tIberiaTL, tIberiaBR))
-			iMaghreb = getNumCitiesInArea(iMoors, utils.getPlotList(tMaghrebTL, tMaghrebBR))
-			iWestAfrica = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tWestAfricaTL, tWestAfricaBR))
-			aHelp.append(getIcon(iMaghreb >= 3) + localText.getText("TXT_KEY_VICTORY_MAGHREB_MOORS", (iMaghreb, 3)) + ' ' + getIcon(iIberia >= 2) + localText.getText("TXT_KEY_VICTORY_IBERIA", (iIberia, 2)) + ' ' + getIcon(iWestAfrica >= 2) + localText.getText("TXT_KEY_VICTORY_WEST_AFRICA", (iWestAfrica, 2)))
-		elif iGoal == 1:
 			bMezquita = data.getWonderBuilder(iMezquita) == iMoors
 			iCounter = 0
 			iCounter += countCitySpecialists(iMoors, (51, 41), iSpecialistGreatProphet)
 			iCounter += countCitySpecialists(iMoors, (51, 41), iSpecialistGreatScientist)
 			iCounter += countCitySpecialists(iMoors, (51, 41), iSpecialistGreatEngineer)
-			aHelp.append(getIcon(bMezquita) + localText.getText("TXT_KEY_BUILDING_LA_MEZQUITA", ()) + ' ' + getIcon(iCounter >= 4) + localText.getText("TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY_MOORS", ("Cordoba", iCounter, 4)))
+			aHelp.append(getIcon(bMezquita) + localText.getText("TXT_KEY_BUILDING_LA_MEZQUITA", ()) + ' ' + getIcon(iCounter >= 3) + localText.getText("TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY_MOORS", ("Cordoba", iCounter, 3)))
+		elif iGoal == 1:
+			iIberia = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tIberiaTL, tIberiaBR))
+			iMaghreb = getNumCitiesInArea(iMoors, utils.getPlotList(tMaghrebTL, tMaghrebBR))
+			iWestAfrica = getNumConqueredCitiesInArea(iMoors, utils.getPlotList(tWestAfricaTL, tWestAfricaBR))
+			aHelp.append(getIcon(iMaghreb >= 3) + localText.getText("TXT_KEY_VICTORY_MAGHREB_MOORS", (iMaghreb, 3)) + ' ' + getIcon(iIberia >= 2) + localText.getText("TXT_KEY_VICTORY_IBERIA", (iIberia, 2)) + ' ' + getIcon(iWestAfrica >= 2) + localText.getText("TXT_KEY_VICTORY_WEST_AFRICA", (iWestAfrica, 2)))
 		elif iGoal == 2:
 			iRaidGold = data.iMoorishGold
 			aHelp.append(getIcon(iRaidGold >= utils.getTurns(3000)) + localText.getText("TXT_KEY_VICTORY_PIRACY", (iRaidGold, utils.getTurns(3000))))
@@ -3621,7 +3621,7 @@ def getUHVHelp(iPlayer, iGoal):
 	elif iPlayer == iFrance:
 		if iGoal == 0:
 			iCulture = getCityCulture(iFrance, (55, 50))
-			aHelp.append(getIcon(iCulture >= utils.getTurns(25000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Paris", iCulture, utils.getTurns(25000))))
+			aHelp.append(getIcon(iCulture >= utils.getTurns(30000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Paris", iCulture, utils.getTurns(30000))))
 		elif iGoal == 1:
 			iEurope, iTotalEurope = countControlledTiles(iFrance, tEuropeTL, tEuropeBR, True)
 			iEasternEurope, iTotalEasternEurope = countControlledTiles(iFrance, tEasternEuropeTL, tEasternEuropeBR, True)
