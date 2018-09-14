@@ -64,8 +64,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA1</Tag>
-		<English>Be the most advanced civilization in 1300 AD</English>
-		<German>Seien Sie im Jahr 1300 n. Chr. die fortschrittlichste Zivilisation</German>
+		<English>Be the most advanced civilization in 1260 AD</English>
+		<German>Seien Sie im Jahr 1260 n. Chr. die fortschrittlichste Zivilisation</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA2_TITLE</Tag>
@@ -74,8 +74,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA2</Tag>
-		<English>Control Egypt, the Maghreb, Spain, Mesopotamia and Persia directly or by vassal in 1300 AD</English>
-		<German>Bringen Sie im Jahr 1300 n. Chr. &#196;gypten, den Maghreb, Spanien, Mesopotamien und Persien unter Ihre Kontrolle oder machen Sie sie zu Vasallenstaaten</German>
+		<English>Control Egypt, the Maghreb, Spain, Mesopotamia and Persia directly or by vassal in 1260 AD</English>
+		<German>Bringen Sie im Jahr 1260 n. Chr. &#196;gypten, den Maghreb, Spanien, Mesopotamien und Persien unter Ihre Kontrolle oder machen Sie sie zu Vasallenstaaten</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA3_TITLE</Tag>
@@ -83,9 +83,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARA3</Tag>
-		<English>Spread Islam to 30% of the cities in the world</English>
+		<English>Spread Islam to 30% of the cities in the world by 1515 AD</English>
 		<French>R&#233;pandre l'Islam &#224; 30% des villes du monde</French>
-		<German>Sorgen Sie f&#252;r eine weltweit 30%-ige Verbreitung des Islam</German>
+		<German>Sorgen Sie f&#252;r eine weltweit 30%-ige Verbreitung des Islam bis zum Jahr 1515 n. Chr.</German>
 		<Italian>Diffondi l'Islam nel 30% delle citt&#224; mondiali</Italian>
 		<Spanish>Propagar el Islam al 30% de las ciudades del mundo</Spanish>
 	</TEXT>
@@ -278,18 +278,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ1</Tag>
-		<English>Have 5000 gold in 1000 AD</English>
-		<German>Besitzen Sie 5000 Gold im Jahr 1000 n. Chr.</German>
+		<English>Have 5000 gold in 1070 AD</English>
+		<German>Besitzen Sie 5000 Gold im Jahr 1070 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ1_EPIC</Tag>
-		<English>Have 7500 gold in 1000 AD</English>
-		<German>Besitzen Sie 7500 Gold im Jahr 1000 n. Chr.</German>
+		<English>Have 7500 gold in 1070 AD</English>
+		<German>Besitzen Sie 7500 Gold im Jahr 1070 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ1_MARATHON</Tag>
-		<English>Have 15000 gold in 1000 AD</English>
-		<German>Besitzen Sie 15000 Gold im Jahr 1000 n. Chr.</German>
+		<English>Have 15000 gold in 1070 AD</English>
+		<German>Besitzen Sie 15000 Gold im Jahr 1070 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ2_TITLE</Tag>
@@ -298,8 +298,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ2</Tag>
-		<English>Make Constantinople the world's largest and most cultured city in 1200 AD</English>
-		<German>Machen Sie Konstantinopel zur gr&#246;&#223;ten und kultiviertesten Stadt der Welt im Jahr 1200 n. Chr.</German>
+		<English>Make Constantinople the world's largest and most cultured city in 1205 AD</English>
+		<German>Machen Sie Konstantinopel zur gr&#246;&#223;ten und kultiviertesten Stadt der Welt im Jahr 1205 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ3_TITLE</Tag>
@@ -308,8 +308,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ3</Tag>
-		<English>Control three cities in the Balkans, Northern Africa and the Near East in 1450 AD</English>
-		<German>Kontrollieren Sie drei St&#228;dte im Balkan, Nordafrika und dem Nahen Osten im Jahr 1450 n. Chr.</German>
+		<English>Control three cities in the Balkans, Northern Africa and the Near East in 1455 AD</English>
+		<German>Kontrollieren Sie drei St&#228;dte im Balkan, Nordafrika und dem Nahen Osten im Jahr 1455 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAN1_TITLE</Tag>
@@ -345,23 +345,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR1</Tag>
-		<English>Build a Palace and the Great Cothon in Carthage by 300 BC</English>
-		<German>Bauen Sie bis zum Jahr 300 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
+		<English>Build a Palace and the Great Cothon in Carthage by 265 BC</English>
+		<German>Bauen Sie bis zum Jahr 265 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR1_EPIC</Tag>
-		<English>Build a Palace and the Great Cothon in Carthage by 300 BC</English>
-		<German>Bauen Sie bis zum Jahr 300 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
+		<English>Build a Palace and the Great Cothon in Carthage by 265 BC</English>
+		<German>Bauen Sie bis zum Jahr 265 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR1_MARATHON</Tag>
-		<English>Build a Palace and the Great Cothon in Carthage by 300 BC</English>
-		<German>Bauen Sie bis zum Jahr 300 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
+		<English>Build a Palace and the Great Cothon in Carthage by 265 BC</English>
+		<German>Bauen Sie bis zum Jahr 265 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR1_NOTURN</Tag>
-		<English>Build a Palace and the Great Cothon in Carthage by 300 BC</English>
-		<German>Bauen Sie bis zum Jahr 300 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
+		<English>Build a Palace and the Great Cothon in Carthage by 265 BC</English>
+		<German>Bauen Sie bis zum Jahr 265 v. Chr. einen Palast und den Gro&#223;en Cothon in Karthago</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR2_TITLE</Tag>
@@ -370,23 +370,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR2</Tag>
-		<English>Control Italy and Iberia in 100 BC</English>
-		<German>Kontrollieren Sie im Jahr 100 v. Chr. Italien und Iberien</German>
+		<English>Control Italy and Iberia in 200 BC</English>
+		<German>Kontrollieren Sie im Jahr 200 v. Chr. Italien und Iberien</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR2_EPIC</Tag>
-		<English>Control Italy and Iberia in 100 BC</English>
-		<German>Kontrollieren Sie im Jahr 100 v. Chr. Italien und Iberien</German>
+		<English>Control Italy and Iberia in 200 BC</English>
+		<German>Kontrollieren Sie im Jahr 200 v. Chr. Italien und Iberien</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR2_MARATHON</Tag>
-		<English>Control Italy and Iberia in 100 BC</English>
-		<German>Kontrollieren Sie im Jahr 100 v. Chr. Italien und Iberien</German>
+		<English>Control Italy and Iberia in 200 BC</English>
+		<German>Kontrollieren Sie im Jahr 200 v. Chr. Italien und Iberien</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR2_NOTURN</Tag>
-		<English>Control Italy and Iberia in 100 BC</English>
-		<German>Kontrollieren Sie im Jahr 100 v. Chr. Italien und Iberien</German>
+		<English>Control Italy and Iberia in 200 BC</English>
+		<German>Kontrollieren Sie im Jahr 200 v. Chr. Italien und Iberien</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR3_TITLE</Tag>
@@ -395,18 +395,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR3</Tag>
-		<English>Have 5000 gold in 200 AD</English>
-		<German>Verf&#252;gen Sie im Jahr 200 v. Chr. &#252;ber 5000 Gold</German>
+		<English>Have 3000 gold in 145 BC</English>
+		<German>Verf&#252;gen Sie im Jahr 145 v. Chr. &#252;ber 3000 Gold</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR3_EPIC</Tag>
-		<English>Have 7500 gold in 200 AD</English>
-		<German>Verf&#252;gen Sie im Jahr 200 v. Chr. &#252;ber 7500 Gold</German>
+		<English>Have 4500 gold in 145 BC</English>
+		<German>Verf&#252;gen Sie im Jahr 145 v. Chr. &#252;ber 4500 Gold</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAR3_MARATHON</Tag>
-		<English>Have 15000 gold in 200 AD</English>
-		<German>Verf&#252;gen Sie im Jahr 200 v. Chr. &#252;ber 15000 Gold</German>
+		<English>Have 9000 gold in 145 BC</English>
+		<German>Verf&#252;gen Sie im Jahr 145 v. Chr. &#252;ber 9000 Gold</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHI1_TITLE</Tag>
@@ -603,8 +603,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH1</Tag>
-		<English>Settle a Great Prophet in two Orthodox cities by 500 AD</English>
-		<German>Siedeln Sie bis zum Jahr 500 n. Chr. einen Großen Propheten in zwei orthodoxen Städten an</German>
+		<English>Settle a Great Prophet in two Orthodox cities by 525 AD</English>
+		<German>Siedeln Sie bis zum Jahr 525 n. Chr. einen Großen Propheten in zwei orthodoxen Städten an</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH2_TITLE</Tag>
@@ -613,18 +613,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH2</Tag>
-		<English>Acquire 3 incense resources by 600 AD</English>
-		<German>Erlangen Sie bis 600 n. Chr. 3 Weihrauch-Ressourcen</German>
+		<English>Acquire 3 incense resources by 615 AD</English>
+		<German>Erlangen Sie bis 615 n. Chr. 3 Weihrauch-Ressourcen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH2_EPIC</Tag>
-		<English>Acquire 3 incense resources by 600 AD</English>
-		<German>Erlangen Sie bis 600 n. Chr. 3 Weihrauch-Ressourcen</German>
+		<English>Acquire 3 incense resources by 615 AD</English>
+		<German>Erlangen Sie bis 615 n. Chr. 3 Weihrauch-Ressourcen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH2_MARATHON</Tag>
-		<English>Acquire 3 incense resources by 600 AD</English>
-		<German>Erlangen Sie bis 600 n. Chr. 3 Weihrauch-Ressourcen</German>
+		<English>Acquire 3 incense resources by 615 AD</English>
+		<German>Erlangen Sie bis 615 n. Chr. 3 Weihrauch-Ressourcen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH3_TITLE</Tag>
@@ -633,8 +633,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH3</Tag>
-		<English>Ensure there are no European colonies in East and Subequatorial Africa in 1500 AD and 1910 AD</English>
-		<German>Lassen Sie im Jahr 1910 n. Chr. keine europ&#228;ischen Kolonien im &#246;stlichen und sub&#228;quatorialen Afrika zu</German>
+		<English>Ensure there are no European colonies in East and Subequatorial Africa in 1545 AD and 1935 AD</English>
+		<German>Lassen Sie in den Jahren 1545 und 1935 n. Chr. keine europ&#228;ischen Kolonien im &#246;stlichen und sub&#228;quatorialen Afrika zu</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1_TITLE</Tag>
@@ -1040,18 +1040,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_JAP1</Tag>
-		<English>Have an average city culture of 6000 by 1600 AD without ever losing a city</English>
-		<German>Erreichen Sie bis zum Jahr 1600 n. Chr. durchschnittlich 6000 Kulturpunkte pro Stadt, ohne jemals eine Stadt zu verlieren</German>
+		<English>Have an average city culture of 8000 by 1870 AD without ever losing a city</English>
+		<German>Erreichen Sie bis zum Jahr 1870 n. Chr. durchschnittlich 8000 Kulturpunkte pro Stadt, ohne jemals eine Stadt zu verlieren</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_JAP1_EPIC</Tag>
-		<English>Have an average city culture of 9000 by 1600 AD</English>
-		<German>Haben Sie bis zum Jahr 1600 n. Chr. durchschnittlich 9000 Kulturpunkte in Ihren St&#228;dten</German>
+		<English>Have an average city culture of 12.000 by 1870 AD</English>
+		<German>Haben Sie bis zum Jahr 1870 n. Chr. durchschnittlich 12.000 Kulturpunkte in Ihren St&#228;dten</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_JAP1_MARATHON</Tag>
-		<English>Have an average city culture of 18000 by 1600 AD</English>
-		<German>Haben Sie bis zum Jahr 1600 n. Chr. durchschnittlich 18000 Kulturpunkte in Ihren St&#228;dten</German>
+		<English>Have an average city culture of 24.000 by 1870 AD</English>
+		<German>Haben Sie bis zum Jahr 1870 n. Chr. durchschnittlich 24.000 Kulturpunkte in Ihren St&#228;dten</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_JAP2_TITLE</Tag>
@@ -1060,8 +1060,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_JAP2</Tag>
-		<English>Control or vassalize Korea, Manchuria, China, Indochina, Indonesia and Philippines in 1940 AD</English>
-		<German>Kontrollieren oder vasallisieren Sie im Jahr 1940 n. Chr. Korea, die Mandschurei, China, Indochina, Indonesian und die Philippinen</German>
+		<English>Control or vassalize Korea, Manchuria, China, Indochina, Indonesia and Philippines in 1945 AD</English>
+		<German>Kontrollieren oder vasallisieren Sie im Jahr 1945 n. Chr. Korea, die Mandschurei, China, Indochina, Indonesian und die Philippinen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_JAP3_TITLE</Tag>
@@ -1070,8 +1070,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_JAP3</Tag>
-		<English>Be the first to discover eight Global and eight Digital technologies</English>
-		<German>Erforschen vor allen anderen Zivilisation acht Technologien des Globalzeitalters und acht Technologien des Digitalzeitalters</German>
+		<English>Be the first to discover seven Global and seven Digital technologies</English>
+		<German>Erforschen vor allen anderen Zivilisation sieben Technologien des Globalzeitalters und sieben Technologien des Digitalzeitalters</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM1_TITLE</Tag>
@@ -1160,8 +1160,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KOR1</Tag>
-		<English>Build a Buddhist Chaitya and a Confucian Guozijian by 1200 AD</English>
-		<German>Bauen Sie eine Buddhistische Stupa und eine Konfuzianische Akademie bis zum Jahr 1200 n. Chr.</German>
+		<English>Build a Buddhist Chaitya and a Confucian Guozijian by 1230 AD</English>
+		<German>Bauen Sie eine Buddhistische Stupa und eine Konfuzianische Akademie bis zum Jahr 1230 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KOR2_TITLE</Tag>
@@ -1178,8 +1178,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KOR3</Tag>
-		<English>Sink 20 enemy ships</English>
-		<German>Versenken Sie 20 gegnerische Schiffe</German>
+		<English>Sink 20 enemy ships by 1600 AD</English>
+		<German>Versenken Sie bis zum Jahr 1600 n. Chr. 20 gegnerische Schiffe</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL1_TITLE</Tag>
@@ -1228,23 +1228,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY1</Tag>
-		<English>Discover Writing and Mathematics by 600 AD</English>
-		<German>Erforschen Sie bis zum Jahr 600 n. Chr. Schrift und Mathematik</German>
+		<English>Discover Writing and Mathematics by 830 AD</English>
+		<German>Erforschen Sie bis zum Jahr 830 n. Chr. Schrift und Mathematik</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY1_EPIC</Tag>
-		<English>Discover Writing and Mathematics by 600 AD</English>
-		<German>Erforschen Sie bis zum Jahr 600 n. Chr. Schrift und Mathematik</German>
+		<English>Discover Writing and Mathematics by 830 AD</English>
+		<German>Erforschen Sie bis zum Jahr 830 n. Chr. Schrift und Mathematik</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY1_MARATHON</Tag>
-		<English>Discover Writing and Mathematics by 600 AD</English>
-		<German>Erforschen Sie bis zum Jahr 600 n. Chr. Schrift und Mathematik</German>
+		<English>Discover Writing and Mathematics by 830 AD</English>
+		<German>Erforschen Sie bis zum Jahr 830 n. Chr. Schrift und Mathematik</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY1_NOTURN</Tag>
-		<English>Discover Writing and Mathematics by 600 AD</English>
-		<German>Erforschen Sie bis zum Jahr 600 n. Chr. Schrift und Mathematik</German>
+		<English>Discover Writing and Mathematics by 830 AD</English>
+		<German>Erforschen Sie bis zum Jahr 830 n. Chr. Schrift und Mathematik</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY2_TITLE</Tag>
@@ -1253,8 +1253,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY2</Tag>
-		<English>Build the Temple of Kukulkan by 900 AD</English>
-		<German>Errichten Sie bis zum Jahr 900 n. Chr. die Pyramide des Kukulc&#225;n</German>
+		<English>Build the Temple of Kukulkan by 1225 AD</English>
+		<German>Errichten Sie bis zum Jahr 1.225 n. Chr. die Pyramide des Kukulc&#225;n</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY3_TITLE</Tag>
@@ -1420,35 +1420,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER1</Tag>
-		<English>Control 7% of the world by 140 AD</English>
-		<French>Contr&#244;ler 7% du territoire mondial avant 140 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 140 n. Chr. 7% der Weltkarte</German>
-		<Italian>Devi controllare l'7% del territorio mondiale entro il 140 d.C.</Italian>
-		<Spanish>Controlar el 7% del territorio mundial antes del 140 d. C.</Spanish>
+		<English>Control 6% of the world by 330 BC</English>
+		<French>Contr&#244;ler 6% du territoire mondial avant 140 ap. J.-C.</French>
+		<German>Kontrollieren Sie bis zum Jahr 330 v. Chr. 6% der Weltkarte</German>
+		<Italian>Devi controllare l'6% del territorio mondiale entro il 330 BC</Italian>
+		<Spanish>Controlar el 6% del territorio mundial antes del 330 BC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER1_EPIC</Tag>
-		<English>Control 7% of the world by 140 AD</English>
-		<French>Contr&#244;ler 7% du territoire mondial avant 140 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 140 n. Chr. 7% der Weltkarte</German>
-		<Italian>Devi controllare l'7% del territorio mondiale entro il 140 d.C.</Italian>
-		<Spanish>Controlar el 7% del territorio mundial antes del 140 d. C.</Spanish>
+		<English>Control 6% of the world by 330 BC</English>
+		<French>Contr&#244;ler 6% du territoire mondial avant 330 BC</French>
+		<German>Kontrollieren Sie bis zum Jahr 330 v. Chr. 6% der Weltkarte</German>
+		<Italian>Devi controllare l'6% del territorio mondiale entro il 330 BC</Italian>
+		<Spanish>Controlar el 6% del territorio mundial antes del 330 BC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER1_MARATHON</Tag>
-		<English>Control 7% of the world by 140 AD</English>
-		<French>Contr&#244;ler 7% du territoire mondial avant 140 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 140 n. Chr. 7% der Weltkarte</German>
-		<Italian>Devi controllare l'7% del territorio mondiale entro il 140 d.C.</Italian>
-		<Spanish>Controlar el 7% del territorio mundial antes del 140 d. C.</Spanish>
+		<English>Control 6% of the world by 330 BC</English>
+		<French>Contr&#244;ler 6% du territoire mondial avant 140 ap. 330 BC</French>
+		<German>Kontrollieren Sie bis zum Jahr 330 v. Chr. 6% der Weltkarte</German>
+		<Italian>Devi controllare l'6% del territorio mondiale entro il 330 BC</Italian>
+		<Spanish>Controlar el 6% del territorio mundial antes del 330 BC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER1_NOTURN</Tag>
-		<English>Control 8% of the world by 140 AD</English>
-		<French>Contr&#244;ler 8% du territoire mondial avant 140 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 140 n. Chr. 8% der Weltkarte</German>
-		<Italian>Devi controllare l'8% del territorio mondiale entro il 140 d.C.</Italian>
-		<Spanish>Controlar el 8% del territorio mundial antes del 140 d. C.</Spanish>
+		<English>Control 6% of the world by 330 BC</English>
+		<French>Contr&#244;ler 6% du territoire mondial avant 330 BC</French>
+		<German>Kontrollieren Sie bis zum Jahr 330 v. Chr. 6% der Weltkarte</German>
+		<Italian>Devi controllare l'6% del territorio mondiale entro il 330 BC</Italian>
+		<Spanish>Controlar el 6% del territorio mundial antes del 330 BC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER2_TITLE</Tag>
@@ -1457,35 +1457,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER2</Tag>
-		<English>Control 7 world wonders by 350 AD</English>
-		<French>Contr&#244;ler 7 merveilles du monde avant 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 350 n. Chr. 7 Weltwunder</German>
-		<Italian>Devi controllare 7 Grandi Meraviglie entro il 350 d.C.</Italian>
-		<Spanish>Controlar 7 grandes maravillas del mundo antes del 350 d. C.</Spanish>
+		<English>Control 7 world wonders by 225 AD</English>
+		<French>Contr&#244;ler 7 merveilles du monde avant 225 ap. J.-C.</French>
+		<German>Kontrollieren Sie bis zum Jahr 225 n. Chr. 7 Weltwunder</German>
+		<Italian>Devi controllare 7 Grandi Meraviglie entro il 225 d.C.</Italian>
+		<Spanish>Controlar 7 grandes maravillas del mundo antes del 225 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER2_EPIC</Tag>
-		<English>Control 7 world wonders by 350 AD</English>
-		<French>Contr&#244;ler 7 merveilles du monde avant 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 350 n. Chr. 7 Weltwunder</German>
-		<Italian>Devi controllare 7 Grandi Meraviglie entro il 350 d.C.</Italian>
-		<Spanish>Controlar 7 grandes maravillas del mundo antes del 350 d. C.</Spanish>
+		<English>Control 7 world wonders by 225 AD</English>
+		<French>Contr&#244;ler 7 merveilles du monde avant 225 ap. J.-C.</French>
+		<German>Kontrollieren Sie bis zum Jahr 225 n. Chr. 7 Weltwunder</German>
+		<Italian>Devi controllare 7 Grandi Meraviglie entro il 225 d.C.</Italian>
+		<Spanish>Controlar 7 grandes maravillas del mundo antes del 225 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER2_MARATHON</Tag>
-		<English>Control 7 world wonders by 350 AD</English>
-		<French>Contr&#244;ler 7 merveilles du monde avant 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 350 n. Chr. 7 Weltwunder</German>
-		<Italian>Devi controllare 7 Grandi Meraviglie entro il 350 d.C.</Italian>
-		<Spanish>Controlar 7 grandes maravillas del mundo antes del 350 d. C.</Spanish>
+		<English>Control 7 world wonders by 225 AD</English>
+		<French>Contr&#244;ler 7 merveilles du monde avant 225 ap. J.-C.</French>
+		<German>Kontrollieren Sie bis zum Jahr 225 n. Chr. 7 Weltwunder</German>
+		<Italian>Devi controllare 7 Grandi Meraviglie entro il 225 d.C.</Italian>
+		<Spanish>Controlar 7 grandes maravillas del mundo antes del 225 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER2_NOTURN</Tag>
-		<English>Control 7 world wonders by 350 AD</English>
-		<French>Contr&#244;ler 7 merveilles du monde avant 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie bis zum Jahr 350 n. Chr. 7 Weltwunder</German>
-		<Italian>Devi controllare 7 Grandi Meraviglie entro il 350 d.C.</Italian>
-		<Spanish>Controlar 7 grandes maravillas del mundo antes del 350 d. C.</Spanish>
+		<English>Control 7 world wonders by 225 AD</English>
+		<French>Contr&#244;ler 7 merveilles du monde avant 225 ap. J.-C.</French>
+		<German>Kontrollieren Sie bis zum Jahr 225 n. Chr. 7 Weltwunder</German>
+		<Italian>Devi controllare 7 Grandi Meraviglie entro il 225 d.C.</Italian>
+		<Spanish>Controlar 7 grandes maravillas del mundo antes del 225 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER3_TITLE</Tag>
@@ -1494,35 +1494,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER3</Tag>
-		<English>Control 2 holy city shrines in 350 AD</English>
-		<French>Contr&#244;ler 2 autels de villes saintes en 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie im Jahr 350 n. Chr. 2 heilige Schreine</German>
-		<Italian>Devi controllare 2 santuari della Citt&#224; Santa nel 350 d.C.</Italian>
-		<Spanish>Controlar 2 santuarios de ciudades santas en el 350 d. C.</Spanish>
+		<English>Control 3 holy city shrines in 600 AD</English>
+		<French>Contr&#244;ler 3 autels de villes saintes en 600 ap. J.-C.</French>
+		<German>Kontrollieren Sie im Jahr 600 n. Chr. 3 heilige Schreine</German>
+		<Italian>Devi controllare 3 santuari della Citt&#224; Santa nel 600 d.C.</Italian>
+		<Spanish>Controlar 3 santuarios de ciudades santas en el 600 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER3_EPIC</Tag>
-		<English>Control 2 holy city shrines in 350 AD</English>
-		<French>Contr&#244;ler 2 autels de villes saintes en 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie im Jahr 350 n. Chr. 2 heilige Schreine</German>
-		<Italian>Devi controllare 2 santuari della Citt&#224; Santa nel 350 d.C.</Italian>
-		<Spanish>Controlar 2 santuarios de ciudades santas en el 350 d. C.</Spanish>
+		<English>Control 3 holy city shrines in 600 AD</English>
+		<French>Contr&#244;ler 3 autels de villes saintes en 600 ap. J.-C.</French>
+		<German>Kontrollieren Sie im Jahr 600 n. Chr. 3 heilige Schreine</German>
+		<Italian>Devi controllare 3 santuari della Citt&#224; Santa nel 600 d.C.</Italian>
+		<Spanish>Controlar 3 santuarios de ciudades santas en el 600 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER3_MARATHON</Tag>
-		<English>Control 2 holy city shrines in 350 AD</English>
-		<French>Contr&#244;ler 2 autels de villes saintes en 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie im Jahr 350 n. Chr. 2 heilige Schreine</German>
-		<Italian>Devi controllare 2 santuari della Citt&#224; Santa nel 350 d.C.</Italian>
-		<Spanish>Controlar 2 santuarios de ciudades santas en el 350 d. C.</Spanish>
+		<English>Control 3 holy city shrines in 600 AD</English>
+		<French>Contr&#244;ler 3 autels de villes saintes en 600 ap. J.-C.</French>
+		<German>Kontrollieren Sie im Jahr 600 n. Chr. 3 heilige Schreine</German>
+		<Italian>Devi controllare 3 santuari della Citt&#224; Santa nel 600 d.C.</Italian>
+		<Spanish>Controlar 3 santuarios de ciudades santas en el 600 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PER3_NOTURN</Tag>
-		<English>Control 2 holy city shrines in 350 AD</English>
-		<French>Contr&#244;ler 2 autels de villes saintes en 350 ap. J.-C.</French>
-		<German>Kontrollieren Sie im Jahr 350 n. Chr. 2 heilige Schreine</German>
-		<Italian>Devi controllare 2 santuari della Citt&#224; Santa nel 350 d.C.</Italian>
-		<Spanish>Controlar 2 santuarios de ciudades santas en el 350 d. C.</Spanish>
+		<English>Control 3 holy city shrines in 600 AD</English>
+		<French>Contr&#244;ler 3 autels de villes saintes en 600 ap. J.-C.</French>
+		<German>Kontrollieren Sie im Jahr 600 n. Chr. 3 heilige Schreine</German>
+		<Italian>Devi controllare 3 santuari della Citt&#224; Santa nel 600 d.C.</Italian>
+		<Spanish>Controlar 3 santuarios de ciudades santas en el 600 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY1_TITLE</Tag>
@@ -1530,8 +1530,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY1</Tag>
-		<English>Settle two of the following island groups by 800 AD: Hawaii, New Zealand, Marquesas and Easter Island</English>
-		<German>Besiedeln Sie bis zum Jahr 800 n. Chr. die folgenden Inselgruppen: Hawaii, Neuseeland, Marquesas und die Osterinsel</German>
+		<English>Settle two of the following island groups by 1025 AD: Hawaii, New Zealand, Marquesas and Easter Island</English>
+		<German>Besiedeln Sie bis zum Jahr 1025 n. Chr. die folgenden Inselgruppen: Hawaii, Neuseeland, Marquesas und die Osterinsel</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY2_TITLE</Tag>
@@ -1539,8 +1539,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY2</Tag>
-		<English>Settle Hawaii, New Zealand, Marquesas and Easter Island by 1000 AD</English>
-		<German>Besiedeln Sie bis zum Jahr 1000 n. Chr. Hawaii, Neuseeland, Marquesas und die Osterinsel</German>
+		<English>Settle Hawaii, New Zealand, Marquesas and Easter Island by 1290 AD</English>
+		<German>Besiedeln Sie bis zum Jahr 1290 n. Chr. Hawaii, Neuseeland, Marquesas und die Osterinsel</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY3_TITLE</Tag>
@@ -1548,8 +1548,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PLY3</Tag>
-		<English>Build the Moai Statues by 1200 AD</English>
-		<German>Bauen Sie bis zum Jahr 1200 n. Chr. die Moai-Statuen</German>
+		<English>Build the Moai Statues by 1500 AD</English>
+		<German>Bauen Sie bis zum Jahr 1500 n. Chr. die Moai-Statuen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POL1_TITLE</Tag>
@@ -1620,23 +1620,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM1</Tag>
-		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 100 AD</English>
-		<German>Bauen Sie bis zum Jahr 100 n. Chr. 6 Kasernen, 5 Aqu&#228;dukte, 4 Amphitheater und 3 Foren</German>
+		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 180 AD</English>
+		<German>Bauen Sie bis zum Jahr 180 n. Chr. 6 Kasernen, 5 Aqu&#228;dukte, 4 Amphitheater und 3 Foren</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM1_EPIC</Tag>
-		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 100 AD</English>
-		<German>Bauen Sie bis zum Jahr 100 n. Chr. 6 Kasernen, 5 Aqu&#228;dukte, 4 Amphitheater und 3 Foren</German>
+		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 180 AD</English>
+		<German>Bauen Sie bis zum Jahr 180 n. Chr. 6 Kasernen, 5 Aqu&#228;dukte, 4 Amphitheater und 3 Foren</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM1_MARATHON</Tag>
-		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 100 AD</English>
-		<German>Bauen Sie bis zum Jahr 100 n. Chr. 6 Kasernen, 5 Aqu&#228;dukte, 4 Amphitheater und 3 Foren</German>
+		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 180 AD</English>
+		<German>Bauen Sie bis zum Jahr 180 n. Chr. 6 Kasernen, 5 Aqu&#228;dukte, 4 Amphitheater und 3 Foren</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM1_NOTURN</Tag>
-		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 100 AD</English>
-		<German>Bauen Sie bis zum Jahr 100 n. Chr. 6 Kasernen, 5 Aqu&#228;dukten, 4 Amphitheatern und 3 Foren</German>
+		<English>Build 6 Barracks, 5 Aqueducts, 4 Amphitheatres and 3 Forums by 180 AD</English>
+		<German>Bauen Sie bis zum Jahr 180 n. Chr. 6 Kasernen, 5 Aqu&#228;dukten, 4 Amphitheatern und 3 Foren</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM2_TITLE</Tag>
@@ -1644,23 +1644,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM2</Tag>
-		<English>Control in 320 AD all the area historically known as the Roman Empire</English>
-		<German>Kontrollieren Sie im Jahr 320 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
+		<English>Control in 180 AD all the area historically known as the Roman Empire</English>
+		<German>Kontrollieren Sie im Jahr 180 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM2_EPIC</Tag>
-		<English>Control in 320 AD all the area historically known as the Roman Empire</English>
-		<German>Kontrollieren Sie im Jahr 320 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
+		<English>Control in 180 AD all the area historically known as the Roman Empire</English>
+		<German>Kontrollieren Sie im Jahr 180 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM2_MARATHON</Tag>
-		<English>Control in 320 AD all the area historically known as the Roman Empire</English>
-		<German>Kontrollieren Sie im Jahr 320 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
+		<English>Control in 180 AD all the area historically known as the Roman Empire</English>
+		<German>Kontrollieren Sie im Jahr 180 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM2_NOTURN</Tag>
-		<English>Control in 320 AD all the area historically known as the Roman Empire</English>
-		<German>Kontrollieren Sie im Jahr 320 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
+		<English>Control in 180 AD all the area historically known as the Roman Empire</English>
+		<German>Kontrollieren Sie im Jahr 180 n. Chr. das gesamte historische Gebiet des R&#246;mischen Reiches</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM3_TITLE</Tag>
@@ -1741,18 +1741,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM1</Tag>
-		<English>Have 3000 gold and 2000 culture in 800 AD</English>
-		<German>Haben Sie im Jahr 800 n. Chr. 3000 Gold und 2000 Kultur</German>
+		<English>Have 2000 gold and 2000 culture in 300 AD</English>
+		<German>Haben Sie im Jahr 300 n. Chr. 2000 Gold und 2000 Kultur</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM1_EPIC</Tag>
-		<English>Have 4500 gold and 3000 culture in 800 AD</English>
-		<German>Haben Sie im Jahr 800 n. Chr. 4500 Gold und 3000 Kultur</German>
+		<English>Have 3000 gold and 3000 culture in 300 AD</English>
+		<German>Haben Sie im Jahr 300 n. Chr. 3000 Gold und 3000 Kultur</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM1_MARATHON</Tag>
-		<English>Have 9000 gold and 6000 culture in 800 AD</English>
-		<German>Haben Sie im Jahr 800 n. Chr. 9000 Gold und 6000 Kultur</German>
+		<English>Have 6000 gold and 6000 culture in 300 AD</English>
+		<German>Haben Sie im Jahr 300 n. Chr. 6000 Gold und 6000 Kultur</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM2_TITLE</Tag>
@@ -1761,8 +1761,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM2</Tag>
-		<English>Control or vassalize the Deccan and Srivijaya in 1000 AD</English>
-		<German>Kontrollieren Sie im Jahr 1000 n. Chr. Srivijaya und den Dekkan direkt oder per Vasall</German>
+		<English>Control or vassalize the Deccan and Srivijaya in 1070 AD</English>
+		<German>Kontrollieren Sie im Jahr 1070 n. Chr. Srivijaya und den Dekkan direkt oder per Vasall</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM3_TITLE</Tag>
@@ -1771,18 +1771,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM3</Tag>
-		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1200 AD</English>
-		<German>Erwirtschaften Sie bis zum Jahr 1200 n. Chr. 4000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
+		<English>Acquire 5000 gold by trade (trade routes, diplomacy, trade missions) by 1280 AD</English>
+		<German>Erwirtschaften Sie bis zum Jahr 1280 n. Chr. 5000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM3_EPIC</Tag>
-		<English>Acquire 6000 gold by trade (trade routes, diplomacy, trade missions) by 1200 AD</English>
-		<German>Erwirtschaften Sie bis zum Jahr 1200 n. Chr. 6000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
+		<English>Acquire 7500 gold by trade (trade routes, diplomacy, trade missions) by 1280 AD</English>
+		<German>Erwirtschaften Sie bis zum Jahr 1280 n. Chr. 7500 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_TAM3_MARATHON</Tag>
-		<English>Acquire 12000 gold by trade (trade routes, diplomacy, trade missions) by 1200 AD</English>
-		<German>Erwirtschaften Sie bis zum Jahr 1200 n. Chr. 12000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
+		<English>Acquire 15000 gold by trade (trade routes, diplomacy, trade missions) by 1280 AD</English>
+		<German>Erwirtschaften Sie bis zum Jahr 1280 n. Chr. 15000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_THA1_TITLE</Tag>
@@ -1875,23 +1875,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VIK1_TITLE</Tag>
-		<English>Norman Conquests</English>
-		<German>Normannische Eroberungen</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_VIK1</Tag>
-		<English>Control the core of another European civilization in 1050 AD</English>
-		<German>Kontrollieren Sie im Jahr 1050 n. Chr. das Kerngebiet einer anderen europ&#228;ischen Zivilisation</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_VIK2_TITLE</Tag>
 		<English>Vinland Saga</English>
 		<German>Die Vinland-Saga</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UHV_VIK1</Tag>
+		<English>Found a city in America by 1020 AD</English>
+		<German>Gr&#252;nden Sie bis 1020 n. Chr. eine Stadt in Amerika</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_VIK2_TITLE</Tag>
+		<English>Norman Conquests</English>
+		<German>Normannische Eroberungen</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UHV_VIK2</Tag>
-		<English>Found a city in America by 1100 AD</English>
-		<German>Gr&#252;nden Sie bis 1100 n. Chr. eine Stadt in Amerika</German>
+		<English>Control the core of another European civilization in 1070 AD</English>
+		<German>Kontrollieren Sie im Jahr 1070 n. Chr. das Kerngebiet einer anderen europ&#228;ischen Zivilisation</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VIK3_TITLE</Tag>
@@ -1899,18 +1899,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VIK3</Tag>
-		<English>Acquire 3000 gold by pillaging, conquering cities and sinking ships by 1500 AD</English>
-		<German>Erwerben Sie bis 1500 n. Chr. 3000 Gold, indem sie pl&#252;ndern, St&#228;dte erobern oder Schiffe versenken</German>
+		<English>Acquire 2000 gold by pillaging, conquering cities and sinking ships by 1295 AD</English>
+		<German>Erwerben Sie bis 1295 n. Chr. 2000 Gold, indem sie pl&#252;ndern, St&#228;dte erobern oder Schiffe versenken</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VIK3_EPIC</Tag>
-		<English>Acquire 4500 gold by pillaging, conquering cities and sinking ships by 1500 AD</English>
-		<German>Erwerben Sie bis 1500 n. Chr. 4500 Gold, indem sie pl&#252;ndern, St&#228;dte erobern oder Schiffe versenken</German>
+		<English>Acquire 3000 gold by pillaging, conquering cities and sinking ships by 1295 AD</English>
+		<German>Erwerben Sie bis 1295 n. Chr. 3000 Gold, indem sie pl&#252;ndern, St&#228;dte erobern oder Schiffe versenken</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VIK3_MARATHON</Tag>
-		<English>Acquire 9000 gold by pillaging, conquering cities and sinking ships by 1500 AD</English>
-		<German>Erwerben Sie bis 1500 n. Chr. 9000 Gold, indem sie pl&#252;ndern, St&#228;dte erobern oder Schiffe versenken</German>
+		<English>Acquire 6000 gold by pillaging, conquering cities and sinking ships by 1295 AD</English>
+		<German>Erwerben Sie bis 1295 n. Chr. 6000 Gold, indem sie pl&#252;ndern, St&#228;dte erobern oder Schiffe versenken</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_JUD1</Tag>
