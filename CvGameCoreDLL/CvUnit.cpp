@@ -118,12 +118,10 @@ int CvUnit::resolveCombat_pyrrh(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefini
                     if(iExperience == 2) 
                         iExperience = GC.getDefineINT("PYRRH_BASE-XP-GAIN_BRAVE-DEFENDER");  
                     iExperience = range(iExperience, 0, GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
-                    double ratioAttDef = (double)(iAttackerStrength) / (double)(iDefenderStrength);
-                    pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), !isBarbarian(),
-                            ratioAttDef);
-                    double ratioDefAtt = 1.0 / ratioAttDef;
-                    changeExperience(GC.getDefineINT("PYRRH_BASE-XP-GAIN_ROUTINE"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian(),
-                            ratioDefAtt);
+//KNOEDEL                    double ratioAttDef = (double)(iAttackerStrength) / (double)(iDefenderStrength);
+                    pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), !isBarbarian());	//KNOEDEL: removed this: , ratioAttDef
+//KNOEDEL                    double ratioDefAtt = 1.0 / ratioAttDef;
+                    changeExperience(GC.getDefineINT("PYRRH_BASE-XP-GAIN_ROUTINE"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());	//KNOEDEL: removed this: , ratioDefAtt
                     break;
                    } // </pyrrh>
                 }
@@ -164,16 +162,14 @@ int CvUnit::resolveCombat_pyrrh(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefini
                 // <pyrrh> retreat code from above mirrored to handle attacks that succeed against their odds
                 if (defUnkillable && pDefender->getDamage() + iDefenderDamage >= pDefender->maxHitPoints()) {
                     r = -1;
-                    double ratioAttDef = (double)(iAttackerStrength) / (double)(iDefenderStrength);
-                    pDefender->changeExperience(GC.getDefineINT("PYRRH_BASE-XP-GAIN_ROUTINE"), maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !isBarbarian(),
-                            ratioAttDef);
+//KNOEDEL                    double ratioAttDef = (double)(iAttackerStrength) / (double)(iDefenderStrength);
+                    pDefender->changeExperience(GC.getDefineINT("PYRRH_BASE-XP-GAIN_ROUTINE"), maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !isBarbarian());	//KNOEDEL: removed this: , ratioAttDef
                     int iExperience = pDefender->attackXPValue();
                     if(iExperience == 4) 
                         iExperience = GC.getDefineINT("PYRRH_BASE-XP-GAIN_BRAVE-ATTACKER");   
                     iExperience = range(iExperience, 0, GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
-                    double ratioDefAtt = 1.0 / ratioAttDef;
-                    changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian(),
-                            ratioDefAtt);
+//KNOEDEL                    double ratioDefAtt = 1.0 / ratioAttDef;
+                    changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());	//KNOEDEL: removed this: , ratioDefAtt
                     break;
                 } // </pyrrh>
 
@@ -213,20 +209,21 @@ int CvUnit::resolveCombat_pyrrh(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefini
 
         if (isDead() || pDefender->isDead())
         {
-            double ratioAttDef = (double)(iAttackerStrength) / (double)(iDefenderStrength);
-            double ratioDefAtt = 1.0 / ratioAttDef;
+//KNOEDEL            double ratioAttDef = (double)(iAttackerStrength) / (double)(iDefenderStrength);
+//KNOEDEL            double ratioDefAtt = 1.0 / ratioAttDef;
             if (isDead())
             {
-                /* pyrrh: reduced XP gain for kills */
-                pDefender->changeExperience(GC.getDefineINT("PYRRH_BASE-XP-GAIN_ROUTINE"), maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !isBarbarian(),
-                    ratioAttDef);
+                int iExperience = defenseXPValue();
+                iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
+                iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+                pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), !isBarbarian());
             }
             else
             {
-                flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
-                /* pyrrh: reduced XP gain for kills */
-                changeExperience(GC.getDefineINT("PYRRH_BASE-XP-GAIN_ROUTINE"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian(),
-                    ratioDefAtt);
+                int iExperience = pDefender->attackXPValue();
+                iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
+                iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+                changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
             }
 
             break;
@@ -5928,6 +5925,11 @@ bool CvUnit::found()
 
 		iPillageGold = (int)lPillageGold;
 
+		if (pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CITY_RUINS") || pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FORT") || pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_HAMLET") || pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE") || pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_VILLAGE") || pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TOWN"))
+		{
+				iPillageGold *= 2;
+		}
+
 		if (iPillageGold > 0)
 		{
 			GET_PLAYER(getOwnerINLINE()).changeGold(iPillageGold);
@@ -11020,23 +11022,27 @@ void CvUnit::setExperience(int iNewValue, int iMax)
 }
 
 //KNOEDELstart
-void CvUnit::changeExperience(int iChange, int iMax, bool bFromCombat, bool bInBorders, bool bUpdateGlobal,
+void CvUnit::changeExperience(int iChange, int iMax, bool bFromCombat, bool bInBorders, bool bUpdateGlobal)	//KNOEDEL: removed this:
+/*	,
 		// pyrrh: added param to allow gaining 1 XP probabilistically
-		double combatStrengthRatio) {
+		double combatStrengthRatio*/
+{
 
     // <pyrrh>
-    if(combatStrengthRatio > 0) {
+/*    if(combatStrengthRatio > 0)
+	{
         double dChange = ((double)iChange) * combatStrengthRatio;
-        if(dChange < 1.0) {
-            /* probability of gaining 1 XP corresponds to ratio of combat strengths,
-               i.e. likelier if a strong unit is defeated */
+        if(dChange < 1.0)
+{
+           // probability of gaining 1 XP corresponds to ratio of combat strengths,
+           //    i.e. likelier if a strong unit is defeated 
             int prGainPercent = (int)floor(0.5 + 100.0 * dChange); // clumsy c++ rounding
             if(GC.getGameINLINE().getSorenRandNum(100, "Gain 1 XP (pyrrh)") < prGainPercent)
-                iChange = 1;
-            else iChange = 0;
+                iChange = 2;	//KNOEDEL: was 1, but I think units should not get so little experience from combat
+            else iChange = 1;	//KNOEDEL: was 0, but I think units should not get literally zero experience from combat
         }
         else iChange = (int)floor(0.5 + dChange); // small change here: XP no longer rounded down
-    }
+    }*/
     // </pyrrh>
 //KNOEDELend
 

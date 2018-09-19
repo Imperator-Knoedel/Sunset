@@ -482,7 +482,7 @@
          Recommended: 3 -->
     <Define>
         <DefineName>PYRRH_BASE-XP-GAIN_BRAVE-ATTACKER</DefineName>
-        <iDefineIntVal>3</iDefineIntVal>
+        <iDefineIntVal>6</iDefineIntVal>
     </Define>
 
     <!-- When surviving an attack FROM a unit protected through
@@ -492,7 +492,7 @@
          Recommended: 2 -->
     <Define>
         <DefineName>PYRRH_BASE-XP-GAIN_BRAVE-DEFENDER</DefineName>
-        <iDefineIntVal>2</iDefineIntVal>
+        <iDefineIntVal>4</iDefineIntVal>
     </Define>
 	<Define>
 		<DefineName>CULTURE_GOLDEN_AGE_THRESHOLD</DefineName>

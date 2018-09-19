@@ -257,7 +257,7 @@ class Barbs:
 				self.checkSpawn(iNative, iImpi, 2 + iHandicap, (60, 10), (72, 27), self.spawnNatives, iGameTurn, 10, 4)
 			else:
 				self.checkSpawn(iNative, iImpi, 2 + iHandicap, (60, 10), (72, 27), self.spawnNatives, iGameTurn, 15, 4)
-		elif utils.isYearIn(1500, 1700):
+		elif utils.isYearIn(1500, 1900):
 			self.checkSpawn(iNative, iPombos, 2 + iHandicap, (60, 10), (72, 27), self.spawnNatives, iGameTurn, 10, 4)
 			
 		#west africa
@@ -268,7 +268,7 @@ class Barbs:
 				sAdj = ["TXT_KEY_ADJECTIVE_SONGHAI"]
 			self.checkSpawn(iNative, iImpi, 2, (48, 22), (63, 29), self.spawnMinors, iGameTurn, 16, 10, sAdj)
 			
-		if utils.isYearIn(1200, 1700):
+		if utils.isYearIn(1200, 1900):
 			self.checkSpawn(iBarbarian, iFarari, 1, (48, 26), (65, 37), self.spawnMinors, iGameTurn, 16, 4, sAdj)
 
 		#American natives

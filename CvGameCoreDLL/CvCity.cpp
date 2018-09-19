@@ -282,7 +282,19 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 				changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + 3);
 			}
 			else changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION"));
-		}	//KNOEDELend
+		}
+		if (pPlot->getRouteType() != NO_ROUTE)
+		{
+			if (pPlot->getRouteType() == (RouteTypes)GC.getInfoTypeForString("ROUTE_ROMAN_ROAD"))
+			{
+				changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + 1);
+			}
+			else if (pPlot->getRouteType() == (RouteTypes)GC.getInfoTypeForString("ROUTE_RAILROAD") || pPlot->getRouteType() == (RouteTypes)GC.getInfoTypeForString("ROUTE_HIGHWAY"))
+			{
+				changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + 2);
+			}
+			else changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION"));
+		}//KNOEDELend
 		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != (FeatureTypes)GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS")) //Leoreth: flood plains are not removed by cities
 		{	//KNOEDELstart
 			CvWString szBuffer;

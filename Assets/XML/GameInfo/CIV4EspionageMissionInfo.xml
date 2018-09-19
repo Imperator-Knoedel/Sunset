@@ -71,7 +71,7 @@
 			<Description>TXT_KEY_ESPIONAGE_DESTROY_PROJECT</Description>
 			<bIsTwoPhases>1</bIsTwoPhases>
 			<bTargetsCity>1</bTargetsCity>
-			<iDifficultyMod>25</iDifficultyMod>
+			<iDifficultyMod>50</iDifficultyMod>
 			<iDestroyProjectCostFactor>500</iDestroyProjectCostFactor>
 		</EspionageMissionInfo>
 		<EspionageMissionInfo>

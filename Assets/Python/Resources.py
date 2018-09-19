@@ -255,6 +255,8 @@ class Resources:
 
 		elif iGameTurn == getTurnForYear(1750):
 			self.removeResource(49, 57) # remove Irish Horse
+			if gc.getMap().plot(49, 57).getImprovementType() != -1:
+				gc.getMap().plot(49, 57).setImprovementType(iFarm)
 			self.createResource(49, 57, iCorn) # Irish Potatoes
 			self.createResource(62, 59, iCorn) # Scandinavia
 			self.createResource(63, 53, iCorn) # Germany

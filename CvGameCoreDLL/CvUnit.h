@@ -73,8 +73,7 @@ public:
 
 //KNOEDELstart
     // <pyrrh>
-    void changeExperience(int iChange, int iMax = -1, bool bFromCombat = false, bool bInBorders = false, bool bUpdateGlobal = false,
-        double combatStrengthRatio = -1); // moved up and added paramter
+    void changeExperience(int iChange, int iMax = -1, bool bFromCombat = false, bool bInBorders = false, bool bUpdateGlobal = false); // moved up and added paramter	KNOEDEL: removed this: double combatStrengthRatio = -1
     // unmodded combat resolution; only moved up for reference:
     void resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition& kBattle);
     /* modded combat resolution. @return: 0 when no unit retreated; otherwise retreat:

@@ -41,8 +41,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME2</Tag>
-		<English>Build the Statue of Liberty, the Empire State Building, the Pentagon and the United Nations by 1950 AD</English>
-		<German>Errichten Sie bis zum Jahr 1950 n. Chr. die Freiheitsstatue, das Empire State Building, das Pentagon und the Vereinten Nationen</German>
+		<English>Build the Statue of Liberty, the Empire State Building, the Pentagon and the United Nations by 1945 AD</English>
+		<German>Errichten Sie bis zum Jahr 1945 n. Chr. die Freiheitsstatue, das Empire State Building, das Pentagon und the Vereinten Nationen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME3_TITLE</Tag>
@@ -51,9 +51,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME3</Tag>
-		<English>Secure 10 Oil resources by 2000 AD</English>
+		<English>Secure 10 Oil resources and make sure there are no totalitarian civilizations by 2000 AD</English>
 		<French>S&#233;curiser 10 gisements de p&#233;trole avant 2000 ap. J.-C.</French>
-		<German>Sichern Sie sich bis zum Jahr 2000 n. Chr. 10 &#214;l-Vorkommen</German>
+		<German>Sichern Sie sich bis zum Jahr 2000 n. Chr. 10 &#214;l-Vorkommen und stellen Sie sicher, dass es in der Welt keine totalitären Zivilisationen gibt</German>
 		<Italian>Assicurati 10 fonti di petrolio entro il 2000 d.C.</Italian>
 		<Spanish>Controlar 10 recursos petrol&#237;feros en el 2000 d. C.</Spanish>
 	</TEXT>
@@ -569,32 +569,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ENG1_TITLE</Tag>
-		<English>The Sun Never Sets</English>
-		<German>Die Sonne geht niemals unter</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG1</Tag>
-		<English>Colonize every continent by 1730 AD</English>
-		<German>Kolonisieren Sie bis zum Jahr 1730 n. Chr. jeden Kontinent</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG2_TITLE</Tag>
 		<English>Britannia Rule the Waves</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG2</Tag>
-		<English>Control a total of 25 frigates or ships of the line and sink 50 enemy ships by 1800 AD</English>
-		<German>Kontrollieren Sie bis zum Jahr 1800 n. Chr. insgesamt 25 Fregatten oder Linienschiffe und versenken Sie 50 gegnerische Schiffe</German>
+		<Tag>TXT_KEY_UHV_ENG1</Tag>
+		<English>Control a total of 25 frigates or ships of the line and sink 50 enemy ships by 1815 AD</English>
+		<German>Kontrollieren Sie bis zum Jahr 1815 n. Chr. insgesamt 25 Fregatten oder Linienschiffe und versenken Sie 50 gegnerische Schiffe</German>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG3_TITLE</Tag>
+		<Tag>TXT_KEY_UHV_ENG2_TITLE</Tag>
 		<English>The Industrial Revolution</English>
 		<German>Die industrielle Revolution</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UHV_ENG2</Tag>
+		<English>Be the first to discover ten Industrial technologies</English>
+		<German>Entdecken Sie als erste Zivilisation zehn Technologien des Industriezeitalters</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ENG3_TITLE</Tag>
+		<English>The Sun Never Sets</English>
+		<German>Die Sonne geht niemals unter</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UHV_ENG3</Tag>
-		<English>Be the first to discover eight Renaissance and eight Industrial technologies</English>
-		<German>Entdecken Sie als erste Zivilisation acht Technologien der Renaissance und acht Technologien des Industriezeitalters</German>
+		<English>Colonize every continent by 1860 AD and build the Cape to Cairo Railway by 1920 AD</English>
+		<German>Kolonisieren Sie bis zum Jahr 1860 n. Chr. jeden Kontinent und bauen Sie bis zum Jahr 1920 n. Chr. die Kap-Kairo-Bahn</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH1_TITLE</Tag>
@@ -823,8 +823,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HRE1</Tag>
-		<English>Control Saint Peter's Basilica and the Church of the Anastasis in 1200 AD</English>
-		<German>Kontrollieren Sie den Petersdom und die Kirche der Anastasis im Jahr 1200 n. Chr.</German>
+		<English>Control Saint Peter's Basilica and the Church of the Anastasis in 1255 AD</English>
+		<German>Kontrollieren Sie den Petersdom und die Kirche der Anastasis im Jahr 1255 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HRE2_TITLE</Tag>
@@ -843,8 +843,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HRE3</Tag>
-		<English>Settle three great artists in Vienna by 1700 AD</English>
-		<German>Siedeln Sie bis zum Jahr 1700 n. Chr. drei gro&#223;e K&#252;nstler in Wien an</German>
+		<English>Settle six great artists in Vienna by 1815 AD</English>
+		<German>Siedeln Sie bis zum Jahr 1815 n. Chr. sechs gro&#223;e K&#252;nstler in Wien an</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_INC1_TITLE</Tag>
@@ -1079,8 +1079,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM1</Tag>
-		<English>Build four Buddhist Sanghas and Hindu Ashrams and Wat Preah Pisnulok and control them in 1200 AD</English>
-		<German>Bauen und kontrollieren Sie bis zum Jahr 1200 n. Chr. vier Buddhistische und Hinduistische Kl&#246;ster und Wat Preah Pisnulok</German>
+		<English>Build four Buddhist Sanghas and Hindu Ashrams and Wat Preah Pisnulok and control them in 1220 AD</English>
+		<German>Bauen und kontrollieren Sie bis zum Jahr 1220 n. Chr. vier Buddhistische und Hinduistische Kl&#246;ster und Wat Preah Pisnulok</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM2_TITLE</Tag>
@@ -1088,11 +1088,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM2</Tag>
-		<English>Have an average city size of 12 or more in 1450 AD</English>
-		<French>Taille moyenne des villes de 12 ou plus en 1450 ap. J.-C.</French>
-		<German>Haben Sie im Jahr 1450 n. Chr. eine durchschnittliche Stadtgr&#246;&#223;e von 12 oder mehr</German>
-		<Italian>Le tue citt&#224; devono avere una dimensione media di 12 o pi&#249; nel 1450 d.C.</Italian>
-		<Spanish>Tener un tama&#241;o medio de las ciudades de 12 o m&#225;s en el 1450 d. C.</Spanish>
+		<English>Have an average city size of 10 or more in 1220 AD</English>
+		<French>Taille moyenne des villes de 10 ou plus en 1220 ap. J.-C.</French>
+		<German>Haben Sie im Jahr 1220 n. Chr. eine durchschnittliche Stadtgr&#246;&#223;e von 10 oder mehr</German>
+		<Italian>Le tue citt&#224; devono avere una dimensione media di 10 o pi&#249; nel 1220 d.C.</Italian>
+		<Spanish>Tener un tama&#241;o medio de las ciudades de 10 o m&#225;s en el 1220 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM3_TITLE</Tag>
@@ -1100,18 +1100,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM3</Tag>
-		<English>Have 8000 culture by 1450 AD</English>
-		<German>Haben Sie bis zum Jahr 1450 n. Chr. 8000 Kulturpunkte</German>
+		<English>Have 7000 culture by 1350 AD</English>
+		<German>Haben Sie bis zum Jahr 1350 n. Chr. 7000 Kulturpunkte</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM3_EPIC</Tag>
-		<English>Have 12000 culture by 1450 AD</English>
-		<German>Haben Sie bis zum Jahr 1450 n. Chr. 12000 Kulturpunkte</German>
+		<English>Have 10,500 culture by 1350 AD</English>
+		<German>Haben Sie bis zum Jahr 1350 n. Chr. 10.500 Kulturpunkte</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHM3_MARATHON</Tag>
-		<English>Have 24000 culture by 1450 AD</English>
-		<German>Haben Sie bis zum Jahr 1450 n. Chr. 24000 Kulturpunkte</German>
+		<English>Have 21,000 culture by 1350 AD</English>
+		<German>Haben Sie bis zum Jahr 1350 n. Chr. 21,000 Kulturpunkte</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CON1_TITLE</Tag>
@@ -1188,8 +1188,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL1</Tag>
-		<English>Conduct a trade mission to your holy city by 1350 AD</English>
-		<German>F&#252;hren Sie bis zum Jahr 1350 n. Chr. eine Handelsmission zu Ihrer heiligen Stadt durch</German>
+		<English>Conduct a trade mission to your holy city by 1330 AD</English>
+		<German>F&#252;hren Sie bis zum Jahr 1330 n. Chr. eine Handelsmission zu Ihrer heiligen Stadt durch</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL2_TITLE</Tag>
@@ -1198,8 +1198,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL2</Tag>
-		<English>Build the University of Sankore and settle a great prophet in its city by 1500 AD</English>
-		<German>Bauen Sie bis zum Jahr die Universit&#228;t von Sankore und siedeln Sie einen gro&#223;en Propheten in ihrer Stadt an</German>
+		<English>Build the University of Sankore and settle a great prophet in its city by 1470 AD</English>
+		<German>Bauen Sie bis zum Jahr 1470 n. Chr. die Universit&#228;t von Sankore und siedeln Sie einen gro&#223;en Propheten in ihrer Stadt an</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL3_TITLE</Tag>
@@ -1208,18 +1208,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL3</Tag>
-		<English>Have 5000 gold in 1500 AD and 15000 gold in 1700 AD</English>
-		<German>Verf&#252;gen Sie im Jahr 1500 n. Chr. &#252;ber 5000 Gold und im Jahr 1700 n. Chr. &#252;ber 15.000 Gold</German>
+		<English>Have 5000 gold in 1500 AD and 10,000 gold in 1600 AD</English>
+		<German>Verf&#252;gen Sie im Jahr 1500 n. Chr. &#252;ber 5000 Gold und im Jahr 1600 n. Chr. &#252;ber 10.000 Gold</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL3_EPIC</Tag>
-		<English>Have 7500 gold in 1500 AD and 22500 gold in 1700 AD</English>
-		<German>Verf&#252;gen Sie im Jahr 1500 n. Chr. &#252;ber 7500 Gold und im Jahr 1700 n. Chr. &#252;ber 22.500 Gold</German>
+		<English>Have 7500 gold in 1500 AD and 15,000 gold in 1600 AD</English>
+		<German>Verf&#252;gen Sie im Jahr 1500 n. Chr. &#252;ber 7500 Gold und im Jahr 1600 n. Chr. &#252;ber 15.000 Gold</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAL3_MARATHON</Tag>
-		<English>Have 15000 gold in 1500 AD and 45000 gold in 1700 AD</English>
-		<German>Verf&#252;gen Sie im Jahr 1500 n. Chr. &#252;ber 15000 Gold und im Jahr 1700 n. Chr. &#252;ber 45.000 Gold</German>
+		<English>Have 15000 gold in 1500 AD and 30,000 gold in 1600 AD</English>
+		<German>Verf&#252;gen Sie im Jahr 1500 n. Chr. &#252;ber 15000 Gold und im Jahr 1600 n. Chr. &#252;ber 30.000 Gold</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MAY1_TITLE</Tag>
@@ -1553,23 +1553,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POL1_TITLE</Tag>
-		<English>The Folwark System</English>
-		<German>Das Folwark-System</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_POL1</Tag>
-		<English>Have three cities of at least size 12 by 1400 AD</English>
-		<German>Haben Sie bis zum Jahr 1400 n. Chr. drei St&#228;dte mit mindestens Gr&#246;&#223;e 12</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_POL2_TITLE</Tag>
 		<English>Golden Liberty</English>
 		<German>Goldene Freiheit</German>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_POL2</Tag>
+		<Tag>TXT_KEY_UHV_POL1</Tag>
 		<English>Be first to discover Civil Liberties</English>
 		<German>Entdecken Sie als erster Freiheitsrechte</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_POL2_TITLE</Tag>
+		<English>The Folwark System</English>
+		<German>Das Folwark-System</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_POL2</Tag>
+		<English>Have four cities of at least size 14 by 1650 AD</English>
+		<German>Haben Sie bis zum Jahr 1650 n. Chr. vier St&#228;dte mit mindestens Gr&#246;&#223;e 14</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POL3_TITLE</Tag>
@@ -1578,8 +1578,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POL3</Tag>
-		<English>Build three Christian Cathedrals by 1600 AD</English>
-		<German>Bauen Sie bis zum Jahr 1600 n. Chr. drei christliche Kathedralen</German>
+		<English>Build three Christian Cathedrals by 1685 AD</English>
+		<German>Bauen Sie bis zum Jahr 1685 n. Chr. drei christliche Kathedralen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POR1_TITLE</Tag>
@@ -1587,11 +1587,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POR1</Tag>
-		<English>Have open borders agreement with 14 other civs by 1550 AD</English>
-		<French>Avoir un accord de libre passage avec 14 autres civilisations en 1550 ap. J.-C.</French>
-		<German>Verf&#252;gen Sie bis zum Jahr 1550 n. Chr. &#252;ber Offene-Grenzen-Abkommen mit 14 anderen Zivilisationen</German>
-		<Italian>Devi aver abilitato il diritto di passaggio con altre 14 civilt&#224; nel 1550 d.C.</Italian>
-		<Spanish>Tener un acuerdo de apertura de fronteras con otras 14 civilizaciones en el 1550 d. C.</Spanish>
+		<English>Have open borders agreement with 15 other civs by 1580 AD</English>
+		<French>Avoir un accord de libre passage avec 15 autres civilisations en 1580 ap. J.-C.</French>
+		<German>Verf&#252;gen Sie bis zum Jahr 1580 n. Chr. &#252;ber Offene-Grenzen-Abkommen mit 15 anderen Zivilisationen</German>
+		<Italian>Devi aver abilitato il diritto di passaggio con altre 15 civilt&#224; nel 1580 d.C.</Italian>
+		<Spanish>Tener un acuerdo de apertura de fronteras con otras 15 civilizaciones en el 1580 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POR2_TITLE</Tag>
@@ -1600,8 +1600,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POR2</Tag>
-		<English>Acquire 12 trading company resources by 1650 AD</English>
-		<German>Erwerben Sie bis zum Jahr 1650 n. Chr. 12 Handelsgesellschaftsressourcen</German>
+		<English>Acquire 12 trading company resources by 1640 AD</English>
+		<German>Erwerben Sie bis zum Jahr 1640 n. Chr. 12 Handelsgesellschaftsressourcen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POR3_TITLE</Tag>
@@ -1610,8 +1610,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_POR3</Tag>
-		<English>Control 15 colonies in Brazil, Africa and Asia in 1700 AD</English>
-		<German>Kontrollieren Sie im Jahr 1700 AD 15 Kolonien in Brasilien, Afrika und Asien</German>
+		<English>Control 20 colonies in Brazil, Africa and Asia in 1760 AD</English>
+		<German>Kontrollieren Sie im Jahr 1760 AD 20 Kolonien in Brasilien, Afrika und Asien</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ROM1_TITLE</Tag>
@@ -1679,8 +1679,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_RUS1</Tag>
-		<English>Found 7 colonies in Siberia by 1700 AD and build the Trans-Siberian Railway by 1920 AD</English>
-		<German>Gr&#252;nden Sie bis zum Jahr 1700 n. Chr. 7 sibirische Kolonien und bauen Sie bis zum Jahr 1920 n. Chr. die transsibirische Eisenbahn</German>
+		<English>Found 8 colonies in Siberia by 1720 AD and build the Trans-Siberian Railway by 1920 AD</English>
+		<German>Gr&#252;nden Sie bis zum Jahr 1720 n. Chr. 8 sibirische Kolonien und bauen Sie bis zum Jahr 1920 n. Chr. die transsibirische Eisenbahn</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_RUS2_TITLE</Tag>
@@ -1699,8 +1699,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_RUS3</Tag>
-		<English>Have friendly relations with 5 communist civilisations by 1950 AD</English>
-		<German>Haben Sie bis zum Jahr 1950 n. Chr. freundliche Beziehungen zu 5 kommunistischen Zivilisationen</German>
+		<English>Have friendly relations with 6 communist civilisations by 1990 AD</English>
+		<German>Haben Sie bis zum Jahr 1990 n. Chr. freundliche Beziehungen zu 6 kommunistischen Zivilisationen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_SPA1_TITLE</Tag>
@@ -2883,6 +2883,10 @@
 		<English>Oil resources secured: %d1 / %d2</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TOTALITARIAN_CIVS</Tag>
+		<English>Totalitarian civilizations: %d1 / %d2</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_OPEN_BORDERS</Tag>
 		<English>Open border agreements: %d1 / %d2</English>
 	</TEXT>
@@ -2983,6 +2987,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_RUSSIA_CONTROL_SIBERIA_COMPLETE</Tag>
 		<English>Colonize Siberia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ENGLAND_SUNSET</Tag>
+		<English>Colonies: %d1 / %d2</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ENGLAND_SUNSET_COMPLETE</Tag>
+		<English>Colonize the world</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SACRIFICED_SLAVES</Tag>
@@ -3102,6 +3114,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TRANSSIBERIAN_RAILWAY</Tag>
 		<English>Railroad from Moscow to a Siberian port</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPE_TO_CAIRO_RAILWAY</Tag>
+		<English>Railroad from Cape Town to an Egyptian Mediterranean port</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_UHV_END_TURN</Tag>

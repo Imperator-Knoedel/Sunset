@@ -24481,10 +24481,20 @@ int CvPlayer::getCultureGoldenAgeThreshold() const
 
 	iThreshold = (GC.getDefineINT("CULTURE_GOLDEN_AGE_THRESHOLD") * std::max(0, (getCultureGoldenAgesStarted())));
 
-	iThreshold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGreatPeoplePercent();
+	iThreshold *= (10 + getCurrentEra());
+	iThreshold /= 10;
+
+	iThreshold *= (100 + (getNumCities() - 1));
 	iThreshold /= 100;
 
-	iThreshold += (getCurrentEra() * 100);
+	if (countColonies() > 0)
+	{
+		iThreshold *= (100 + (countColonies() * 2));
+		iThreshold /= 100;
+	}
+
+	iThreshold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGreatPeoplePercent();
+	iThreshold /= 100;
 
 	return std::max(1, iThreshold);
 }//KNOEDELend

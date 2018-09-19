@@ -28,7 +28,7 @@
 			<Type>COMMERCE_CULTURE</Type>
 			<Description>TXT_KEY_COMMERCE_CULTURE</Description>
 			<iInitialPercent>0</iInitialPercent>
-			<iInitialHappiness>10</iInitialHappiness>
+			<iInitialHappiness>0</iInitialHappiness>
 			<iAIWeightPercent>25</iAIWeightPercent>
 			<bFlexiblePercent>0</bFlexiblePercent>
 			<Button>Art/Interface/Buttons/Process/ProcessCulture.dds</Button>

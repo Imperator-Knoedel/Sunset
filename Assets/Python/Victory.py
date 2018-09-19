@@ -111,6 +111,9 @@ tAfricaBR = (76, 39)
 tAsiaTL = (73, 29)
 tAsiaBR = (121, 64)
 
+# third English goal: Cape to Cairo Railway by 1920 AD
+lNorthernEgypt = [(66, 36), (66, 37), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36)]
+
 # first Russian goal: found seven cities in Siberia by 1700 AD and build the Trans-Siberian Railway by 1920 AD
 tSiberiaTL = (82, 50)
 tSiberiaBR = (112, 64)
@@ -199,7 +202,7 @@ dTechGoals = {
 	iGreece: (0, [iMathematics, iLiterature, iAesthetics, iPhilosophy, iMedicine]),
 	iRome: (2, [iArchitecture, iPolitics, iScholarship, iMachinery, iCivilService]),
 	iKorea: (1, [iPrinting]),
-	iPoland: (1, [iCivilLiberties]),
+	iPoland: (0, [iCivilLiberties]),
 }
 
 dEraGoals = {}
@@ -893,8 +896,8 @@ def checkTurn(iGameTurn, iPlayer):
 			
 	elif iPlayer == iKhmer:
 	
-		# first Khmer goal: build four Buddhist and Hindu monasteries and Wat Preah Pisnulok in 1200 AD
-		if iGameTurn == getTurnForYear(1200):
+		# first Khmer goal: build four Buddhist and Hindu monasteries and Wat Preah Pisnulok in 1220 AD
+		if iGameTurn == getTurnForYear(1220):
 			if isPossible(iKhmer, 0):
 				iBuddhist = getNumBuildings(iKhmer, iBuddhistMonastery)
 				iHindu = getNumBuildings(iKhmer, iHinduMonastery)
@@ -904,46 +907,68 @@ def checkTurn(iGameTurn, iPlayer):
 				else:
 					lose(iKhmer, 0)
 				
-		# second goal: have an average city size of 12 in 1450 AD
-		if iGameTurn == getTurnForYear(1450):
+		# second goal: have an average city size of 10 in 1220 AD
+		if iGameTurn == getTurnForYear(1220):
 			if isPossible(iKhmer, 1):
-				if getAverageCitySize(iKhmer) >= 12.0:
+				if getAverageCitySize(iKhmer) >= 10.0:
 					win(iKhmer, 1)
 				else:
 					lose(iKhmer, 1)
 			
-		# third goal: have 8000 culture by 1450 AD
+		# third goal: have 7000 culture by 1350 AD
 		if isPossible(iKhmer, 2):
-			if pKhmer.countTotalCulture() >= utils.getTurns(8000):
+			if pKhmer.countTotalCulture() >= utils.getTurns(7000):
 				win(iKhmer, 2)
 				
-		if iGameTurn == getTurnForYear(1450):
+		if iGameTurn == getTurnForYear(1350):
 			expire(iKhmer, 2)
 			
 	elif iPlayer == iEngland:
-	
-		# first goal: colonize every continent by 1730 AD
-		if iGameTurn == getTurnForYear(1730):
-			expire(iEngland, 0)
 			
-		# second goal: control a total of 25 frigates and ships of the line and sink 50 enemy ships by 1800 AD
-		if isPossible(iEngland, 1):
+		# first goal: control a total of 25 frigates and ships of the line and sink 50 enemy ships by 1815 AD
+		if isPossible(iEngland, 0):
 			iEnglishNavy = 0
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iFrigate).getUnitClassType())
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iShipOfTheLine).getUnitClassType())
 			
 			if iEnglishNavy >= 25 and data.iEnglishSinks >= 50:
-				win(iEngland, 1)
+				win(iEngland, 0)
 		
-		if iGameTurn == getTurnForYear(1800):
-			expire(iEngland, 1)
+		if iGameTurn == getTurnForYear(1815):
+			expire(iEngland, 0)
 			
-		# third goal: be the first to enter the Industrial and Modern eras
+		# second goal: be the first to discover a number of Industrial techs
+
+		# third goal: colonize every continent by 1860 AD and build the Cape to Cairo Railway by 1920 AD
+		if iGameTurn == getTurnForYear(1860):
+			bNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR)) < 5
+			bSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR)) < 3
+			bAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR)) < 4
+			bAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR)) < 6
+			bOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR)) < 6
+			if bNAmerica or bSCAmerica or bAfrica or bAsia or bOceania:
+				lose(iEngland, 2)
+				
+		if isPossible(iEngland, 2):
+			if isConnectedByRailroad(iEngland, (63, 10), lNorthernEgypt):
+				if gc.getGame().getGameTurn() >= getTurnForYear(1860):
+					win(iEngland, 2)
+				else:
+					bNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR)) >= 5
+					bSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR)) >= 3
+					bAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR)) >= 4
+					bAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR)) >= 6
+					bOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR)) >= 6
+					if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
+						win(iEngland, 2)
+
+		if iGameTurn == getTurnForYear(1920):
+			expire(iEngland, 2)
 		
 	elif iPlayer == iHolyRome:
 	
-		# first goal: control Saint Peter's Basilica and the Church of the Anastasis in 1200 AD
-		if iGameTurn == getTurnForYear(1200):
+		# first goal: control Saint Peter's Basilica and the Church of the Anastasis in 1255 AD
+		if iGameTurn == getTurnForYear(1255):
 			bSaintPeters = getNumBuildings(iHolyRome, iCatholicShrine) > 0
 			bAnastasis = getNumBuildings(iHolyRome, iOrthodoxShrine) > 0
 			if bSaintPeters and bAnastasis:
@@ -953,19 +978,19 @@ def checkTurn(iGameTurn, iPlayer):
 				
 		# second goal: found Protestantism
 		
-		# third goal: settle three great artists in Vienna by 1700 AD
+		# third goal: settle three great artists in Vienna by 1815 AD
 		if isPossible(iHolyRome, 2):
-			if countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatArtist) >= 3:
+			if countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatArtist) >= 6:
 				win(iHolyRome, 2)
 				
-		if iGameTurn == getTurnForYear(1700):
+		if iGameTurn == getTurnForYear(1815):
 			expire(iHolyRome, 2)
 			
 	elif iPlayer == iRussia:
 	
-		# first goal: found seven cities in Siberia by 1700 AD and build the Trans-Siberian Railway by 1920 AD
-		if iGameTurn == getTurnForYear(1700):
-			if getNumFoundedCitiesInArea(iRussia, utils.getPlotList(tSiberiaTL, tSiberiaBR)) < 7:
+		# first goal: found eight cities in Siberia by 1720 AD and build the Trans-Siberian Railway by 1920 AD
+		if iGameTurn == getTurnForYear(1720):
+			if getNumFoundedCitiesInArea(iRussia, utils.getPlotList(tSiberiaTL, tSiberiaBR)) < 8:
 				lose(iRussia, 0)
 				
 		if isPossible(iRussia, 0):
@@ -977,81 +1002,81 @@ def checkTurn(iGameTurn, iPlayer):
 			
 		# second goal: be the first civilization to complete the Manhattan Project and the Apollo Program
 		
-		# third goal: have friendly relations with five communist civilizations by 1950 AD
+		# third goal: have friendly relations with six communist civilizations by 1990 AD
 		if isPossible(iRussia, 2):
-			if countPlayersWithAttitudeAndCivic(iPlayer, AttitudeTypes.ATTITUDE_FRIENDLY, (iCivicsEconomy, iCentralPlanning)) >= 5:
+			if countPlayersWithAttitudeAndCivic(iPlayer, AttitudeTypes.ATTITUDE_FRIENDLY, (iCivicsEconomy, iCentralPlanning)) >= 6:
 				win(iRussia, 2)
 				
-		if iGameTurn == getTurnForYear(1950):
+		if iGameTurn == getTurnForYear(1990):
 			expire(iRussia, 2)
 			
 	elif iPlayer == iMali:
 		
-		# first goal: conduct a trade mission to your holy city by 1350 AD
-		if iGameTurn == getTurnForYear(1350):
+		# first goal: conduct a trade mission to your holy city by 1330 AD
+		if iGameTurn == getTurnForYear(1330):
 			expire(iMali, 0)
 			
-		# second goal: build the University of Sankore and settle a great prophet in its city by 1500 AD
+		# second goal: build the University of Sankore and settle a great prophet in its city by 1470 AD
 		if isPossible(iMali, 1):
 			for city in utils.getCityList(iMali):
 				if city.isHasRealBuilding(iUniversityOfSankore) and city.getFreeSpecialistCount(iSpecialistGreatProphet) >= 1:
 					win(iMali, 1)
 		
-		if iGameTurn == getTurnForYear(1500):
+		if iGameTurn == getTurnForYear(1470):
 			expire(iMali, 1)
 			
-		# third goal: have 5000 gold in 1500 AD and 15000 gold in 1700 AD
+		# third goal: have 5000 gold in 1500 AD and 10000 gold in 1600 AD
 		if iGameTurn == getTurnForYear(1500):
 			if pMali.getGold() < utils.getTurns(5000):
 				lose(iMali, 2)
 				
-		if iGameTurn == getTurnForYear(1700) and isPossible(iMali, 2):
-			if pMali.getGold() >= utils.getTurns(15000):
+		if iGameTurn == getTurnForYear(1600) and isPossible(iMali, 2):
+			if pMali.getGold() >= utils.getTurns(10000):
 				win(iMali, 2)
 			else:
 				lose(iMali, 2)
 				
 	elif iPlayer == iPoland:
+
+		# first goal: be the first to discover Civil Liberties
 	
-		# first goal: have three cities with a population of 12 by 1400 AD
-		if isPossible(iPoland, 0):
-			if countCitiesOfSize(iPoland, 12) >= 3:
-				win(iPoland, 0)
+		# second goal: have four cities with a population of 14 by 1650 AD
+		if isPossible(iPoland, 1):
+			if countCitiesOfSize(iPoland, 14) >= 4:
+				win(iPoland, 1)
 				
-		if iGameTurn == getTurnForYear(1400):
-			expire(iPoland, 0)
-			
-		# second goal: be the first to discover Liberalism
+		if iGameTurn == getTurnForYear(1650):
+			expire(iPoland, 1)
 		
-		# third goal: build three Christian Cathedrals by 1600 AD
-		if iGameTurn == getTurnForYear(1600):
+		# third goal: build three Christian Cathedrals by 1685 AD
+		if iGameTurn == getTurnForYear(1685):
 			expire(iPoland, 2)
 			
 	elif iPlayer == iPortugal:
 	
-		# first goal: have open borders with 14 civilizations by 1550 AD
+		# first goal: have open borders with 15 civilizations by 1580 AD
 		if isPossible(iPortugal, 0):
-			if countOpenBorders(iPortugal) >= 14:
+			if countOpenBorders(iPortugal) >= 15:
 				win(iPortugal, 0)
 				
-		if iGameTurn == getTurnForYear(1550):
+		if iGameTurn == getTurnForYear(1580):
 			expire(iPortugal, 0)
 			
-		# second goal: acquire 12 colonial resources by 1650 AD
+		# second goal: acquire 12 colonial resources by 1640 AD
 		if isPossible(iPortugal, 1):
 			if countAcquiredResources(iPortugal, lColonialResources) >= 12:
 				win(iPortugal, 1)
 				
-		if iGameTurn == getTurnForYear(1650):
+		if iGameTurn == getTurnForYear(1640):
 			expire(iPortugal, 1)
 			
-		# third goal: control 15 cities in Brazil, Africa and Asia in 1700 AD
-		if iGameTurn == getTurnForYear(1700):
+		# third goal: control 20 cities in Brazil, Africa and Asia in 1760 AD
+		if iGameTurn == getTurnForYear(1760):
 			iCount = 0
 			iCount += getNumCitiesInArea(iPortugal, utils.getPlotList(tBrazilTL, tBrazilBR))
 			iCount += getNumCitiesInArea(iPortugal, utils.getPlotList(tAfricaTL, tAfricaBR))
 			iCount += getNumCitiesInArea(iPortugal, utils.getPlotList(tAsiaTL, tAsiaBR))
-			if iCount >= 15:
+			if iCount >= 20:
 				win(iPortugal, 2)
 			else:
 				lose(iPortugal, 2)
@@ -1310,22 +1335,22 @@ def checkTurn(iGameTurn, iPlayer):
 		
 	elif iPlayer == iAmerica:
 	
-		# first goal: allow no European colonies in North America, Central America and the Caribbean and control or vassalize Mexico in 1930 AD
+		# first goal: allow no European colonies in North America, Central America and the Caribbean and control or vassalize Mexico in 1900 AD
 		if iGameTurn == getTurnForYear(1900):
 			if isAreaFreeOfCivs(utils.getPlotList(tNCAmericaTL, tNCAmericaBR), lCivGroups[0]) and isControlledOrVassalized(iAmerica, Areas.getCoreArea(iAztecs, True)):
 				win(iAmerica, 0)
 			else:
 				lose(iAmerica, 0)
 				
-		# second goal: build the Statue of Liberty, the Empire State Building, the Pentagon and the United Nations by 1950 AD
-		if iGameTurn == getTurnForYear(1950):
+		# second goal: build the Statue of Liberty, the Empire State Building, the Pentagon and the United Nations by 1945 AD
+		if iGameTurn == getTurnForYear(1945):
 			expire(iAmerica, 1)
 			
-		# third goal: secure 10 oil resources by 2000 AD
+		# third goal: secure 10 oil resources and make sure there are no totalitarian civilizations by 2000 AD
 		if isPossible(iAmerica, 2):
-			if countResources(iAmerica, iOil) >= 10:
+			if countResources(iAmerica, iOil) >= 10 and countCivicPlayers(iCivicsSociety, iTotalitarianism) == 0:
 				win(iAmerica, 2)
-				
+
 		if iGameTurn == getTurnForYear(2000):
 			expire(iAmerica, 2)
 			
@@ -1523,18 +1548,7 @@ def onCityBuilt(iPlayer, city):
 		if isPossible(iTibet, 0):
 			if pTibet.getNumCities() >= 4:
 				win(iTibet, 0)
-					
-	# first English goal: colonize every continent by 1730 AD
-	elif iPlayer == iEngland:
-		if isPossible(iEngland, 0):
-			bNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR)) >= 5
-			bSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR)) >= 3
-			bAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR)) >= 4
-			bAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR)) >= 5
-			bOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR)) >= 3
-			if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
-				win(iEngland, 0)
-				
+	
 def onCityAcquired(iPlayer, iOwner, city, bConquest):
 
 	if not gc.getGame().isVictoryValid(7): return
@@ -1550,17 +1564,6 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 		if isPossible(iTibet, 0):
 			if pTibet.getNumCities() >= 4:
 				win(iTibet, 0)
-					
-	# first English goal: colonize every continent by 1730 AD
-	elif iPlayer == iEngland:
-		if isPossible(iEngland, 0):
-			bNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR)) >= 5
-			bSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR)) >= 3
-			bAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR)) >= 4
-			bAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR)) >= 5
-			bOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR)) >= 3
-			if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
-				win(iEngland, 0)
 				
 	# second Dutch goal: conquer four European colonies by 1745 AD
 	elif iPlayer == iNetherlands:
@@ -1607,11 +1610,11 @@ def onTechAcquired(iPlayer, iTech):
 				if iPlayer == iJapan: win(iJapan, 2)
 				else: lose(iJapan, 2)
 				
-		# third English goal: be the first to discover ten Renaissance and ten Industrial technologies
-		if isPossible(iEngland, 2):
-			if countFirstDiscovered(iPlayer, iRenaissance) >= 8 and countFirstDiscovered(iPlayer, iIndustrial) >= 8:
-				if iPlayer == iEngland: win(iEngland, 2)
-				else: lose(iEngland, 2)
+		# second English goal: be the first to discover ten Industrial technologies
+		if isPossible(iEngland, 1):
+			if countFirstDiscovered(iPlayer, iIndustrial) >= 10:
+				if iPlayer == iEngland: win(iEngland, 1)
+				else: lose(iEngland, 1)
 				
 		# third German goal: be the first to discover ten Industrial and ten Global technologies
 		if isPossible(iGermany, 2):
@@ -1842,9 +1845,9 @@ def onCombatResult(pWinningUnit, pLosingUnit):
 	pLosingUnitInfo = gc.getUnitInfo(pLosingUnit.getUnitType())
 	iDomainSea = DomainTypes.DOMAIN_SEA
 	
-	# second English goal: control a total of 25 frigates and ships of the line and sink 50 ships in 1800 AD
+	# first English goal: control a total of 25 frigates and ships of the line and sink 50 ships by 1815 AD
 	if iWinningPlayer == iEngland:
-		if isPossible(iEngland, 1):
+		if isPossible(iEngland, 0):
 			if pLosingUnitInfo.getDomainType() == iDomainSea:
 				data.iEnglishSinks += 1
 				
@@ -3644,31 +3647,36 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(iNumBuddhism >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_BUDDHIST_MONASTERIES", (iNumBuddhism, 4)) + ' ' + getIcon(iNumHinduism >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_HINDU_MONASTERIES", (iNumHinduism, 4)) + ' ' + getIcon(bWatPreahPisnulok) + localText.getText("TXT_KEY_BUILDING_WAT_PREAH_PISNULOK", ()))
 		elif iGoal == 1:
 			fPopPerCity = getAverageCitySize(iKhmer)
-			aHelp.append(getIcon(fPopPerCity >= 12.0) + localText.getText("TXT_KEY_VICTORY_AVERAGE_CITY_POPULATION", (str(u"%.2f" % fPopPerCity), str(12))))
+			aHelp.append(getIcon(fPopPerCity >= 10.0) + localText.getText("TXT_KEY_VICTORY_AVERAGE_CITY_POPULATION", (str(u"%.2f" % fPopPerCity), str(10))))
 		elif iGoal == 2:
 			iCulture = pKhmer.countTotalCulture()
-			aHelp.append(getIcon(iCulture >= utils.getTurns(8000)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(8000))))
+			aHelp.append(getIcon(iCulture >= utils.getTurns(7000)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(7000))))
 
 	elif iPlayer == iEngland:
 		if iGoal == 0:
-			iNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR))
-			iSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR))
-			iAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR))
-			iAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR))
-			iOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR))
-			aHelp.append(getIcon(iNAmerica >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_NORTH_AMERICA", (iNAmerica, 5)) + ' ' + getIcon(iAsia >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_ASIA", (iAsia, 5)) + ' ' + getIcon(iAfrica >= 4) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_AFRICA", (iAfrica, 4)))
-			aHelp.append(getIcon(iSCAmerica >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_SOUTH_AMERICA", (iSCAmerica, 3)))
-			aHelp.append(getIcon(iOceania >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_OCEANIA", (iOceania, 3)))
-		elif iGoal == 1:
 			iEnglishNavy = 0
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iFrigate).getUnitClassType())
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iShipOfTheLine).getUnitClassType())
 			iEnglishSinks = data.iEnglishSinks
 			aHelp.append(getIcon(iEnglishNavy >= 25) + localText.getText("TXT_KEY_VICTORY_NAVY_SIZE", (iEnglishNavy, 25)) + ' ' + getIcon(iEnglishSinks >= 50) + localText.getText("TXT_KEY_VICTORY_ENEMY_SHIPS_SUNK", (iEnglishSinks, 50)))
-		elif iGoal == 2:
-			iRenaissanceTechs = countFirstDiscovered(iEngland, iRenaissance)
+		elif iGoal == 1:
 			iIndustrialTechs = countFirstDiscovered(iEngland, iIndustrial)
-			aHelp.append(getIcon(iRenaissanceTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iRenaissance).getText(), iRenaissanceTechs, 8)) + ' ' + getIcon(iIndustrialTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 8)))
+			aHelp.append(getIcon(iIndustrialTechs >= 10) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 10)))
+		elif iGoal == 2:
+			iNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR))
+			iSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR))
+			iAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR))
+			iAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR))
+			iOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR))
+			aHelp.append(getIcon(iNAmerica >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_NORTH_AMERICA", (iNAmerica, 5)) + ' ' + getIcon(iAsia >= 6) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_ASIA", (iAsia, 6)) + ' ' + getIcon(iAfrica >= 4) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_AFRICA", (iAfrica, 4)))
+			aHelp.append(getIcon(iSCAmerica >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_SOUTH_AMERICA", (iSCAmerica, 3)))
+			aHelp.append(getIcon(iOceania >= 6) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_OCEANIA", (iOceania, 6)))
+			iSunset = iNAmerica + iSCAmerica + iAfrica + iAsia + iOceania
+			bSunset = ((iNAmerica >= 5) and (iSCAmerica >= 3) and (iOceania >= 6) and (iAfrica) >= 4 and (iAsia >= 6)) or gc.getGame().getGameTurn() >= getTurnForYear(1860)
+			sunsetText = localText.getText("TXT_KEY_VICTORY_ENGLAND_SUNSET", (iSunset, 24))
+			if bSunset: sunsetText = localText.getText("TXT_KEY_VICTORY_ENGLAND_SUNSET_COMPLETE", ())
+			bCapetoCairo = isConnectedByRailroad(iEngland, (63, 10), lNorthernEgypt)
+			aHelp.append(getIcon(bSunset) + sunsetText + ' ' + getIcon(bCapetoCairo) + localText.getText("TXT_KEY_VICTORY_CAPE_TO_CAIRO_RAILWAY", ()))
 
 	elif iPlayer == iHolyRome:
 		if iGoal == 0:
@@ -3677,13 +3685,13 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(bSaintPeters) + localText.getText("TXT_KEY_BUILDING_CATHOLIC_SHRINE", ()) + ' ' + getIcon(bAnastasis) + localText.getText("TXT_KEY_BUILDING_ORTHODOX_SHRINE", ()))
 		elif iGoal == 2:
 			iGreatArtists = countCitySpecialists(iHolyRome, tVienna, iSpecialistGreatArtist)
-			aHelp.append(getIcon(iGreatArtists >= 3) + localText.getText("TXT_KEY_VICTORY_GREAT_ARTISTS_SETTLED", ('Vienna', iGreatArtists, 3)))
+			aHelp.append(getIcon(iGreatArtists >= 6) + localText.getText("TXT_KEY_VICTORY_GREAT_ARTISTS_SETTLED", ('Vienna', iGreatArtists, 6)))
 
 	elif iPlayer == iRussia:
 		if iGoal == 0:
 			iSiberia = getNumFoundedCitiesInArea(iRussia, utils.getPlotList(tSiberiaTL, tSiberiaBR))
-			bSiberia = (iSiberia >= 7) or gc.getGame().getGameTurn() >= getTurnForYear(1700)
-			siberiaText = localText.getText("TXT_KEY_VICTORY_RUSSIA_CONTROL_SIBERIA", (iSiberia, 7))
+			bSiberia = (iSiberia >= 8) or gc.getGame().getGameTurn() >= getTurnForYear(1720)
+			siberiaText = localText.getText("TXT_KEY_VICTORY_RUSSIA_CONTROL_SIBERIA", (iSiberia, 8))
 			if bSiberia: siberiaText = localText.getText("TXT_KEY_VICTORY_RUSSIA_CONTROL_SIBERIA_COMPLETE", ()) 
 			bSiberianRailway = isConnectedByRailroad(iRussia, Areas.getCapital(iRussia), lSiberianCoast)
 			aHelp.append(getIcon(bSiberia) + siberiaText + ' ' + getIcon(bSiberianRailway) + localText.getText("TXT_KEY_VICTORY_TRANSSIBERIAN_RAILWAY", ()))
@@ -3693,7 +3701,7 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(bManhattanProject) + localText.getText("TXT_KEY_PROJECT_MANHATTAN_PROJECT", ()) + ' ' + getIcon(bApolloProgram) + localText.getText("TXT_KEY_PROJECT_APOLLO_PROGRAM", ()))
 		elif iGoal == 2:
 			iCount = countPlayersWithAttitudeAndCivic(iPlayer, AttitudeTypes.ATTITUDE_FRIENDLY, (iCivicsEconomy, iCentralPlanning))
-			aHelp.append(getIcon(iCount >= 5) + localText.getText("TXT_KEY_VICTORY_COMMUNIST_BROTHERS", (iCount, 5)))
+			aHelp.append(getIcon(iCount >= 6) + localText.getText("TXT_KEY_VICTORY_COMMUNIST_BROTHERS", (iCount, 6)))
 
 	elif iPlayer == iMali:
 		if iGoal == 1:
@@ -3708,19 +3716,21 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 2:
 			iTreasury = pMali.getGold()
 			iThreshold = 5000
-			if gc.getGame().getGameTurn() > getTurnForYear(1500): iThreshold = 15000
+			if gc.getGame().getGameTurn() > getTurnForYear(1500): iThreshold = 10000
 			aHelp.append(getIcon(iTreasury >= utils.getTurns(iThreshold)) + localText.getText("TXT_KEY_VICTORY_TOTAL_GOLD", (iTreasury, utils.getTurns(iThreshold))))
 		
 	elif iPlayer == iPoland:
-		if iGoal == 0:
-			lCities = getLargestCities(iPlayer, 3)
+		if iGoal == 1:
+			lCities = getLargestCities(iPlayer, 4)
 			bCity1 = len(lCities) > 0
 			bCity2 = len(lCities) > 1
 			bCity3 = len(lCities) > 2
+			bCity4 = len(lCities) > 3
 			if not bCity1: aHelp.append(getIcon(False) + localText.getText("TXT_KEY_VICTORY_NO_CITIES", ()))
-			if bCity1: aHelp.append(getIcon(lCities[0].getPopulation() >= 12) + localText.getText("TXT_KEY_VICTORY_CITY_SIZE", (lCities[0].getName(), lCities[0].getPopulation(), 12)))
-			if bCity2: aHelp.append(getIcon(lCities[1].getPopulation() >= 12) + localText.getText("TXT_KEY_VICTORY_CITY_SIZE", (lCities[1].getName(), lCities[1].getPopulation(), 12)))
-			if bCity3: aHelp.append(getIcon(lCities[2].getPopulation() >= 12) + localText.getText("TXT_KEY_VICTORY_CITY_SIZE", (lCities[2].getName(), lCities[2].getPopulation(), 12)))
+			if bCity1: aHelp.append(getIcon(lCities[0].getPopulation() >= 14) + localText.getText("TXT_KEY_VICTORY_CITY_SIZE", (lCities[0].getName(), lCities[0].getPopulation(), 14)))
+			if bCity2: aHelp.append(getIcon(lCities[1].getPopulation() >= 14) + localText.getText("TXT_KEY_VICTORY_CITY_SIZE", (lCities[1].getName(), lCities[1].getPopulation(), 14)))
+			if bCity3: aHelp.append(getIcon(lCities[2].getPopulation() >= 14) + localText.getText("TXT_KEY_VICTORY_CITY_SIZE", (lCities[2].getName(), lCities[2].getPopulation(), 14)))
+			if bCity4: aHelp.append(getIcon(lCities[3].getPopulation() >= 14) + localText.getText("TXT_KEY_VICTORY_CITY_SIZE", (lCities[3].getName(), lCities[3].getPopulation(), 14)))
 		elif iGoal == 2:
 			iCatholic = getNumBuildings(iPoland, iCatholicCathedral)
 			iOrthodox = getNumBuildings(iPoland, iOrthodoxCathedral)
@@ -3731,7 +3741,7 @@ def getUHVHelp(iPlayer, iGoal):
 	elif iPlayer == iPortugal:
 		if iGoal == 0:
 			iCount = countOpenBorders(iPortugal)
-			aHelp.append(getIcon(iCount >= 14) + localText.getText("TXT_KEY_VICTORY_OPEN_BORDERS", (iCount, 14)))
+			aHelp.append(getIcon(iCount >= 15) + localText.getText("TXT_KEY_VICTORY_OPEN_BORDERS", (iCount, 15)))
 		elif iGoal == 1:
 			iCount = countAcquiredResources(iPortugal, lColonialResources)
 			aHelp.append(getIcon(iCount >= 12) + localText.getText("TXT_KEY_VICTORY_COLONIAL_RESOURCES", (iCount, 12)))
@@ -3739,7 +3749,7 @@ def getUHVHelp(iPlayer, iGoal):
 			iColonies = getNumCitiesInArea(iPortugal, utils.getPlotList(tBrazilTL, tBrazilBR))
 			iColonies += getNumCitiesInArea(iPortugal, utils.getPlotList(tAfricaTL, tAfricaBR))
 			iColonies += getNumCitiesInArea(iPortugal, utils.getPlotList(tAsiaTL, tAsiaBR))
-			aHelp.append(getIcon(iColonies >= 15) + localText.getText("TXT_KEY_VICTORY_EXTRA_EUROPEAN_COLONIES", (iColonies, 15)))
+			aHelp.append(getIcon(iColonies >= 20) + localText.getText("TXT_KEY_VICTORY_EXTRA_EUROPEAN_COLONIES", (iColonies, 20)))
 
 	elif iPlayer == iInca:
 		if iGoal == 0:
@@ -3903,7 +3913,10 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(bStatueOfLiberty) + localText.getText("TXT_KEY_BUILDING_STATUE_OF_LIBERTY", ()) + ' ' + getIcon(bEmpireState) + localText.getText("TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING", ()) + ' ' + getIcon(bPentagon) + localText.getText("TXT_KEY_BUILDING_PENTAGON", ()) + ' ' + getIcon(bUnitedNations) + localText.getText("TXT_KEY_BUILDING_UNITED_NATIONS", ()))
 		elif iGoal == 2:
 			iCounter = countResources(iAmerica, iOil)
+			iTotalitarianCivs, iTotal = countCivicPlayers(iCivicsSociety, iTotalitarianism)
+			bNoNazis, iTotal = countCivicPlayers(iCivicsSociety, iTotalitarianism) == 0
 			aHelp.append(getIcon(iCounter >= 10) + localText.getText("TXT_KEY_VICTORY_OIL_SECURED", (iCounter, 10)))
+			aHelp.append(getIcon(bNoNazis) + localText.getText("TXT_KEY_VICTORY_TOTALITARIAN_CIVS", (iTotalitarianCivs, iTotal)))
 
 	elif iPlayer == iArgentina:
 		if iGoal == 0:

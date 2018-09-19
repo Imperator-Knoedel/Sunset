@@ -1448,7 +1448,7 @@
 	<!-- Each 'whatever' modifies cost of espionage Missions by this % -->
 	<Define>
 		<DefineName>ESPIONAGE_CITY_POP_EACH_MOD</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
+		<iDefineIntVal>-2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>ESPIONAGE_CITY_TRADE_ROUTE_MOD</DefineName>

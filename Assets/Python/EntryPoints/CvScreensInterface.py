@@ -1021,6 +1021,12 @@ def getUHVTileInfo(argsList):
 		if utils.isPlotInArea((x, y), vic.tSouthCentralAmericaTL, vic.tSouthCentralAmericaBR):
 			return 32
 				
+		if (x, y) == (63, 10):
+			return 70
+			
+		if (x, y) in vic.lNorthernEgypt:
+			return 71
+			
 		if utils.isPlotInArea((x, y), vic.tAfricaTL, vic.tAfricaBR):
 			return 33
 				
@@ -1155,7 +1161,7 @@ def getUHVTileInfo(argsList):
 		if (x, y) in Areas.getNormalArea(iChina, False):
 			return 69
 				
-		# continue with ID 70
+		# continue with ID 72 (70 and 71 are in use for England's Cape to Cairo UHV)
 			
 	return -1
 		

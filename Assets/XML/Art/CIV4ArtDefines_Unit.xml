@@ -6663,6 +6663,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_ARTIST</Type>
@@ -6684,6 +6686,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_ARTIST_MODERN</Type>
@@ -6705,6 +6709,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_SCIENTIST</Type>
@@ -6726,6 +6732,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_SCIENTIST_MODERN</Type>
@@ -6747,6 +6755,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_MERCHANT</Type>
@@ -6768,6 +6778,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_MERCHANT_MODERN</Type>
@@ -6797,6 +6809,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_ANCIENT_GREAT_SPY</Type>
@@ -6818,6 +6832,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_MODERN_GREAT_SPY</Type>
@@ -6839,6 +6855,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_ENGINEER</Type>
@@ -6860,6 +6878,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_ENGINEER_MODERN</Type>
@@ -6881,6 +6901,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_GENERAL_ANCIENT</Type>
@@ -6902,6 +6924,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_GENERAL_MEDIEVAL</Type>
@@ -6923,6 +6947,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_GENERAL_MODERN</Type>
@@ -6944,6 +6970,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FEMALE_GREAT_STATESMAN</Type>
@@ -6965,6 +6993,8 @@
 			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
+            <SelectionSound>AS3D_UN_FEMALE_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_ACTION_VOX</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_RELIGIOUS_PERSECUTOR</Type>

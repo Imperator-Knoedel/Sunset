@@ -108,7 +108,7 @@
 			<iAirBombDefense>-1</iAirBombDefense>
 			<iDefenseModifier>0</iDefenseModifier>
 			<iHappinessPercent>0</iHappinessPercent>
-			<iPillageGold>0</iPillageGold>
+			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>0</bOutsideBorders>
 			<TerrainMakesValids/>
 			<FeatureMakesValids/>
@@ -1949,7 +1949,7 @@
 			<iAirBombDefense>20</iAirBombDefense>
 			<iDefenseModifier>50</iDefenseModifier>
 			<iHappinessPercent>0</iHappinessPercent>
-			<iPillageGold>0</iPillageGold>
+			<iPillageGold>5</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
 			<TerrainMakesValids>
 				<TerrainMakesValid>
