@@ -123,6 +123,8 @@ class Resources:
 		# Knoedel: Remove Greek Gold
 		elif iGameTurn == getTurnForYear(-400):
 			self.removeResource(67, 44)
+			if gc.getMap().plot(67, 44).getImprovementType() == iMine:
+				gc.getMap().plot(67, 44).setImprovementType(-1)
 		    
 		elif iGameTurn == getTurnForYear(1100):
 			#gc.getMap().plot(71, 30).setBonusType(iSugar) #Egypt

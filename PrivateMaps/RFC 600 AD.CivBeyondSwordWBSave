@@ -27743,6 +27743,7 @@ BeginPlot
 	x=71,y=40
 	BonusType=BONUS_COPPER
 	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot

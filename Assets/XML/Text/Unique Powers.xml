@@ -401,9 +401,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_KHM</Tag>
-		<English>All land units can move through jungles and rainforests, can build farms on rainforest</English>
+		<English>All land units can move through jungles and rainforests, can build farms on rainforest, farms on rainforest are built twice as fast and yield extra food [ICON_FOOD]</English>
 		<French>Toutes les unit&#233;s terrestres peuvent se d&#233;placer &#224; travers la jungle</French>
-		<German>Landeinheiten k&#246;nnen Dschungel und Regenwald durchqueren, kann Farmen in Regenwald errichten</German>
+		<German>Landeinheiten k&#246;nnen Dschungel und Regenwald durchqueren, kann Farmen in Regenwald errichten, Farmen in Regenwald werden zweimal so schnell gebaut und produzieren extra Nahrung [ICON_FOOD]</German>
 		<Italian>Tutte le unit&#224; di terra si possono muovere attraverso la giungla</Italian>
 		<Spanish>Todas las unidades terrestres se pueden mover a trav&#233;s de las junglas</Spanish>
 	</TEXT>

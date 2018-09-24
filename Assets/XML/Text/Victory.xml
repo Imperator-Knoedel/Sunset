@@ -681,8 +681,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GER1</Tag>
-		<English>Have 7 great people in Berlin in 1900 AD</English>
-		<German>Haben Sie 7 gro&#223;e Pers&#246;nlichkeiten in Berlin im Jahr 1900 n. Chr.</German>
+		<English>Have 7 great people in Berlin in 1870 AD</English>
+		<German>Haben Sie 7 gro&#223;e Pers&#246;nlichkeiten in Berlin im Jahr 1870 n. Chr.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GER2_TITLE</Tag>
@@ -690,8 +690,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GER2</Tag>
-		<English>Control Italy, France, Scandinavia, England and Russia in 1940 AD</English>
-		<German>Kontrollieren Sie im Jahr 1940 n. Chr. Italien, Frankreich, Skandinavien, England und Russland</German>
+		<English>Control Austria, Poland, the Netherlands, Scandinavia, France, England and Russia in 1945 AD</English>
+		<German>Kontrollieren Sie im Jahr 1945 n. Chr. Österreich, Polen, die Niederlande, Skandinavien, Frankreich, England und Russland</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GER3_TITLE</Tag>
@@ -699,8 +699,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GER3</Tag>
-		<English>Be the first to discover eight Industrial and eight Global era technologies</English>
-		<German>Entdecken Sie als erste Zivilisation acht Technologien des Industriezeitalters und acht Technologien des Globalzeitalters</German>
+		<English>Be the first to discover six Industrial and eight Global era technologies</English>
+		<German>Entdecken Sie als erste Zivilisation sechs Technologien des Industriezeitalters und acht Technologien des Globalzeitalters</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GRE1_TITLE</Tag>
@@ -791,8 +791,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HOL1</Tag>
-		<English>Settle 3 great merchants in Amsterdam by 1745 AD</English>
-		<German>Siedeln Sie bis 1745 n.Chr. 3 gro&#223;e H&#228;ndler in Amsterdam an</German>
+		<English>Build a Stock Exchange and settle 4 great merchants, scientists or artists in Amsterdam by 1745 AD</English>
+		<German>Bauen Sie bis 1745 n. Chr. eine Börse und siedeln Sie 4 gro&#223;e H&#228;ndler, Wissenschaftler oder Künstler in Amsterdam an</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HOL2_TITLE</Tag>
@@ -801,8 +801,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HOL2</Tag>
-		<English>Conquer 4 European colonies by 1745 AD</English>
-		<German>Erobern Sie bis 1745 n. Chr. 4 europ&#228;ische Kolonien</German>
+		<English>Conquer 5 European colonies by 1785 AD</English>
+		<German>Erobern Sie bis 1785 n. Chr. 5 europ&#228;ische Kolonien</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HOL3_TITLE</Tag>
@@ -811,11 +811,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HOL3</Tag>
-		<English>Secure or get by trade 7 spices resources by 1775 AD</English>
-		<French>S&#233;curiser ou obtenir par le commerce 7 en ressources d'&#233;pices avant 1775 ap. J.-C.</French>
-		<German>Besetzen oder kaufen Sie bis zum Jahr 1775 n. Chr. 7 Gew&#252;rz-Ressourcen</German>
-		<Italian>Assicurati o procurati col commercio 7 fonti di spezie entro il 1775 d.C.</Italian>
-		<Spanish>Asegurar o conseguir por medio del comercio 7 recursos de especias en el 1775 d. C.</Spanish>
+		<English>Secure or get by trade 8 spices resources by 1795 AD</English>
+		<French>S&#233;curiser ou obtenir par le commerce 8 en ressources d'&#233;pices avant 1795 ap. J.-C.</French>
+		<German>Besetzen oder kaufen Sie bis zum Jahr 1795 n. Chr. 8 Gew&#252;rz-Ressourcen</German>
+		<Italian>Assicurati o procurati col commercio 8 fonti di spezie entro il 1795 d.C.</Italian>
+		<Spanish>Asegurar o conseguir por medio del comercio 8 recursos de especias en el 1795 d. C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_HRE1_TITLE</Tag>
@@ -2536,6 +2536,10 @@
 		<English>Great prophets, scientists and engineers in %s1_city: %d2 / %d3</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY_DUTCH</Tag>
+		<English>Great merchants, scientists and artists in %s1_city: %d2 / %d3</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_GREAT_PROPHETS_SETTLED</Tag>
 		<English>Great prophets settled in %s1_city: %d2 / %d3</English>
 	</TEXT>
@@ -3160,5 +3164,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_ORTHODOX_CITIES_WITH_GREAT_PROPHETS</Tag>
 		<English>Orthodox cities with Great Prophets: %d1 / %d2</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_STOCK_EXCHANGE</Tag>
+		<English>Stock Exchange in Amsterdam</English>
 	</TEXT>
 </Civ4GameText>

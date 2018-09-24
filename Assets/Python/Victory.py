@@ -1289,30 +1289,37 @@ def checkTurn(iGameTurn, iPlayer):
 		
 	elif iPlayer == iNetherlands:
 	
-		# first goal: settle three great merchants in Amsterdam by 1745 AD
+		# first goal: build a Stock Exchange and settle four great merchants, scientists or artists in Amsterdam by 1745 AD
 		if isPossible(iNetherlands, 0):
-			if countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatMerchant) >= 3:
+			bStockExchange = pNetherlands.getCapitalCity().isHasRealBuilding(iStockExchange)
+		
+			iCounter = 0
+			iCounter += countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatMerchant)
+			iCounter += countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatScientist)
+			iCounter += countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatArtist)
+			
+			if bStockExchange and iCounter >= 4:
 				win(iNetherlands, 0)
 				
 		if iGameTurn == getTurnForYear(1745):
 			expire(iNetherlands, 0)
 			
-		# second goal: conquer four European colonies by 1745 AD
-		if iGameTurn == getTurnForYear(1745):
+		# second goal: conquer five European colonies by 1785 AD
+		if iGameTurn == getTurnForYear(1785):
 			expire(iNetherlands, 1)
 			
-		# third goal: secure or get by trade seven spice resources by 1775 AD
+		# third goal: secure or get by trade eight spice resources by 1795 AD
 		if isPossible(iNetherlands, 2):
-			if pNetherlands.getNumAvailableBonuses(iSpices) >= 7:
+			if pNetherlands.getNumAvailableBonuses(iSpices) >= 8:
 				win(iNetherlands, 2)
 				
-		if iGameTurn == getTurnForYear(1775):
+		if iGameTurn == getTurnForYear(1795):
 			expire(iNetherlands, 2)
 			
 	elif iPlayer == iGermany:
 	
-		# first goal: settle seven great people in Berlin in 1900 AD
-		if iGameTurn == getTurnForYear(1900):
+		# first goal: settle seven great people in Berlin in 1870 AD
+		if iGameTurn == getTurnForYear(1870):
 			iCount = 0
 			for iSpecialist in lGreatPeople:
 				iCount += countCitySpecialists(iPrussia, Areas.getCapital(iGermany), iSpecialist)
@@ -1321,17 +1328,19 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iGermany, 0)
 				
-		# second goal: control Italy, France, England, Scandinavia and Russia
-		if iGameTurn == getTurnForYear(1940):
-			bItaly = checkOwnedCiv(iGermany, iItaly)
+		# second goal: control Austria, Poland, the Netherlands, Scandinavia, France, England and Russia in 1945
+		if iGameTurn == getTurnForYear(1945):
+			bAustria = checkOwnedCiv(iGermany, iAustria)
+			bPoland = checkOwnedCiv(iGermany, iPoland)
+			bNetherlands = checkOwnedCiv(iGermany, iNetherlands)
+			bScandinavia = checkOwnedCiv(iGermany, iVikings)
 			bFrance = checkOwnedCiv(iGermany, iFrance)
 			bEngland = checkOwnedCiv(iGermany, iEngland)
-			bScandinavia = checkOwnedCiv(iGermany, iVikings)
 			bRussia = checkOwnedCiv(iGermany, iRussia)
-			if bItaly and bFrance and bEngland and bScandinavia and bRussia:
+			if bAustria and bPoland and bNetherlands and bScandinavia and bFrance and bEngland and bRussia:
 				win(iGermany, 1)
 			else:
-				lose(iGermany, 0)
+				lose(iGermany, 1)
 				
 		# third goal: be the first to complete the tech tree
 		
@@ -1568,7 +1577,7 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 			if pTibet.getNumCities() >= 4:
 				win(iTibet, 0)
 				
-	# second Dutch goal: conquer four European colonies by 1745 AD
+	# second Dutch goal: conquer five European colonies by 1785 AD
 	elif iPlayer == iNetherlands:
 		if isPossible(iNetherlands, 1):
 			if iOwner in [iSpain, iFrance, iEngland, iPortugal, iVikings, iItaly, iRussia, iGermany, iHolyRome, iPoland]:
@@ -1576,7 +1585,7 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 			
 				if bColony and bConquest:
 					data.iDutchColonies += 1
-					if data.iDutchColonies >= 4:
+					if data.iDutchColonies >= 5:
 						win(iNetherlands, 1)
 				
 	# second Canadian goal: control all cities and 90% of the territory in Canada by 1950 AD without ever conquering a city
@@ -1619,9 +1628,9 @@ def onTechAcquired(iPlayer, iTech):
 				if iPlayer == iEngland: win(iEngland, 1)
 				else: lose(iEngland, 1)
 				
-		# third German goal: be the first to discover ten Industrial and ten Global technologies
+		# third German goal: be the first to discover six Industrial and eight Global technologies
 		if isPossible(iGermany, 2):
-			if countFirstDiscovered(iPlayer, iIndustrial) >= 8 and countFirstDiscovered(iPlayer, iGlobal) >= 8:
+			if countFirstDiscovered(iPlayer, iIndustrial) >= 6 and countFirstDiscovered(iPlayer, iGlobal) >= 8:
 				if iPlayer == iGermany: win(iGermany, 2)
 				else: lose(iGermany, 2)
 			
@@ -3876,14 +3885,20 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iNetherlands:
 		if iGoal == 0:
-			iMerchants = countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatMerchant)
-			aHelp.append(getIcon(iMerchants >= 3) + localText.getText("TXT_KEY_VICTORY_GREAT_MERCHANTS_IN_CITY", ("Amsterdam", iMerchants, 3)))
+			bStockExchange = False
+			capital = pNetherlands.getCapitalCity()
+			if capital: bStockExchange = capital.isHasRealBuilding(iStockExchange)
+			iCounter = 0
+			iCounter += countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatMerchant)
+			iCounter += countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatScientist)
+			iCounter += countCitySpecialists(iNetherlands, Areas.getCapital(iNetherlands), iSpecialistGreatArtist)
+			aHelp.append(getIcon(bStockExchange) + localText.getText("TXT_KEY_VICTORY_STOCK_EXCHANGE", ()) + ' ' + getIcon(iCounter >= 4) + localText.getText("TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY_DUTCH", ("Amsterdam", iCounter, 4)))
 		elif iGoal == 1:
 			iColonies = data.iDutchColonies
-			aHelp.append(getIcon(iColonies >= 4) + localText.getText("TXT_KEY_VICTORY_EUROPEAN_COLONIES_CONQUERED", (iColonies, 4)))
+			aHelp.append(getIcon(iColonies >= 5) + localText.getText("TXT_KEY_VICTORY_EUROPEAN_COLONIES_CONQUERED", (iColonies, 5)))
 		elif iGoal == 2:
 			iNumSpices = pNetherlands.getNumAvailableBonuses(iSpices)
-			aHelp.append(getIcon(iNumSpices >= 7) + localText.getText("TXT_KEY_VICTORY_AVAILABLE_SPICE_RESOURCES", (iNumSpices, 7)))
+			aHelp.append(getIcon(iNumSpices >= 8) + localText.getText("TXT_KEY_VICTORY_AVAILABLE_SPICE_RESOURCES", (iNumSpices, 8)))
 
 	elif iPlayer == iGermany:
 		if iGoal == 0:
@@ -3892,17 +3907,20 @@ def getUHVHelp(iPlayer, iGoal):
 				iCounter += countCitySpecialists(iPrussia, Areas.getCapital(iGermany), iSpecialist)
 			aHelp.append(getIcon(iCounter >= 7) + localText.getText("TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY", ("Berlin", iCounter, 7)))
 		elif iGoal == 1:
-			bFrance = checkOwnedCiv(iGermany, iFrance)
-			bRome = checkOwnedCiv(iGermany, iItaly)
-			bRussia = checkOwnedCiv(iGermany, iRussia)
-			bEngland = checkOwnedCiv(iGermany, iEngland)
+			bAustria = checkOwnedCiv(iGermany, iAustria)
+			bPoland = checkOwnedCiv(iGermany, iPoland)
+			bNetherlands = checkOwnedCiv(iGermany, iNetherlands)
 			bScandinavia = checkOwnedCiv(iGermany, iVikings)
-			aHelp.append(getIcon(bRome) + localText.getText("TXT_KEY_CIV_ITALY_SHORT_DESC", ()) + ' ' + getIcon(bFrance) + localText.getText("TXT_KEY_CIV_FRANCE_SHORT_DESC", ()) + ' ' + getIcon(bScandinavia) + localText.getText("TXT_KEY_VICTORY_SCANDINAVIA", ()))
-			aHelp.append(getIcon(bEngland) + localText.getText("TXT_KEY_CIV_ENGLAND_SHORT_DESC", ()) + ' ' + getIcon(bRussia) + localText.getText("TXT_KEY_CIV_RUSSIA_SHORT_DESC", ()))
+			bFrance = checkOwnedCiv(iGermany, iFrance)
+			bEngland = checkOwnedCiv(iGermany, iEngland)
+			bRussia = checkOwnedCiv(iGermany, iRussia)
+			aHelp.append(getIcon(bAustria) + localText.getText("TXT_KEY_CIV_AUSTRIA_SHORT_DESC", ()) + ' ' + getIcon(bPoland) + localText.getText("TXT_KEY_CIV_POLAND_SHORT_DESC", ()))
+			aHelp.append(getIcon(bNetherlands) + localText.getText("TXT_KEY_CIV_NETHERLANDS_ARTICLE", ()) + ' ' + getIcon(bScandinavia) + localText.getText("TXT_KEY_VICTORY_SCANDINAVIA", ()))
+			aHelp.append(getIcon(bFrance) + localText.getText("TXT_KEY_CIV_FRANCE_SHORT_DESC", ()) + ' ' + getIcon(bEngland) + localText.getText("TXT_KEY_CIV_ENGLAND_SHORT_DESC", ()) + ' ' + getIcon(bRussia) + localText.getText("TXT_KEY_CIV_RUSSIA_SHORT_DESC", ()))
 		elif iGoal == 2:
 			iIndustrialTechs = countFirstDiscovered(iGermany, iIndustrial)
 			iGlobalTechs = countFirstDiscovered(iGermany, iGlobal)
-			aHelp.append(getIcon(iIndustrialTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 8)) + ' ' + getIcon(iGlobalTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iGlobal).getText(), iGlobalTechs, 8)))
+			aHelp.append(getIcon(iIndustrialTechs >= 6) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 6)) + ' ' + getIcon(iGlobalTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iGlobal).getText(), iGlobalTechs, 8)))
 
 	elif iPlayer == iAmerica:
 		if iGoal == 0:

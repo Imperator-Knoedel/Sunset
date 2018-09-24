@@ -83,7 +83,7 @@
 			<iCost>0</iCost> <!-- Default: 100 -->
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>1</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>

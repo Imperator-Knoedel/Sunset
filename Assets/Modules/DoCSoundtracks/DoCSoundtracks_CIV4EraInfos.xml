@@ -41,7 +41,7 @@
 			<iCulturePercent>100</iCulturePercent>
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>200</iSoundtrackSpace>
+			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_ALLEGRI_MISERERE</EraInfoSoundtrack>
@@ -111,7 +111,7 @@
 			<iCulturePercent>100</iCulturePercent>
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>600</iSoundtrackSpace>
+			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_MIDDLE_EAST_1</EraInfoSoundtrack>
@@ -175,7 +175,7 @@
 			<iCulturePercent>100</iCulturePercent>
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>250</iSoundtrackSpace>
+			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_SOUTH_ASIA_1</EraInfoSoundtrack>
