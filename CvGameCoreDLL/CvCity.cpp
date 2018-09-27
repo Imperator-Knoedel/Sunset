@@ -2239,25 +2239,32 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		return false;
 	}
 
-	// Leoreth: pagan buildings require no religion in the city
+	// Leoreth: pagan buildings require no religion in the city	//KNOEDELstart
 	if (GC.getBuildingInfo(eBuilding).isPagan())
-	{	//KNOEDELstart
-		if ((!(isHasReligion(JUDAISM) || isHasReligion(ZOROASTRIANISM)) && 
-			GET_PLAYER(getOwnerINLINE()).getStateReligion() != JUDAISM && 
-			GET_PLAYER(getOwnerINLINE()).getStateReligion() != ZOROASTRIANISM && 
-			getReligionCount() > 0) || 
+	{
+		if (!PAGAN_TEMPLE)
+		{
+			if ((!(isHasReligion(JUDAISM) || isHasReligion(ZOROASTRIANISM)) && 
+				GET_PLAYER(getOwnerINLINE()).getStateReligion() != JUDAISM && 
+				GET_PLAYER(getOwnerINLINE()).getStateReligion() != ZOROASTRIANISM && 
+				getReligionCount() > 0) || 
 
-			(!(isHasReligion(JUDAISM) && isHasReligion(ZOROASTRIANISM)) && 
-			GET_PLAYER(getOwnerINLINE()).getStateReligion() != JUDAISM && 
-			GET_PLAYER(getOwnerINLINE()).getStateReligion() != ZOROASTRIANISM && 
-			getReligionCount() > 1) || 
+				(!(isHasReligion(JUDAISM) && isHasReligion(ZOROASTRIANISM)) && 
+				GET_PLAYER(getOwnerINLINE()).getStateReligion() != JUDAISM && 
+				GET_PLAYER(getOwnerINLINE()).getStateReligion() != ZOROASTRIANISM && 
+				getReligionCount() > 1) || 
 
-			getReligionCount() > 2)	//KNOEDELend
+				getReligionCount() > 2)
+			{
+				return false;
+			}
+		}
+		else if (GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || isHasReligion(ORTHODOXY) || isHasReligion(CATHOLICISM) || isHasReligion(PROTESTANTISM) || isHasReligion(ISLAM))
 		{
 			return false;
 		}
 	}
-
+//KNOEDELend
 	if (GC.getBuildingInfo(eBuilding).isPrereqReligion())
 	{
 		if (getReligionCount() > 0)

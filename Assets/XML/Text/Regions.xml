@@ -519,4 +519,19 @@
 		<English>Cairo/Africa</English>
 		<German>Kairo/Afrika</German>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_72</Tag>
+		<English>Austria</English>
+		<German>Österreich</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_73</Tag>
+		<English>Poland</English>
+		<German>Polen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_74</Tag>
+		<English>Netherlands</English>
+		<German>Niederlande</German>
+	</TEXT>
 </Civ4GameText>

@@ -6067,16 +6067,23 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 	{
 		return false;
 	}
-
+//KNOEDELstart
 	// Leoreth: pagan buildings require no state religion
 	if (GC.getBuildingInfo(eBuilding).isPagan())
 	{
-		if (!isStateReligion() || getStateReligion() != NO_RELIGION)
+		if (!PAGAN_TEMPLE)
+		{
+			if (!isStateReligion() || getStateReligion() != NO_RELIGION)
+			{
+				return false;
+			}
+		}
+		else if (getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || getStateReligion() == ORTHODOXY || getStateReligion() == CATHOLICISM || getStateReligion() == PROTESTANTISM || getStateReligion() == ISLAM)
 		{
 			return false;
 		}
 	}
-
+//KNOEDELend
 	if (GC.getGameINLINE().countCivTeamsEverAlive() < GC.getBuildingInfo(eBuilding).getNumTeamsPrereq())
 	{
 		return false;

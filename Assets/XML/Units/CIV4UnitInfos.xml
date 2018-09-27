@@ -137,7 +137,7 @@
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<TerrainImpassables>
 				<TerrainImpassable>
@@ -14553,6 +14553,7 @@
 			<Strategy>TXT_KEY_UNIT_GREAT_GENERAL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bGoldenAge>1</bGoldenAge>
+			<bResolveCrisis>1</bResolveCrisis>
 			<bNukeImmune>1</bNukeImmune>
 			<UnitAIs>
 				<UnitAI>

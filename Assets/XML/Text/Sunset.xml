@@ -31,4 +31,12 @@
 		<Italian>[ICON_BULLET]Nessuna penalit&#224; nel guado di un fiume</Italian>
 		<Spanish>[ICON_BULLET]No sufre penalizaci&#243;n al combate por cruzar un r&#237;o</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_GOLD_FROM_SETTLE_IMP</Tag>
+		<English>Founding a city has yielded %d1_Num[ICON_GOLD] from repurposing the infrastructure of the %s2_ImpName. The local people have been integrated into the new settlement as well, making the city start off with additional population.</English>
+		<French>Vous avez pill&#233; %d1_Num[ICON_GOLD] dans : %s2_ImpName !</French>
+		<German>Die Gründung einer Stadt in der Nähe des/der %s2_ImpName hat %d1_Num[ICON_GOLD] durch die Verwertung der vorhandenen Infrastruktur eingebracht. Die lokale Bevölkerung wurde ebenfalls in die neue Siedlung integriert, wodurch die Stadt mit mehr Einwohnern anfängt.</German>
+		<Italian>Hai saccheggiato %d1_Num[ICON_GOLD] da %s2_ImpName!</Italian>
+		<Spanish>Hab&#233;is saqueado %d1_Num [ICON_GOLD] [NUM2:del:de la:de los:de las] %s2_ImpName.</Spanish>
+	</TEXT>
 </Civ4GameText>

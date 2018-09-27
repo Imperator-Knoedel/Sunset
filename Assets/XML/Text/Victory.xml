@@ -41,8 +41,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME2</Tag>
-		<English>Build the Statue of Liberty, the Empire State Building, the Pentagon and the United Nations by 1945 AD</English>
-		<German>Errichten Sie bis zum Jahr 1945 n. Chr. die Freiheitsstatue, das Empire State Building, das Pentagon und the Vereinten Nationen</German>
+		<English>Build the Statue of Liberty, the Empire State Building, the Pentagon, the United Nations, Hollywood and Graceland by 1960 AD</English>
+		<German>Errichten Sie bis zum Jahr 1960 n. Chr. die Freiheitsstatue, das Empire State Building, das Pentagon, die Vereinten Nationen, Hollywood und Graceland</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AME3_TITLE</Tag>
@@ -91,13 +91,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG1_TITLE</Tag>
-		<English>The Argentinian Paradox</English>
+		<English>The Argentine Paradox</English>
 		<German>Das argentinische Paradox</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG1</Tag>
-		<English>Experience two golden ages by 1930 AD</English>
-		<German>Erleben Sie bis zum Jahr 1930 n. Chr. zwei goldene Zeitalter</German>
+		<English>Get 8000 gold through trade (trade routes, diplomacy, trade missions) by 1930</English>
+		<German>Erwirtschaften Sie bis zum Jahr 1930 n. Chr. 8000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG1_EPIC</Tag>
+		<English>Get 12,000 gold through trade (trade routes, diplomacy, trade missions) by 1930</English>
+		<German>Erwirtschaften Sie bis zum Jahr 1930 n. Chr. 12.000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ARG1_MARATHON</Tag>
+		<English>Get 24,000 gold through trade (trade routes, diplomacy, trade missions) by 1930</English>
+		<German>Erwirtschaften Sie bis zum Jahr 1930 n. Chr. 24.000 Gold durch Handel (Handelsrouten, Diplomatie, Handelsmissionen)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG2_TITLE</Tag>
@@ -106,18 +116,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG2</Tag>
-		<English>Have 25000 culture in Buenos Aires by 1960 AD</English>
-		<German>Haben Sie bis zum Jahr 1960 n. Chr. 25.000 Kultur in Buenos Aires</German>
+		<English>Have 25000 culture in Buenos Aires by 1955 AD</English>
+		<German>Haben Sie bis zum Jahr 1955 n. Chr. 25.000 Kultur in Buenos Aires</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG2_EPIC</Tag>
-		<English>Have 37500 culture in Buenos Aires by 1960 AD</English>
-		<German>Haben Sie bis zum Jahr 1960 n. Chr. 37.500 Kultur in Buenos Aires</German>
+		<English>Have 37500 culture in Buenos Aires by 1955 AD</English>
+		<German>Haben Sie bis zum Jahr 1955 n. Chr. 37.500 Kultur in Buenos Aires</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG2_MARATHON</Tag>
-		<English>Have 75000 culture in Buenos Aires by 1960 AD</English>
-		<German>Haben Sie bis zum Jahr 1960 n. Chr. 75.000 Kultur in Buenos Aires</German>
+		<English>Have 75000 culture in Buenos Aires by 1955 AD</English>
+		<German>Haben Sie bis zum Jahr 1955 n. Chr. 75.000 Kultur in Buenos Aires</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG3_TITLE</Tag>
@@ -126,8 +136,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ARG3</Tag>
-		<English>Experience five golden ages by 2000 AD</English>
-		<German>Erleben Sie bis zum Jahr 2000 n. Chr. f&#252;nf goldene Zeitalter</German>
+		<English>Experience six golden ages by 1975 AD</English>
+		<German>Erleben Sie bis zum Jahr 1975 n. Chr. sechs goldene Zeitalter</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AZT1_TITLE</Tag>
@@ -250,8 +260,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BRA1</Tag>
-		<English>Control 10 Slave Plantations and 4 Pastures in 1880 AD</English>
-		<German>Kontrollieren Sie im Jahr 1880 n. Chr. 10 Sklaven-Plantagen und 4 Weidel&#228;nder</German>
+		<English>Control 10 Slave Plantations and 4 Pastures in 1890 AD</English>
+		<German>Kontrollieren Sie im Jahr 1890 n. Chr. 10 Sklaven-Plantagen und 4 Weidel&#228;nder</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BRA2_TITLE</Tag>
@@ -268,8 +278,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BRA3</Tag>
-		<English>Control 20 Forest Preserves and have a National Park in your capital by 1950 AD</English>
-		<German>Kontrollieren Sie bis zum Jahr 1880 n. Chr. 20 Waldschutzgebiete und einen Nationalpark in Ihrer Hauptstadt</German>
+		<English>Control 20 Forest Preserves and have a National Park in your capital by 1965 AD</English>
+		<German>Kontrollieren Sie bis zum Jahr 1965 n. Chr. 20 Waldschutzgebiete und einen Nationalpark in Ihrer Hauptstadt</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_BYZ1_TITLE</Tag>
@@ -317,8 +327,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAN1</Tag>
-		<English>Connect your capital to an Atlantic and a Pacific port by railroad by 1920 AD</English>
-		<German>Verbinden Sie bis zum Jahr 1920 n. Chr. Ihre Hauptstadt per Schiene zu einem atlantischem und einem pazifischen Hafen</German>
+		<English>Connect your capital to an Atlantic and a Pacific port by railroad by 1930 AD</English>
+		<German>Verbinden Sie bis zum Jahr 1930 n. Chr. Ihre Hauptstadt per Schiene zu einem atlantischem und einem pazifischen Hafen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAN2_TITLE</Tag>
@@ -326,8 +336,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAN2</Tag>
-		<English>Control all cities and 90% of the territory in Canada without ever conquering a city by 1950 AD</English>
-		<German>Kontrollieren Sie bis zum Jahr 1950 n. Chr. alle St&#228;dte und 90% des Gebiets in Kanada ohne jemals eine Stadt zu erobern</German>
+		<English>Control all cities and 95% of the territory in Canada without ever conquering a city by 1965 AD</English>
+		<German>Kontrollieren Sie bis zum Jahr 1965 n. Chr. alle St&#228;dte und 95% des Gebiets in Kanada ohne jemals eine Stadt zu erobern</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CAN3_TITLE</Tag>
@@ -448,8 +458,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_COL1</Tag>
-		<English>Allow no European colonies in Peru, Gran Colombia, the Guayanas and the Caribbean in 1870 AD</English>
-		<German>Lassen sie im Jahr 1870 n. Chr. keine europ&#228;ischen Kolonien in Peru, Gro&#223;kolumbien, den Guayanas and der Karibik</German>
+		<English>Allow no European colonies in Peru, Gran Colombia, the Guayanas and the Caribbean in 1860 AD</English>
+		<German>Lassen sie im Jahr 1860 n. Chr. keine europ&#228;ischen Kolonien in Peru, Gro&#223;kolumbien, den Guayanas and der Karibik</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_COL2_TITLE</Tag>
@@ -458,8 +468,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_COL2</Tag>
-		<English>Control South America in 1920 AD</English>
-		<German>Kontrollieren Sie im Jahr 1920 n. Chr. S&#252;damerika</German>
+		<English>Control South America in 1900 AD</English>
+		<German>Kontrollieren Sie im Jahr 1900 n. Chr. S&#252;damerika</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_COL3_TITLE</Tag>
@@ -467,18 +477,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_COL3</Tag>
-		<English>Acquire 3000 gold by selling resources by 1950 AD</English>
-		<German>Erhalten Sie bis zum Jahr 1950 n. Chr. 3000 Gold durch den Verkauf von Ressourcen</German>
+		<English>Acquire 3000 gold by selling resources by 1960 AD</English>
+		<German>Erhalten Sie bis zum Jahr 1960 n. Chr. 3000 Gold durch den Verkauf von Ressourcen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_COL3_EPIC</Tag>
-		<English>Acquire 4500 gold by selling resources by 1950 AD</English>
-		<German>Erhalten Sie bis zum Jahr 1950 n. Chr. 4500 Gold durch den Verkauf von Ressourcen</German>
+		<English>Acquire 4500 gold by selling resources by 1960 AD</English>
+		<German>Erhalten Sie bis zum Jahr 1960 n. Chr. 4500 Gold durch den Verkauf von Ressourcen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_COL3_MARATHON</Tag>
-		<English>Acquire 9000 gold by selling resources by 1950 AD</English>
-		<German>Erhalten Sie bis zum Jahr 1950 n. Chr. 9000 Gold durch den Verkauf von Ressourcen</German>
+		<English>Acquire 9000 gold by selling resources by 1960 AD</English>
+		<German>Erhalten Sie bis zum Jahr 1960 n. Chr. 9000 Gold durch den Verkauf von Ressourcen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_EGY1_TITLE</Tag>
@@ -1273,8 +1283,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MEX1</Tag>
-		<English>Build three cathedrals of your state religion by 1880 AD</English>
-		<German>Bauen Sie bis zum Jahr 1880 n. Chr. drei Kathedralen Ihrer Staatsreligion</German>
+		<English>Build three cathedrals of your state religion by 1910 AD</English>
+		<German>Bauen Sie bis zum Jahr 1910 n. Chr. drei Kathedralen Ihrer Staatsreligion</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MEX2_TITLE</Tag>
@@ -1293,8 +1303,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MEX3</Tag>
-		<English>Make Mexico City the largest city in the world in 1960 AD</English>
-		<German>Machen Sie Mexico-Stadt im Jahr 1960 n. Chr. zur gr&#246;&#223;ten Stadt der Welt</German>
+		<English>Make Mexico City the largest city in the world in 1970 AD</English>
+		<German>Machen Sie Mexico-Stadt im Jahr 1970 n. Chr. zur gr&#246;&#223;ten Stadt der Welt</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MON1_TITLE</Tag>
@@ -2010,18 +2020,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_HIN2</Tag>
-		<English>Artha: Experience 24 turns of golden age</English>
-		<German>Artha: Erleben Sie 24 Runden Goldenes Zeitalter</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_URV_HIN2_EPIC</Tag>
 		<English>Artha: Experience 36 turns of golden age</English>
 		<German>Artha: Erleben Sie 36 Runden Goldenes Zeitalter</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_URV_HIN2_EPIC</Tag>
+		<English>Artha: Experience 54 turns of golden age</English>
+		<German>Artha: Erleben Sie 54 Runden Goldenes Zeitalter</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_URV_HIN2_MARATHON</Tag>
-		<English>Artha: Experience 72 turns of golden age</English>
-		<German>Artha: Erleben Sie 72 Runden Goldenes Zeitalter</German>
+		<English>Artha: Experience 108 turns of golden age</English>
+		<German>Artha: Erleben Sie 108 Runden Goldenes Zeitalter</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_HIN3</Tag>

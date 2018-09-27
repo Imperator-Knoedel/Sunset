@@ -151,7 +151,7 @@ tBaghdad = (77, 40)
 lEasternMediterranean = [(58, 39), (58, 38), (58, 37), (59, 37), (60, 37), (61, 37), (61, 36), (62, 36), (63, 36), (64, 36), (65, 36), (66, 36), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36), (65, 37), (66, 37), (72, 37), (73, 37), (73, 38), (73, 39), (73, 40), (73, 41), (73, 42), (70, 42), (71, 42), (72, 42), (69, 43), (70, 43), (69, 44), (68, 45), (67, 44), (67, 45), (66, 44), (65, 43), (66, 43), (65, 42), (66, 42), (67, 42), (67, 41), (65, 40), (66, 40)]
 lBlackSea = [(69, 44), (70, 44), (71, 44), (71, 45), (72, 45), (73, 45), (73, 44), (74, 44), (75, 44), (76, 44), (76, 45), (76, 46), (76, 47), (75, 47), (74, 48), (75, 48), (72, 48), (74, 49), (73, 49), (71, 49), (69, 49), (69, 50), (70, 50), (71, 50), (72, 50), (73, 50), (68, 49), (68, 48), (67, 45), (67, 46), (67, 47), (67, 48), (68, 45)]
 
-#first Egyptian goal: control Jerusalem in 1070 BC
+# first Egyptian goal: control Jerusalem in 1070 BC
 tJerusalem = (73, 38)
 
 # third Thai goal: allow no foreign powers in South Asia in 1900 AD
@@ -167,6 +167,10 @@ tTransoxaniaBR = (86, 49)
 tNWIndiaTL = (85, 36)
 tNWIndiaBR = (91, 43)
 tNWIndiaExceptions = ((89, 36), (90, 36), (91, 36), (89, 37), (90, 37), (91, 37), (89, 38), (90, 38), (91, 38))
+
+# second German goal: control Austria and a bunch of other countries
+tAustriaTL = (61, 47)
+tAustriaBR = (66, 50)
 
 # first American goal: allow no European colonies in North America, Central America and the Caribbean
 tNCAmericaTL = (3, 33)
@@ -219,7 +223,7 @@ dWonderGoals = {
 	iMali: (1, [iUniversityOfSankore], False),
 	iItaly: (0, [iSanMarcoBasilica, iSistineChapel, iLeaningTower], True),
 	iMughals: (1, [iTajMahal, iRedFort, iHarmandirSahib], True),
-	iAmerica: (1, [iStatueOfLiberty, iEmpireStateBuilding, iPentagon, iUnitedNations], True),
+	iAmerica: (1, [iStatueOfLiberty, iEmpireStateBuilding, iPentagon, iUnitedNations, iHollywood, iGraceland], True),
 	iBrazil: (1, [iWembley, iCristoRedentor, iItaipuDam], True),
 }
 
@@ -621,8 +625,8 @@ def checkTurn(iGameTurn, iPlayer):
 		# Colombia
 		else:
 		
-			# first goal: allow no European civilizations in Peru, Gran Colombia, the Guayanas and the Caribbean in 1870 AD
-			if iGameTurn == getTurnForYear(1870):
+			# first goal: allow no European civilizations in Peru, Gran Colombia, the Guayanas and the Caribbean in 1860 AD
+			if iGameTurn == getTurnForYear(1860):
 				bPeru = isAreaFreeOfCivs(utils.getPlotList(tPeruTL, tPeruBR), lCivGroups[0])
 				bGranColombia = isAreaFreeOfCivs(utils.getPlotList(tGranColombiaTL, tGranColombiaBR), lCivGroups[0])
 				bGuayanas = isAreaFreeOfCivs(utils.getPlotList(tGuayanasTL, tGuayanasBR), lCivGroups[0])
@@ -632,14 +636,14 @@ def checkTurn(iGameTurn, iPlayer):
 				else:
 					lose(iMaya, 0)
 					
-			# second goal: control South America in 1920 AD
-			if iGameTurn == getTurnForYear(1920):
+			# second goal: control South America in 1900 AD
+			if iGameTurn == getTurnForYear(1900):
 				if isControlled(iMaya, utils.getPlotList(tSAmericaTL, tSAmericaBR, tSouthAmericaExceptions)):
 					win(iMaya, 1)
 				else:
 					lose(iMaya, 1)
 			
-			# third goal: acquire 3000 gold by selling resources by 1950 AD
+			# third goal: acquire 3000 gold by selling resources by 1960 AD
 			if isPossible(iMaya, 2):
 				iTradeGold = 0
 				
@@ -651,7 +655,7 @@ def checkTurn(iGameTurn, iPlayer):
 				if data.iColombianTradeGold >= utils.getTurns(3000):
 					win(iMaya, 2)
 					
-			if iGameTurn == getTurnForYear(1950):
+			if iGameTurn == getTurnForYear(1960):
 				expire(iMaya, 2)
 					
 	elif iPlayer == iByzantium:
@@ -1200,16 +1204,16 @@ def checkTurn(iGameTurn, iPlayer):
 		# Mexico
 		else:
 		
-			# first goal: build three cathedrals of your state religion by 1880 AD
-			if iGameTurn == getTurnForYear(1880):
+			# first goal: build three cathedrals of your state religion by 1910 AD
+			if iGameTurn == getTurnForYear(1910):
 				expire(iAztecs, 0)
 				
 			# second goal: create three great generals by 1940 AD
 			if iGameTurn == getTurnForYear(1940):
 				expire(iAztecs, 1)
 				
-			# third goal: make Mexico City the largest city in the world in 1960 AD
-			if iGameTurn == getTurnForYear(1960):
+			# third goal: make Mexico City the largest city in the world in 1970 AD
+			if iGameTurn == getTurnForYear(1970):
 				if isBestCity(iAztecs, (18, 37), cityPopulation):
 					win(iAztecs, 2)
 				else:
@@ -1330,7 +1334,7 @@ def checkTurn(iGameTurn, iPlayer):
 				
 		# second goal: control Austria, Poland, the Netherlands, Scandinavia, France, England and Russia in 1945
 		if iGameTurn == getTurnForYear(1945):
-			bAustria = checkOwnedCiv(iGermany, iAustria)
+			bAustria = isControlled(iGermany, utils.getPlotList(tAustriaTL, tAustriaBR))
 			bPoland = checkOwnedCiv(iGermany, iPoland)
 			bNetherlands = checkOwnedCiv(iGermany, iNetherlands)
 			bScandinavia = checkOwnedCiv(iGermany, iVikings)
@@ -1353,8 +1357,8 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iAmerica, 0)
 				
-		# second goal: build the Statue of Liberty, the Empire State Building, the Pentagon and the United Nations by 1945 AD
-		if iGameTurn == getTurnForYear(1945):
+		# second goal: build the Statue of Liberty, the Empire State Building, the Pentagon, the United Nations, Hollywood and Graceland by 1960 AD
+		if iGameTurn == getTurnForYear(1960):
 			expire(iAmerica, 1)
 			
 		# third goal: secure 10 oil resources and make sure there are no totalitarian civilizations by 2000 AD
@@ -1368,28 +1372,42 @@ def checkTurn(iGameTurn, iPlayer):
 			
 	elif iPlayer == iArgentina:
 	
-		# first goal: experience two golden ages by 1930 AD
+		# first goal: get 8000 gold through trade by 1930 AD
 		if isPossible(iArgentina, 0):
-			if data.iArgentineGoldenAgeTurns >= utils.getTurns(16):
+			iTradeGold = 0
+			
+			# gold from city trade routes
+			iTradeCommerce = 0
+			for city in utils.getCityList(iArgentina):
+				iTradeCommerce += city.getTradeYield(2)
+			iTradeGold += iTradeCommerce * pArgentina.getCommercePercent(0) / 100
+			
+			# gold from per turn gold trade
+			for iPlayer in range(iNumPlayers):
+				iTradeGold += pArgentina.getGoldPerTurnByPlayer(iPlayer)
+			
+			data.iArgentineTradeGold += iTradeGold
+			
+			if data.iArgentineTradeGold >= utils.getTurns(8000):
 				win(iArgentina, 0)
 				
 		if iGameTurn == getTurnForYear(1930):
 			expire(iArgentina, 0)
 			
-		# second goal: have 25000 culture in Buenos Aires by 1960 AD
+		# second goal: have 25000 culture in Buenos Aires by 1955 AD
 		if isPossible(iArgentina, 1):
 			if getCityCulture(iArgentina, Areas.getCapital(iArgentina)) >= utils.getTurns(25000):
 				win(iArgentina, 1)
 				
-		if iGameTurn == getTurnForYear(1960):
+		if iGameTurn == getTurnForYear(1955):
 			expire(iArgentina, 1)
 			
-		# third goal: experience five golden ages by 2000 AD
+		# third goal: experience six golden ages by 1975 AD
 		if isPossible(iArgentina, 2):
-			if data.iArgentineGoldenAgeTurns >= utils.getTurns(40):
+			if data.iArgentineGoldenAgeTurns >= utils.getTurns(48):
 				win(iArgentina, 2)
 				
-		if iGameTurn == getTurnForYear(2000):
+		if iGameTurn == getTurnForYear(1975):
 			expire(iArgentina, 2)
 			
 		if pArgentina.isGoldenAge() and not pArgentina.isAnarchy():
@@ -1397,8 +1415,8 @@ def checkTurn(iGameTurn, iPlayer):
 			
 	elif iPlayer == iBrazil:
 	
-		# first goal: control 10 slave plantations and 4 pastures in 1880 AD
-		if iGameTurn == getTurnForYear(1880):
+		# first goal: control 10 slave plantations and 4 pastures in 1890 AD
+		if iGameTurn == getTurnForYear(1890):
 			if countImprovements(iBrazil, iSlavePlantation) >= 10 and countImprovements(iBrazil, iPasture) >= 4:
 				win(iBrazil, 0)
 			else:
@@ -1406,17 +1424,17 @@ def checkTurn(iGameTurn, iPlayer):
 				
 		# second goal: build Wembley, Cristo Redentor and the Three Gorges Dam
 		
-		# third goal: control 20 forest preserves and have a national park in your capital by 1950 AD
+		# third goal: control 20 forest preserves and have a national park in your capital by 1965 AD
 		if isPossible(iBrazil, 2):
 			if countImprovements(iBrazil, iForestPreserve) >= 20 and pBrazil.getCapitalCity() and pBrazil.getCapitalCity().isHasRealBuilding(iNationalPark):
 				win(iBrazil, 2)
 				
-		if iGameTurn == getTurnForYear(1950):
+		if iGameTurn == getTurnForYear(1965):
 			expire(iBrazil, 2)
 				
 	elif iPlayer == iCanada:
 	
-		# first goal: connect your capital to an Atlantic and a Pacific port by 1920 AD
+		# first goal: connect your capital to an Atlantic and a Pacific port by 1930 AD
 		if isPossible(iCanada, 0):
 			capital = pCanada.getCapitalCity()
 			tCapital = (capital.getX(), capital.getY())
@@ -1425,10 +1443,10 @@ def checkTurn(iGameTurn, iPlayer):
 			if bAtlantic and bPacific:
 				win(iCanada, 0)
 				
-		if iGameTurn == getTurnForYear(1920):
+		if iGameTurn == getTurnForYear(1930):
 			expire(iCanada, 0)
 			
-		# second goal: control all cities and 90% of the territory in Canada without ever conquering a city by 1950 AD
+		# second goal: control all cities and 95% of the territory in Canada without ever conquering a city by 1965 AD
 		if isPossible(iCanada, 1):
 			iEast, iTotalEast = countControlledTiles(iCanada, tCanadaEastTL, tCanadaEastBR, False, tCanadaEastExceptions)
 			iWest, iTotalWest = countControlledTiles(iCanada, tCanadaWestTL, tCanadaWestBR, False, tCanadaWestExceptions)
@@ -1438,10 +1456,10 @@ def checkTurn(iGameTurn, iPlayer):
 			bAllCitiesEast = controlsAllCities(iCanada, tCanadaEastTL, tCanadaEastBR, tCanadaEastExceptions)
 			bAllCitiesWest = controlsAllCities(iCanada, tCanadaWestTL, tCanadaWestBR, tCanadaWestExceptions)
 			
-			if fCanada >= 90.0 and bAllCitiesEast and bAllCitiesWest:
+			if fCanada >= 95.0 and bAllCitiesEast and bAllCitiesWest:
 				win(iCanada, 1)
 				
-		if iGameTurn == getTurnForYear(1950):
+		if iGameTurn == getTurnForYear(1965):
 			expire(iCanada, 1)
 			
 		# third goal: end twelve wars through diplomacy by 2000 AD
@@ -1588,7 +1606,7 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 					if data.iDutchColonies >= 5:
 						win(iNetherlands, 1)
 				
-	# second Canadian goal: control all cities and 90% of the territory in Canada by 1950 AD without ever conquering a city
+	# second Canadian goal: control all cities and 95% of the territory in Canada by 1965 AD without ever conquering a city
 	elif iPlayer == iCanada:
 		if bConquest:
 			expire(iCanada, 1)
@@ -1765,7 +1783,7 @@ def onBuildingBuilt(iPlayer, iBuilding):
 					if iTemples >= 5 and iAltars >= 5:
 						win(iAztecs, 1)
 						
-		# first Mexican goal: build three cathedrals of your state religion by 1880 AD
+		# first Mexican goal: build three cathedrals of your state religion by 1910 AD
 		else:
 			if isPossible(iAztecs, 0):
 				iStateReligion = pAztecs.getStateReligion()
@@ -1911,6 +1929,11 @@ def onPlayerGoldTrade(iPlayer, iGold):
 	if iPlayer == iTamils:
 		if isPossible(iTamils, 2):
 			data.iTamilTradeGold += iGold
+
+	# first Argentine goal: acquire 8000 gold by trade by 1930 AD
+	if iPlayer == iArgentina:
+		if isPossible(iArgentina, 0):
+			data.iArgentineTradeGold += iGold
 		
 def onPlayerSlaveTrade(iPlayer, iGold):
 
@@ -1926,6 +1949,10 @@ def onTradeMission(iPlayer, iX, iY, iGold):
 	# third Tamil goal: acquire 5000 gold by trade by 1280 AD
 	if iPlayer == iTamils:
 		data.iTamilTradeGold += iGold
+
+	# first Argentine goal: acquire 8000 gold by trade by 1930 AD
+	if iPlayer == iArgentina:
+		data.iArgentineTradeGold += iGold
 		
 	# first Mande goal: conduct a trade mission in your state religion's holy city by 1350 AD
 	elif iPlayer == iMali:
@@ -2085,9 +2112,9 @@ def checkReligiousGoal(iPlayer, iGoal):
 					iCount += 1
 			if iCount >= 5: return 1
 		
-		# second Hindu goal: experience 24 turns of golden age
+		# second Hindu goal: experience 36 turns of golden age
 		elif iGoal == 1:
-			if data.iHinduGoldenAgeTurns >= utils.getTurns(24): return 1
+			if data.iHinduGoldenAgeTurns >= utils.getTurns(36): return 1
 			
 		# third Hindu goal: make sure the five largest cities in the world are Hindu
 		elif iGoal == 2:
@@ -3111,7 +3138,7 @@ def getURVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(iCount >= 5) + localText.getText("TXT_KEY_VICTORY_CITY_DIFFERENT_GREAT_PEOPLE", (gc.getGame().getHolyCity(iHinduism).getName(), iCount, 5)))
 		elif iGoal == 1:
 			iGoldenAgeTurns = data.iHinduGoldenAgeTurns
-			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(24)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGE_TURNS", (iGoldenAgeTurns, utils.getTurns(24))))
+			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(36)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGE_TURNS", (iGoldenAgeTurns, utils.getTurns(36))))
 		elif iGoal == 2:
 			iLargestCities = countBestCitiesReligion(iHinduism, cityPopulation, 5)
 			aHelp.append(getIcon(iLargestCities >= 5) + localText.getText("TXT_KEY_VICTORY_HINDU_LARGEST_CITIES", (iLargestCities, 5)))
@@ -3907,7 +3934,7 @@ def getUHVHelp(iPlayer, iGoal):
 				iCounter += countCitySpecialists(iPrussia, Areas.getCapital(iGermany), iSpecialist)
 			aHelp.append(getIcon(iCounter >= 7) + localText.getText("TXT_KEY_VICTORY_GREAT_PEOPLE_IN_CITY", ("Berlin", iCounter, 7)))
 		elif iGoal == 1:
-			bAustria = checkOwnedCiv(iGermany, iAustria)
+			bAustria = isControlled(iGermany, utils.getPlotList(tAustriaTL, tAustriaBR))
 			bPoland = checkOwnedCiv(iGermany, iPoland)
 			bNetherlands = checkOwnedCiv(iGermany, iNetherlands)
 			bScandinavia = checkOwnedCiv(iGermany, iVikings)
@@ -3932,7 +3959,9 @@ def getUHVHelp(iPlayer, iGoal):
 			bStatueOfLiberty = data.getWonderBuilder(iStatueOfLiberty) == iAmerica
 			bPentagon = data.getWonderBuilder(iPentagon) == iAmerica
 			bEmpireState = data.getWonderBuilder(iEmpireStateBuilding) == iAmerica
-			aHelp.append(getIcon(bStatueOfLiberty) + localText.getText("TXT_KEY_BUILDING_STATUE_OF_LIBERTY", ()) + ' ' + getIcon(bEmpireState) + localText.getText("TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING", ()) + ' ' + getIcon(bPentagon) + localText.getText("TXT_KEY_BUILDING_PENTAGON", ()) + ' ' + getIcon(bUnitedNations) + localText.getText("TXT_KEY_BUILDING_UNITED_NATIONS", ()))
+			bHollywood = data.getWonderBuilder(iHollywood) == iAmerica
+			bGraceland = data.getWonderBuilder(iGraceland) == iAmerica
+			aHelp.append(getIcon(bStatueOfLiberty) + localText.getText("TXT_KEY_BUILDING_STATUE_OF_LIBERTY", ()) + ' ' + getIcon(bEmpireState) + localText.getText("TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING", ()) + ' ' + getIcon(bPentagon) + localText.getText("TXT_KEY_BUILDING_PENTAGON", ()) + ' ' + getIcon(bUnitedNations) + localText.getText("TXT_KEY_BUILDING_UNITED_NATIONS", ()) + ' ' + getIcon(bHollywood) + localText.getText("TXT_KEY_BUILDING_HOLLYWOOD", ()) + ' ' + getIcon(bGraceland) + localText.getText("TXT_KEY_BUILDING_GRACELAND", ()))
 		elif iGoal == 2:
 			iCounter = countResources(iAmerica, iOil)
 			iTotalitarianCivs, iTotal = countCivicPlayers(iCivicsSociety, iTotalitarianism)
@@ -3941,14 +3970,14 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iArgentina:
 		if iGoal == 0:
-			iGoldenAgeTurns = data.iArgentineGoldenAgeTurns
-			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(16)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 2)))
+			iTradeGold = data.iArgentineTradeGold
+			aHelp.append(getIcon(iTradeGold >= utils.getTurns(8000)) + localText.getText("TXT_KEY_VICTORY_TRADE_GOLD", (iTradeGold, utils.getTurns(8000))))
 		elif iGoal == 1:
 			iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
 			aHelp.append(getIcon(iCulture >= utils.getTurns(25000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Buenos Aires", iCulture, utils.getTurns(25000))))
 		elif iGoal == 2:
 			iGoldenAgeTurns = data.iArgentineGoldenAgeTurns
-			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(40)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 5)))
+			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(48)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 6)))
 
 	elif iPlayer == iBrazil:
 		if iGoal == 0:
@@ -3978,7 +4007,7 @@ def getUHVHelp(iPlayer, iGoal):
 			iCanadaEast, iTotalCanadaEast = countControlledTiles(iCanada, tCanadaEastTL, tCanadaEastBR, False, tCanadaEastExceptions)
 			fCanada = (iCanadaWest + iCanadaEast) * 100.0 / (iTotalCanadaWest + iTotalCanadaEast)
 			bAllCities = controlsAllCities(iCanada, tCanadaWestTL, tCanadaWestBR, tCanadaWestExceptions) and controlsAllCities(iCanada, tCanadaEastTL, tCanadaEastBR, tCanadaEastExceptions)
-			aHelp.append(getIcon(fCanada >= 90.0) + localText.getText("TXT_KEY_VICTORY_CONTROL_CANADA", (str(u"%.2f%%" % fCanada), str(90))) + ' ' + getIcon(bAllCities) + localText.getText("TXT_KEY_VICTORY_CONTROL_CANADA_CITIES", ()))
+			aHelp.append(getIcon(fCanada >= 95.0) + localText.getText("TXT_KEY_VICTORY_CONTROL_CANADA", (str(u"%.2f%%" % fCanada), str(95))) + ' ' + getIcon(bAllCities) + localText.getText("TXT_KEY_VICTORY_CONTROL_CANADA_CITIES", ()))
 		elif iGoal == 2:
 			iPeaceDeals = data.iCanadianPeaceDeals
 			aHelp.append(getIcon(iPeaceDeals >= 12) + localText.getText("TXT_KEY_VICTORY_CANADIAN_PEACE_DEALS", (iPeaceDeals, 12)))

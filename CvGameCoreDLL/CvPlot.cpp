@@ -3342,8 +3342,8 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 	iRegularCost = std::min(iRegularCost, pUnit->baseMoves());
 
 	iRegularCost *= GC.getMOVE_DENOMINATOR();
-
-	//Rhye - start
+//KNOEDELstart: I don't think there's a need for oceans speeding up ships when ships now have so much movement anyway
+/*	//Rhye - start
 	if (getTerrainType() == TERRAIN_OCEAN)
 	{
 		// Leoreth: reduced movement cost only for units that could enter ocean on their own
@@ -3352,8 +3352,8 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			iRegularCost /= 2;
 		}
 	}
-	//Rhye - end
-
+	//Rhye - end*/
+//KNOEDELend
 	if (bHasTerrainCost)
 	{
 		// Leoreth: terrain double move only when there are no hills
