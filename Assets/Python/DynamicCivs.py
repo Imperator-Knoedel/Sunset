@@ -418,6 +418,7 @@ lIslamicRepublicOf = [iIndia, iPersia, iMali, iMughals]
 lCityStatesStart = [iRome, iCarthage, iGreece, iIndia, iMaya, iAztecs]
 
 dEmpireThreshold = {
+	iGreece : 6,
 	iCarthage : 4,
 	iIndonesia : 4,
 	iKorea : 4,

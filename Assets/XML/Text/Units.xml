@@ -1576,4 +1576,12 @@
 		<Tag>TXT_KEY_UNIT_MUSKETMAN_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Musketmen[COLOR_REVERT] requires no special resources.</English>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OCEAN_LINER</Tag>
+		<English>Ocean Liner</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OCEAN_LINER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Ocean Liners[COLOR_REVERT] are the cargo ships of the steam age. Use them to ferry land units across the seas.</English>
+	</TEXT>
 </Civ4GameText>

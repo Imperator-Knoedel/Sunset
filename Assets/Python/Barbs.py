@@ -157,7 +157,7 @@ class Barbs:
 
 		#Kushana
 		if utils.isYearIn(30, 220):
-			self.checkSpawn(iBarbarian, iAsvaka, 3+iHandicap, (84, 40), (89, 43), self.spawnInvaders, iGameTurn, 8, 3, ["TXT_KEY_ADJECTIVE_KUSHANA"])
+			self.checkSpawn(iBarbarian, iAsvaka, 2+iHandicap, (84, 40), (89, 43), self.spawnInvaders, iGameTurn, 8, 3, ["TXT_KEY_ADJECTIVE_KUSHANA"])
 
 		#Hephtalites
 		if utils.isYearIn(400, 550):
@@ -211,8 +211,10 @@ class Barbs:
 		#barbarians in central asia
 		if utils.isYearIn(-1600, -850):
 			self.checkLimitedSpawn(iBarbarian, iVulture, 1, 3, (74, 34), (78, 44), self.spawnNomads, iGameTurn, 8-iHandicap, 2, ["TXT_KEY_ADJECTIVE_ASSYRIAN"])
-		elif utils.isYearIn(-850, 300):
+		elif utils.isYearIn(-850, -300):
 			self.checkLimitedSpawn(iBarbarian, iVulture, 1, 4, (73, 38), (78, 44), self.spawnNomads, iGameTurn, 10-iHandicap, 2, ["TXT_KEY_ADJECTIVE_ASSYRIAN"])
+			self.checkSpawn(iBarbarian, iHorseman, 1 + iHandicap, (79, 41), (84, 49), self.spawnNomads, iGameTurn, 7-iHandicap, 2, ["TXT_KEY_ADJECTIVE_PARTHIAN"])
+		elif utils.isYearIn(-300, 300):
 			self.checkSpawn(iBarbarian, iHorseman, 2 + iHandicap, (79, 41), (84, 49), self.spawnInvaders, iGameTurn, 7-iHandicap, 2, ["TXT_KEY_ADJECTIVE_PARTHIAN"])
 		elif utils.isYearIn(300, 700):
 			#if utils.getScenario() == i3000BC:  #late start condition

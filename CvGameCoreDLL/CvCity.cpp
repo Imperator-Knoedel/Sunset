@@ -2242,8 +2242,10 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	// Leoreth: pagan buildings require no religion in the city	//KNOEDELstart
 	if (GC.getBuildingInfo(eBuilding).isPagan())
 	{
-		if (!PAGAN_TEMPLE)
+/*		if (PAGAN_TEMPLE && (GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || isHasReligion(ORTHODOXY) || isHasReligion(CATHOLICISM) || isHasReligion(PROTESTANTISM) || isHasReligion(ISLAM)))
 		{
+			return false;
+		}*/
 			if ((!(isHasReligion(JUDAISM) || isHasReligion(ZOROASTRIANISM)) && 
 				GET_PLAYER(getOwnerINLINE()).getStateReligion() != JUDAISM && 
 				GET_PLAYER(getOwnerINLINE()).getStateReligion() != ZOROASTRIANISM && 
@@ -2256,12 +2258,14 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 
 				getReligionCount() > 2)
 			{
-				return false;
-			}
-		}
-		else if (GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || isHasReligion(ORTHODOXY) || isHasReligion(CATHOLICISM) || isHasReligion(PROTESTANTISM) || isHasReligion(ISLAM))
-		{
-			return false;
+				if (GC.getBuildingInfo(eBuilding).getBuildingClassType() != (BuildingTypes)GC.getInfoTypeForString("BUILDINGCLASS_PAGAN_TEMPLE"))
+				{
+					return false;
+				}
+				else if (GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || isHasReligion(ORTHODOXY) || isHasReligion(CATHOLICISM) || isHasReligion(PROTESTANTISM) || isHasReligion(ISLAM))
+				{
+					return false;
+				}
 		}
 	}
 //KNOEDELend

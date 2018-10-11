@@ -6071,16 +6071,20 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 	// Leoreth: pagan buildings require no state religion
 	if (GC.getBuildingInfo(eBuilding).isPagan())
 	{
-		if (!PAGAN_TEMPLE)
-		{
-			if (!isStateReligion() || getStateReligion() != NO_RELIGION)
-			{
-				return false;
-			}
-		}
-		else if (getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || getStateReligion() == ORTHODOXY || getStateReligion() == CATHOLICISM || getStateReligion() == PROTESTANTISM || getStateReligion() == ISLAM)
+/*		if (PAGAN_TEMPLE && (getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || getStateReligion() == ORTHODOXY || getStateReligion() == CATHOLICISM || getStateReligion() == PROTESTANTISM || getStateReligion() == ISLAM))
 		{
 			return false;
+		}*/
+			if (!isStateReligion() || getStateReligion() != NO_RELIGION)
+			{
+				if (GC.getBuildingInfo(eBuilding).getBuildingClassType() != (BuildingTypes)GC.getInfoTypeForString("BUILDINGCLASS_PAGAN_TEMPLE"))
+				{
+					return false;
+				}
+				else if (getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM || getStateReligion() == ORTHODOXY || getStateReligion() == CATHOLICISM || getStateReligion() == PROTESTANTISM || getStateReligion() == ISLAM)
+				{
+					return false;
+				}
 		}
 	}
 //KNOEDELend
@@ -24471,6 +24475,10 @@ void CvPlayer::incrementCultureGoldenAgeStarted()
 	if (m_iCultureGoldenAgesStarted > 1000)
 	{
 			m_iCultureGoldenAgesStarted = 2000;
+	}
+	else if (m_iCultureGoldenAgesStarted == 20)
+	{
+			m_iCultureGoldenAgesStarted = 200;
 	}
 	else if (m_iCultureGoldenAgesStarted == 2)
 	{

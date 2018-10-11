@@ -25,7 +25,7 @@
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>1</iCombat>
 			<iCombatLimit>100</iCombatLimit>
