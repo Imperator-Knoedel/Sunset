@@ -1372,7 +1372,7 @@ def checkTurn(iGameTurn, iPlayer):
 			
 	elif iPlayer == iArgentina:
 	
-		# first goal: get 8000 gold through trade by 1930 AD
+		# first goal: get 6000 gold through trade by 1930 AD
 		if isPossible(iArgentina, 0):
 			iTradeGold = 0
 			
@@ -1388,7 +1388,7 @@ def checkTurn(iGameTurn, iPlayer):
 			
 			data.iArgentineTradeGold += iTradeGold
 			
-			if data.iArgentineTradeGold >= utils.getTurns(8000):
+			if data.iArgentineTradeGold >= utils.getTurns(6000):
 				win(iArgentina, 0)
 				
 		if iGameTurn == getTurnForYear(1930):
@@ -1542,7 +1542,7 @@ def onCityBuilt(iPlayer, city):
 			if iPlayer not in lCivGroups[5]:
 				data.iFirstNewWorldColony = iPlayer
 			
-				# second Viking goal: found a city in America by 1020 AD
+				# first Viking goal: found a city in America by 1020 AD
 				if isPossible(iVikings, 0):
 					if iPlayer == iVikings:
 						win(iVikings, 0)
@@ -1929,12 +1929,7 @@ def onPlayerGoldTrade(iPlayer, iGold):
 	if iPlayer == iTamils:
 		if isPossible(iTamils, 2):
 			data.iTamilTradeGold += iGold
-
-	# first Argentine goal: acquire 8000 gold by trade by 1930 AD
-	if iPlayer == iArgentina:
-		if isPossible(iArgentina, 0):
-			data.iArgentineTradeGold += iGold
-		
+			
 def onPlayerSlaveTrade(iPlayer, iGold):
 
 	# second Congolese goal: gain 1000 gold through slave trade by 1840 AD
@@ -1949,10 +1944,6 @@ def onTradeMission(iPlayer, iX, iY, iGold):
 	# third Tamil goal: acquire 5000 gold by trade by 1280 AD
 	if iPlayer == iTamils:
 		data.iTamilTradeGold += iGold
-
-	# first Argentine goal: acquire 8000 gold by trade by 1930 AD
-	if iPlayer == iArgentina:
-		data.iArgentineTradeGold += iGold
 		
 	# first Mande goal: conduct a trade mission in your state religion's holy city by 1350 AD
 	elif iPlayer == iMali:
@@ -3971,7 +3962,7 @@ def getUHVHelp(iPlayer, iGoal):
 	elif iPlayer == iArgentina:
 		if iGoal == 0:
 			iTradeGold = data.iArgentineTradeGold
-			aHelp.append(getIcon(iTradeGold >= utils.getTurns(8000)) + localText.getText("TXT_KEY_VICTORY_TRADE_GOLD", (iTradeGold, utils.getTurns(8000))))
+			aHelp.append(getIcon(iTradeGold >= utils.getTurns(6000)) + localText.getText("TXT_KEY_VICTORY_TRADE_GOLD", (iTradeGold, utils.getTurns(6000))))
 		elif iGoal == 1:
 			iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
 			aHelp.append(getIcon(iCulture >= utils.getTurns(25000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Buenos Aires", iCulture, utils.getTurns(25000))))

@@ -3328,11 +3328,14 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 
 //KNOEDELstart
 	// byFra
-	if (!pUnit->ignoreTerrainCost() || !pUnit->isRiver())
+	if (isCrossRiverMovement(pUnit, pFromPlot))
 	{
-		if (isCrossRiverMovement(pUnit, pFromPlot))
+		if (!pUnit->ignoreTerrainCost())
 		{
-			return pUnit->maxMoves();
+			if (!pUnit->isRiver())
+			{
+				return pUnit->maxMoves();
+			}
 		}
 	}
 //KNOEDELend

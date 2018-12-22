@@ -11804,7 +11804,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=3
-	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -12238,6 +12237,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=4
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=29,
@@ -46589,14 +46589,6 @@ BeginPlot
 	x=100,y=43
 	isNOfRiver
 	RiverWEDirection=1
-	ImprovementType=IMPROVEMENT_MINE
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-	TeamReveal=1,44,45,
-EndPlot
-BeginPlot
-	x=100,y=44
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
@@ -46627,6 +46619,14 @@ BeginPlot
 		ReligionType=RELIGION_TAOISM
 		Player1Culture=300, (China)
 	EndCity
+	TeamReveal=1,44,45,
+EndPlot
+BeginPlot
+	x=100,y=44
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_MINE
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 	TeamReveal=1,44,45,
 EndPlot
 BeginPlot

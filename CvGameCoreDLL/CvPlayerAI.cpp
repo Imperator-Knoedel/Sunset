@@ -4955,10 +4955,10 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 									iValue /= ((iCVValue < 100) ? 400 : 100);
 								}
 
-								if (iI == CONSTRUCTION || iI == ENGINEERING)
+/*//KNOEDELstart								if (iI == CONSTRUCTION || iI == ENGINEERING)
 								{
 									iValue *= 2;
-								}
+								}*/	//KNOEDELend
 
 								if (iI == GUILDS) {
 									iValue *= 3;
@@ -4997,6 +4997,15 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 										iValue *= 4;
 									}
 								}
+//KNOEDELstart
+								if (getID() == BABYLONIA && iI == MATHEMATICS)
+								{
+									if ((GET_PLAYER((PlayerTypes)GREECE).isHuman()) || !GET_TEAM((TeamTypes)GREECE).isHasTech((TechTypes)MATHEMATICS))
+									{
+										iValue /= 2;
+									}
+								}
+//KNOEDELend
 
 								iValue = std::max(1, iValue);
 

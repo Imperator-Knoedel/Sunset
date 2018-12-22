@@ -547,7 +547,7 @@
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GENERAL_EUROPEAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GENERAL_MODERN_ENGLISH</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_GENERAL_MEDIEVAL_ENGLISH</MiddleArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_GENERAL_MEDIEVAL_EUROPEAN</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>

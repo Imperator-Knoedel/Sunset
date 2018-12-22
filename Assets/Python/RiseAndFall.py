@@ -2352,13 +2352,13 @@ class RiseAndFall:
 		elif iCiv == iGreece:
 			utils.makeUnit(iHoplite, iCiv, tPlot, 4)
 		elif iCiv == iPersia:
-			utils.makeUnit(iImmortal, iCiv, tPlot, 4)
+			utils.makeUnit(iImmortal, iCiv, tPlot, 6)
 		elif iCiv == iCarthage:
-			utils.makeUnit(iAtlasElephant, iCiv, tPlot, 1)
+			utils.makeUnit(iAtlasElephant, iCiv, tPlot, 2)
 		elif iCiv == iPolynesia:
 			utils.makeUnit(iMilitia, iCiv, tPlot, 2)
 		elif iCiv == iRome:
-			utils.makeUnit(iLegion, iCiv, tPlot, 4)
+			utils.makeUnit(iLegion, iCiv, tPlot, 5)
 		elif iCiv == iJapan:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 2)
@@ -2373,25 +2373,25 @@ class RiseAndFall:
 				utils.makeUnit(iUnit, iCiv, tPlot, 2)
 		elif iCiv == iMaya:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
-			utils.makeUnit(iHolkan, iCiv, tPlot, 2)
+			utils.makeUnit(iHolkan, iCiv, tPlot, 3)
 		elif iCiv == iByzantium:
-			utils.makeUnit(iCataphract, iCiv, tPlot, 2)
+			utils.makeUnit(iCataphract, iCiv, tPlot, 3)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 2)
 		elif iCiv == iVikings:
-			utils.makeUnit(iHuscarl, iCiv, tPlot, 3)
+			utils.makeUnit(iHuscarl, iCiv, tPlot, 4)
 		elif iCiv == iArabia:
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
-			utils.makeUnit(iCamelArcher, iCiv, tPlot, 4)
+			utils.makeUnit(iCamelArcher, iCiv, tPlot, 5)
 		elif iCiv == iTibet:
-			utils.makeUnit(iKhampa, iCiv, tPlot, 2)
+			utils.makeUnit(iKhampa, iCiv, tPlot, 3)
 		elif iCiv == iKhmer:
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
-			utils.makeUnit(iBallistaElephant, iCiv, tPlot, 2)
+			utils.makeUnit(iBallistaElephant, iCiv, tPlot, 3)
 		elif iCiv == iIndonesia:
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 2)
 			utils.makeUnit(iWarElephant, iCiv, tPlot, 1)
 		elif iCiv == iMoors:
-			utils.makeUnit(iCamelArcher, iCiv, tPlot, 2)
+			utils.makeUnit(iCamelArcher, iCiv, tPlot, 3)
 		elif iCiv == iSpain:
 			utils.makeUnit(iLongbowman, iCiv, tPlot, 3)
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
@@ -2412,7 +2412,7 @@ class RiseAndFall:
 			utils.makeUnit(iMusketman, iCiv, tPlot, 3)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 3)
 		elif iCiv == iMali:
-			utils.makeUnit(iKelebolo, iCiv, tPlot, 4)
+			utils.makeUnit(iKelebolo, iCiv, tPlot, 5)
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
 		elif iCiv == iTurkey:
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 3)
@@ -2424,35 +2424,35 @@ class RiseAndFall:
 			utils.makeUnit(iLongbowman, iCiv, tPlot, 3)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 3)
 		elif iCiv == iInca:
-			utils.makeUnit(iAucac, iCiv, tPlot, 5)
+			utils.makeUnit(iAucac, iCiv, tPlot, 6)
 			utils.makeUnit(iArcher, iCiv, tPlot, 3)
 		elif iCiv == iItaly:
 			utils.makeUnit(iLancer, iCiv, tPlot, 2)
 		elif iCiv == iMongolia:
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 2) 
-			utils.makeUnit(iKeshik, iCiv, tPlot, 4)
+			utils.makeUnit(iKeshik, iCiv, tPlot, 5)
 		elif iCiv == iAztecs:
-			utils.makeUnit(iJaguar, iCiv, tPlot, 5)
+			utils.makeUnit(iJaguar, iCiv, tPlot, 6)
 			utils.makeUnit(iArcher, iCiv, tPlot, 3)
 		elif iCiv == iMughals:
-			utils.makeUnit(iSiegeElephant, iCiv, tPlot, 2)
+			utils.makeUnit(iSiegeElephant, iCiv, tPlot, 3)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 4)
 		elif iCiv == iThailand:
 			utils.makeUnit(iPikeman, iCiv, tPlot, 2)
-			utils.makeUnit(iChangSuek, iCiv, tPlot, 2)
+			utils.makeUnit(iChangSuek, iCiv, tPlot, 3)
 		elif iCiv == iCongo:
-			utils.makeUnit(iPombos, iCiv, tPlot, 3)
+			utils.makeUnit(iPombos, iCiv, tPlot, 4)
 		elif iCiv == iGermany:
 			utils.makeUnit(iRifleman, iCiv, tPlot, 5)
 			utils.makeUnit(iCannon, iCiv, tPlot, 3)
 		elif iCiv == iAmerica:
 			utils.makeUnit(iGrenadier, iCiv, tPlot, 3)
-			utils.makeUnit(iMinuteman, iCiv, tPlot, 3)
+			utils.makeUnit(iMinuteman, iCiv, tPlot, 4)
 			utils.makeUnit(iCannon, iCiv, tPlot, 3)
 		elif iCiv == iArgentina:
 			utils.makeUnit(iRifleman, iCiv, tPlot, 2)
-			utils.makeUnit(iGrenadierCavalry, iCiv, tPlot, 4)
+			utils.makeUnit(iGrenadierCavalry, iCiv, tPlot, 5)
 		elif iCiv == iBrazil:
 			utils.makeUnit(iGrenadier, iCiv, tPlot, 2)
 			utils.makeUnit(iRifleman, iCiv, tPlot, 3)
@@ -2473,7 +2473,7 @@ class RiseAndFall:
 		elif iCiv == iGreece:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iMilitia, iCiv, tPlot, 2)
-			utils.makeUnit(iHoplite, iCiv, tPlot, 1) #3
+			utils.makeUnit(iHoplite, iCiv, tPlot, 2) #3
 			pGreece.initUnit(iHoplite, tPlot[0], tPlot[1], UnitAITypes.UNITAI_ATTACK, DirectionTypes.DIRECTION_SOUTH)
 			pGreece.initUnit(iHoplite, tPlot[0], tPlot[1], UnitAITypes.UNITAI_ATTACK_CITY, DirectionTypes.DIRECTION_SOUTH)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
@@ -2483,11 +2483,11 @@ class RiseAndFall:
 				utils.makeUnit(iSettler, iCiv, tSeaPlot, 1)
 				utils.makeUnit(iMilitia, iCiv, tSeaPlot, 1)
 		elif iCiv == iPersia:
-			utils.createSettlers(iCiv, 3)
-			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
-			utils.makeUnit(iImmortal, iCiv, tPlot, 4)
-			utils.makeUnit(iHorseman, iCiv, tPlot, 2)
-			utils.makeUnit(iWarElephant, iCiv, tPlot, 1)
+			utils.createSettlers(iCiv, 4)
+			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 4)
+			utils.makeUnit(iImmortal, iCiv, tPlot, 7)
+			utils.makeUnit(iHorseman, iCiv, tPlot, 3)
+			utils.makeUnit(iWarElephant, iCiv, tPlot, 2)
 		elif iCiv == iCarthage:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
@@ -2507,9 +2507,9 @@ class RiseAndFall:
 			utils.makeUnit(iSettler, iCiv, tSeaPlot, 1)
 			utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 1)
 		elif iCiv == iRome:
-			utils.createSettlers(iCiv, 3)
-			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
-			utils.makeUnit(iLegion, iCiv, tPlot, 4)
+			utils.createSettlers(iCiv, 4)
+			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 4)
+			utils.makeUnit(iLegion, iCiv, tPlot, 5)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
 				utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 1)
@@ -2562,7 +2562,7 @@ class RiseAndFall:
 				utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
 		elif iCiv == iMaya:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iHolkan, iCiv, tPlot, 2)
+			utils.makeUnit(iHolkan, iCiv, tPlot, 3)
 		elif iCiv == iByzantium:
 			utils.makeUnit(iLegion, iCiv, tPlot, 4)
 			utils.makeUnit(iSpearman, iCiv, tPlot, 2)
@@ -2578,7 +2578,7 @@ class RiseAndFall:
 		elif iCiv == iVikings:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 4)
-			utils.makeUnit(iHuscarl, iCiv, tPlot, 3)
+			utils.makeUnit(iHuscarl, iCiv, tPlot, 4)
 			utils.makeUnit(iScout, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
@@ -2591,7 +2591,7 @@ class RiseAndFall:
 		elif iCiv == iArabia:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
-			utils.makeUnit(iCamelArcher, iCiv, tPlot, 2)
+			utils.makeUnit(iCamelArcher, iCiv, tPlot, 3)
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)    
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
@@ -2599,12 +2599,12 @@ class RiseAndFall:
 		elif iCiv == iTibet:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
-			utils.makeUnit(iKhampa, iCiv, tPlot, 2)
+			utils.makeUnit(iKhampa, iCiv, tPlot, 3)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iKhmer:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
-			utils.makeUnitAI(iBallistaElephant, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
+			utils.makeUnitAI(iBallistaElephant, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 4)
 			utils.createMissionaries(iCiv, 1)
 			utils.createMissionaries(iCiv, 1, iBuddhism)
 			tSeaPlot = self.findSeaPlots(tPlot, 2, iCiv)
@@ -2699,14 +2699,14 @@ class RiseAndFall:
 				utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 2)
 				pNetherlands.initUnit(iEastIndiaman, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_SETTLER_SEA, DirectionTypes.DIRECTION_SOUTH)
 				utils.makeUnit(iSettler, iCiv, tSeaPlot, 1)
-				utils.makeUnit(iLongbowman, iCiv, tSeaPlot, 1)
+				utils.makeUnit(iArquebusier, iCiv, tSeaPlot, 1)
 				pNetherlands.initUnit(iEastIndiaman, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_SETTLER_SEA, DirectionTypes.DIRECTION_SOUTH)
 				utils.makeUnit(iSettler, iCiv, tSeaPlot, 1)
-				utils.makeUnit(iLongbowman, iCiv, tSeaPlot, 1)
+				utils.makeUnit(iArquebusier, iCiv, tSeaPlot, 1)
 				utils.makeUnit(iCaravel, iCiv, tSeaPlot, 2)
 		elif iCiv == iMali:
 			utils.createSettlers(iCiv, 3)
-			utils.makeUnit(iKelebolo, iCiv, tPlot, 5)
+			utils.makeUnit(iKelebolo, iCiv, tPlot, 6)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iPoland:
 			iNumSettlers = 1
@@ -2723,7 +2723,7 @@ class RiseAndFall:
 			utils.makeUnit(iHeavySwordsman, iCiv, tPlot, 2)
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
 			utils.makeUnit(iLancer, iCiv, tPlot, 3)
-			utils.makeUnit(iJanissary, iCiv, tPlot, 2)
+			utils.makeUnit(iJanissary, iCiv, tPlot, 3)
 			utils.makeUnit(iBombard, iCiv, tPlot, 4)
 			utils.makeUnit(iTrebuchet, iCiv, tPlot, 2)
 			utils.createMissionaries(iCiv, 3)
@@ -2745,7 +2745,7 @@ class RiseAndFall:
 				utils.makeUnitAI(iHeavyGalley, iCiv, tSeaPlot, UnitAITypes.UNITAI_EXPLORE_SEA, 1)
 		elif iCiv == iInca:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iAucac, iCiv, tPlot, 4)
+			utils.makeUnit(iAucac, iCiv, tPlot, 5)
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			if utils.getHumanID() != iInca:
 				utils.makeUnit(iSettler, iCiv, tPlot, 1)
@@ -2765,7 +2765,7 @@ class RiseAndFall:
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 3)
 			utils.makeUnit(iHeavySwordsman, iCiv, tPlot, 2)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 2)
-			utils.makeUnitAI(iKeshik, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 6)
+			utils.makeUnitAI(iKeshik, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 7)
 			utils.makeUnit(iBombard, iCiv, tPlot, 3)
 			if utils.getHumanID() != iMongolia:
 				utils.makeUnitAI(iKeshik, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 4)
@@ -2778,11 +2778,11 @@ class RiseAndFall:
 				utils.makeUnitAI(iLongbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
 		elif iCiv == iAztecs:
 			utils.createSettlers(iCiv, 2)
-			utils.makeUnit(iJaguar, iCiv, tPlot, 4)
+			utils.makeUnit(iJaguar, iCiv, tPlot, 5)
 			utils.makeUnit(iArcher, iCiv, tPlot, 4)
 		elif iCiv == iMughals:
 			utils.createSettlers(iCiv, 3)
-			utils.makeUnit(iSiegeElephant, iCiv, tPlot, 3)
+			utils.makeUnit(iSiegeElephant, iCiv, tPlot, 4)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 4)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 2)
 			utils.createMissionaries(iCiv, 1)
@@ -2792,11 +2792,11 @@ class RiseAndFall:
 			utils.createSettlers(iCiv, 1)
 			utils.createMissionaries(iCiv, 1)
 			utils.makeUnit(iHeavySpearman, iCiv, tPlot, 3)
-			utils.makeUnit(iChangSuek, iCiv, tPlot, 2)
+			utils.makeUnit(iChangSuek, iCiv, tPlot, 3)
 		elif iCiv == iCongo:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
-			utils.makeUnit(iPombos, iCiv, tPlot, 2)
+			utils.makeUnit(iPombos, iCiv, tPlot, 3)
 		elif iCiv == iGermany:
 			utils.createSettlers(iCiv, 4)
 			utils.createMissionaries(iCiv, 2)
@@ -2809,7 +2809,7 @@ class RiseAndFall:
 		elif iCiv == iAmerica:
 			utils.createSettlers(iCiv, 8)
 			utils.makeUnit(iGrenadier, iCiv, tPlot, 2)
-			utils.makeUnit(iMinuteman, iCiv, tPlot, 4)
+			utils.makeUnit(iMinuteman, iCiv, tPlot, 5)
 			utils.makeUnit(iCannon, iCiv, tPlot, 2)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:

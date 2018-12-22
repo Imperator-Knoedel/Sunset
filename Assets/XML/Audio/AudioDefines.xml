@@ -11459,6 +11459,13 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_CANADA</SoundID>
+			<Filename>Sounds/Diplomacy/Elizabeth_Late</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SND_FEMALE_SELECTION</SoundID>
 			<Filename>Sounds/Units/Female_Selection</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>

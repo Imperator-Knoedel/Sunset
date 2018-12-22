@@ -71,9 +71,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BAB</Tag>
-		<English>Receives a free technology for the first four technologies discovered</English>
+		<English>Receives a free technology for the first six technologies discovered</English>
 		<French>Pas de r&#233;sistance dans les villes conquises</French>
-		<German>Erhält eine weitere Technologie für die ersten vier entdeckten Technologien</German>
+		<German>Erhält eine weitere Technologie für die ersten sechs entdeckten Technologien</German>
 		<Italian>Nessuna resistenza nelle citt&#224; conquistate</Italian>
 		<Spanish>Las ciudades conquistadas no ofrecen resistencia</Spanish>
 	</TEXT>

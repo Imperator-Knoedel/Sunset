@@ -99,7 +99,7 @@ lCivBioNewWorld = [iMaya, iInca, iAztecs] #, iNative]
 
 #for Victory and the handler
 tAmericasTL = (3, 0)
-tAmericasBR = (43, 63)
+tAmericasBR = (43, 59)
 
 # Colombian UP
 tSouthCentralAmericaTL = (13, 3)

@@ -544,8 +544,6 @@ class CvRFCEventHandler:
 			sta.onPalaceMoved(iOwner)
 			dc.onPalaceMoved(iOwner)
 			
-			if city.isHasRealBuilding(iAdministrativeCenter): city.setHasRealBuilding(iAdministrativeCenter, False)
-			
 			# Leoreth: in case human Phoenicia moves palace to Carthage
 			if iOwner == iCarthage and tCity == (58, 39):
 				utils.setReborn(iCarthage, True)

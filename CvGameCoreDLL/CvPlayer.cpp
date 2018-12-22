@@ -1415,7 +1415,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 	bool bRecapture;
 	bool bRaze;
 	bool bGift;
-	//int iRange;
+	int iRange;	//KNOEDEL
 	int iCaptureGold;
 	int iGameTurnFounded;
 	int iPopulation;
@@ -1459,6 +1459,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 
 	if (bConquest)
 	{
+		iRange = pOldCity->getCultureLevel();	//KNOEDEL
 		for (iI = 0; iI < pOldCity->getNextCoveredPlot(); iI++)
 		{
 			pLoopPlot = pOldCity->getCulturePlot(iI);
@@ -1863,7 +1864,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 			//Rhye - end UP
 
 			// Leoreth: occupation timer depends on culture level
-			pNewCity->changeOccupationTimer((pNewCity->getCultureLevel() + 1) * (100 - iTeamCulturePercent) / 100);
+			pNewCity->changeOccupationTimer((iRange) * (100 - iTeamCulturePercent) / 100);	//KNOEDEL
 		}
 
 		GC.getMapINLINE().verifyUnitValidPlot();

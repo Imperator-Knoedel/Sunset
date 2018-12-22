@@ -2745,12 +2745,16 @@ int CvTeam::getCivilizationResearchModifier() const
 	}*/
 //KNOEDEL: Maya now have extra food from some improvements as new UP
 
-	// nerf late game China
+	// nerf late game China	//KNOEDEL literally all eras but ancient
 	if (getLeaderID() == CHINA)
 	{
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() == ERA_MEDIEVAL) iCivModifier += 10;	//KNOEDEL
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_RENAISSANCE) iCivModifier += 20;	//KNOEDEL
+		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_CLASSICAL) iCivModifier += 20;	//KNOEDEL
 	}
+	//KNOEDELstart
+	if (getLeaderID() == GREECE)
+	{
+		if (GET_PLAYER(getLeaderID()).getCurrentEra() == ERA_CLASSICAL) iCivModifier += 30;	//KNOEDEL
+	}	//KNOEDELend
 
 	return iCivModifier;
 }

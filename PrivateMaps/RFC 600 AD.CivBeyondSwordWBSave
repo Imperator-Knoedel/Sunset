@@ -39207,13 +39207,6 @@ BeginPlot
 	x=100,y=43
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=100,y=44
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 (	BeginUnit)
@@ -39256,6 +39249,12 @@ BeginPlot
 (		ReligionType=RELIGION_TAOISM)
 		Player45Culture=3000, (100)
 	EndCity
+EndPlot
+BeginPlot
+	x=100,y=44
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=100,y=45
