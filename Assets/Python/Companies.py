@@ -12,11 +12,7 @@ gc = CyGlobalContext()
 localText = CyTranslator()
 PyPlayer = PyHelpers.PyPlayer
 
-iNumCompanies = 9
-
-(iSilkRoute, iTradingCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry, iComputerIndustry) = range(iNumCompanies)
-
-tCompanyTechs = (iCompass, iExploration, iBiology, iRefrigeration, iThermodynamics, iMetallurgy, iRefining, iConsumerism, iComputers)
+tCompanyTechs = (iCurrency, iExploration, iBiology, iRefrigeration, iThermodynamics, iMetallurgy, iRefining, iConsumerism, iComputers)
 tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10, 12) # kind of arbitrary currently, see how this plays out
 
 lTradingCompanyCivs = [iSpain, iFrance, iEngland, iPortugal, iNetherlands, iVikings] # Vikings too now
@@ -40,30 +36,29 @@ class Companies:
 
 	def checkTurn(self, iGameTurn):
 
-		iCompany = iGameTurn % iNumCompanies
+		iCompany = iGameTurn % iNumCorporations
 		self.checkCompany(iCompany, iGameTurn)
 
-		iCompany = (iGameTurn + 4) % iNumCompanies
+		iCompany = (iGameTurn + 4) % iNumCorporations
 		self.checkCompany(iCompany, iGameTurn)
 
 
 	def checkCompany(self, iCompany, iGameTurn):
-		
 		if (iCompany == iSilkRoute and iGameTurn > getTurnForYear(1500)) or (iCompany == iTradingCompany and iGameTurn > getTurnForYear(1800)) or (iCompany == iTextileIndustry and iGameTurn > getTurnForYear(1920)):
 			iMaxCompanies = 0
 		else:
 			iMaxCompanies = tCompaniesLimit[iCompany]
-		
+			
 		# count the number of companies
 		iCompanyCount = 0
 		for iLoopPlayer in range(iNumPlayers):
 			if gc.getPlayer(iLoopPlayer).isAlive():
 				iCompanyCount += gc.getPlayer(iLoopPlayer).countCorporations(iCompany)
-		
+				
 		# return if gameturn is beyond company fall date and removed from all cities
 		if iMaxCompanies == 0 and iCompanyCount == 0:
 			return
-		
+			
 		# loop through all cities, check the company value for each and add the good ones to a list of tuples (city, value)
 		cityValueList = []
 		for iPlayer in range(iNumPlayers):
@@ -74,7 +69,7 @@ class Companies:
 						cityValueList.append((city, iValue * 10 + gc.getGame().getSorenRandNum(10, 'random bonus')))
 					elif city.isHasCorporation(iCompany): # quick check to remove companies
 						city.setHasCorporation(iCompany, False, True, True)
-		
+						
 		# sort cities from highest to lowest value
 		cityValueList.sort(key=itemgetter(1), reverse=True)
 		
@@ -85,6 +80,8 @@ class Companies:
 			if city.isHasCorporation(iCompany):
 				#debugText += '%s:%d(skip), ' %(city.getName(), cityValueList[i][1])
 				continue
+			if iMaxCompanies == 0:
+				break
 			if iCompanyCount >= iMaxCompanies and i >= iMaxCompanies: # don't spread to weak cities if the limit was reached
 				#debugText += 'limit reached'
 				break
@@ -105,7 +102,7 @@ class Companies:
 	def onCityAcquired(self, argsList):
 		iPreviousOwner, iNewOwner, city, bConquest, bTrade = argsList
 		
-		for iCompany in range(iNumCompanies):
+		for iCompany in range(iNumCorporations):
 			if city.isHasCorporation(iCompany):
 				if self.getCityValue(city, iCompany) < 0:
 					city.setHasCorporation(iCompany, False, True, True)
@@ -124,7 +121,7 @@ class Companies:
 		
 		# Central Planning: only one company per city
 		if owner.getCivics(iCivicsEconomy) == iCentralPlanning:
-			for iLoopCorporation in range(iNumCompanies):
+			for iLoopCorporation in range(iNumCorporations):
 				if city.isHasCorporation(iLoopCorporation) and iLoopCorporation != iCompany:
 					return -1
 
@@ -157,7 +154,7 @@ class Companies:
 		if iCompany == iSilkRoute and not self.isCityInArea(tPlot, tSilkRouteTL, tSilkRouteBR) and not self.isCityInArea(tPlot, tMiddleEastTL, tMiddleEastBR):
 			return -1
 		if iCompany == iTradingCompany:
-			if not self.isCityInArea(tPlot, tCaribbeanTL, tCaribbeanBR) and not self.isCityInArea(tPlot, tSubSaharanAfricaTL, tSubSaharanAfricaBR) and not self.isCityInArea(tPlot, tSouthAsiaTL, tSouthAsiaBR) and not (city.isHasRealBuilding(iTradingCompany) or city.isHasRealBuilding(iIberianTradingCompany)):
+			if not self.isCityInArea(tPlot, tCaribbeanTL, tCaribbeanBR) and not self.isCityInArea(tPlot, tSubSaharanAfricaTL, tSubSaharanAfricaBR) and not self.isCityInArea(tPlot, tSouthAsiaTL, tSouthAsiaBR) and not (city.isHasRealBuilding(iTradingCompanyBuilding) or city.isHasRealBuilding(iIberianTradingCompanyBuilding)):
 				return -1
 			elif self.isCityInArea(tPlot, tCaribbeanTL, tCaribbeanBR):
 				iValue += 1
@@ -188,7 +185,7 @@ class Companies:
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iCustomsHouse)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iBank)): iValue += 1
-			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iTradingCompany)): iValue += 2
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iTradingCompanyBuilding)): iValue += 2
 
 		elif iCompany == iCerealIndustry:
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iGranary)): iValue += 1

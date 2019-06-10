@@ -25,6 +25,8 @@ class PlayerData:
 	
 		# Rise and Fall
 		
+		self.bSpawned = False
+		
 		self.iColonistsAlreadyGiven = 0
 		self.iSpawnDelay = 0
 		self.iFlipsDelay = 0
@@ -52,6 +54,7 @@ class PlayerData:
 		# Victory
 		
 		self.lGoals = [-1, -1, -1]
+		self.lGoalTurns = [-1, -1, -1]
 		self.bHistoricalGoldenAge = False
 		
 		# Stability
@@ -61,7 +64,7 @@ class PlayerData:
 		# Tech Log
 		
 		self.iTechColumn = 0
-		
+	
 	def resetStability(self):
 		self.iStabilityLevel = iStabilityShaky
 		
@@ -183,7 +186,6 @@ class GameData:
 		# Unique Powers
 		
 		self.iImmigrationTimer = 0
-		self.iRomanVictories = 0
 		
 		self.lByzantineBribes = []
 		
@@ -200,7 +202,7 @@ class GameData:
 		self.iGlobalWarAttacker = -1
 		self.iGlobalWarDefender = -1
 		
-		self.iCongressTurns = 0
+		self.iCongressTurns = 8
 		self.iCivsWithNationalism = 0
 		
 		self.currentCongress = None
@@ -217,6 +219,8 @@ class GameData:
 		
 		self.bIgnoreAI = True
 		
+		self.bEthiopiaConverted = False
+		
 		self.lWonderBuilder = [-1] * (iNumBuildings - iBeginWonders)
 		self.lReligionFounder = [-1] * iNumReligions
 		self.lFirstDiscovered = [-1] * iNumTechs
@@ -230,7 +234,9 @@ class GameData:
 		self.iColombianTradeGold = 0
 		self.iArgentineTradeGold = 0
 		self.iVikingGold = 0
+		self.iTurkicPillages = 0
 		self.iMoorishGold = 0
+		self.lHolyRomanShrines = [False] * 3
 		self.iEnglishSinks = 0
 		self.iMongolRazes = 0
 		self.iAztecSlaves = 0
@@ -239,6 +245,9 @@ class GameData:
 		self.iMexicanGreatGenerals = 0
 		self.iArgentineGoldenAgeTurns = 0
 		self.iCanadianPeaceDeals = 0
+		
+		self.tFirstTurkicCapital = None
+		self.tSecondTurkicCapital = None
 		
 		self.iPopeTurns = 0
 		self.iHinduGoldenAgeTurns = 0
@@ -255,8 +264,6 @@ class GameData:
 		self.iHumanRazePenalty = 0
 		
 		self.bCrisisImminent = False
-		self.bNoHumanStability = False
-		self.bNoAIStability = False
 		
 		self.dSecedingCities = {}
 		
