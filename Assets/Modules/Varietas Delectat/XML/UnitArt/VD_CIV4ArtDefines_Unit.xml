@@ -2639,7 +2639,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_ZULU</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_ZULU</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -4553,7 +4553,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_BABYLONIAN</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_BABYLONIAN</Type>
 			<Button>Art/Interface/Buttons/Units/Musketman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -7696,7 +7696,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_NATIVE_AMERICAN</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_NATIVE_AMERICAN</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -9271,7 +9271,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_CHINESE</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_CHINESE</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -9655,7 +9655,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_CHINESE</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_CHINESE</Type>
 			<Button>Art/Interface/Buttons/Units/Musketman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -12762,7 +12762,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_INDIAN</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_INDIAN</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -13195,9 +13195,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Ottoman/Ottoman Heavy Swordsman/OttomanHeavyJanissary.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Ottoman/Heavy Swordsman/OttomanHeavyJanissary.nif</NIF>
 			<KFM>Art/Units/Charlemagne_HeavySwordsman/HeavySwordsman.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Ottoman/Ottoman Heavy Swordsman/OttomanHeavyJanissary.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Ottoman/Heavy Swordsman/OttomanHeavyJanissary.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -14164,7 +14164,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_GERMAN</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_GERMAN</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -14611,9 +14611,9 @@
 			<fInterfaceScale>1.3</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A submarine/german/submarine.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A submarine/german/submarine.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A submarine/german/submarine_fx.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A/german/submarine.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A/german/submarine.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A/german/submarine_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/BattleshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -14641,9 +14641,9 @@
 			<fInterfaceScale>1.3</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A submarine/italy/submarine.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A submarine/italy/submarine.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A submarine/italy/submarine_fx.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A/italy/submarine.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A/italy/submarine.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[naval]/Type 212A/italy/submarine_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/BattleshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -15655,7 +15655,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_CAVALRY_ENGLISH</Type>
+			<Type>ART_DEF_UNIT_DRAGOON_ENGLAND</Type>
 			<Button>,Art/Interface/Buttons/Units/Cavalry.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,2</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -16590,7 +16590,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_GREEK</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_GREEK</Type>
 			<Button>Art/Interface/Buttons/Units/Musketman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -19437,7 +19437,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_HOLLAND</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_HOLLAND</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -20010,7 +20010,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_PORTUGAL_OLD</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_PORTUGAL_OLD</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -22271,7 +22271,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_SPAIN</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_SPAIN</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -23261,9 +23261,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Byzantine/Byzantine Pikeman/ByzantinePikeman.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Byzantine/Pikeman/ByzantinePikeman.nif</NIF>
 			<KFM>Art/Units/Charlemagne_HeavySpearman/HeavySpearman.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Byzantine/Byzantine Pikeman/ByzantinePikeman.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Byzantine/Pikeman/ByzantinePikeman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -23279,7 +23279,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_BYZANTINE</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_BYZANTINE</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -24006,7 +24006,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_USA</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_USA</Type>
 			<Button>Art/Interface/Buttons/Units/Musketman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -24033,12 +24033,12 @@
 			<Type>ART_DEF_UNIT_CANNON_USA</Type>
 			<Button>,Art/Interface/Buttons/Units/Cannon.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,8</Button>
 			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/USA/Union Cannon/Cannon_fx.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/USA/American Foot Artillery/American Foot.nif</NIF>
 			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/USA/Union Cannon/Cannon_fx.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/USA/American Foot Artillery/American Foot.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
 				<ShadowAttachNode/>
@@ -25102,7 +25102,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_CELTIC</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_CELTIC</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.425</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -25670,7 +25670,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MUSKETMAN_PIRATE</Type>
+			<Type>ART_DEF_UNIT_MUSKETEER_PIRATE</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.425</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -30151,9 +30151,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Denel AH-2 Rooivalk/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Denel AH-2 Rooivalk/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Denel AH-2 Rooivalk/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Rooivalk/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Rooivalk/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Rooivalk/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30178,9 +30178,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/German/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/German/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/German/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/German/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/German/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/German/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30205,9 +30205,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/French/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/French/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/French/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/French/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/French/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/French/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30232,9 +30232,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Leopard/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Leopard/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Leopard/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Leopard/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Leopard/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Leopard/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30259,9 +30259,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo2/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo2/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo2/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo2/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo2/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo2/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30286,9 +30286,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo3/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo3/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo3/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo3/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo3/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo3/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30313,9 +30313,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo4/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo4/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo4/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo4/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo4/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo4/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30340,9 +30340,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo5/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo5/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo5/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo5/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo5/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo5/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30367,9 +30367,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo6/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo6/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo6/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo6/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo6/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo6/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30394,9 +30394,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo7/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo7/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo7/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo7/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo7/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo7/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -30421,9 +30421,9 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo8/tiger.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo8/tiger.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/[heli]/Eurocopter Tiger/Camo8/tiger.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo8/tiger.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo8/tiger.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/[air]/Eurocopter/Camo8/tiger.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -32848,9 +32848,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General med/TamerlanewCape.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Medieval)/TamerlanewCape.nif</NIF>
 			<KFM>Art/Units/Warlord_Ancient/Warlord_Ancient.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General med/TamerlanewCape.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Medieval)/TamerlanewCape.nif</SHADERNIF>
 			<ShadowDef>
 			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 			<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -32872,9 +32872,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General mod/warlord_modern_fx.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Modern)/warlord_modern_fx.nif</NIF>
 			<KFM>Art/Units/Warlord_Modern/Warlord_Modern.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General mod/warlord_modern_fx.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Modern)/warlord_modern_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -34423,9 +34423,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Russia/Russian General (Medieval)/syvatoslav.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Russia/General_Med/syvatoslav.nif</NIF>
 			<KFM>Art/Units/Warlord_Ancient/Warlord_Ancient.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Russia/Russian General (Medieval)/syvatoslav.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Russia/General_Med/syvatoslav.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -36487,9 +36487,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General med/TamerlanewCape.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Medieval)/TamerlanewCape.nif</NIF>
 			<KFM>Art/Units/Warlord_Ancient/Warlord_Ancient.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General med/TamerlanewCape.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Medieval)/TamerlanewCape.nif</SHADERNIF>
 			<ShadowDef>
 			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 			<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -36511,9 +36511,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General med/warlord_modern_fx.nif</NIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Modern)/warlord_modern_fx.nif</NIF>
 			<KFM>Art/Units/Warlord_Modern/Warlord_Modern.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General mod/warlord_modern_fx.nif</SHADERNIF>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Mongol/Mongolian General (Modern)/warlord_modern_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
@@ -37543,9 +37543,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/Varietas Delectat/Art/Units/Generic/Native Spy/nativespydef_fx.nif</NIF>
-			<KFM>Modules/Varietas Delectat/Art/Units/Generic/European Spy/MedievalSpy.kfm</KFM>
-			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Generic/Native Spy/nativespydef_fx.nif</SHADERNIF>
+			<NIF>Modules/Varietas Delectat/Art/Units/Generic/Native Great Spy/nativespydef_fx.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/Generic/European Great Spy/MedievalSpy.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Generic/Native Great Spy/nativespydef_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>

@@ -519,10 +519,6 @@ def checkTurn(iGameTurn, iPlayer):
 					
 		# third goal: be first to discover Theology, Machinery and Civil Service
 		
-		# third goal: sink 20 enemy ships by 1600 AD
-		if iGameTurn == getTurnForYear(1600):
-			expire(iKorea, 2)
-		
 	elif iPlayer == iMaya:
 	
 		# Maya
@@ -2007,10 +2003,6 @@ def onPlayerGoldTrade(iPlayer, iGold):
 	if iPlayer == iTamils:
 		if isPossible(iTamils, 2):
 			data.iTamilTradeGold += iGold * 100
-
-	if iPlayer == iArgentina:
-		if isPossible(iArgentina, 0):
-			data.iArgentineTradeGold += iGold * 100
 			
 def onPlayerSlaveTrade(iPlayer, iGold):
 
@@ -2026,9 +2018,6 @@ def onTradeMission(iPlayer, iX, iY, iGold):
 	# third Tamil goal: acquire 5000 gold by trade by 1280 AD
 	if iPlayer == iTamils:
 		data.iTamilTradeGold += iGold * 100
-		
-	if iPlayer == iArgentina:
-		data.iArgentineTradeGold += iGold * 100
 		
 	# first Mande goal: conduct a trade mission in your state religion's holy city by 1350 AD
 	elif iPlayer == iMali:

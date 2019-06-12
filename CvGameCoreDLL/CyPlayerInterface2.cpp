@@ -124,5 +124,11 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("resetGreatPeopleCreated", &CyPlayer::resetGreatPeopleCreated, "void ()")
 		.def("canUseSlaves", &CyPlayer::canUseSlaves, "bool ()")
 		.def("changeYieldRateModifier", &CyPlayer::changeYieldRateModifier, "void (int iYieldType, int iChange)")
+		.def("setBuildingPreference", &CyPlayer::setBuildingPreference, "void (int iBuilding, int iNewValue)")
+		.def("getBuildingPreference", &CyPlayer::getBuildingPreference, "int (int iBuilding)")
+		.def("changeGreatPeopleCreated", &CyPlayer::changeGreatPeopleCreated, "void (int iChange)")
+		.def("changeGreatGeneralsCreated", &CyPlayer::changeGreatGeneralsCreated, "void (int iChange)")
+		.def("launch", &CyPlayer::launch, "void (int iVictory)")
+		.def("isNoTemporaryUnhappiness", &CyPlayer::isNoTemporaryUnhappiness, "bool ()")
 		;
 }

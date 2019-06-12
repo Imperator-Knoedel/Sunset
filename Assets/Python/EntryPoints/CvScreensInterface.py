@@ -1027,10 +1027,10 @@ def getUHVTileInfo(argsList):
 			return 32
 				
 		if (x, y) == (63, 10):
-			return 70
+			return 72
 			
 		if (x, y) in vic.lNorthernEgypt:
-			return 71
+			return 73
 			
 		if plot.getRegionID() in lAfrica:
 			return 33
@@ -1043,13 +1043,13 @@ def getUHVTileInfo(argsList):
 			
 	elif iPlayer == iGermany:
 		if utils.isPlotInArea((x, y), vic.tAustriaTL, vic.tAustriaBR):
-			return 72
+			return 74
 			
 		if (x, y) in Areas.getNormalArea(iPoland, False):
-			return 73
+			return 75
 			
 		if (x, y) in Areas.getNormalArea(iNetherlands, False):
-			return 74
+			return 76
 
 		if (x, y) in Areas.getNormalArea(iFrance, False):
 			return 36
@@ -1179,7 +1179,7 @@ def getUHVTileInfo(argsList):
 		if utils.isPlotInArea((x, y), vic.tChinaTL, vic.tChinaBR):
 			return 71
 				
-		# continue with ID 75 (70 and 71 are in use for England's Cape to Cairo UHV and 72-74 for Germany)
+		# continue with ID 77 (72 and 73 are in use for England's Cape to Cairo UHV and 74-76 for Germany)
 			
 	return -1
 		
