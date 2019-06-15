@@ -9169,12 +9169,13 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			}
 		}
 
-		if (!(pAttacker->isRiver()))
+		if ((pAttacker->bombardRate() == 0) && !(pAttacker->isRiver()))	//KNOEDEL
 		{
 			if (pAttacker->plot()->isRiverCrossing(directionXY(pAttacker->plot(), pAttackedPlot)))
 			{
 				iExtraModifier = -GC.getRIVER_ATTACK_MODIFIER();
 				iTempModifier += iExtraModifier;
+
 				if (pCombatDetails != NULL)
 				{
 					pCombatDetails->iRiverAttackModifier = iExtraModifier;

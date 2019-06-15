@@ -1024,11 +1024,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_GOLD_UNITS</Tag>
-		<English>Can Spend Gold to Finish Military Unit Production in a City</English>
-		<French>Possibilit&#233; de d&#233;penser de l'or pour achever la production des unit&#233;s militaires</French>
-		<German>Can Spend Gold to Finish Military Unit Production in a City</German>
-		<Italian>Can Spend Gold to Finish Military Unit Production in a City</Italian>
-		<Spanish>Can Spend Gold to Finish Military Unit Production in a City</Spanish>
+		<English>Can Spend Gold to Finish Unit Production in a City</English>
+		<French>Possibilit&#233; de d&#233;penser de l'or pour achever la production des unit&#233;s</French>
+		<German>Can Spend Gold to Finish Unit Production in a City</German>
+		<Italian>Can Spend Gold to Finish Unit Production in a City</Italian>
+		<Spanish>Can Spend Gold to Finish Unit Production in a City</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ICON_BULLET</Tag>

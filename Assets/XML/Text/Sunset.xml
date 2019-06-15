@@ -26,17 +26,25 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_RIVER_ATTACK_TEXT</Tag>
 		<English>[ICON_BULLET]No Combat or Movement Penalty for Crossing River</English>
-		<French>[ICON_BULLET]Aucune p&#233;nalit&#233; de combat en franchissant une rivi&#232;re</French>
+		<French>[ICON_BULLET]No Combat or Movement Penalty for Crossing River</French>
 		<German>[ICON_BULLET]Keine Kampf- oder Bewegungsstrafe f&#252;r Fluss&#252;berquerung</German>
-		<Italian>[ICON_BULLET]Nessuna penalit&#224; nel guado di un fiume</Italian>
-		<Spanish>[ICON_BULLET]No sufre penalizaci&#243;n al combate por cruzar un r&#237;o</Spanish>
+		<Italian>[ICON_BULLET]No Combat or Movement Penalty for Crossing River</Italian>
+		<Spanish>[ICON_BULLET]No Combat or Movement Penalty for Crossing River</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GOLD_FROM_SETTLE_IMP</Tag>
 		<English>Founding a city has yielded %d1_Num[ICON_GOLD] from repurposing the infrastructure of the %s2_ImpName. The local people have been integrated into the new settlement as well, making the city start off with additional population.</English>
-		<French>Vous avez pill&#233; %d1_Num[ICON_GOLD] dans : %s2_ImpName !</French>
+		<French>Founding a city has yielded %d1_Num[ICON_GOLD] from repurposing the infrastructure of the %s2_ImpName. The local people have been integrated into the new settlement as well, making the city start off with additional population.</French>
 		<German>Die Gründung einer Stadt in der Nähe des/der %s2_ImpName hat %d1_Num[ICON_GOLD] durch die Verwertung der vorhandenen Infrastruktur eingebracht. Die lokale Bevölkerung wurde ebenfalls in die neue Siedlung integriert, wodurch die Stadt mit mehr Einwohnern anfängt.</German>
-		<Italian>Hai saccheggiato %d1_Num[ICON_GOLD] da %s2_ImpName!</Italian>
-		<Spanish>Hab&#233;is saqueado %d1_Num [ICON_GOLD] [NUM2:del:de la:de los:de las] %s2_ImpName.</Spanish>
+		<Italian>Founding a city has yielded %d1_Num[ICON_GOLD] from repurposing the infrastructure of the %s2_ImpName. The local people have been integrated into the new settlement as well, making the city start off with additional population.</Italian>
+		<Spanish>Founding a city has yielded %d1_Num[ICON_GOLD] from repurposing the infrastructure of the %s2_ImpName. The local people have been integrated into the new settlement as well, making the city start off with additional population.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BOMBARD_RATE</Tag>
+		<English>[ICON_BULLET]Can Bombard City Defenses (-%d1_Mod%%/Turn)[ICON_BULLET]No Combat Penalty for Crossing River</English>
+		<French>[ICON_BULLET]Peut bombarder les d&#233;fenses d'une ville (-%d1_Mod%%/tour)[ICON_BULLET]No Combat Penalty for Crossing River</French>
+		<German>[ICON_BULLET]Kann Stadtverteidigungen bombardieren (-%d1_Mod%%/Runde)[ICON_BULLET]Keine Kampfstrafe f&#252;r Fluss&#252;berquerung</German>
+		<Italian>[ICON_BULLET]Pu&#242; bombardare le difese cittadine (-%d1_Mod%%/turno)[ICON_BULLET]No Combat Penalty for Crossing River</Italian>
+		<Spanish>[ICON_BULLET]Puede ca&#241;onear las defensas de las ciudades (-%d1_Mod%%/turno)[ICON_BULLET]No Combat Penalty for Crossing River</Spanish>
 	</TEXT>
 </Civ4GameText>

@@ -3313,6 +3313,17 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 	else
 	{
 		iRegularCost = ((getFeatureType() == NO_FEATURE) ? GC.getTerrainInfo(getTerrainType()).getMovementCost() : GC.getFeatureInfo(getFeatureType()).getMovementCost());
+		
+//KNOEDELstart
+		// byFra
+		if (isCrossRiverMovement(pUnit, pFromPlot))
+		{
+			if (!pUnit->isRiver())
+			{
+				iRegularCost *= 2;
+			}
+		}
+//KNOEDELend
 
 		if (isHills())
 		{
@@ -3333,20 +3344,6 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			iRegularCost = std::max(1, (iRegularCost - pUnit->getExtraMoveDiscount()));
 		}
 	}
-
-//KNOEDELstart
-	// byFra
-	if (isCrossRiverMovement(pUnit, pFromPlot))
-	{
-		if (!pUnit->ignoreTerrainCost())
-		{
-			if (!pUnit->isRiver())
-			{
-				iRegularCost *= 2;
-			}
-		}
-	}
-//KNOEDELend
 
 	bool bHasTerrainCost = (iRegularCost > 1);
 

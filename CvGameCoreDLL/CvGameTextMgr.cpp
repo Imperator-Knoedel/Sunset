@@ -3160,7 +3160,7 @@ It is fine for a human player mouse-over (which is what it is used for).
                         }
                     }
 
-                    if (!(pAttacker->isRiver()))
+                    if ((pAttacker->bombardRate() == 0) && !(pAttacker->isRiver()))	//KNOEDEL
                     {
                         if (pAttacker->plot()->isRiverCrossing(directionXY(pAttacker->plot(), pPlot)))
                         {

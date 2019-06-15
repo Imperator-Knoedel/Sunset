@@ -942,8 +942,8 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iFrance, 1)
 				
-		# third goal: build Notre Dame, Versailles, the Louvre, the Eiffel Tower and the Metropolitain by 1890 AD
-		if iGameTurn == getTurnForYear(1890):
+		# third goal: build Notre Dame, Versailles, the Louvre, the Eiffel Tower and the Metropolitain by 1900 AD
+		if iGameTurn == getTurnForYear(1900):
 			expire(iFrance, 2)
 			
 	elif iPlayer == iKhmer:

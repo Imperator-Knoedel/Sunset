@@ -32982,7 +32982,7 @@ BeginPlot
 	x=86,y=39
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_STONE
+	BonusType=BONUS_MARBLE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

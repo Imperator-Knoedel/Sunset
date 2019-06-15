@@ -140,7 +140,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 44
+iNumMinorCities = 43
 
 # scripted conquerors
 iNumConquests = 13
@@ -372,7 +372,7 @@ iCivTibet : (840, 1685, 1685),
 iCivIndonesia : (1390, 1510, 1950),
 iCivMoors : (1030, 1210, 1680),
 iCivSpain : (-1, 1600, 1650),
-iCivFrance : (1790, 1815, 1890),
+iCivFrance : (1790, 1815, 1900),
 iCivKhmer : (1220, 1220, 1350),
 iCivEngland : (1815, -1, 1920),
 iCivHolyRome : (1550, 1650, 1850),

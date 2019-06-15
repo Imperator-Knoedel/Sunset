@@ -22,7 +22,6 @@ tMinorCities = (
 (-2700, (69, 39), iIndependent2, 'Knossos', 2, iArcher, 1), 	# Knossos
 (-2000, (85, 47), iIndependent, 'Afrasiyab', 1, iArcher, 1), 	# Samarkand
 #(-2000, (92, 39), iIndependent, 'Varanasi', 1, iMilitia, 1), 	# Varanasi
-(-1700, (70, 43), iIndependent2, 'Ephesos', 2, iArcher, 1), 	# Troy but I don't know how to dynamic names and I'm not willing to learn!
 (-1600, (73, 43), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara
 (-1600, (90, 40), iIndependent, 'Indraprastha', 1, iMilitia, 1),	# Delhi
 (-1000, (102, 47), iIndependent, 'Zhongdu', 2, iSpearman, 1),	# Beijing

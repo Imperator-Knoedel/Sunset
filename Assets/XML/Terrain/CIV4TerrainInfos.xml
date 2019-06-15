@@ -336,7 +336,7 @@
 			<iSeeFrom>1</iSeeFrom>
 			<iSeeThrough>1</iSeeThrough>
 			<iBuildModifier>25</iBuildModifier>
-			<iDefense>0</iDefense>
+			<iDefense>-10</iDefense>
 			<iCultureCost>15</iCultureCost>
 			<Button>Art/Interface\Buttons\WorldBuilder\Terrain_Desert.dds</Button>
 			<FootstepSounds>
@@ -638,7 +638,7 @@
 			<iSeeFrom>1</iSeeFrom>
 			<iSeeThrough>1</iSeeThrough>
 			<iBuildModifier>50</iBuildModifier>
-			<iDefense>0</iDefense>
+			<iDefense>-10</iDefense>
 			<iCultureCost>20</iCultureCost>
 			<Button>Art/Interface\Buttons\WorldBuilder\Terrain_Ice.dds</Button>
 			<FootstepSounds>

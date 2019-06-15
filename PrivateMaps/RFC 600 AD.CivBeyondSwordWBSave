@@ -22351,7 +22351,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=46 (Independent2)
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=46, (Independent2)
 	EndUnit
 	BeginCity
 		CityOwner=46, (Independent2)
@@ -26537,55 +26537,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_BYZANTINE_CATAPHRACT, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPEARMAN, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPEARMAN, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER, UnitOwner=14, (Byzantium)
-	EndUnit
-	BeginCity
-		CityOwner=14, (Byzantium)
-		CityName=Konstantinoupolis
-		CityPopulation=4
-		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_WALLS
-		BuildingType=BUILDING_CASTLE
-		BuildingType=BUILDING_BARRACKS
-		BuildingType=BUILDING_STABLE
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_BYZANTINE_HIPPODROME
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_ORTHODOX_TEMPLE
-		BuildingType=BUILDING_THEODOSIAN_WALLS
-		BuildingType=BUILDING_HAGIA_SOPHIA
-		ReligionType=RELIGION_JUDAISM
-		ReligionType=RELIGION_ORTHODOXY
-		ReligionType=RELIGION_CATHOLICISM
-		Player14Culture=250, (Byzantium)
-	EndCity
 EndPlot
 BeginPlot
 	x=68,y=46

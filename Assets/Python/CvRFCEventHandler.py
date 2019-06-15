@@ -127,13 +127,6 @@ class CvRFCEventHandler:
 		if bConquest:
 			sta.onCityAcquired(city, iOwner, iPlayer)
 			
-		for iI in range(gc.getNumBuildingClassInfos()):
-			player = gc.getPlayer(iPlayer)
-			building = gc.getBuildingInfo(iI)
-			if building != BuildingTypes.NO_BUILDING and city.canConstruct(iI, False, False, False):
-				if (building.getFreeStartEra() != -1 and player.getCurrentEra() >= building.getFreeStartEra()) and (building.getMaxStartEra() == -1 or player.getCurrentEra() < building.getMaxStartEra()) and (building.getObsoleteTech() == -1 or not gc.getTeam(iPlayer).isHasTech(building.getObsoleteTech())):
-					city.setHasRealBuilding(iI, True)
-		
 		if iPlayer == iArabia:
 			self.up.arabianUP(city)
 			
@@ -159,6 +152,11 @@ class CvRFCEventHandler:
 			utils.removeSlaves(city)
 		else:
 			utils.freeSlaves(city, iPlayer)
+			
+		if city.isCapital():
+			if city.isHasRealBuilding(iAdministrativeCenter): 
+				city.setHasRealBuilding(iAdministrativeCenter, False)
+				utils.makeUnit(iGreatStatesman, iPlayer, tCity, 1)
 				
 		# Leoreth: relocate capital for AI if reacquired:
 		if utils.getHumanID() != iPlayer and iPlayer < iNumPlayers:
@@ -589,6 +587,10 @@ class CvRFCEventHandler:
 			sta.onPalaceMoved(iOwner)
 			dc.onPalaceMoved(iOwner)
 			
+			if city.isHasRealBuilding(iAdministrativeCenter):
+				city.setHasRealBuilding(iAdministrativeCenter, False)
+				utils.makeUnit(iGreatStatesman, iOwner, tCity, 1)
+			
 			# Leoreth: in case human Phoenicia moves palace to Carthage
 			if iOwner == iCarthage and tCity == (58, 39):
 				utils.setReborn(iCarthage, True)
@@ -855,7 +857,38 @@ class CvRFCEventHandler:
 			data.players[iOtherTeam].iAggressionLevel = 0
 			
 	def onGoldenAge(self, argsList):
-		iPlayer = argsList[0]
+		iPlayer = argsList[0]	
+				
+		capital = gc.getPlayer(iPlayer).getCapitalCity()
+		
+		if iPlayer == iHarappa:
+			utils.makeUnit(iCityBuilder, iPlayer, (capital.getX(), capital.getY()), 2)
+		if iPlayer == iAmerica:
+			utils.makeUnit(iPioneer, iPlayer, (capital.getX(), capital.getY()), 2)			
+
+		if iPlayer == iPolynesia or iPlayer == iVikings or iPlayer == iIndonesia:
+			utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
+			utils.makeUnit(iWorkboat, iPlayer, (capital.getX(), capital.getY()), 3)
+			utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+			utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+			utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+			utils.makeUnit(utils.getBestShip(iPlayer), iPlayer, (capital.getX(), capital.getY()), 5)
+		
+		if iPlayer == iMaya or iPlayer == iInca or iPlayer == iAztecs or iPlayer == iCongo:
+			utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
+			utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+			utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
+			utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
+			utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
+		
+		else:
+			utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
+			utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+			utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
+			utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
+			utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
+			utils.makeUnit(utils.getBestSiege(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+			utils.makeUnit(utils.getBestCavalry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
 		
 		sta.onGoldenAge(iPlayer)
 		

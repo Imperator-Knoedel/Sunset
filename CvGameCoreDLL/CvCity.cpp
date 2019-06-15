@@ -7266,7 +7266,9 @@ int CvCity::calculateNumCitiesMaintenanceTimes100() const
 	}
 
 	iNumCitiesMaintenance *= std::max(0, (GET_PLAYER(getOwnerINLINE()).getNumCitiesMaintenanceModifier() + 100));
-	iNumCitiesMaintenance /= 100;
+	iNumCitiesMaintenance /= 1000;	//KNOEDEL
+	iNumCitiesMaintenance *= (GET_PLAYER(getOwnerINLINE()).getCurrentEra() + 1);	//KNOEDEL
+	iNumCitiesMaintenance *= 2;	//KNOEDEL
 
 	FAssert(iNumCitiesMaintenance >= 0);
 

@@ -25862,10 +25862,10 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN, UnitOwner=45, (Independent)
+		UnitType=UNIT_MUSKETEER, UnitOwner=45, (Independent)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN, UnitOwner=45, (Independent)
+		UnitType=UNIT_MUSKETEER, UnitOwner=45, (Independent)
 	EndUnit
 	BeginCity
 		CityOwner=45, (Independent)
@@ -32930,21 +32930,6 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=25,30,45,
-EndPlot
-BeginPlot
-	x=71,y=20
-	isNOfRiver
-	RiverWEDirection=1
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
-	TeamReveal=23,25,30,39,45,
-EndPlot
-BeginPlot
-	x=71,y=21
-	RouteType=ROUTE_ROAD
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
 	BeginUnit
 		UnitType=UNIT_ARQUEBUSIER, UnitOwner=45, (Independent)
 	EndUnit
@@ -32964,6 +32949,21 @@ BeginPlot
 		ReligionType=RELIGION_ISLAM
 		Player45Culture=100, (Independent)
 	EndCity
+	TeamReveal=25,30,45,
+EndPlot
+BeginPlot
+	x=71,y=20
+	isNOfRiver
+	RiverWEDirection=1
+	RouteType=ROUTE_ROAD
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
+	TeamReveal=23,25,30,39,45,
+EndPlot
+BeginPlot
+	x=71,y=21
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 	TeamReveal=23,25,30,39,45,
 EndPlot
 BeginPlot

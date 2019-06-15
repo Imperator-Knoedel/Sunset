@@ -11409,12 +11409,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CATAPULT</Class>
@@ -11500,12 +11494,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_TREBUCHET</Class>
@@ -11594,12 +11582,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBARD</Class>
@@ -11687,12 +11669,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBARD</Class>
@@ -11878,12 +11854,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_BOMBARD</Class>
@@ -11971,12 +11941,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_CANNON</Class>
@@ -12065,12 +12029,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_ARTILLERY</Class>
@@ -12165,12 +12123,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MACHINE_GUN</Class>
@@ -12347,12 +12299,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MOBILE_ARTILLERY</Class>
@@ -12438,12 +12384,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WORK_BOAT</Class>

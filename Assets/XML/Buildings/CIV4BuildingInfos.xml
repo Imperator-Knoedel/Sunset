@@ -28,19 +28,25 @@
 			<YieldChanges>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>8</iYield>
+				<iYield>4</iYield>
 			</YieldChanges>
 			<CommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>4</iCommerce>
+				<iCommerce>2</iCommerce>
 			</CommerceChanges>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
@@ -80,7 +86,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ZULU_IKHANDA</ArtDefineTag>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMaintenanceModifier>-20</iMaintenanceModifier>
@@ -116,7 +122,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
 			<FreeStartEra>ERA_MEDIEVAL</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
@@ -155,7 +161,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_INCAN_TAMBO</ArtDefineTag>
 			<FreeStartEra>ERA_MEDIEVAL</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
@@ -205,7 +211,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SMOKEHOUSE</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_PASTORALISM</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
@@ -253,13 +259,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -627,7 +639,7 @@
 			<ObsoleteTech>TECH_POWER_PROJECTION</ObsoleteTech>
 			<PrereqTech>TECH_RIDING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
@@ -680,7 +692,7 @@
 			<ObsoleteTech>TECH_POWER_PROJECTION</ObsoleteTech>
 			<PrereqTech>TECH_RIDING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
@@ -752,10 +764,11 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LIBRARY</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_WRITING</PrereqTech>
-			<iCost>90</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iCultureGreatPeopleRateModifier>10</iCultureGreatPeopleRateModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -796,10 +809,11 @@
 			<ArtDefineTag>ART_DEF_BUILDING_BABYLONIAN_EDUBBA</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_WRITING</PrereqTech>
-			<iCost>45</iCost>
+			<iCost>40</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iCultureGreatPeopleRateModifier>10</iCultureGreatPeopleRateModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -840,10 +854,11 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CHINESE_TAIXUE</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_WRITING</PrereqTech>
-			<iCost>90</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iCultureGreatPeopleRateModifier>10</iCultureGreatPeopleRateModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -888,11 +903,12 @@
 			<ArtDefineTag>ART_DEF_BUILDING_THAI_HO_TRAI</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_WRITING</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>45</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iHappiness>1</iHappiness>
+			<iCultureGreatPeopleRateModifier>10</iCultureGreatPeopleRateModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -933,10 +949,11 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TAMIL_SANGAM</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_WRITING</PrereqTech>
-			<iCost>90</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iCultureGreatPeopleRateModifier>10</iCultureGreatPeopleRateModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -987,7 +1004,7 @@
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<bWater>1</bWater>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
@@ -1015,7 +1032,7 @@
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>100</iCost>
+			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
@@ -1042,7 +1059,7 @@
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>100</iCost>
+			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
@@ -1105,7 +1122,7 @@
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>100</iCost>
+			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
@@ -1164,7 +1181,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GREEK_ODEON</ArtDefineTag>
 			<PrereqTech>TECH_LITERATURE</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1203,7 +1220,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BYZANTINE_HIPPODROME</ArtDefineTag>
 			<PrereqTech>TECH_LITERATURE</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1249,7 +1266,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CHINESE_PAVILLION</ArtDefineTag>
 			<PrereqTech>TECH_LITERATURE</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1307,7 +1324,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAYAN_BALL_COURT</ArtDefineTag>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -1464,7 +1481,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WEAVER</ArtDefineTag>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<iCost>80</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -1474,7 +1491,7 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
@@ -1522,7 +1539,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CONGOLESE_MBWADI</ArtDefineTag>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<iCost>80</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -1590,11 +1607,11 @@
 			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
-			<iCultureTradeRouteModifier>5</iCultureTradeRouteModifier>
+			<iCultureTradeRouteModifier>10</iCultureTradeRouteModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<CommerceModifiers>
@@ -1642,12 +1659,12 @@
 			<ArtDefineTag>ART_DEF_BUILDING_ROMAN_FORUM</ArtDefineTag>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
 			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
-			<iCultureTradeRouteModifier>5</iCultureTradeRouteModifier>
+			<iCultureTradeRouteModifier>10</iCultureTradeRouteModifier>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<CommerceModifiers>
@@ -1699,12 +1716,12 @@
 			<ArtDefineTag>ART_DEF_BUILDING_PHOENICIAN_GLASSMAKER</ArtDefineTag>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
 			<iTradeRouteModifier>50</iTradeRouteModifier>
-			<iCultureTradeRouteModifier>5</iCultureTradeRouteModifier>
+			<iCultureTradeRouteModifier>10</iCultureTradeRouteModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<CommerceModifiers>
@@ -1752,7 +1769,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_JAIL</ArtDefineTag>
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>50</iConquestProb>
@@ -1787,7 +1804,7 @@
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
 			<iHurryAngerModifier>-50</iHurryAngerModifier>
-			<iCost>90</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>50</iConquestProb>
@@ -1821,7 +1838,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TURKIC_DIVAN</ArtDefineTag>
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>50</iConquestProb>
@@ -1860,7 +1877,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BATH</ArtDefineTag>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
-			<iCost>100</iCost>
+			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1906,7 +1923,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HARAPPAN_RESERVOIR</ArtDefineTag>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1945,7 +1962,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_OTTOMAN_HAMMAM</ArtDefineTag>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
-			<iCost>100</iCost>
+			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1992,7 +2009,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_FORGE</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_STEEL</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>75</iConquestProb>
@@ -2058,7 +2075,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_MANDE_MINT</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_STEEL</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>75</iConquestProb>
@@ -2131,7 +2148,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_ITALIAN_ART_STUDIO</ArtDefineTag>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
 			<PrereqTech>TECH_STEEL</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>75</iConquestProb>
@@ -2316,7 +2333,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PHARMACY</ArtDefineTag>
 			<PrereqTech>TECH_ALCHEMY</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -2363,7 +2380,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PERSIAN_APOTHECARY</ArtDefineTag>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -2431,7 +2448,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARABIAN_ALCHEMIST</ArtDefineTag>
 			<PrereqTech>TECH_ALCHEMY</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -2483,7 +2500,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_POST_OFFICE</ArtDefineTag>
 			<PrereqTech>TECH_PAPER</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>120</iCost>
+			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -2525,7 +2542,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_INCAN_TAMBO</ArtDefineTag>
 			<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>80</iCost>
+			<iCost>70</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -2568,7 +2585,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_IRANIAN_CARAVANSERAI</ArtDefineTag>
 			<PrereqTech>TECH_PAPER</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>120</iCost>
+			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -2630,7 +2647,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_WHARF</ArtDefineTag>
 			<PrereqTech>TECH_COMPASS</PrereqTech>
 			<bWater>1</bWater>
-			<iCost>140</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>12</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -2680,7 +2697,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COFFEEHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_PATRONAGE</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2740,7 +2757,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_SALON</ArtDefineTag>
 			<PrereqTech>TECH_PATRONAGE</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2877,7 +2894,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CONSTABULARY</ArtDefineTag>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			<iAIWeight>25</iAIWeight>
-			<iCost>150</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>50</iConquestProb>
@@ -2931,7 +2948,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE</ArtDefineTag>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			<iAIWeight>25</iAIWeight>
-			<iCost>150</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>50</iConquestProb>
@@ -2991,7 +3008,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CUSTOMS_HOUSE</ArtDefineTag>
 			<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			<bWater>1</bWater>
-			<iCost>180</iCost>
+			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>10</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -3022,7 +3039,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_PORTUGUESE_FEITORIA</ArtDefineTag>
 			<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			<bWater>1</bWater>
-			<iCost>180</iCost>
+			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>10</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -3198,7 +3215,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CIVIC_SQUARE</ArtDefineTag>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3277,7 +3294,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HOLY_ROMAN_RATHAUS</ArtDefineTag>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3357,7 +3374,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_POLISH_SEJMIK</ArtDefineTag>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3437,7 +3454,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SEWER</ArtDefineTag>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>200</iCost>
+			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
@@ -3463,7 +3480,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_STAR_FORT</ArtDefineTag>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3489,7 +3506,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_ESTATE</ArtDefineTag>
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3545,7 +3562,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_MUGHAL_MAUSOLEUM</ArtDefineTag>
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_HERITAGE</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3607,7 +3624,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_BRAZILIAN_FAZENDA</ArtDefineTag>
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3705,7 +3722,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_COLOMBIAN_HACIENDA</ArtDefineTag>
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
-			<iCost>120</iCost>
+			<iCost>100</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3877,7 +3894,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_OBSERVATORY</ArtDefineTag>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -4145,8 +4162,15 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DISTILLERY</ArtDefineTag>
 			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+			<PrereqBonuses>
+				<Bonus>BONUS_RICE</Bonus>
+				<Bonus>BONUS_WHEAT</Bonus>
+				<Bonus>BONUS_SUGAR</Bonus>
+			</PrereqBonuses>
+			<FreeBonus>BONUS_WINE</FreeBonus>
+			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>180</iCost>
+			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -4189,6 +4213,20 @@
 					</YieldChanges>
 				</BonusYieldChange>
 			</BonusYieldChanges>
+			<BonusHealthChanges>
+				<BonusHealthChange>
+					<BonusType>BONUS_RICE</BonusType>
+					<iHealthChange>-1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_WHEAT</BonusType>
+					<iHealthChange>-1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_SUGAR</BonusType>
+					<iHealthChange>-1</iHealthChange>
+				</BonusHealthChange>
+			</BonusHealthChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -4205,13 +4243,23 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PARK</ArtDefineTag>
 			<PrereqTech>TECH_BIOLOGY</PrereqTech>
-			<iCost>200</iCost>
+			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
 			<iMaxLatitude>90</iMaxLatitude>
 			<iHappiness>2</iHappiness>
 			<iHealth>2</iHealth>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<Flavors>
@@ -4232,7 +4280,7 @@
 			<PrereqTech>TECH_ENGINE</PrereqTech>
 			<PowerBonus>BONUS_COAL</PowerBonus>
 			<bDirtyPower>1</bDirtyPower>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>75</iConquestProb>
@@ -4722,7 +4770,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PUBLIC_TRANSPORTATION</ArtDefineTag>
 			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -4733,6 +4781,16 @@
 					<iHealthChange>2</iHealthChange>
 				</BonusHealthChange>
 			</BonusHealthChanges>
+			<ImprovementHealths>
+				<ImprovementHealth>
+					<ImprovementType>IMPROVEMENT_VILLAGE</ImprovementType>
+					<iHealthPercent>25</iHealthPercent>
+				</ImprovementHealth>
+				<ImprovementHealth>
+					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<iHealthPercent>50</iHealthPercent>
+				</ImprovementHealth>
+			</ImprovementHealths>
 			<iAsset>5</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_RECYCLING_CENTER</ConstructSound>
@@ -4876,7 +4934,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_INTELLIGENCE_AGENCY</ArtDefineTag>
 			<PrereqTech>TECH_PSYCHOLOGY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>180</iCost>
+			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>5</iAsset>
@@ -4916,7 +4974,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ELECTRICAL_GRID</ArtDefineTag>
 			<PrereqTech>TECH_SOCIAL_SERVICES</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
@@ -4987,10 +5045,11 @@
 			<PrereqTech>TECH_ROCKETRY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>100</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAirModifier>-50</iAirModifier>
+			<iFoodKept>10</iFoodKept>
 			<iAsset>1</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<Flavors>
@@ -5012,10 +5071,11 @@
 			<PrereqTech>TECH_FISSION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>100</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iNukeModifier>-50</iNukeModifier>
+			<iFoodKept>10</iFoodKept>
 			<iAsset>1</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<Flavors>
@@ -5241,7 +5301,7 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMaxLatitude>90</iMaxLatitude>
 			<iTradeRouteModifier>20</iTradeRouteModifier>
-			<iCultureTradeRouteModifier>10</iCultureTradeRouteModifier>
+			<iCultureTradeRouteModifier>15</iCultureTradeRouteModifier>
 			<iAsset>6</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -5484,7 +5544,7 @@
 			<ReligionType>RELIGION_JUDAISM</ReligionType>
 			<PrereqReligion>RELIGION_JUDAISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5595,7 +5655,7 @@
 			<ReligionType>RELIGION_JUDAISM</ReligionType>
 			<PrereqReligion>RELIGION_JUDAISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5699,7 +5759,7 @@
 			<ReligionType>RELIGION_ORTHODOXY</ReligionType>
 			<PrereqReligion>RELIGION_ORTHODOXY</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5810,7 +5870,7 @@
 			<ReligionType>RELIGION_ORTHODOXY</ReligionType>
 			<PrereqReligion>RELIGION_ORTHODOXY</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5908,7 +5968,7 @@
 			<ReligionType>RELIGION_CATHOLICISM</ReligionType>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6019,7 +6079,7 @@
 			<ReligionType>RELIGION_CATHOLICISM</ReligionType>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6119,7 +6179,7 @@
 			<ReligionType>RELIGION_PROTESTANTISM</ReligionType>
 			<PrereqReligion>RELIGION_PROTESTANTISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6230,7 +6290,7 @@
 			<ReligionType>RELIGION_PROTESTANTISM</ReligionType>
 			<PrereqReligion>RELIGION_PROTESTANTISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6328,7 +6388,7 @@
 			<ReligionType>RELIGION_ISLAM</ReligionType>
 			<PrereqReligion>RELIGION_ISLAM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6439,7 +6499,7 @@
 			<ReligionType>RELIGION_ISLAM</ReligionType>
 			<PrereqReligion>RELIGION_ISLAM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6537,7 +6597,7 @@
 			<ReligionType>RELIGION_HINDUISM</ReligionType>
 			<PrereqReligion>RELIGION_HINDUISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6648,7 +6708,7 @@
 			<ReligionType>RELIGION_HINDUISM</ReligionType>
 			<PrereqReligion>RELIGION_HINDUISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6746,7 +6806,7 @@
 			<ReligionType>RELIGION_BUDDHISM</ReligionType>
 			<PrereqReligion>RELIGION_BUDDHISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6857,7 +6917,7 @@
 			<ReligionType>RELIGION_BUDDHISM</ReligionType>
 			<PrereqReligion>RELIGION_BUDDHISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6955,7 +7015,7 @@
 			<ReligionType>RELIGION_CONFUCIANISM</ReligionType>
 			<PrereqReligion>RELIGION_CONFUCIANISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7066,7 +7126,7 @@
 			<ReligionType>RELIGION_CONFUCIANISM</ReligionType>
 			<PrereqReligion>RELIGION_CONFUCIANISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7164,7 +7224,7 @@
 			<ReligionType>RELIGION_TAOISM</ReligionType>
 			<PrereqReligion>RELIGION_TAOISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7275,7 +7335,7 @@
 			<ReligionType>RELIGION_TAOISM</ReligionType>
 			<PrereqReligion>RELIGION_TAOISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7373,7 +7433,7 @@
 			<ReligionType>RELIGION_ZOROASTRIANISM</ReligionType>
 			<PrereqReligion>RELIGION_ZOROASTRIANISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7484,7 +7544,7 @@
 			<ReligionType>RELIGION_ZOROASTRIANISM</ReligionType>
 			<PrereqReligion>RELIGION_ZOROASTRIANISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8590,6 +8650,11 @@
 				<iCommerce>100</iCommerce>
 			</CommerceModifiers>
 			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>3</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<SpecialistYieldChanges>
 				<SpecialistYieldChange>
 					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
@@ -8606,11 +8671,6 @@
 					</YieldChanges>
 				</SpecialistYieldChange>
 			</SpecialistYieldChanges>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>3</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<PrereqBuildingClassPercents>
 				<PrereqBuildingClassPercent>
 					<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
@@ -8676,7 +8736,7 @@
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>100</iAIWeight>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8785,7 +8845,7 @@
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8898,7 +8958,7 @@
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9194,7 +9254,7 @@
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>150</iCost>
+			<iCost>120</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9368,7 +9428,7 @@
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<iCost>450</iCost>
+			<iCost>300</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -11052,7 +11112,7 @@
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<iAIWeight>100</iAIWeight>
-			<iCost>150</iCost>
+			<iCost>100</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -15998,13 +16058,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16038,13 +16104,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16078,13 +16150,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16118,13 +16196,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16158,13 +16242,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16198,13 +16288,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16238,13 +16334,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16278,13 +16380,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16318,13 +16426,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16358,13 +16472,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16398,13 +16518,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16437,13 +16563,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16476,13 +16608,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16516,13 +16654,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16556,13 +16700,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16595,13 +16745,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16635,13 +16791,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -16675,13 +16837,19 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>

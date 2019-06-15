@@ -24780,7 +24780,7 @@ int CvPlayer::getCultureGoldenAgeThreshold() const
 
 	iThreshold = (GC.getDefineINT("CULTURE_GOLDEN_AGE_THRESHOLD") * std::max(0, (getCultureGoldenAgesStarted())));
 
-	iThreshold *= (10 + getCurrentEra());
+	iThreshold *= (10 + (getCurrentEra()));
 	iThreshold /= 10;
 
 	iThreshold *= (100 + (getNumCities() - 1));

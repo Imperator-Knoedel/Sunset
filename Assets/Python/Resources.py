@@ -69,9 +69,7 @@ class Resources:
 		
 		# Gujarati horses appear later so Harappa cannot benefit too early; also Harappan Stone turns to Marble
 		if iGameTurn == getTurnForYear(-1000):
-			self.removeResource(86, 39)
 			self.createResource(88, 37, iHorse)
-			self.createResource(86, 39, iMarble)
 			
 		# Assyrian copper appears later to prevent Babylonia from building too strong a defensive military
 		if iGameTurn == getTurnForYear(-800):
