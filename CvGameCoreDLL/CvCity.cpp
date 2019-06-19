@@ -14393,7 +14393,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			pUnit->finishMoves();
 
 			// Leoreth: if unit was hurried, apply the mercenary promotion, and reset the hurry memory
-			if (isUnitHurried(eTrainUnit))
+			if (isUnitHurried(eTrainUnit) && pUnit->isCombat())	//KNOEDEL
 			{
 				pUnit->setHasPromotion((PromotionTypes)GC.getInfoTypeForString("PROMOTION_MERCENARY"), true);
 				setUnitHurried(eTrainUnit, false);

@@ -1232,11 +1232,26 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			{
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE_SHORT", ((pUnit->bombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE())));
+//KNOEDELstart
+				if (pUnit->getDomainType() == DOMAIN_LAND)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_UNIT_SIEGE_IGNORE_RIVER"));
+				}
+//KNOEDELend
 			}
 			else
 			{
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE", ((pUnit->bombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE())));
+//KNOEDELstart
+				if (pUnit->getDomainType() == DOMAIN_LAND)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_UNIT_SIEGE_IGNORE_RIVER"));
+				}
+//KNOEDELend
+
 			}
 		}
 
@@ -9408,6 +9423,13 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE", ((GC.getUnitInfo(eUnit).getBombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE())));
+//KNOEDELstart
+		if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_LAND)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_SIEGE_IGNORE_RIVER"));
+		}
+//KNOEDELend
 	}
 
 	bFirst = true;

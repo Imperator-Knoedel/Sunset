@@ -40,11 +40,11 @@
 		<Spanish>Founding a city has yielded %d1_Num[ICON_GOLD] from repurposing the infrastructure of the %s2_ImpName. The local people have been integrated into the new settlement as well, making the city start off with additional population.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_BOMBARD_RATE</Tag>
-		<English>[ICON_BULLET]Can Bombard City Defenses (-%d1_Mod%%/Turn)[ICON_BULLET]No Combat Penalty for Crossing River</English>
-		<French>[ICON_BULLET]Peut bombarder les d&#233;fenses d'une ville (-%d1_Mod%%/tour)[ICON_BULLET]No Combat Penalty for Crossing River</French>
-		<German>[ICON_BULLET]Kann Stadtverteidigungen bombardieren (-%d1_Mod%%/Runde)[ICON_BULLET]Keine Kampfstrafe f&#252;r Fluss&#252;berquerung</German>
-		<Italian>[ICON_BULLET]Pu&#242; bombardare le difese cittadine (-%d1_Mod%%/turno)[ICON_BULLET]No Combat Penalty for Crossing River</Italian>
-		<Spanish>[ICON_BULLET]Puede ca&#241;onear las defensas de las ciudades (-%d1_Mod%%/turno)[ICON_BULLET]No Combat Penalty for Crossing River</Spanish>
+		<Tag>TXT_KEY_UNIT_SIEGE_IGNORE_RIVER</Tag>
+		<English>[ICON_BULLET]No Combat Penalty for Crossing River</English>
+		<French>[ICON_BULLET]No Combat Penalty for Crossing River</French>
+		<German>[ICON_BULLET]Keine Kampfstrafe f&#252;r Fluss&#252;berquerung</German>
+		<Italian>[ICON_BULLET]No Combat Penalty for Crossing River</Italian>
+		<Spanish>[ICON_BULLET]No Combat Penalty for Crossing River</Spanish>
 	</TEXT>
 </Civ4GameText>
