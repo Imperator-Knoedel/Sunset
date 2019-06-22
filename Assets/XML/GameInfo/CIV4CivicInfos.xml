@@ -548,7 +548,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Caste System.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iExtraHealth>2</iExtraHealth>
+			<iExtraHealth>1</iExtraHealth>
 			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>

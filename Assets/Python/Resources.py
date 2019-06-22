@@ -103,6 +103,7 @@ class Resources:
 			
 			self.removeResource(51, 36)
 			self.removeResource(58, 37)
+			self.createResource(68, 45, iSilk) #Silk in Constantinople
 			
 		# Leoreth: prepare Tibet, 630 AD
 		elif iGameTurn == getTurnForYear(tBirth[iTibet])-1 and data.isPlayerEnabled(iTibet):
@@ -262,6 +263,8 @@ class Resources:
 			self.createResource(104, 25, iCoffee) # Java
 			
 			self.createResource(67, 44, iTobacco) # Turkey
+			
+			self.createResource(90, 35, iTea) # West Bengal
 			
 			self.createResource(39, 16, iFish) # Brazil
 			

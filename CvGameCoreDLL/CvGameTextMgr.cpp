@@ -510,8 +510,6 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 	bool bAlt = gDLL->altKey();
 
 //KNOEDELstart
-	CvUnitInfo& kUnitInfo = GC.getUnitInfo(pUnit->getUnitType());
-
 //FlavourMod: Added by Jean Elcard (display unit combat symbol in unit tool tip) - integrated into BUG by Tholal
 	if (getBugOptionBOOL("MainInterface__UnitCombatIcons", true, "BUG_UNIT_COMBAT_ICONS"))
 	{
