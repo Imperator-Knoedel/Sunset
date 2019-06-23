@@ -884,7 +884,7 @@ class CvRFCEventHandler:
 				utils.makeUnit(iCityBuilder, iPlayer, (capital.getX(), capital.getY()), 2)
 			if iPlayer == iAmerica:
 				utils.makeUnit(iPioneer, iPlayer, (capital.getX(), capital.getY()), 2)		
-			else:
+			if iPlayer != iHarappa and iPlayer != iAmerica:
 				utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
 		
 		sta.onGoldenAge(iPlayer)
