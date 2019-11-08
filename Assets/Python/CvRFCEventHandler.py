@@ -857,7 +857,7 @@ class CvRFCEventHandler:
 				
 		capital = gc.getPlayer(iPlayer).getCapitalCity()
 
-		if iPlayer == iPolynesia or iPlayer == iVikings or iPlayer == iIndonesia:
+		if iPlayer == iPolynesia or iPlayer == iVikings or iPlayer == iIndonesia or iPlayer == iNetherlands:
 			utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
 			utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
 			utils.makeUnit(iWorkboat, iPlayer, (capital.getX(), capital.getY()), 1)

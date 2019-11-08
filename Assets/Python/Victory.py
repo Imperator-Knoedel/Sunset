@@ -293,9 +293,9 @@ def checkTurn(iGameTurn, iPlayer):
 		if iGameTurn == getTurnForYear(-245):
 			expire(iEgypt, 1)
 				
-		# third goal: have 5000 culture in 30 BC
+		# third goal: have 6000 culture in 30 BC
 		if iGameTurn == getTurnForYear(-30):
-			if pEgypt.countTotalCulture() >= utils.getTurns(5000):
+			if pEgypt.countTotalCulture() >= utils.getTurns(6000):
 				win(iEgypt, 2)
 			else:
 				lose(iEgypt, 2)
@@ -3479,7 +3479,7 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(bPyramids) + localText.getText("TXT_KEY_BUILDING_PYRAMIDS", ()) + getIcon(bSphinx) + localText.getText("TXT_KEY_BUILDING_GREAT_SPHINX", ()) + getIcon(bLibrary) + localText.getText("TXT_KEY_BUILDING_GREAT_LIBRARY", ()) + getIcon(bLighthouse) + localText.getText("TXT_KEY_BUILDING_GREAT_LIGHTHOUSE", ()))
 		elif iGoal == 2:
 			iCulture = pEgypt.countTotalCulture()
-			aHelp.append(getIcon(iCulture >= utils.getTurns(5000)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(5000))))
+			aHelp.append(getIcon(iCulture >= utils.getTurns(6000)) + localText.getText("TXT_KEY_VICTORY_TOTAL_CULTURE", (iCulture, utils.getTurns(6000))))
 
 	elif iPlayer == iHarappa:
 		if iGoal == 1:
