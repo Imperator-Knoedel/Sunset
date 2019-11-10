@@ -1752,6 +1752,7 @@ public:
 	int getWarWearinessModifier() const;				// Exposed to Python
 	int getGlobalWarWearinessModifier() const;				// Exposed to Python
 	int getEnemyWarWearinessModifier() const;				// Exposed to Python
+	int getGarrisonUnhappinessModifier() const;	//KNOEDEL
 	int getHealRateChange() const;				// Exposed to Python
 	int getHealth() const;				// Exposed to Python
 	int getAreaHealth() const;				// Exposed to Python
@@ -1982,6 +1983,7 @@ protected:
 	int m_iWarWearinessModifier;
 	int m_iGlobalWarWearinessModifier;
 	int m_iEnemyWarWearinessModifier;
+	int m_iGarrisonUnhappinessModifier;	//KNOEDEL
 	int m_iHealRateChange;
 	int m_iHealth;
 	int m_iAreaHealth;

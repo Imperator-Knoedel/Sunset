@@ -60,6 +60,7 @@
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-25</iGarrisonUnhappinessModifier>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
@@ -89,6 +90,7 @@
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-25</iGarrisonUnhappinessModifier>
 			<iMaintenanceModifier>-20</iMaintenanceModifier>
 			<iAsset>3</iAsset>
 			<iPower>3</iPower>
@@ -573,6 +575,7 @@
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-25</iGarrisonUnhappinessModifier>
 			<iDefense>50</iDefense>
 			<iBombardDefense>50</iBombardDefense>
 			<iAsset>1</iAsset>
@@ -608,6 +611,7 @@
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-25</iGarrisonUnhappinessModifier>
 			<iDefense>50</iDefense>
 			<iBombardDefense>50</iBombardDefense>
 			<iAsset>1</iAsset>
@@ -2232,6 +2236,7 @@
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-25</iGarrisonUnhappinessModifier>
 			<iDefense>50</iDefense>
 			<iBombardDefense>25</iBombardDefense>
 			<iAsset>2</iAsset>
@@ -2288,6 +2293,7 @@
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-25</iGarrisonUnhappinessModifier>
 			<iMaintenanceModifier>-25</iMaintenanceModifier>
 			<iDefense>50</iDefense>
 			<iBombardDefense>25</iBombardDefense>
@@ -5088,6 +5094,7 @@
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-10</iGarrisonUnhappinessModifier>
 			<iAirModifier>-50</iAirModifier>
 			<iFoodKept>10</iFoodKept>
 			<iAsset>1</iAsset>
@@ -5114,6 +5121,7 @@
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-10</iGarrisonUnhappinessModifier>
 			<iNukeModifier>-50</iNukeModifier>
 			<iFoodKept>10</iFoodKept>
 			<iAsset>1</iAsset>

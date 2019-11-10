@@ -682,6 +682,14 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 		if (!bShort)
 		{
+//KNOEDELstart
+			if (pUnit->getUnitInfo().getCultureGarrisonValue() > 0)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_UNIT_CULTURE_GARRISON_VALUE", pUnit->getUnitInfo().getCultureGarrisonValue()));
+			}
+//KNOEDELend
+
 			if (pUnit->nukeRange() >= 0)
 			{
 				szString.append(NEWLINE);
@@ -10718,6 +10726,13 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_ENEMY_WAR_WEAR", kBuilding.getEnemyWarWearinessModifier()));
 	}
 
+//KNOEDELstart
+	if (kBuilding.getGarrisonUnhappinessModifier() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_GARRISON_UNHAPPY_MOD", kBuilding.getGarrisonUnhappinessModifier()));
+	}
+//KNOEDELend
 	if (kBuilding.getHealRateChange() != 0)
 	{
 		szBuffer.append(NEWLINE);

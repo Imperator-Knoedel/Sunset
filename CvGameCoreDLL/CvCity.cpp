@@ -543,6 +543,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iMaintenance = 0;
 	m_iMaintenanceModifier = 0;
 	m_iWarWearinessModifier = 0;
+	m_iGarrisonUnhappinessModifier = 0;	//KNOEDEL
 	m_iHurryAngerModifier = 0;
 	m_iHealRate = 0;
 	m_iEspionageHealthCounter = 0;
@@ -4574,6 +4575,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		changeFreeSpecialist(GC.getBuildingInfo(eBuilding).getFreeSpecialist() * iChange);
 		changeMaintenanceModifier(GC.getBuildingInfo(eBuilding).getMaintenanceModifier() * iChange);
 		changeWarWearinessModifier(GC.getBuildingInfo(eBuilding).getWarWearinessModifier() * iChange);
+		changeGarrisonUnhappinessModifier(GC.getBuildingInfo(eBuilding).getGarrisonUnhappinessModifier() * iChange);	//KNOEDEL
 		changeHurryAngerModifier(GC.getBuildingInfo(eBuilding).getHurryAngerModifier() * iChange);
 		changeHealRate(GC.getBuildingInfo(eBuilding).getHealRateChange() * iChange);
 
@@ -5482,10 +5484,41 @@ int CvCity::getNoMilitaryPercentAnger() const
 
 	iAnger = 0;
 
+//KNOEDELstart
 	if (getMilitaryHappinessUnits() == 0)
 	{
 		iAnger += GC.getDefineINT("NO_MILITARY_PERCENT_ANGER");
 	}
+
+	else
+	{
+		CLLNode<IDInfo>* pUnitNode;
+		CvUnit* pLoopUnit;
+		int iGarrison;
+
+		iGarrison = 0;
+
+		pUnitNode = plot()->headUnitNode();
+
+		while (pUnitNode != NULL)
+		{
+			pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+			iGarrison += pLoopUnit->getUnitInfo().getCultureGarrisonValue();
+		}
+
+		if (getPopulation() > iGarrison)
+		{
+			iAnger += GC.getDefineINT("NO_MILITARY_PERCENT_ANGER");
+			iAnger *= (getPopulation()-iGarrison);
+			iAnger /= getPopulation();
+		}
+	}
+
+	iAnger *= std::max(0, (getGarrisonUnhappinessModifier() + 100));
+	iAnger /= 100;
+//KNOEDELend
 
 	return iAnger;
 }
@@ -7436,6 +7469,23 @@ void CvCity::changeWarWearinessModifier(int iChange)
 	}
 }
 
+//KNOEDELstart
+int CvCity::getGarrisonUnhappinessModifier() const
+{
+	return m_iGarrisonUnhappinessModifier;
+}
+
+
+void CvCity::changeGarrisonUnhappinessModifier(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iGarrisonUnhappinessModifier = (m_iGarrisonUnhappinessModifier + iChange);
+
+		AI_setAssignWorkDirty(true);
+	}
+}
+//KNOEDELend
 
 int CvCity::getHurryAngerModifier() const
 {
@@ -15858,6 +15908,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iMaintenance);
 	pStream->Read(&m_iMaintenanceModifier);
 	pStream->Read(&m_iWarWearinessModifier);
+	pStream->Read(&m_iGarrisonUnhappinessModifier);	//KNOEDEL
 	pStream->Read(&m_iHurryAngerModifier);
 	pStream->Read(&m_iHealRate);
 	pStream->Read(&m_iEspionageHealthCounter);
@@ -16152,6 +16203,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_iMaintenance);
 	pStream->Write(m_iMaintenanceModifier);
 	pStream->Write(m_iWarWearinessModifier);
+	pStream->Write(m_iGarrisonUnhappinessModifier);	//KNOEDEL
 	pStream->Write(m_iHurryAngerModifier);
 	pStream->Write(m_iHealRate);
 	pStream->Write(m_iEspionageHealthCounter);

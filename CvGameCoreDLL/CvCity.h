@@ -362,6 +362,9 @@ public:
 	int getWarWearinessModifier() const;																	// Exposed to Python
 	void changeWarWearinessModifier(int iChange);													
 
+	int getGarrisonUnhappinessModifier() const;	//KNOEDEL																// Exposed to Python
+	void changeGarrisonUnhappinessModifier(int iChange);	//KNOEDEL
+
 	int getHurryAngerModifier() const;																	// Exposed to Python
 	void changeHurryAngerModifier(int iChange);													
 
@@ -1253,6 +1256,7 @@ protected:
 	int m_iMaintenance;
 	int m_iMaintenanceModifier;
 	int m_iWarWearinessModifier;
+	int m_iGarrisonUnhappinessModifier;	//KNOEDEL
 	int m_iHurryAngerModifier;
 	int m_iHealRate;
 	int m_iEspionageHealthCounter;
