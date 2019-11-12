@@ -15014,8 +15014,8 @@ bool CvCity::doGrowth()
 							changeOccupationTimer(GC.getDefineINT("BASE_REVOLT_OCCUPATION_TURNS") + GC.getGameINLINE().getSorenRandNum(-(foodDifference() / 4), "Revolt Turns"));
 	
 							// XXX announce for all seen cities?
-							szBuffer = gDLL->getText("TXT_KEY_MISC_REVOLT_IN_CITY", GET_PLAYER(INDEPENDENT2).getCivilizationAdjective(), getNameKey());
-							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_REVOLTSTART", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+							szBuffer = gDLL->getText("TXT_KEY_MISC_FOOD_RIOT_IN_CITY", getNameKey());
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 						}
 					}	
 				}
@@ -18446,8 +18446,8 @@ bool CvCity::doRiots()
 					changeOccupationTimer(GC.getDefineINT("BASE_REVOLT_OCCUPATION_TURNS") + GC.getGameINLINE().getSorenRandNum((iAngryPopulation / 2), "Revolt Turns"));
 
 					// XXX announce for all seen cities?
-					szBuffer = gDLL->getText("TXT_KEY_MISC_REVOLT_IN_CITY", GET_PLAYER(INDEPENDENT).getCivilizationAdjective(), getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_REVOLTSTART", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+					szBuffer = gDLL->getText("TXT_KEY_MISC_RIOT_IN_CITY", getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 			}
 		}	

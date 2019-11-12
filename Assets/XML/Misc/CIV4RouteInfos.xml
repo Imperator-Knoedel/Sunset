@@ -31,8 +31,8 @@
 			<iValue>3</iValue>
 			<iAdvancedStartCost>18</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iMovement>10</iMovement>
-			<iFlatMovement>3</iFlatMovement>
+			<iMovement>15</iMovement>
+			<iFlatMovement>10</iFlatMovement>
 			<BonusType>NONE</BonusType>
 			<PrereqOrBonuses>
 				<PrereqOrBonus>
@@ -66,8 +66,8 @@
 			<iValue>3</iValue>
 			<iAdvancedStartCost>18</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iMovement>10</iMovement>
-			<iFlatMovement>3</iFlatMovement>
+			<iMovement>15</iMovement>
+			<iFlatMovement>10</iFlatMovement>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqOrBonuses/>
 			<Yields/>

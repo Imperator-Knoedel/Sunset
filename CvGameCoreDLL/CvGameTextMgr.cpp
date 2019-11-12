@@ -5693,14 +5693,57 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 // BUG - Revolt Chance - start
 	if (getBugOptionBOOL("CityBar__RevoltChance", true, "BUG_CITYBAR_REVOLT_CHANCE"))
 	{
+		int iCityStrength = 1;	//KNOEDEL
+		int iGarrison = 0;	//KNOEDEL
+		int iRiotChance = 0;	//KNOEDEL
+		int iGarrison2 = 1;	//KNOEDEL
+		bool bCultureRiot = false;	//KNOEDEL
 		PlayerTypes eCulturalOwner = pCity->plot()->calculateCulturalOwner();
 
 		if (eCulturalOwner != NO_PLAYER)
 		{
 			if (GET_PLAYER(eCulturalOwner).getTeam() != pCity->getTeam())
 			{
-				int iCityStrength = pCity->cultureStrength(eCulturalOwner);
-				int iGarrison = pCity->cultureGarrison(eCulturalOwner);
+//KNOEDELstart
+				iCityStrength = std::max(1, pCity->cultureStrength(eCulturalOwner));
+				iGarrison = pCity->cultureGarrison(eCulturalOwner);
+
+				if (iCityStrength > iGarrison)
+				{
+					bool bCultureRiot = true;
+					/*swprintf(szTempBuffer, L"%.2f", std::max(0.0f, (1.0f - (((float)iGarrison) / ((float)iCityStrength))) * ((float)(std::min(100.0f, ((float)pHeadSelectedCity->getRevoltTestProbability())))));
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_MISC_CHANCE_OF_REVOLT", szTempBuffer));*/
+				}
+			}
+		}
+
+		iGarrison2 = std::max(1, pCity->cultureGarrison(NO_PLAYER)/8);
+		if (pCity->getFood() == 0)
+		{
+			if (pCity->getPopulation() > 1 && !(pCity->isOccupation()) && !(pCity->isBarbarian()) && GET_PLAYER(pCity->getOwnerINLINE()).getNumCities() > 1)
+			{
+				iRiotChance += -pCity->foodDifference();
+			}
+		}
+		if (pCity->angryPopulation() > 0)
+		{
+			if (!(pCity->isOccupation()) && !(pCity->isBarbarian()) && GET_PLAYER(pCity->getOwnerINLINE()).getNumCities() > 1)
+			{
+				iRiotChance += pCity->angryPopulation();
+			}
+		}
+		if (bCultureRiot || iRiotChance > 0)
+		{
+			iCityStrength = pCity->cultureStrength(eCulturalOwner);
+			iGarrison = pCity->cultureGarrison(eCulturalOwner);
+
+			szTempBuffer.Format(L"%.2f", (bCultureRiot ? std::max(0.0f, (1.0f - (((float)iGarrison) / ((float)iCityStrength))) * ((float)(std::min(100.0f, ((float)pCity->getRevoltTestProbability()))))) : 0.0f) + ( ( (float)(10 * pCity->getRevoltTestProbability()) * ((float)iRiotChance)) / ( ((float)iGarrison2) * 30.0f ) ));
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_MISC_CHANCE_OF_REVOLT", szTempBuffer.GetCString()));
+		}
+//KNOEDELend
+/*			{OLD CODE
 
 				if (iCityStrength > iGarrison)
 				{
@@ -5708,8 +5751,8 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 					szString.append(NEWLINE);
 					szString.append(gDLL->getText("TXT_KEY_MISC_CHANCE_OF_REVOLT", szTempBuffer.GetCString()));
 				}
-			}
-		}
+			}*/
+	
 	}
 // BUG - Revolt Chance - end
 

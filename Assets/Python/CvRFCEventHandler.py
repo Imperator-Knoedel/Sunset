@@ -859,7 +859,7 @@ class CvRFCEventHandler:
 			data.players[iPlayer].bFirstGoldenAge = True
 			capital = gc.getPlayer(iPlayer).getCapitalCity()
 			
-			if iPlayer == iPolynesia or iVikings or iIndonesia or iNetherlands:
+			if iPlayer in [iPolynesia, iVikings, iIndonesia, iNetherlands]:
 				utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
 				utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
 				utils.makeUnit(iWorkboat, iPlayer, (capital.getX(), capital.getY()), 1)
@@ -868,7 +868,7 @@ class CvRFCEventHandler:
 				utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
 				utils.makeUnit(utils.getBestShip(iPlayer), iPlayer, (capital.getX(), capital.getY()), 4)			
 
-			elif iPlayer == iMaya or iInca or iAztecs or iCongo:
+			elif iPlayer in [iMaya, iInca, iAztecs, iCongo]:
 				utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
 				utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
 				utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)

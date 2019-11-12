@@ -14760,6 +14760,18 @@ bool CvUnit::resolveCrisis()
 	for (CvCity* pLoopCity = GET_PLAYER(getOwner()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwner()).nextCity(&iLoop))
 	{
 		pLoopCity->setOccupationTimer(0);
+		//KNOEDELstart
+		
+		if (pLoopCity->getNumRevolts(INDEPENDENT) > 0)
+		{
+			pLoopCity->changeNumRevolts(INDEPENDENT, -1);
+		}
+
+		if (pLoopCity->getNumRevolts(INDEPENDENT2) > 0)
+		{
+			pLoopCity->changeNumRevolts(INDEPENDENT2, -1);
+		}
+		//KNOEDELend
 	}
 
 	if (plot()->isActiveVisible(false))

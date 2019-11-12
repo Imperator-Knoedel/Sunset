@@ -88,4 +88,20 @@
 		<Italian>[ICON_BULLET]No revolts from starvation or [ICON_UNHAPPY]</Italian>
 		<Spanish>[ICON_BULLET]No revolts from starvation or [ICON_UNHAPPY]</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_RIOT_IN_CITY</Tag>
+		<English>A riot has taken place in %s1_CityName!</English>
+		<French>A riot has taken place in %s1_CityName!</French>
+		<German>In %s1_CityName hat ein Aufstand stattgefunden!</German>
+		<Italian>A riot has taken place in %s1_CityName!</Italian>
+		<Spanish>A riot has taken place in %s1_CityName!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_FOOD_RIOT_IN_CITY</Tag>
+		<English>A food riot has taken place in %s1_CityName!</English>
+		<French>A food riot has taken place in %s1_CityName!</French>
+		<German>In %s1_CityName hat eine Hungerrevolte stattgefunden!</German>
+		<Italian>A food riot has taken place in %s1_CityName!</Italian>
+		<Spanish>A food riot has taken place in %s1_CityName!</Spanish>
+	</TEXT>
 </Civ4GameText>
