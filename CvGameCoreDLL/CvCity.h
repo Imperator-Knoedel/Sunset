@@ -1484,7 +1484,7 @@ protected:
 	int*	m_aiCommerceRank;
 	bool*	m_abCommerceRankValid;
 
-	void doGrowth();
+	bool doGrowth();	//KNOEDEL
 	void doCulture();
 	void doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate);
 	void doProduction(bool bAllowNoProduction);
@@ -1511,6 +1511,14 @@ protected:
 
 	virtual bool AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPlot = NULL, SpecialistTypes* peBestSpecialist = NULL) = 0;
 	virtual bool AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist = NO_SPECIALIST) = 0;
+
+//KNOEDELstart
+public:
+	bool doRiots();
+
+protected:
+
+//KNOEDELend
 };
 
 #endif

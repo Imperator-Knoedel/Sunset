@@ -1127,7 +1127,16 @@ void CvCity::doTurn()
 
 	bool bAllowNoProduction = !doCheckProduction();
 
-	doGrowth();
+//KNOEDELstart
+	if (doRiots())
+	{
+		return;
+	}
+	if (doGrowth())
+	{
+		return;
+	}
+//KNOEDELend
 
 /*************************************************************************************************/
 /**	SPEEDTWEAK (BarbCities) Sephi                                            					**/
@@ -14854,24 +14863,33 @@ const std::vector< std::pair<float, float> >& CvCity::getWallOverridePoints() co
 }
 
 // Protected Functions...
-
-void CvCity::doGrowth()
+//KNOEDELstart
+bool CvCity::doGrowth()
 {
-	int iDiff;
+	int iDiff, iI;
+	CvWString szBuffer;
+	CvWString szName;
+	CvPlot* pPlot = plot();
+	CvCity* pNewCity = NULL;
 
-	//Rhye - start
-//Speed: Modified by Kael 04/19/2007
-//	CyArgsList argsList;
-//	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-//	long lResult=0;
-//	gDLL->getPythonIFace()->callFunction(PYGameModule, "doGrowth", argsList.makeFunctionArgs(), &lResult);
-//	delete pyCity;	// python fxn must not hold on to this pointer
-//	if (lResult == 1)
-//	{
-//		return;
-//	}
-//FfH: End Modify
-	//Rhye - end
+/*************************************************************************************************/
+/**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
+/**	If you want to allow modmodders to enable this Callback, see CvCity::cancreate for example  **/
+/*************************************************************************************************/
+/**
+	CyCity* pyCity = new CyCity(this);
+	CyArgsList argsList;
+	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
+	long lResult=0;
+	gDLL->getPythonIFace()->callFunction(PYGameModule, "doGrowth", argsList.makeFunctionArgs(), &lResult);
+	delete pyCity;	// python fxn must not hold on to this pointer
+	if (lResult == 1)
+	{
+		return false;
+	}
+/*************************************************************************************************/
+/**	END	                                        												**/
+/*************************************************************************************************/
 
 	iDiff = foodDifference();
 
@@ -14902,10 +14920,112 @@ void CvCity::doGrowth()
 		if (getPopulation() > 1)
 		{
 			changePopulation(-1);
+	
+			if (!(isOccupation()) && !(isBarbarian()) && GET_PLAYER(getOwnerINLINE()).getNumCities() > 1 && GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_SOCIETY) != CIVIC_TOTALITARIANISM)
+			{
+				if (GC.getGameINLINE().getSorenRandNum(10, "Revolt #1") < getRevoltTestProbability()) // test for units which reduce revolt chance
+				{
+					CLLNode<IDInfo>* pUnitNode;
+					CvUnit* pLoopUnit;
+					int iGarrisonModifier = std::max(1, cultureGarrison(NO_PLAYER)/8);
+					if (-iDiff > GC.getGameINLINE().getSorenRandNum(30 * iGarrisonModifier, "Revolt #2"))
+					{
+						CLinkList<IDInfo> oldUnits;
+
+						pUnitNode = plot()->headUnitNode();
+
+						while (pUnitNode != NULL)
+						{
+							oldUnits.insertAtEnd(pUnitNode->m_data);
+							pUnitNode = plot()->nextUnitNode(pUnitNode);
+						}
+
+						pUnitNode = oldUnits.head();
+
+						while (pUnitNode != NULL)
+						{
+							pLoopUnit = ::getUnit(pUnitNode->m_data);
+							pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+							if (pLoopUnit)
+							{
+								if (pLoopUnit->canDefend())
+								{
+									pLoopUnit->changeDamage((pLoopUnit->currHitPoints() / 2), NO_PLAYER);
+								}
+							}
+						}
+						if (getNumRevolts(INDEPENDENT2) >= GC.getDefineINT("NUM_WARNING_REVOLTS"))
+						{
+							szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED_REBELS", getNameKey());
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->getInterfaceIFace()->addMessage(INDEPENDENT2, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+							szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTS_JOINS_REBELS", getNameKey());
+							GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
+							szName.Format(L"%s (%s)", getName().GetCString(), GET_PLAYER(getOwnerINLINE()).getName());
+							for (iI = 0; iI < MAX_PLAYERS; iI++)
+							{
+								if (GET_PLAYER((PlayerTypes)iI).isAlive())
+								{
+									if (iI != getOwnerINLINE())
+									{
+										if (isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
+										{
+											szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED_REBELS", szName.GetCString());
+											gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+										}
+									}
+								}
+							}
+							GET_PLAYER(INDEPENDENT2).acquireCity(this, false, false, true);
+							pNewCity = pPlot->getPlotCity();
+							if (pNewCity != NULL)
+							{
+								pNewCity->changeOccupationTimer(GC.getDefineINT("BASE_OCCUPATION_TURNS") + ((pNewCity->getPopulation() * GC.getDefineINT("OCCUPATION_TURNS_POPULATION_PERCENT")) / 100));
+							}
+			//			GC.getMapINLINE().verifyUnitValidPlot();
+						int iFreeUnits = std::max(1, GC.getGameINLINE().getSorenRandNum((3 * iGarrisonModifier) / 2, "Free Units"));
+					//	for (int iI = 0; iI < iFreeUnits; ++iI)
+						//{
+							UnitTypes eBestUnit;
+	
+							eBestUnit = pNewCity->AI_bestUnitAI(UNITAI_CITY_DEFENSE);
+	
+							if (eBestUnit == NO_UNIT)
+							{
+								eBestUnit = pNewCity->AI_bestUnitAI(UNITAI_ATTACK);
+							}
+	
+							if (eBestUnit != NO_UNIT)
+							{
+								iFreeUnits = (GC.getDefineINT("BASE_REVOLT_FREE_UNITS") + ((pNewCity->getHighestPopulation() * GC.getDefineINT("REVOLT_FREE_UNITS_PERCENT")) / 100));
+	
+								for (iI = 0; iI < iFreeUnits; ++iI)
+								{
+									GET_PLAYER(INDEPENDENT2).initUnit(eBestUnit, getX_INLINE(), getY_INLINE(), UNITAI_CITY_DEFENSE);
+								}
+							}
+					//	}
+							return true;
+						}
+						else
+						{
+							changeNumRevolts(INDEPENDENT2, 1);
+							changeOccupationTimer(GC.getDefineINT("BASE_REVOLT_OCCUPATION_TURNS") + GC.getGameINLINE().getSorenRandNum(-(foodDifference() / 4), "Revolt Turns"));
+	
+							// XXX announce for all seen cities?
+							szBuffer = gDLL->getText("TXT_KEY_MISC_REVOLT_IN_CITY", GET_PLAYER(INDEPENDENT2).getCivilizationAdjective(), getNameKey());
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_REVOLTSTART", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+						}
+					}	
+				}
+			}
 		}
 	}
-}
 
+	return false;
+}
+//KNOEDELend
 
 void CvCity::doCulture()
 {
@@ -18223,6 +18343,118 @@ void CvCity::getBuildQueue(std::vector<std::string>& astrQueue) const
 		pNode = nextOrderQueueNode(pNode);
 	}
 }
+
+//KNOEDELstart
+bool CvCity::doRiots()
+{
+	int iI;
+	CvWString szName;
+	CvWString szBuffer;
+	CvPlot* pPlot = plot();
+	CvCity* pNewCity = NULL;
+	int iAngryPopulation = angryPopulation();
+	if (iAngryPopulation > 0 && GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_SOCIETY) != CIVIC_TOTALITARIANISM)
+	{
+		if (GC.getGameINLINE().getSorenRandNum(10, "Revolt #1") < getRevoltTestProbability()) // test for units which reduce revolt chance
+		{
+			CLLNode<IDInfo>* pUnitNode;
+			CvUnit* pLoopUnit;
+			int iGarrisonModifier = std::max(1, cultureGarrison(NO_PLAYER)/8);
+			if (iAngryPopulation > GC.getGameINLINE().getSorenRandNum(30 * iGarrisonModifier, "Revolt #2"))
+			{
+				CLinkList<IDInfo> oldUnits;
+
+				pUnitNode = plot()->headUnitNode();
+
+				while (pUnitNode != NULL)
+				{
+					oldUnits.insertAtEnd(pUnitNode->m_data);
+					pUnitNode = plot()->nextUnitNode(pUnitNode);
+				}
+
+				pUnitNode = oldUnits.head();
+
+				while (pUnitNode != NULL)
+				{
+					pLoopUnit = ::getUnit(pUnitNode->m_data);
+					pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+					if (pLoopUnit)
+					{
+						if (pLoopUnit->canDefend())
+						{
+							pLoopUnit->changeDamage((pLoopUnit->currHitPoints() / 2), NO_PLAYER);
+						}
+					}
+				}
+				if (getNumRevolts(INDEPENDENT) >= GC.getDefineINT("NUM_WARNING_REVOLTS"))
+				{
+					szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED_REBELS", getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+					gDLL->getInterfaceIFace()->addMessage(INDEPENDENT, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+					szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTS_JOINS_REBELS", getNameKey());
+					GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
+					szName.Format(L"%s (%s)", getName().GetCString(), GET_PLAYER(getOwnerINLINE()).getName());
+					for (iI = 0; iI < MAX_PLAYERS; iI++)
+					{
+						if (GET_PLAYER((PlayerTypes)iI).isAlive())
+						{
+							if (iI != getOwnerINLINE())
+							{
+								if (isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
+								{
+									szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED_REBELS", szName.GetCString());
+									gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+								}
+							}
+						}
+					}
+					GET_PLAYER(INDEPENDENT).acquireCity(this, false, false, true);
+					pNewCity = pPlot->getPlotCity();
+					if (pNewCity != NULL)
+					{
+						pNewCity->changeOccupationTimer(GC.getDefineINT("BASE_OCCUPATION_TURNS") + ((pNewCity->getPopulation() * GC.getDefineINT("OCCUPATION_TURNS_POPULATION_PERCENT")) / 100));
+					}
+		//			GC.getMapINLINE().verifyUnitValidPlot();
+					int iFreeUnits = std::max(1, GC.getGameINLINE().getSorenRandNum((3 * iGarrisonModifier) / 2, "Free Units"));
+				//	for (int iI = 0; iI < iFreeUnits; ++iI)
+					//{
+						UnitTypes eBestUnit;
+
+						eBestUnit = pNewCity->AI_bestUnitAI(UNITAI_CITY_DEFENSE);
+
+						if (eBestUnit == NO_UNIT)
+						{
+							eBestUnit = pNewCity->AI_bestUnitAI(UNITAI_ATTACK);
+						}
+
+						if (eBestUnit != NO_UNIT)
+						{
+							iFreeUnits = (GC.getDefineINT("BASE_REVOLT_FREE_UNITS") + ((pNewCity->getHighestPopulation() * GC.getDefineINT("REVOLT_FREE_UNITS_PERCENT")) / 100));
+
+							for (iI = 0; iI < iFreeUnits; ++iI)
+							{
+								GET_PLAYER(INDEPENDENT).initUnit(eBestUnit, getX_INLINE(), getY_INLINE(), UNITAI_CITY_DEFENSE);
+							}
+						}
+				//	}
+					return true;
+				}
+				else
+				{
+					changeNumRevolts(INDEPENDENT, 1);
+					changeOccupationTimer(GC.getDefineINT("BASE_REVOLT_OCCUPATION_TURNS") + GC.getGameINLINE().getSorenRandNum((iAngryPopulation / 2), "Revolt Turns"));
+
+					// XXX announce for all seen cities?
+					szBuffer = gDLL->getText("TXT_KEY_MISC_REVOLT_IN_CITY", GET_PLAYER(INDEPENDENT).getCivilizationAdjective(), getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_REVOLTSTART", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+			}
+		}	
+	}
+	return false;
+}
+//KNOEDELend
 
 int CvCity::getRegionID() const
 {

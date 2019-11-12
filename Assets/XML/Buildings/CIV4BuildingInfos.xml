@@ -3490,6 +3490,7 @@
 			<iConquestProb>100</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGarrisonUnhappinessModifier>-25</iGarrisonUnhappinessModifier>
 			<iUnignorableBombardDefense>50</iUnignorableBombardDefense>
 			<iAsset>2</iAsset>
 			<iPower>2</iPower>

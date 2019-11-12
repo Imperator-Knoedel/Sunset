@@ -32170,7 +32170,6 @@ BeginPlot
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_UNIVERSITY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_PHARMACY
 		BuildingType=BUILDING_JAIL
@@ -32250,7 +32249,6 @@ BeginPlot
 		BuildingType=BUILDING_CUSTOMS_HOUSE
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_UNIVERSITY
 		BuildingType=BUILDING_THEATRE
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_PHARMACY
@@ -34219,9 +34217,6 @@ BeginPlot
 		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_BOMBARD, UnitOwner=27, (Russia)
 	EndUnit
 	BeginUnit
@@ -34246,7 +34241,6 @@ BeginPlot
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_UNIVERSITY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_PHARMACY
 		BuildingType=BUILDING_AQUEDUCT
@@ -38060,6 +38054,18 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ORTHODOX_MISSIONARY, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=27, (Russia)
+	EndUnit
 	BeginCity
 		CityOwner=27, (Russia)
 		CityName=Ekaterinburg
@@ -39423,6 +39429,18 @@ BeginPlot
 	PlotType=2
 	BeginUnit
 		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ORTHODOX_MISSIONARY, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=27, (Russia)
 	EndUnit
 	BeginCity
 		CityOwner=27, (Russia)
@@ -41257,6 +41275,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=88,y=54
+	ImprovementType=IMPROVEMENT_FORT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -41746,6 +41765,18 @@ BeginPlot
 	PlotType=2
 	BeginUnit
 		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_RUSSIAN_STRELETS, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ORTHODOX_MISSIONARY, UnitOwner=27, (Russia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=27, (Russia)
 	EndUnit
 	BeginCity
 		CityOwner=27, (Russia)
@@ -43239,6 +43270,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=92,y=56
+	ImprovementType=IMPROVEMENT_FORT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=27,
@@ -45417,6 +45449,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=97,y=57
+	ImprovementType=IMPROVEMENT_FORT
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -47722,7 +47755,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=102,y=44
-	ImprovementType=IMPROVEMENT_CAMP
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1

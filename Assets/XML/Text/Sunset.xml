@@ -64,4 +64,28 @@
 		<Italian>[ICON_BULLET]%D1_Mod%% [ICON_UNHAPPY] from lack of military protection</Italian>
 		<Spanish>[ICON_BULLET]%D1_Mod%% [ICON_UNHAPPY] from lack of military protection</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_CITY_REVOLTED_JOINED_REBELS</Tag>
+		<English>%s1_CityName has revolted and is now independent!</English>
+		<French>%s1_CityName has revolted and is now independent!</French>
+		<German>Nach einer Revolte hat die Stadt %s1_CityName ihre Unabhaengigkeit erklaert!</German>
+		<Italian>%s1_CityName has revolted and is now independent!</Italian>
+		<Spanish>%s1_CityName has revolted and is now independent!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_CITY_REVOLTS_JOINS_REBELS</Tag>
+		<English>%s1_CityName revolts and declares its independence!</English>
+		<French>%s1_CityName revolts and declares its independence!</French>
+		<German>Die Stadt %s1_CityName revoltiert und erklaert ihre Unabhaengigkeit!</German>
+		<Italian>%s1_CityName revolts and declares its independence!</Italian>
+		<Spanish>%s1_CityName revolts and declares its independence!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOTALITARIANISM_HELP</Tag>
+		<English>[ICON_BULLET]No revolts from starvation or [ICON_UNHAPPY]</English>
+		<French>[ICON_BULLET]No revolts from starvation or [ICON_UNHAPPY]</French>
+		<German>[ICON_BULLET]Keine Revolten durch Hunger oder [ICON_UNHAPPY]</German>
+		<Italian>[ICON_BULLET]No revolts from starvation or [ICON_UNHAPPY]</Italian>
+		<Spanish>[ICON_BULLET]No revolts from starvation or [ICON_UNHAPPY]</Spanish>
+	</TEXT>
 </Civ4GameText>

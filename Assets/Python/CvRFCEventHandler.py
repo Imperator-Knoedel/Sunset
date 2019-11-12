@@ -9,7 +9,7 @@ import Barbs
 from Religions import rel
 import Resources
 import CityNameManager as cnm
-import UniquePowers     
+import UniquePowers
 import AIWars
 import Congresses as cong
 from Consts import *
@@ -854,39 +854,44 @@ class CvRFCEventHandler:
 			
 	def onGoldenAge(self, argsList):
 		iPlayer = argsList[0]	
-				
-		capital = gc.getPlayer(iPlayer).getCapitalCity()
-
-		if iPlayer == iPolynesia or iPlayer == iVikings or iPlayer == iIndonesia or iPlayer == iNetherlands:
-			utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
-			utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(iWorkboat, iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(utils.getBestShip(iPlayer), iPlayer, (capital.getX(), capital.getY()), 4)
 		
-		if iPlayer == iMaya or iPlayer == iInca or iPlayer == iAztecs or iPlayer == iCongo:
-			utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
-			utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
-			utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
-			utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
-		
-		else:
-			utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
-			utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
-			utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
-			utils.makeUnit(utils.getBestSiege(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			utils.makeUnit(utils.getBestCavalry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
-			if iPlayer == iHarappa:
-				utils.makeUnit(iCityBuilder, iPlayer, (capital.getX(), capital.getY()), 2)
-			if iPlayer == iAmerica:
-				utils.makeUnit(iPioneer, iPlayer, (capital.getX(), capital.getY()), 2)		
-			if iPlayer != iHarappa and iPlayer != iAmerica:
+		if not data.players[iPlayer].bFirstGoldenAge:
+			data.players[iPlayer].bFirstGoldenAge = True
+			capital = gc.getPlayer(iPlayer).getCapitalCity()
+			
+			if iPlayer == iPolynesia or iVikings or iIndonesia or iNetherlands:
 				utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
-		
+				utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(iWorkboat, iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(utils.getBestShip(iPlayer), iPlayer, (capital.getX(), capital.getY()), 4)			
+
+			elif iPlayer == iMaya or iInca or iAztecs or iCongo:
+				utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
+				utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
+				utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
+				utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 3)
+
+			else:
+				utils.makeUnit(utils.getBestWorker(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(utils.getBestInfantry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
+				utils.makeUnit(utils.getBestCounter(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
+				utils.makeUnit(utils.getBestDefender(iPlayer), iPlayer, (capital.getX(), capital.getY()), 2)
+				utils.makeUnit(utils.getBestSiege(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				utils.makeUnit(utils.getBestCavalry(iPlayer), iPlayer, (capital.getX(), capital.getY()), 1)
+				
+				if iPlayer == iHarappa:
+					utils.makeUnit(iCityBuilder, iPlayer, (capital.getX(), capital.getY()), 2)
+				
+				elif iPlayer == iAmerica:
+					utils.makeUnit(iPioneer, iPlayer, (capital.getX(), capital.getY()), 2)
+				
+				else:
+					utils.makeUnit(iSettler, iPlayer, (capital.getX(), capital.getY()), 2)
+
 		sta.onGoldenAge(iPlayer)
 		
 	def onReleasedPlayer(self, argsList):

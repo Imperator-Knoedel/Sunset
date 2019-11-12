@@ -87,18 +87,6 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
-					<ImprovementYields>
-						<iYield>-1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_HAMLET</ImprovementType>
-					<ImprovementYields>
-						<iYield>-1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_VILLAGE</ImprovementType>
 					<ImprovementYields>
 						<iYield>-1</iYield>
@@ -601,6 +589,7 @@
 			<Description>TXT_KEY_CIVIC_TOTALITARIANISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TOTALITARIANISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TOTALITARIANISM_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_TOTALITARIANISM_HELP</Help>
 			<TechPrereq>TECH_PSYCHOLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Totalitarianism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

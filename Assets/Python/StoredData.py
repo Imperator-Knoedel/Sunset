@@ -64,7 +64,10 @@ class PlayerData:
 		# Tech Log
 		
 		self.iTechColumn = 0
-	
+			
+		# First Golden Age
+		self.bFirstGoldenAge = False
+		
 	def resetStability(self):
 		self.iStabilityLevel = iStabilityShaky
 		
