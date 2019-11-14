@@ -1187,12 +1187,12 @@ def checkTurn(iGameTurn, iPlayer):
 		if iGameTurn == getTurnForYear(1525):
 			expire(iItaly, 0)
 			
-		# second goal: have three cities with influential culture by 1560 AD
+		# second goal: have three cities with influential culture by 1630 AD
 		if isPossible(iItaly, 1):
 			if countCitiesWithCultureLevel(iItaly, 5) >= 3:
 				win(iItaly, 1)
 				
-		if iGameTurn == getTurnForYear(1560):
+		if iGameTurn == getTurnForYear(1630):
 			expire(iItaly, 1)
 			
 		# third goal: control 75% of the Mediterranean by 1945 AD

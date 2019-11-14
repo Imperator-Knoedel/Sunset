@@ -141,15 +141,15 @@
 			<SpeedThresholds>
 				<SpeedThreshold>
 					<GameSpeedType>GAMESPEED_MARATHON</GameSpeedType>
-					<iThreshold>120000</iThreshold>
+					<iThreshold>300000</iThreshold>
 				</SpeedThreshold>
 				<SpeedThreshold>
 					<GameSpeedType>GAMESPEED_EPIC</GameSpeedType>
-					<iThreshold>60000</iThreshold>
+					<iThreshold>150000</iThreshold>
 				</SpeedThreshold>
 				<SpeedThreshold>
 					<GameSpeedType>GAMESPEED_NORMAL</GameSpeedType>
-					<iThreshold>40000</iThreshold>
+					<iThreshold>100000</iThreshold>
 				</SpeedThreshold>
 			</SpeedThresholds>
 		</CultureLevelInfo>
