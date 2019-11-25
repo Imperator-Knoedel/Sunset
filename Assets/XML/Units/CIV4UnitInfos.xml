@@ -11320,6 +11320,7 @@
 			<bPillage>1</bPillage>
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
+			<bFlatMovementCost>1</bFlatMovementCost>
 			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<FlankingStrikes>
 				<FlankingStrike>
@@ -13362,7 +13363,7 @@
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>9</iMoves>
+			<iMoves>8</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<TerrainImpassables>
 				<TerrainImpassable>
@@ -14995,9 +14996,9 @@
 			<iCost>170</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>26</iMoves>
+			<iMoves>24</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iCombat>20</iCombat>
+			<iCombat>22</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>

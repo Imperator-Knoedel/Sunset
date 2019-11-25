@@ -3267,15 +3267,15 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 	{
 		return GC.getMOVE_DENOMINATOR();
 	}
-
-	if (pUnit->isHuman())
+//KNOEDELstart
+/*	if (pUnit->isHuman())
 	{
 		if (!isRevealed(pUnit->getTeam(), false))
 		{
 			return pUnit->maxMoves();
 		}
-	}
-
+	}*/
+//KNOEDELend
 	if (!pFromPlot->isValidDomainForLocation(*pUnit))
 	{
 		return pUnit->maxMoves();
