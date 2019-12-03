@@ -83,15 +83,15 @@ tSpainMoorsBR = (54, 42)
 tConquestSpainMoors = (9, iSpain, iMoors, tSpainMoorsTL, tSpainMoorsBR, 1, iSpainMoorsYear, 10)
 
 iTurksPersiaYear = 1000
-tTurksPersiaTL = (78, 37)
+tTurksPersiaTL = (79, 39)
 tTurksPersiaBR = (85, 43)
 
 iTurksAnatoliaYear = 1100
-tTurksAnatoliaTL = (69, 37)
+tTurksAnatoliaTL = (72, 43)
 tTurksAnatoliaBR = (78, 45)
 
-tConquestTurksPersia = (10, iTurks, iArabia, tTurksPersiaTL, tTurksPersiaBR, 4, iTurksPersiaYear, 20)
-tConquestTurksAnatolia = (11, iTurks, iByzantium, tTurksAnatoliaTL, tTurksAnatoliaBR, 5, iTurksAnatoliaYear, 20)
+tConquestTurksPersia = (10, iTurks, iArabia, tTurksPersiaTL, tTurksPersiaBR, 3, iTurksPersiaYear, 20)
+tConquestTurksAnatolia = (11, iTurks, iByzantium, tTurksAnatoliaTL, tTurksAnatoliaBR, 4, iTurksAnatoliaYear, 20)
 
 iMongolsPersiaYear = 1220
 tMongolsPersiaTL = (79, 37)
