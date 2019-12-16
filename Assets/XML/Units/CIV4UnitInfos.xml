@@ -5009,7 +5009,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
 			<iConscription>5</iConscription>
-			<iCultureGarrison>8</iCultureGarrison>
+			<iCultureGarrison>10</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>16</iPower>
 			<UnitMeshGroups>
@@ -5090,7 +5090,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
 			<iConscription>5</iConscription>
-			<iCultureGarrison>8</iCultureGarrison>
+			<iCultureGarrison>10</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>16</iPower>
 			<UnitMeshGroups>
@@ -5562,7 +5562,7 @@
 					<iUnitCombatMod>100</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>8</iCultureGarrison>
+			<iCultureGarrison>9</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>14</iPower>
 			<UnitMeshGroups>
@@ -5665,7 +5665,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>2</iFirstStrikes>
 			<iConscription>6</iConscription>
-			<iCultureGarrison>10</iCultureGarrison>
+			<iCultureGarrison>12</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>20</iPower>
 			<UnitMeshGroups>
@@ -5836,7 +5836,8 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iConscription>1</iConscription>	
+			<iConscription>1</iConscription>
+			<iCultureGarrison>14</iCultureGarrison>
 			<iAsset>5</iAsset>
 			<iPower>22</iPower>
 			<UnitMeshGroups>
@@ -7640,7 +7641,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>6</iPower>
 			<UnitMeshGroups>
@@ -7739,7 +7740,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>6</iPower>
 			<UnitMeshGroups>
@@ -7849,7 +7850,7 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>6</iPower>
 			<UnitMeshGroups>
@@ -7960,7 +7961,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>6</iPower>
 			<UnitMeshGroups>
@@ -8166,7 +8167,7 @@
 			<iWithdrawalProb>30</iWithdrawalProb>
 			<iPlainsAttack>50</iPlainsAttack>
 			<iPlainsDefense>50</iPlainsDefense>
-			<iCultureGarrison>5</iCultureGarrison>
+			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>2</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -8247,7 +8248,7 @@
 			<iWithdrawalProb>30</iWithdrawalProb>
 			<iPlainsAttack>50</iPlainsAttack>
 			<iPlainsDefense>50</iPlainsDefense>
-			<iCultureGarrison>5</iCultureGarrison>
+			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>2</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -8322,7 +8323,7 @@
 			<iCityAttack>50</iCityAttack>
 			<iPlainsAttack>50</iPlainsAttack>
 			<iPlainsDefense>50</iPlainsDefense>
-			<iCultureGarrison>5</iCultureGarrison>
+			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>2</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -8405,7 +8406,7 @@
 			<iWithdrawalProb>30</iWithdrawalProb>
 			<iPlainsAttack>50</iPlainsAttack>
 			<iPlainsDefense>50</iPlainsDefense>
-			<iCultureGarrison>5</iCultureGarrison>
+			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>2</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -8510,7 +8511,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>5</iCultureGarrison>
+			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>2</iAsset>
 			<iPower>7</iPower>
 			<UnitMeshGroups>
@@ -8610,7 +8611,7 @@
 			<iCityDefense>-25</iCityDefense>
 			<iCollateralDamageLimit>100</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
@@ -8700,7 +8701,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamageLimit>100</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>12</iPower>
 			<UnitMeshGroups>
@@ -8792,7 +8793,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamageLimit>100</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -8883,7 +8884,7 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamageLimit>100</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
@@ -8975,7 +8976,7 @@
 			<iCollateralDamageLimit>60</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>5</iCollateralDamageMaxUnits>
 			<iCityDefense>-25</iCityDefense>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
@@ -9069,7 +9070,7 @@
 			<iCityDefense>-25</iCityDefense>
 			<iCollateralDamageLimit>100</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
@@ -9174,7 +9175,7 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
@@ -9269,7 +9270,7 @@
 			<iCityDefense>-25</iCityDefense>
 			<iCollateralDamageLimit>100</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
-			<iCultureGarrison>6</iCultureGarrison>
+			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>9</iPower>
 			<UnitMeshGroups>
@@ -10752,7 +10753,7 @@
 					<iUnitClassMod>50</iUnitClassMod>
 				</UnitClassAttackMod>
 			</UnitClassAttackMods>
-			<iCultureGarrison>8</iCultureGarrison>
+			<iCultureGarrison>9</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>14</iPower>
 			<UnitMeshGroups>
@@ -10871,7 +10872,7 @@
 					<iUnitClassMod>50</iUnitClassMod>
 				</UnitClassAttackMod>
 			</UnitClassAttackMods>
-			<iCultureGarrison>8</iCultureGarrison>
+			<iCultureGarrison>9</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>14</iPower>
 			<UnitMeshGroups>
@@ -12095,7 +12096,7 @@
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
 			<iBombardRate>12</iBombardRate>
-			<iCultureGarrison>7</iCultureGarrison>
+			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
@@ -12274,7 +12275,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iCultureGarrison>9</iCultureGarrison>
+			<iCultureGarrison>11</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>18</iPower>
 			<UnitMeshGroups>
@@ -12370,6 +12371,7 @@
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
 			<iBombardRate>16</iBombardRate>
+			<iCultureGarrison>8</iCultureGarrison>
 			<iAsset>4</iAsset>
 			<iPower>18</iPower>
 			<UnitMeshGroups>
@@ -12456,6 +12458,7 @@
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
 			<iBombardRate>16</iBombardRate>
+			<iCultureGarrison>9</iCultureGarrison>
 			<iAsset>5</iAsset>
 			<iPower>24</iPower>
 			<UnitMeshGroups>

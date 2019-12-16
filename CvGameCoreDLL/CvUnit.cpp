@@ -4310,7 +4310,7 @@ bool CvUnit::canAirlift(const CvPlot* pPlot) const
 		return false;
 	}
 
-	if (pCity->getCurrAirlift() >= pCity->getMaxAirlift())
+	if (pCity->getCurrAirlift() >= pCity->getMaxAirlift() && getUnitCombatType() != 8)	//KNOEDEL
 	{
 		return false;
 	}
@@ -4348,7 +4348,7 @@ bool CvUnit::canAirliftAt(const CvPlot* pPlot, int iX, int iY) const
 		return false;
 	}
 
-	if (pTargetCity->isAirliftTargeted())
+	if (pTargetCity->isAirliftTargeted() && getUnitCombatType() != 8)	//KNOEDEL
 	{
 		return false;
 	}
@@ -4381,12 +4381,16 @@ bool CvUnit::airlift(int iX, int iY)
 	FAssert(pTargetCity != NULL);
 	FAssert(pCity != pTargetCity);
 
-	pCity->changeCurrAirlift(1);
-	if (pTargetCity->getMaxAirlift() == 0)
+//KNOEDELstart
+	if (getUnitCombatType() != 8)	//KNOEDEL
 	{
-		pTargetCity->setAirliftTargeted(true);
+		pCity->changeCurrAirlift(1);
+		if (pTargetCity->getMaxAirlift() == 0)
+		{
+			pTargetCity->setAirliftTargeted(true);
+		}
 	}
-
+//KNOEDELend
 	finishMoves();
 
 	setXY(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE());

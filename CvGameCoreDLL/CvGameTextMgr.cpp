@@ -673,6 +673,14 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 				szString.append(gDLL->getText("TXT_KEY_UNIT_CARRIES", GC.getSpecialUnitInfo(pUnit->specialCargo()).getTextKeyWide()));
 			}
 		}
+		
+//KNOEDELstart
+		if (pUnit->getUnitInfo().getCultureGarrisonValue() > 0)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_UNIT_CULTURE_GARRISON_VALUE", pUnit->getUnitInfo().getCultureGarrisonValue()));
+		}
+//KNOEDELend
 
 		if (pUnit->fortifyModifier() != 0)
 		{
@@ -682,14 +690,6 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 		if (!bShort)
 		{
-//KNOEDELstart
-			if (pUnit->getUnitInfo().getCultureGarrisonValue() > 0)
-			{
-				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_UNIT_CULTURE_GARRISON_VALUE", pUnit->getUnitInfo().getCultureGarrisonValue()));
-			}
-//KNOEDELend
-
 			if (pUnit->nukeRange() >= 0)
 			{
 				szString.append(NEWLINE);
@@ -8712,7 +8712,16 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 		}
 // BUG - Starting Experience - end
 	}
+			
+//KNOEDELstart
+		if (GC.getUnitInfo(eUnit).getCultureGarrisonValue() > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CULTURE_GARRISON_VALUE", GC.getUnitInfo(eUnit).getCultureGarrisonValue()));
+		}
+//KNOEDELend
 
+	
 	if (GC.getUnitInfo(eUnit).isGoldenAge())
 	{
 		szBuffer.append(NEWLINE);
