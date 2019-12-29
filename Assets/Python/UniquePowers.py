@@ -451,6 +451,12 @@ class UniquePowers:
 					if iRandom == 0:
 						targetCity.setHasReligion(iReligion, True, True, True)
 						
+			# chance to spawn a worker
+			if (gc.getGame().getGameTurn() <= getTurnForYear(1950)):
+				iRandom = gc.getGame().getSorenRandNum(1, 'random Worker spawn')
+				if iRandom == 0:
+					utils.makeUnit(iWorker, iTargetPlayer, (x, y), 1)
+				
 			# notify affected players
 			if utils.getHumanID() == iSourcePlayer:
 				CyInterface().addMessage(iSourcePlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_EMIGRATION", (sourceCity.getName(),)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), sourceCity.getX(), sourceCity.getY(), True, True)

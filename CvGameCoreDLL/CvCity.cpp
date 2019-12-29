@@ -14921,7 +14921,7 @@ bool CvCity::doGrowth()
 		{
 			changePopulation(-1);
 	
-			if (!(isOccupation()) && !(GET_PLAYER((PlayerTypes)getOwnerINLINE()).isMinorCiv()) && GET_PLAYER(getOwnerINLINE()).getNumCities() > 1 && GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_SOCIETY) != CIVIC_TOTALITARIANISM)
+			if (!(isDisorder()) && !(GET_PLAYER((PlayerTypes)getOwnerINLINE()).isMinorCiv()) && GET_PLAYER(getOwnerINLINE()).getNumCities() > 1 && GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_SOCIETY) != CIVIC_TOTALITARIANISM)
 			{
 				if (GC.getGameINLINE().getSorenRandNum(10, "Revolt #1") < getRevoltTestProbability()) // test for units which reduce revolt chance
 				{
@@ -18353,7 +18353,7 @@ bool CvCity::doRiots()
 	CvPlot* pPlot = plot();
 	CvCity* pNewCity = NULL;
 	int iAngryPopulation = angryPopulation();
-	if (!(isOccupation()) && !(GET_PLAYER((PlayerTypes)getOwnerINLINE()).isMinorCiv()) && (GET_PLAYER(getOwnerINLINE()).getNumCities() > 1) && (iAngryPopulation > 0) && (GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_SOCIETY) != CIVIC_TOTALITARIANISM))
+	if (!(isDisorder()) && !(GET_PLAYER((PlayerTypes)getOwnerINLINE()).isMinorCiv()) && (GET_PLAYER(getOwnerINLINE()).getNumCities() > 1) && (iAngryPopulation > 0) && (GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_SOCIETY) != CIVIC_TOTALITARIANISM))
 	{
 		if (GC.getGameINLINE().getSorenRandNum(10, "Revolt #1") < getRevoltTestProbability()) // test for units which reduce revolt chance
 		{

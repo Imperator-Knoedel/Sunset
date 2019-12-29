@@ -611,11 +611,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHI1</Tag>
-		<English>Build 2 Confucian Guozijians and 2 Taoist Gongs by 1270 AD</English>
-		<French>Construire 2 acad&#233;mies confuc&#233;ennes et 2 pagodes tao&#239;stes avant 1270 ap. J.-C.</French>
-		<German>Bauen Sie bis zum Jahr 1270 n. Chr. 2 Konfuzianische Akademien und 2 Taoistische Pagoden</German>
-		<Italian>Costruisci due Accademie Confuciane e due Pagode Taoiste entro il 1270 d.C.</Italian>
-		<Spanish>Construir 2 academias confucianas y 2 pagodas tao&#237;stas antes del 1270 d. C.</Spanish>
+		<English>Build 2 Confucian Guozijians, 2 Taoist Gongs, and 1 Buddhist Chaitya by 1270 AD</English>
+		<French>Build 2 Confucian Guozijians, 2 Taoist Gongs, and 1 Buddhist Chaitya by 1270 AD</French>
+		<German>Bauen Sie bis zum Jahr 1270 n. Chr. 2 Konfuzianische Akademien, 2 Taoistische Pagoden, und 1 Buddhistische Chaitya</German>
+		<Italian>Build 2 Confucian Guozijians, 2 Taoist Gongs, and 1 Buddhist Chaitya by 1270 AD</Italian>
+		<Spanish>Build 2 Confucian Guozijians, 2 Taoist Gongs, and 1 Buddhist Chaitya by 1270 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHI2_TITLE</Tag>
@@ -4603,6 +4603,14 @@
 		<German>Confucian Guozijians: %d1 / %d2</German>
 		<Italian>Confucian Guozijians: %d1 / %d2</Italian>
 		<Spanish>Confucian Guozijians: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NUM_BUDDHIST_CATHEDRALS</Tag>
+		<English>Buddhist Chaitya: %d1 / %d2</English>
+		<French>Buddhist Chaitya: %d1 / %d2</French>
+		<German>Buddhistische Chaitya: %d1 / %d2</German>
+		<Italian>Buddhist Chaitya: %d1 / %d2</Italian>
+		<Spanish>Buddhist Chaitya: %d1 / %d2</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NUM_FORUMS</Tag>
