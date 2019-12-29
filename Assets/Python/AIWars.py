@@ -99,7 +99,16 @@ tMongolsPersiaBR = (85, 49)
 
 tConquestMongolsPersia = (12, iMongolia, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 7, iMongolsPersiaYear, 10)
 
-lConquests = [tConquestRomeCarthage, tConquestRomeGreece, tConquestRomeAnatolia, tConquestRomeCelts, tConquestRomeEgypt, tConquestGreeceMesopotamia, tConquestGreeceEgypt, tConquestGreecePersia, tConquestCholaSumatra, tConquestSpainMoors, tConquestTurksPersia, tConquestTurksAnatolia, tConquestMongolsPersia]
+iPersiaYear = -530
+tPersiaMesopotamiaTL = (74, 37)
+tPersiaMesopotamiaBR = (78, 45)
+tPersiaEgyptTL = (65, 32)
+tPersiaEgyptBR = (73, 38)
+
+tConquestPersiaMesopotamia = (13, iPersia, iBabylonia, tPersiaMesopotamiaTL, tPersiaMesopotamiaBR, 2, iPersiaYear, 20)
+tConquestPersiaEgypt = (14, iPersia, iEgypt, tPersiaEgyptTL, tPersiaEgyptBR, 2, iPersiaYear, 20)
+
+lConquests = [tConquestRomeCarthage, tConquestRomeGreece, tConquestRomeAnatolia, tConquestRomeCelts, tConquestRomeEgypt, tConquestGreeceMesopotamia, tConquestGreeceEgypt, tConquestGreecePersia, tConquestCholaSumatra, tConquestSpainMoors, tConquestTurksPersia, tConquestTurksAnatolia, tConquestMongolsPersia, tConquestPersiaMesopotamia, tConquestPersiaEgypt]
 
 class AIWars:
 		
@@ -220,11 +229,18 @@ class AIWars:
 				iBestInfantry = iHoplite
 				iBestSiege = iCatapult
 			
+			if iPlayer == iPersia:
+				iBestInfantry = iImmortal
+				iBestSiege = iCatapult
+				
 			utils.makeUnitAI(iBestInfantry, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iExtra)
 			utils.makeUnitAI(iBestSiege, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1 + 2*iExtra)
 			
 			if iPlayer == iGreece:
 				utils.makeUnitAI(iCompanion, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
+			
+			if iPlayer == iPersia:
+				utils.makeUnitAI(iImmortal, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 			
 			if iPlayer == iTamils:
 				utils.makeUnitAI(iWarElephant, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)

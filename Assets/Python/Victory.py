@@ -342,7 +342,7 @@ def checkTurn(iGameTurn, iPlayer):
 				
 	elif iPlayer == iChina:
 	
-		# first goal: build two Confucian and Taoist Cathedrals by 1270 AD
+		# first goal: build two Confucian and Taoist Cathedrals and a Buddhist one by 1270 AD
 		if iGameTurn == getTurnForYear(1270):
 			expire(iChina, 0)
 			
@@ -1782,13 +1782,14 @@ def onBuildingBuilt(iPlayer, iBuilding):
 	
 	if not gc.getPlayer(iPlayer).isAlive(): return
 	
-	# first Chinese goal: build two Confucian and Taoist Cathedrals by 1270 AD
+	# first Chinese goal: build two Confucian and Taoist Cathedrals and a Buddhist one by 1270 AD
 	if iPlayer == iChina:
 		if isPossible(iChina, 0):
-			if iBuilding in [iConfucianCathedral, iTaoistCathedral]:
+			if iBuilding in [iConfucianCathedral, iTaoistCathedral, iBuddhistCathedral]:
 				iConfucian = getNumBuildings(iChina, iConfucianCathedral)
 				iTaoist = getNumBuildings(iChina, iTaoistCathedral)
-				if iConfucian >= 2 and iTaoist >= 2:
+				iBuddhist = getNumBuildings(iChina, iBuddhistCathedral)
+				if iConfucian >= 2 and iTaoist >= 2 and iBuddhist >= 1:
 					win(iChina, 0)
 					
 	# second Harappan goal: build three Baths, two Granaries and two Smokehouses by 1700 BC
@@ -3513,7 +3514,8 @@ def getUHVHelp(iPlayer, iGoal):
 		if iGoal == 0:
 			iConfucianCounter = getNumBuildings(iChina, iConfucianCathedral)
 			iTaoistCounter = getNumBuildings(iChina, iTaoistCathedral)
-			aHelp.append(getIcon(iConfucianCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_CONFUCIAN_ACADEMIES", (iConfucianCounter, 2)) + ' ' + getIcon(iTaoistCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_TAOIST_PAGODAS", (iTaoistCounter, 2)))
+			iBuddhistCounter = getNumBuildings(iChina, iBuddhistCathedral)
+			aHelp.append(getIcon(iConfucianCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_CONFUCIAN_ACADEMIES", (iConfucianCounter, 2)) + ' ' + getIcon(iTaoistCounter >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_TAOIST_PAGODAS", (iTaoistCounter, 2)) + ' ' + getIcon(iBuddhistCounter >= 1) + localText.getText("TXT_KEY_VICTORY_NUM_BUDDHIST_CATHEDRALS", (iBuddhistCounter, 1)))
 		elif iGoal == 1:
 			bCompass = data.lFirstDiscovered[iCompass] == iChina
 			bPaper = data.lFirstDiscovered[iPaper] == iChina

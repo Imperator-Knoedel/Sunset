@@ -11314,6 +11314,7 @@
 			<Description>TXT_KEY_UNIT_GUNSHIP</Description>
 			<Civilopedia>TXT_KEY_UNIT_GUNSHIP_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GUNSHIP_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_ALWAYS_AIRLIFT</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>

@@ -104,4 +104,12 @@
 		<Italian>A food riot has taken place in %s1_CityName!</Italian>
 		<Spanish>A food riot has taken place in %s1_CityName!</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ALWAYS_AIRLIFT</Tag>
+		<English>[ICON_BULLET]Can be Airlifted Independent of Airports</English>
+		<French>[ICON_BULLET]Can be Airlifted Independent of Airports</French>
+		<German>[ICON_BULLET]Can be Airlifted Independent of Airports</German>
+		<Italian>[ICON_BULLET]Can be Airlifted Independent of Airports</Italian>
+		<Spanish>[ICON_BULLET]Can be Airlifted Independent of Airports</Spanish>
+	</TEXT>
 </Civ4GameText>
