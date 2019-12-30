@@ -8256,6 +8256,26 @@ void CvPlayer::revolution(CivicTypes* paeNewCivics, bool bForce)
 			setCivics(((CivicOptionTypes)iI), paeNewCivics[iI]);
 		}
 	}
+	
+//KNOEDELstart
+	CvCity* pLoopCity;
+	int iLoop;
+
+	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		pLoopCity->setOccupationTimer(0);
+		
+		if (pLoopCity->getNumRevolts(INDEPENDENT) > 0)
+		{
+			pLoopCity->changeNumRevolts(INDEPENDENT, -1);
+		}
+
+		if (pLoopCity->getNumRevolts(INDEPENDENT2) > 0)
+		{
+			pLoopCity->changeNumRevolts(INDEPENDENT2, -1);
+		}
+	}
+//KNOEDELend
 
 	setRevolutionTimer(std::max(1, ((100 + getAnarchyModifier()) * GC.getDefineINT("MIN_REVOLUTION_TURNS")) / 100) + iAnarchyLength);
 

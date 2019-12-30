@@ -9198,7 +9198,7 @@
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<ObsoleteTech>TECH_ALCHEMY</ObsoleteTech>
-			<PrereqBonuses>BONUS_COPPER</PrereqBonuses>
+			<PrereqBonuses>BONUS_IVORY</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
