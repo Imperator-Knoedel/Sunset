@@ -4132,6 +4132,12 @@ bool CvUnit::canHeal(const CvPlot* pPlot) const
 		return false;
 	}
 
+	// Leoreth: hidden nationality units can enter cities with open borders but don't let them heal there because it's an easy area to retreat to
+	if (m_pUnitInfo->isHiddenNationality() && pPlot->isCity() && pPlot->getPlotCity()->getOwnerINLINE() != getOwnerINLINE())
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -4763,6 +4769,12 @@ bool CvUnit::canReconAt(const CvPlot* pPlot, int iX, int iY) const
 	if (!canRecon(pPlot))
 	{
 		return false;
+	}
+
+	// Leoreth: -1 for unlimited range
+	if (airRange() == -1)
+	{
+		return true;
 	}
 
 	int iDistance = plotDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iX, iY);
@@ -6930,7 +6942,7 @@ bool CvUnit::greatWork()
 	if (pCity != NULL)
 	{
 		pCity->setCultureUpdateTimer(0);
-		pCity->setOccupationTimer(0);
+		//pCity->setOccupationTimer(0); // Leoreth: artists shouldn't solve occupation unrest
 
 		int iCultureToAdd = 100 * getGreatWorkCulture(plot());
 		int iNumTurnsApplied = (GC.getDefineINT("GREAT_WORKS_CULTURE_TURNS") * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getUnitGreatWorkPercent()) / 100;
@@ -6946,6 +6958,11 @@ bool CvUnit::greatWork()
 		}
 
 		GET_PLAYER(getOwnerINLINE()).changeCultureGoldenAgeProgress(getGreatWorkCulture(plot()));	//KNOEDEL
+
+		if (pCity->getPopulation() == 0)
+		{
+			pCity->completeRaze();
+		}
 	}
 
 	if (plot()->isActiveVisible(false))
@@ -9179,7 +9196,6 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			{
 				iExtraModifier = -GC.getRIVER_ATTACK_MODIFIER();
 				iTempModifier += iExtraModifier;
-
 				if (pCombatDetails != NULL)
 				{
 					pCombatDetails->iRiverAttackModifier = iExtraModifier;

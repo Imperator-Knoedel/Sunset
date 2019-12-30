@@ -1208,7 +1208,7 @@ void CvCity::doTurn()
 	// razing cities reduces population to 0 during occupation, so if that happened raze the city and return
 	if (getPopulation() == 0)
 	{
-		doTask(TASK_RAZE);
+		completeRaze();
 		return;
 	}
 
@@ -1293,6 +1293,7 @@ void CvCity::doTurn()
 		for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 		{
 			FAssert(getBuildingCommerce((CommerceTypes)iI) >= 0);
+			int iSpecialistCommerce = getSpecialistCommerce((CommerceTypes)iI);
 			FAssert(getSpecialistCommerce((CommerceTypes)iI) >= 0);
 			FAssert(getReligionCommerce((CommerceTypes)iI) >= 0);
 			FAssert(getCorporationCommerce((CommerceTypes)iI) >= 0);
@@ -2998,7 +2999,7 @@ int CvCity::getProductionExperience(UnitTypes eUnit)
 			}
 		}
 	}
-	//SuperSpies: TSHEEP end
+	//SuperSpies: TSHEEP 
 
 	return std::max(0, iExperience);
 }
@@ -8221,7 +8222,7 @@ int CvCity::getAdditionalHealthByBuilding(BuildingTypes eBuilding, int& iGood, i
 	}
 
 	// Power
-	if (kBuilding.isPower() || kBuilding.isAreaCleanPower() || (kBuilding.getPowerBonus() != NO_BONUS && hasBonus((BonusTypes)kBuilding.getPowerBonus())))
+	if (kBuilding.isPower() || kBuilding.isAreaCleanPower() || (kBuilding.getPowerBonus() != NO_BONUS && hasBonus((BonusTypes)kBuilding.getPowerBonus())) || kBuilding.isDirtyPower())
 	{
 		// adding power
 		if (!isPower())
@@ -8231,7 +8232,7 @@ int CvCity::getAdditionalHealthByBuilding(BuildingTypes eBuilding, int& iGood, i
 			// adding dirty power
 			if (kBuilding.isDirtyPower())
 			{
-				addGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE"), iGood, iBad);
+				addGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE") * getPowerConsumedCount(), iGood, iBad);
 			}
 		}
 		else
@@ -8239,7 +8240,7 @@ int CvCity::getAdditionalHealthByBuilding(BuildingTypes eBuilding, int& iGood, i
 			// replacing dirty power with clean power
 			if (isDirtyPower() && !kBuilding.isDirtyPower())
 			{
-				subtractGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE"), iGood, iBad);
+				subtractGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE") * getPowerConsumedCount(), iGood, iBad);
 			}
 		}
 	}
@@ -8260,6 +8261,34 @@ int CvCity::getAdditionalHealthByBuilding(BuildingTypes eBuilding, int& iGood, i
 	if (kBuilding.getCorporationUnhealthModifier() != 0)
 	{
 		iBad -= (getCorporationUnhealth() * (100 + kBuilding.getCorporationUnhealthModifier())) / 100;
+	}
+
+	// Merijn: dirty power unhealth
+	if (isDirtyPower())
+	{
+		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		{
+			if (kBuilding.getPowerYieldModifier(iI) > 0)
+			{
+				addGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE"), iGood, iBad);
+			}
+			else if (kBuilding.getPowerYieldModifier(iI) < 0)
+			{
+				subtractGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE"), iGood, iBad);
+			}
+		}
+
+		for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+		{
+			if (kBuilding.getPowerCommerceModifier(iI) > 0)
+			{
+				addGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE"), iGood, iBad);
+			}
+			else if (kBuilding.getPowerCommerceModifier(iI) < 0)
+			{
+				subtractGoodOrBad(GC.getDefineINT("DIRTY_POWER_HEALTH_CHANGE"), iGood, iBad);
+			}
+		}
 	}
 
 	// Effect on Spoiled Food
@@ -9659,7 +9688,7 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 		if (GC.getGameINLINE().isFinalInitialized())
 		{
 			// Leoreth: culture level specialist effects
-			for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+			/*for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 			{
 				CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo((SpecialistTypes)iI);
 
@@ -9679,7 +9708,7 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 
 					changeBaseGreatPeopleRate(iSpecialistCount * (kSpecialist.getCultureLevelGreatPeopleRateChange(eNewValue) - kSpecialist.getCultureLevelGreatPeopleRateChange(eOldValue)));
 				}
-			}
+			}*/
 
 			if (isHasBuildingEffect((BuildingTypes)IMAGE_OF_THE_WORLD_SQUARE))
 			{
@@ -10237,6 +10266,7 @@ void CvCity::changeBonusYieldRateModifier(YieldTypes eIndex, int iChange)
 	{
 		m_aiBonusYieldRateModifier[eIndex] = (m_aiBonusYieldRateModifier[eIndex] + iChange);
 		FAssert(getYieldRate(eIndex) >= 0);
+		FAssert(getBonusYieldRateModifier(eIndex) < 1000);
 
 		GET_PLAYER(getOwnerINLINE()).invalidateYieldRankCache(eIndex);
 
@@ -10612,7 +10642,7 @@ int CvCity::getExtraSpecialistYield(YieldTypes eIndex, SpecialistTypes eSpeciali
 	FAssertMsg(eSpecialist >= 0, "eSpecialist expected to be >= 0");
 	FAssertMsg(eSpecialist < GC.getNumSpecialistInfos(), "GC.getNumSpecialistInfos expected to be >= 0");
 	// Leoreth: includes culture level yield change
-    return ((getSpecialistCount(eSpecialist) + getFreeSpecialistCount(eSpecialist)) * (GET_PLAYER(getOwnerINLINE()).getSpecialistExtraYield(eSpecialist, eIndex) + GC.getSpecialistInfo(eSpecialist).getCultureLevelYieldChange(getCultureLevel(), eIndex)));
+    return ((getSpecialistCount(eSpecialist) + getFreeSpecialistCount(eSpecialist)) * (GET_PLAYER(getOwnerINLINE()).getSpecialistExtraYield(eSpecialist, eIndex) /*+ GC.getSpecialistInfo(eSpecialist).getCultureLevelYieldChange(getCultureLevel(), eIndex)*/));
 }
 
 void CvCity::updateExtraSpecialistYield(YieldTypes eYield)
@@ -10871,6 +10901,8 @@ void CvCity::updateCommerce(CommerceTypes eIndex)
 
 		GET_PLAYER(getOwnerINLINE()).changeCommerceRate(eIndex, (iNewCommerce - iOldCommerce));
 
+		GET_PLAYER(getOwnerINLINE()).verifyCommerceRates(eIndex);
+
 		if (isCitySelected())
 		{
 			gDLL->getInterfaceIFace()->setDirty(InfoPane_DIRTY_BIT, true );
@@ -11111,8 +11143,22 @@ int CvCity::getAdditionalCommerceRateModifierByBuilding(CommerceTypes eIndex, Bu
 	{
 		return 0;
 	}
+	
+	int iExtraModifier = 0;
+	
+	CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+	if (!isPower())
+	{
+		if (kBuilding.isPower() || kBuilding.isAreaCleanPower() || (kBuilding.getPowerBonus() != NO_BONUS && hasBonus((BonusTypes)kBuilding.getPowerBonus())))
+		{
+			for (int i = 0; i < GC.getNumBuildingInfos(); i++)
+			{
+				iExtraModifier += getNumActiveBuilding((BuildingTypes)i) * GC.getBuildingInfo((BuildingTypes)i).getPowerCommerceModifier(eIndex);
+			}
+		}
+	}
 
-	int iExtraModifier = getAdditionalCommerceRateModifierByBuildingImpl(eIndex, eBuilding);
+	iExtraModifier += getAdditionalCommerceRateModifierByBuildingImpl(eIndex, eBuilding);
 	if (bNoEspionage && eIndex == COMMERCE_CULTURE)
 	{
 		iExtraModifier += getAdditionalCommerceRateModifierByBuildingImpl(COMMERCE_ESPIONAGE, eBuilding);
@@ -11140,6 +11186,10 @@ int CvCity::getAdditionalCommerceRateModifierByBuildingImpl(CommerceTypes eIndex
 	{
 		iExtraModifier += kBuilding.getCommerceModifier(eIndex);
 		iExtraModifier += kBuilding.getGlobalCommerceModifier(eIndex);
+		if (isPower())
+		{
+			iExtraModifier += kBuilding.getPowerCommerceModifier(eIndex);
+		}
 	}
 	
 	return iExtraModifier;
@@ -11395,24 +11445,31 @@ int CvCity::getCorporationYieldByCorporation(YieldTypes eIndex, CorporationTypes
 	FAssertMsg(eCorporation < GC.getNumCorporationInfos(), "GC.getNumCorporationInfos expected to be >= 0");
 
 	int iYield = 0;
+	int iNumBonuses = 0;
 
 	if (isActiveCorporation(eCorporation) && !isDisorder())
 	{
 		for (int i = 0; i < GC.getNUM_CORPORATION_PREREQ_BONUSES(); ++i)
 		{
 			BonusTypes eBonus = (BonusTypes)GC.getCorporationInfo(eCorporation).getPrereqBonus(i);
-			if (NO_BONUS != eBonus && getNumBonuses(eBonus) > 0)
+			if (eBonus == NO_BONUS)
 			{
-				// Leoreth: Dutch UP
-				if (getOwner() == (PlayerTypes)NETHERLANDS && eCorporation == (CorporationTypes)1) // trading company
-				{
-					iYield += 2 * (GC.getCorporationInfo(eCorporation).getYieldProduced(eIndex) * std::min(12, getNumBonuses(eBonus)) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;;
-				}
-				else
-				{
-					//iYield += (GC.getCorporationInfo(eCorporation).getYieldProduced(eIndex) * getNumBonuses(eBonus) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
-					iYield += (GC.getCorporationInfo(eCorporation).getYieldProduced(eIndex) * std::min(12, getNumBonuses(eBonus)) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
-				}
+				continue;
+			}
+
+			iNumBonuses += getNumBonuses(eBonus);
+		}
+		
+		// Merijn: Oil Industry doesn't provide yield, so Brazil UP not required here
+		
+		if (iNumBonuses > 0)
+		{
+			iYield = (GC.getCorporationInfo(eCorporation).getYieldProduced(eIndex) * std::min(12, iNumBonuses) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
+			
+			// Dutch UP: double yield from trading company
+			if (getOwner() == NETHERLANDS && eCorporation == (CorporationTypes)1)
+			{
+				iYield *= 2;
 			}
 		}
 	}
@@ -11440,19 +11497,24 @@ int CvCity::getCorporationCommerceByCorporation(CommerceTypes eIndex, Corporatio
 				continue;
 			}
 
-			iNumBonuses = getNumBonuses(eBonus);
+			iNumBonuses += getNumBonuses(eBonus);
+		}
 
-			// Leoreth: Brazilian UP (sugar counts as oil for oil industry)
-			if (getOwner() == BRAZIL && eBonus == BONUS_OIL && eCorporation == (CorporationTypes)6)
-			{
-				iNumBonuses += getNumBonuses(BONUS_SUGAR);
-			}
+		// Leoreth: Brazilian UP (sugar counts as oil for oil industry)
+		if (getOwner() == BRAZIL && eCorporation == (CorporationTypes)6)
+		{
+			iNumBonuses += getNumBonuses(BONUS_SUGAR);
+		}
 
-			// Leoreth: includes Dutch UP (double yield from trading company)
-			if (iNumBonuses > 0)
+		if (iNumBonuses > 0)
+		{
+			//iCommerce += (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * iNumBonuses * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
+			iCommerce = (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * std::min(12, iNumBonuses) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
+			
+			// Dutch UP: double commerce from trading company
+			if (getOwner() == NETHERLANDS && eCorporation == (CorporationTypes)1)
 			{
-				//iCommerce += (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * iNumBonuses * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
-				iCommerce += ((getOwner() == NETHERLANDS && eCorporation == (CorporationTypes)1) ? 2 : 1) * (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * std::min(12, getNumBonuses(eBonus)) * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
+				iCommerce *= 2;
 			}
 		}
 	}
@@ -11466,8 +11528,6 @@ int CvCity::getCorporationCommerceByCorporation(CommerceTypes eIndex, Corporatio
 		//Leoreth: civic corporation commerce modifier
 		iCommerce = iCommerce * (100 + GET_PLAYER(getOwner()).getCorporationCommerceModifier()) / 100;
 	}
-
-	
 
 	return (iCommerce + 99) / 100;
 }
@@ -12469,7 +12529,19 @@ bool CvCity::isCorporationBonus(BonusTypes eBonus) const
 			}
 		}
 	}
-
+	
+	// Merijn: Brazilian UP
+	if (GET_PLAYER(getOwnerINLINE()).isActiveCorporation((CorporationTypes)6))
+	{
+		if (getOwner() == BRAZIL && eBonus == BONUS_SUGAR)
+		{
+			if (isHasCorporation((CorporationTypes)6))
+			{
+				return true;
+			}
+		}
+	}
+	
 	return false;
 }
 
@@ -13499,6 +13571,8 @@ void CvCity::setNumRealBuildingTimed(BuildingTypes eIndex, int iNewValue, bool b
 		iOldNumBuilding = getNumBuilding(eIndex);
 
 		m_paiNumRealBuilding[eIndex] = iNewValue;
+
+		FAssert(getNumRealBuilding(eIndex) >= 0);
 
 		if (getNumRealBuilding(eIndex) > 0)
 		{
@@ -19534,6 +19608,11 @@ void CvCity::applyBuildingDamage(int iDamage)
 
 	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 	{
+		if (!isHasRealBuilding((BuildingTypes)iI))
+		{
+			continue;
+		}
+
 		if (GC.getBuildingInfo((BuildingTypes)iI).getDefenseModifier() > 0)
 		{
 			continue;
@@ -19544,7 +19623,7 @@ void CvCity::applyBuildingDamage(int iDamage)
 			continue;
 		}
 
-		if (GC.getBuildingInfo((BuildingTypes)iI).getConquestProbability() == 0)
+		if (GC.getBuildingInfo((BuildingTypes)iI).getConquestProbability() == 100)
 		{
 			continue;
 		}
@@ -19673,7 +19752,7 @@ void CvCity::completeAcquisition(int iCaptureGold)
 		}
 		else
 		{
-			doTask(TASK_RAZE);
+			completeRaze();
 		}
 	}
 }
@@ -19755,6 +19834,25 @@ void CvCity::raze(int iCaptureGold)
 	completeAcquisition(iCaptureGold);
 }
 
+void CvCity::completeRaze()
+{
+	plot()->resetCultureConversion();
+
+	int iI;
+	CvPlot* pAdjacentPlot;
+	for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+
+		if (pAdjacentPlot != NULL)
+		{
+			pAdjacentPlot->resetCultureConversion();
+		}
+	}
+
+	doTask(TASK_RAZE);
+}
+
 bool CvCity::canLiberate() const
 {
 	if (isOccupation())
@@ -19809,10 +19907,10 @@ int CvCity::calculateBaseYieldRate(YieldTypes eYield) const
 
 		iYield += iNumSpecialists * GET_PLAYER(getOwnerINLINE()).getSpecialistExtraYield((SpecialistTypes)iI, eYield);
 		
-		if (!GC.getSpecialistInfo((SpecialistTypes)iI).isNoGlobalEffects())
+		/*if (!GC.getSpecialistInfo((SpecialistTypes)iI).isNoGlobalEffects())
 		{
 			iYield += iNumSpecialists * GC.getSpecialistInfo((SpecialistTypes)iI).getCultureLevelYieldChange(getCultureLevel(), eYield);
-		}
+		}*/
 	}
 
 	iYield += getTradeYield(eYield);
@@ -19833,13 +19931,7 @@ int CvCity::calculateBaseGreatPeopleRate() const
 		if (isHasRealBuilding((BuildingTypes)iI))
 		{
 			iRate += GC.getBuildingInfo((BuildingTypes)iI).getGreatPeopleRateChange();
-		}
-	}
 
-	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
-	{
-		if (isHasRealBuilding((BuildingTypes)iI))
-		{
 			if (!GET_TEAM(getTeam()).isObsoleteBuilding((BuildingTypes)iI))
 			{
 				iRate += getBuildingGreatPeopleRateChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType());

@@ -4920,7 +4920,7 @@
 		<Tag>TXT_KEY_VICTORY_RUSSIA_CONTROL_SIBERIA</Tag>
 		<English>Cities in Siberia: %d1 / %d2</English>
 		<French>Villes en Sib&#233;rie : %d1 / %d2</French>
-		<German>Staedte in Sibirien: %d1 / %d2</German>
+		<German>St&#228;dte in Sibirien: %d1 / %d2</German>
 		<Italian>Cities in Siberia: %d1 / %d2</Italian>
 		<Spanish>Cities in Siberia: %d1 / %d2</Spanish>
 	</TEXT>
@@ -5152,7 +5152,7 @@
 		<Tag>TXT_KEY_VICTORY_TRANSSIBERIAN_RAILWAY</Tag>
 		<English>Railroad from Moscow to a Siberian port</English>
 		<French>Chemin de fer de Moscou &#224; un port sib&#233;rien</French>
-		<German>Eisenbahn von Moskau an einen sibirischen Hafen</German>
+		<German>Eisenbahn von Moskau zu einem sibirischen Hafen</German>
 		<Italian>Railroad from Moscow to a Siberian port</Italian>
 		<Spanish>Railroad from Moscow to a Siberian port</Spanish>
 	</TEXT>

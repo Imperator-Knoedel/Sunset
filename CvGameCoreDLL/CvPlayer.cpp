@@ -1507,17 +1507,6 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		}
 	}
 
-	// Leoreth: undo culture conversion
-	pOldCity->plot()->resetCultureConversion();
-	for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
-	{
-		pLoopPlot = plotDirection(pOldCity->getX(), pOldCity->getY(), (DirectionTypes)iDirection);
-		if (pLoopPlot->getCultureConversionPlayer() == pOldCity->getOwnerINLINE())
-		{
-			pLoopPlot->resetCultureConversion();
-		}
-	}
-
 	if (bConquest)
 	{
 		for (iI = 0; iI < pOldCity->getNextCoveredPlot(); iI++)
@@ -1830,6 +1819,23 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 					}
 				}
 
+				if (kOldBuilding.getConquestProbability() == 0)
+				{
+					continue;
+				}
+
+				// cannot capture a unique building that requires different techs unless you can build your own version of it
+				if (eBuilding != iI)
+				{
+					if (kOldBuilding.getPrereqAndTech() != kNewBuilding.getPrereqAndTech())
+					{
+						if (!canConstruct(eBuilding))
+						{
+							continue;
+						}
+					}
+				}
+
 				if (bTrade || !kOldBuilding.isNeverCapture() || (kOldBuilding.getReligionType() != NO_RELIGION && getSpreadType(pCityPlot, (ReligionTypes)kOldBuilding.getReligionType()) >= RELIGION_SPREAD_NORMAL))
 				{
 					if (!isProductionMaxedBuildingClass(((BuildingClassTypes)kNewBuilding.getBuildingClassType()), true))
@@ -2054,19 +2060,19 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 			else
 			{
 				//popup raze option
-				eHighestCulturePlayer = pNewCity->getLiberationPlayer(true);
+				PlayerTypes eLiberationPlayer = pNewCity->getLiberationPlayer(true);
 				bDecide = canRaze(pNewCity) || canSack(pNewCity) || canSpare(pNewCity, eHighestCulturePlayer, iCaptureGold);
-				bGift = ((eHighestCulturePlayer != NO_PLAYER)
-						&& (eHighestCulturePlayer != getID())
-						&& ((getTeam() == GET_PLAYER(eHighestCulturePlayer).getTeam())
-							|| GET_TEAM(getTeam()).isOpenBorders(GET_PLAYER(eHighestCulturePlayer).getTeam())
-							|| GET_TEAM(GET_PLAYER(eHighestCulturePlayer).getTeam()).isVassal(getTeam())));
+				bGift = ((eLiberationPlayer != NO_PLAYER)
+						&& (eLiberationPlayer != getID())
+						&& ((getTeam() == GET_PLAYER(eLiberationPlayer).getTeam())
+							|| GET_TEAM(getTeam()).isOpenBorders(GET_PLAYER(eLiberationPlayer).getTeam())
+							|| GET_TEAM(GET_PLAYER(eLiberationPlayer).getTeam()).isVassal(getTeam())));
 
 				if (bDecide || bGift)
 				{
 					CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_RAZECITY);
 					pInfo->setData1(pNewCity->getID());
-					pInfo->setData2(eHighestCulturePlayer);
+					pInfo->setData2(eLiberationPlayer);
 					pInfo->setData3(iCaptureGold);
 					gDLL->getInterfaceIFace()->addPopup(pInfo, getID());
 				}
@@ -3340,6 +3346,8 @@ void CvPlayer::updateCommerce(CommerceTypes eCommerce)
 	{
 		pLoopCity->updateCommerce(eCommerce);
 	}
+
+	verifyCommerceRates(eCommerce);
 }
 
 
@@ -3351,6 +3359,11 @@ void CvPlayer::updateCommerce()
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		pLoopCity->updateCommerce();
+	}
+
+	for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+	{
+		verifyCommerceRates((CommerceTypes)iI);
 	}
 }
 
@@ -4491,6 +4504,11 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 
 	case TRADE_VASSAL:
 	case TRADE_SURRENDER:
+		if (getNumCities() == 0 || GET_PLAYER(eWhoTo).getNumCities() == 0)
+		{
+			return false;
+		}
+
 		if (!isHuman() || GET_PLAYER(eWhoTo).isHuman()) //  human can't be vassal of AI
 		{
 			CvTeam& kVassalTeam = GET_TEAM(getTeam());
@@ -5100,7 +5118,7 @@ int CvPlayer::getNumGovernmentCenters() const
 
 bool CvPlayer::canRaze(CvCity* pCity) const
 {
-	if (!pCity->isAutoRaze())
+	if (!pCity->isAutoRaze() && pCity->getPopulation() > 0)
 	{
 		if (GC.getGameINLINE().isOption(GAMEOPTION_NO_CITY_RAZING))
 		{
@@ -12726,6 +12744,8 @@ int CvPlayer::getCommerceRate(CommerceTypes eIndex) const
 		}
 	}
 
+	FAssert(iRate >= 0);
+
 	return iRate / 100;
 }
 
@@ -12740,10 +12760,33 @@ void CvPlayer::changeCommerceRate(CommerceTypes eIndex, int iChange)
 		m_aiCommerceRate[eIndex] += iChange;
 		FAssert(getCommerceRate(eIndex) >= 0);
 
+		verifyCommerceRates(eIndex);
+
 		if (getID() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
 		}
+	}
+}
+
+void CvPlayer::verifyCommerceRates(CommerceTypes eCommerce) const
+{
+	int iCityCommerce = 0;
+	int iLoop;
+	for (CvCity* pCity = firstCity(&iLoop); pCity != NULL; pCity = nextCity(&iLoop))
+	{
+		iCityCommerce += pCity->getCommerceRateTimes100(eCommerce);
+	}
+
+	iCityCommerce /= 100;
+
+	int iTotalCommerce = getCommerceRate(eCommerce);
+
+	FAssert(iTotalCommerce == iCityCommerce);
+
+	if (iTotalCommerce != iCityCommerce)
+	{
+		warn(CvWString::format(L"Player %s %s (%d) and sum of city %s (%d) do not match", getCivilizationShortDescription(), GC.getCommerceInfo(eCommerce).getText(), iTotalCommerce, GC.getCommerceInfo(eCommerce).getText(), iCityCommerce));
 	}
 }
 

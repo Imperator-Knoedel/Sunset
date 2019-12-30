@@ -12,6 +12,9 @@ import Areas
 import PyHelpers
 PyPlayer = PyHelpers.PyPlayer
 
+import BugPath
+from datetime import date
+
 # globals
 gc = CyGlobalContext()
 
@@ -103,11 +106,18 @@ def triggerCollapse(iPlayer):
 				collapseToCore(iPlayer)
 				return
 
+	scheduleCollapse(iPlayer)
+
+def scheduleCollapse(iPlayer):
 	data.players[iPlayer].iTurnsToCollapse = 1
+	
+	epoch = "BC"
+	if gc.getGame().getGameTurnYear() > 0: epoch = "AD"
+	filePath = BugPath.join(BugPath.getRootDir(), 'Saves', 'single', 'collapses', '%s Collapse %d %s (turn %d) %s.CivBeyondSwordSave' % (gc.getPlayer(iPlayer).getCivilizationAdjective(0), abs(gc.getGame().getGameTurnYear()), epoch, gc.getGame().getGameTurn(), date.today()))
+	gc.getGame().saveGame(filePath.encode('ascii', 'xmlcharrefreplace'))
 
 def onCityAcquired(city, iOwner, iPlayer):
 	checkStability(iOwner)
-	
 	checkLostCoreCollapse(iOwner)
 	
 	if iPlayer == iBarbarian:
@@ -257,7 +267,7 @@ def checkLostCitiesCollapse(iPlayer):
 	
 		if getStabilityLevel(iPlayer) == iStabilityCollapsing:
 			utils.debugTextPopup('Collapse by lost cities: ' + pPlayer.getCivilizationShortDescription(0))
-			completeCollapse(iPlayer)
+			scheduleCollapse(iPlayer)
 		else:
 			utils.debugTextPopup('Collapse to core by lost cities: ' + pPlayer.getCivilizationShortDescription(0))
 			setStabilityLevel(iPlayer, iStabilityCollapsing)
@@ -280,7 +290,7 @@ def checkLostCoreCollapse(iPlayer):
 			return
 	
 		utils.debugTextPopup('Collapse from lost core: ' + pPlayer.getCivilizationShortDescription(0))
-		completeCollapse(iPlayer)
+		scheduleCollapse(iPlayer)
 	
 def determineStabilityLevel(iCurrentLevel, iStability, bFall = False):
 	iThreshold = 10 * iCurrentLevel - 10
@@ -299,6 +309,9 @@ def checkStability(iPlayer, bPositive = False, iMaster = -1):
 	
 	bVassal = (iMaster != -1)
 	
+	# no check if already scheduled for collapse
+	if data.players[iPlayer].iTurnsToCollapse >= 0: return
+	
 	# vassal checks are made for triggers of their master civ
 	if gc.getTeam(pPlayer.getTeam()).isAVassal() and not bVassal: return
 	
@@ -309,6 +322,11 @@ def checkStability(iPlayer, bPositive = False, iMaster = -1):
 		
 	# immune during anarchy
 	if pPlayer.isAnarchy(): return
+	
+	# no repeated stability checks
+	if data.players[iPlayer].iLastStabilityTurn == iGameTurn: return
+	
+	data.players[iPlayer].iLastStabilityTurn = iGameTurn
 		
 	iStability, lStabilityTypes, lParameters = calculateStability(iPlayer)
 	iStabilityLevel = getStabilityLevel(iPlayer)
@@ -505,8 +523,14 @@ def secedeCities(iPlayer, lCities, bRazeMinorCities = False):
 		if gc.getPlayer(utils.getHumanID()).canContact(iPlayer):
 			CyInterface().addMessage(utils.getHumanID(), False, iDuration, localText.getText("TXT_KEY_STABILITY_CITIES_SECEDED", (gc.getPlayer(iPlayer).getCivilizationDescription(0), len(lCededCities))), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
 		
+	# collect additional cities that can be part of the resurrection
+	lCededTiles = [(city.getX(), city.getY()) for city in lCededCities]
+	for iResurrectionPlayer in dPossibleResurrections:
+		for city in getResurrectionCities(iResurrectionPlayer, True):
+			if (city.getX(), city.getY()) not in lCededTiles:
+				dPossibleResurrections[iResurrectionPlayer].append(city)
+
 	# execute possible resurrections
-	# might need a more sophisticated approach to also catch minors and other unstable civs in their respawn area
 	for iResurrectionPlayer in dPossibleResurrections:
 		utils.debugTextPopup('Resurrection: ' + gc.getPlayer(iResurrectionPlayer).getCivilizationShortDescription(0))
 		resurrectionFromCollapse(iResurrectionPlayer, dPossibleResurrections[iResurrectionPlayer])
@@ -989,7 +1013,7 @@ def calculateStability(iPlayer):
 	iFriendlyRelations = 0
 	iFuriousRelations = 0
 	
-	lAttitudes = []
+	lContacts = []
 	
 	for iLoopPlayer in range(iNumPlayers):
 		pLoopPlayer = gc.getPlayer(iLoopPlayer)
@@ -1014,16 +1038,7 @@ def calculateStability(iPlayer):
 			
 		# relations
 		if tPlayer.canContact(iLoopPlayer):
-			iNumContacts += 1
-
-			if pLoopPlayer.AI_getAttitude(iPlayer) == AttitudeTypes.ATTITUDE_FURIOUS: iFuriousRelations += 1
-			elif pLoopPlayer.AI_getAttitude(iPlayer) == AttitudeTypes.ATTITUDE_FRIENDLY: iFriendlyRelations += 1
-			
-			iAttitude = 0
-			for iMemory in range(MemoryTypes.NUM_MEMORY_TYPES):
-				iAttitude += pLoopPlayer.AI_getMemoryAttitude(iPlayer, iMemory)
-			
-			lAttitudes.append(iAttitude)
+			lContacts.append(iLoopPlayer)
 			
 		# defensive pacts
 		if tPlayer.isDefensivePact(iLoopPlayer):
@@ -1046,10 +1061,26 @@ def calculateStability(iPlayer):
 					else: iTheocracyStability -= 2
 		
 	# attitude stability
+	lStrongerAttitudes, lEqualAttitudes, lWeakerAttitudes = calculateRankedAttitudes(iPlayer, lContacts)
 	
-	iRelationStability += calculateSumScore(lAttitudes) / 2
-	iRelationStability += calculateSumScore(lAttitudes, 2) / 2
-	iRelationStability += calculateSumScore(lAttitudes, 3)
+	iAttitudeThresholdModifier = pPlayer.getCurrentEra() / 2
+	
+	iRelationStronger = 0
+	iPositiveStronger = count(lStrongerAttitudes, lambda x: x >= 4 + iAttitudeThresholdModifier * 2)
+	if iPositiveStronger > len(lStrongerAttitudes) / 2:
+		iRelationStronger = 5 * iPositiveStronger / max(1, len(lStrongerAttitudes))
+		iRelationStronger = min(iRelationStronger, len(lStrongerAttitudes))
+	
+	iRelationWeaker = 0
+	iNegativeWeaker = max(0, count(lWeakerAttitudes, lambda x: x < -1) - count(lWeakerAttitudes, lambda x: x >= 3 + iAttitudeThresholdModifier))
+	
+	if iNegativeWeaker > 0:
+		iRelationWeaker = -8 * min(iNegativeWeaker, len(lWeakerAttitudes) / 2) / max(1, len(lWeakerAttitudes) / 2)
+		iRelationWeaker = max(iRelationWeaker, -len(lWeakerAttitudes))
+		
+	iRelationEqual = sum(sign(iAttitude) * min(25, abs(iAttitude) / 5) for iAttitude in lEqualAttitudes if abs(iAttitude) > 2)
+
+	iRelationStability = iRelationStronger + iRelationEqual + iRelationWeaker
 		
 	if bIsolationism:
 		if iRelationStability < 0: iRelationStability = 0
@@ -1239,6 +1270,9 @@ def other(lCombination, *civics):
 def sigmoid(x):
 	return math.tanh(5 * x / 2)
 	
+def count(iterable, function = lambda x: True):
+	return len([element for element in iterable if function(element)])
+	
 def calculateTrendScore(lTrend):
 	iPositive = 0
 	iNeutral = 0
@@ -1319,8 +1353,12 @@ def updateHappinessTrend(iPlayer):
 		elif iUnhappiness - iOvercrowding > iPopulation / 5 or iUnhappiness - iHappiness > 0:
 			iUnhappyCities += 1
 			
-	if iHappyCities - iUnhappyCities > math.ceil(iNumCities / 5.0): data.players[iPlayer].pushHappinessTrend(1)
-	elif iUnhappyCities - iHappyCities > math.ceil(iNumCities / 5.0): data.players[iPlayer].pushHappinessTrend(-1)
+	iCurrentTrend = 0
+			
+	if iHappyCities - iUnhappyCities > math.ceil(iNumCities / 5.0): iCurrentTrend = 1
+	elif iUnhappyCities - iHappyCities > math.ceil(iNumCities / 5.0): iCurrentTrend = -1
+	
+	data.players[iPlayer].pushHappinessTrend(iCurrentTrend)
 	
 def updateWarTrend(iPlayer, iEnemy):
 	iOurCurrentSuccess = gc.getTeam(iPlayer).AI_getWarSuccess(iEnemy)
@@ -1417,6 +1455,35 @@ def calculateCommerceRank(iPlayer, iTurn):
 def calculatePowerRank(iPlayer, iTurn):
 	lPowerValues = utils.getSortedList([i for i in range(iNumPlayers)], lambda x : gc.getPlayer(x).getPowerHistory(iTurn), True)
 	return lPowerValues.index(iPlayer)
+	
+def calculateRankedAttitudes(iPlayer, lContacts):
+	lContacts.append(iPlayer)
+	lContacts = utils.getSortedList(lContacts, lambda iPlayer: gc.getGame().getPlayerScore(iPlayer), True)
+	iPlayerIndex = lContacts.index(iPlayer)
+	
+	iRangeSize = 4
+	if iPlayerIndex <= len(lContacts) / 5:
+		iRangeSize = 3
+	
+	iRange = len(lContacts) / iRangeSize
+	iLeft = max(0, iPlayerIndex - iRange/2)
+	iRight = min(iLeft + iRange, len(lContacts)-1)
+	
+	lStronger = [calculateAttitude(iLoopPlayer, iPlayer) for iLoopPlayer in lContacts[:iLeft] if iLoopPlayer != iPlayer]
+	lEqual = [calculateAttitude(iLoopPlayer, iPlayer) for iLoopPlayer in lContacts[iLeft:iRight] if iLoopPlayer != iPlayer]
+	lWeaker = [calculateAttitude(iLoopPlayer, iPlayer) for iLoopPlayer in lContacts[iRight:] if iLoopPlayer != iPlayer]
+	
+	return lStronger, lEqual, lWeaker
+	
+def calculateAttitude(iFromPlayer, iToPlayer):
+	pPlayer = gc.getPlayer(iFromPlayer)
+
+	iAttitude = pPlayer.AI_getAttitudeVal(iToPlayer)
+	iAttitude -= pPlayer.AI_getSameReligionAttitude(iToPlayer)
+	iAttitude -= pPlayer.AI_getDifferentReligionAttitude(iToPlayer)
+	iAttitude -= pPlayer.AI_getFirstImpressionAttitude(iToPlayer)
+	
+	return iAttitude
 	
 def isTolerated(iPlayer, iReligion):
 	pPlayer = gc.getPlayer(iPlayer)
@@ -1560,13 +1627,8 @@ def getResurrectionCities(iPlayer, bFromCollapse = False):
 	return lFlippingCities
 	
 def resurrectionFromCollapse(iPlayer, lCityList):
-
-	# collect other cities that could flip
-	for city in getResurrectionCities(iPlayer, True):
-		if city not in lCityList:
-			lCityList.append(city)
-			
-	doResurrection(iPlayer, lCityList)
+	if lCityList:
+		doResurrection(iPlayer, lCityList)
 	
 def doResurrection(iPlayer, lCityList, bAskFlip = True):
 	pPlayer = gc.getPlayer(iPlayer)
@@ -1848,6 +1910,8 @@ def getCorePopulationModifier(iEra):
 	return tEraCorePopulationModifiers[iEra]
 	
 def balanceStability(iPlayer, iNewStabilityLevel):
+	utils.debugTextPopup("Balance stability: %s" % gc.getPlayer(iPlayer).getCivilizationShortDescription(0))
+
 	playerData = data.players[iPlayer]
 	
 	# set stability to at least the specified level
@@ -1868,7 +1932,7 @@ def balanceStability(iPlayer, iNewStabilityLevel):
 	playerData.resetWarTrends()
 	
 def isDecline(iPlayer):
-	return utils.getHumanID() != iPlayer and gc.getGame().getGameTurn() >= getTurnForYear(tFall[iPlayer])
+	return utils.getHumanID() != iPlayer and not utils.isReborn(iPlayer) and gc.getGame().getGameTurn() >= getTurnForYear(tFall[iPlayer])
 	
 class Civics:
 

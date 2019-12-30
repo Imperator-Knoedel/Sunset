@@ -1159,6 +1159,8 @@ public:
 	void spare(int iCaptureGold);
 	void raze(int iCaptureGold);
 
+	void completeRaze();
+
 	bool canLiberate() const;
 
 	DllExport int getMusicScriptId() const;

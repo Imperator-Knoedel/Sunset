@@ -39,7 +39,7 @@ class Resources:
 		if iBonus == -1:
 			iImprovement = gc.getMap().plot(iX, iY).getImprovementType()
 			if iImprovement >= 0:
-				if gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(iBonus):
+				if gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(iRemovedBonus):
 					gc.getMap().plot(iX, iY).setImprovementType(-1)
 			
 		iOwner = gc.getMap().plot(iX,iY).getOwner()
@@ -67,7 +67,7 @@ class Resources:
        	
 	def checkTurn(self, iGameTurn):
 		
-		# Gujarati horses appear later so Harappa cannot benefit too early; also Harappan Stone turns to Marble
+		# Gujarati horses appear later so Harappa cannot benefit too early
 		if iGameTurn == getTurnForYear(-1000):
 			self.createResource(88, 37, iHorse)
 			
@@ -286,14 +286,6 @@ class Resources:
 				
 			if gc.getDefineINT("PLAYER_REBIRTH_COLOMBIA") != 0:
 				self.createResource(28, 31, iIron) # Colombia
-				# 2nd UU: Move banana 1W, add horse on old spot
-				self.removeResource(27, 31)
-				self.createResource(27, 31, iHorse) # Colombia
-				self.createResource(26, 31, iBanana) # Colombia
-				gc.getMap().plot(27, 31).setFeatureType(-1, 0)
-				if gc.getMap().plot(27, 31).getImprovementType() != -1:
-					gc.getMap().plot(26, 31).setImprovementType(iPlantation)
-					gc.getMap().plot(27, 31).setImprovementType(-1)
 			
 			if data.isPlayerEnabled(iArgentina):
 				self.createResource(31, 10, iWine) # Mendoza, Argentina

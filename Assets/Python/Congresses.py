@@ -111,7 +111,10 @@ def endGlobalWar(iAttacker, iDefender):
 	lAttackers = [iAttacker]
 	lDefenders = [iDefender]
 	
-	lAttackers, lDefenders = determineAlliances(iAttacker, iDefender)
+	lAttackerAllies, lDefenderAllies = determineAlliances(iAttacker, iDefender)
+	
+	lAttackers += lAttackerAllies
+	lDefenders += lDefenderAllies
 	
 	# force peace for all allies of the belligerents
 	for iLoopPlayer in lAttackers:
@@ -169,7 +172,7 @@ class Congress:
 
 	### Popups ###
 	
-	def startIntroductionEvent(self, bHumanInvited):
+	def startIntroductionEvent(self, bHumanInvited, bHumanInGlobalWar = False):
 		popup = CyPopupInfo()
 		popup.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
 		popup.setOnClickedPythonCallback("applyIntroductionEvent")
@@ -183,10 +186,11 @@ class Congress:
 			if bHumanInvited: 
 				if utils.getHumanID() in self.lWinners: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION_WAR_WON", (self.sHostCityName, sInviteString))
 				elif utils.getHumanID() in self.lLosers: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION_WAR_LOST", (self.sHostCityName, sInviteString))
-				else: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION_WAR", (self.sHostCityName, sInviteString))
+				else: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION_WAR", (self.sHostCityName, sInviteString)) 
 			else: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION_WAR_AI", (self.sHostCityName, sInviteString))
 		else:
 			if bHumanInvited: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION", (self.sHostCityName, sInviteString))
+			elif bHumanInGlobalWar: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION_AI_WAR_EXCLUDED", (self.sHostCityName, sInviteString))
 			else: sText = localText.getText("TXT_KEY_CONGRESS_INTRODUCTION_AI", (self.sHostCityName, sInviteString))
 			
 		popup.setText(sText)
@@ -554,11 +558,16 @@ class Congress:
 				
 		# procedure continues from the makeClaimHuman event
 		
+		bHumanInGlobalWar = False
+		if isGlobalWar():
+			lAttackers, lDefenders = determineAlliances(data.iGlobalWarAttacker, data.iGlobalWarDefender)
+			bHumanInGlobalWar = utils.getHumanID() in lAttackers + lDefenders
+		
 		# unless the player isn't involved, in that case resolve from here
 		if utils.getHumanID() not in self.lInvites:
 			# since Congresses now can occur during autoplay, don't display these congresses to the player
 			if gc.getGame().getGameTurn() >= getTurnForYear(tBirth[utils.getHumanID()]):
-				self.startIntroductionEvent(False)
+				self.startIntroductionEvent(False, bHumanInGlobalWar)
 			else:
 				# select claims first, then move on to voting directly since the player isn't involved
 				for iLoopPlayer in self.lInvites:
@@ -651,12 +660,12 @@ class Congress:
 		iNumDefenders = max(2, gc.getPlayer(iPlayer).getCurrentEra()-1)
 		lFlippingUnits, lRelocatedUnits = utils.flipOrRelocateGarrison(city, iNumDefenders)
 		
-		utils.completeCityFlip(x, y, iPlayer, iOwner, 80, False, False, True)
+		utils.completeCityFlip(x, y, iPlayer, iOwner, 80, False, False, True, bPermanentCultureChange=False)
 		
 		utils.flipOrCreateDefenders(iPlayer, lFlippingUnits, (x, y), iNumDefenders)
 		
 		if iOwner < iNumPlayers:
-			utils.relocateUnitsToCore(iPlayer, lRelocatedUnits)
+			utils.relocateUnitsToCore(iOwner, lRelocatedUnits)
 		else:
 			utils.killUnits(lRelocatedUnits)
 		
@@ -685,6 +694,7 @@ class Congress:
 			iRand = gc.getGame().getSorenRandNum(100, 'Random declaration of war')
 			iThreshold = 10 + tPatienceThreshold[iBelligerent] - 5 * self.dPossibleBelligerents[iBelligerent] - iGlobalWarModifier
 			if iRand >= iThreshold:
+				gc.getTeam(iBelligerent).setDefensivePact(utils.getHumanID(), False)
 				gc.getTeam(iBelligerent).declareWar(utils.getHumanID(), False, WarPlanTypes.WARPLAN_DOGPILE)
 				
 		# display Congress results
@@ -759,8 +769,8 @@ class Congress:
 		
 		print sDebugText
 		
-		# everyone agrees on AI American claims in the west
-		if iClaimant == iAmerica and iVoter != iOwner:
+		# everyone agrees on AI American claims in the west, unless owner is native to the Americas
+		if iClaimant == iAmerica and iVoter != iOwner and iOwner not in lCivGroups[5]:
 			if utils.isPlotInArea((x, y), tAmericanClaimsTL, tAmericanClaimsBR):
 				self.vote(iVoter, iClaimant, 1)
 				return
@@ -1069,7 +1079,7 @@ class Congress:
 				# colonies
 				if iPlayer in lCivGroups[0]:
 					if iLoopPlayer >= iNumPlayers or (iLoopPlayer not in lCivGroups[0] and utils.getStabilityLevel(iLoopPlayer) < iStabilityShaky) or (iLoopPlayer in lCivGroups[0] and utils.getHumanID() != iLoopPlayer and pPlayer.AI_getAttitude(iLoopPlayer) < AttitudeTypes.ATTITUDE_PLEASED):
-						if plot.getRegionID() not in lEurope and plot.getRegionID() not in lMiddleEast:
+						if plot.getRegionID() not in lEurope + lMiddleEast + lNorthAfrica:
 							if iSettlerMapValue > 90:
 								iValue += max(1, iSettlerMapValue / 100)
 									

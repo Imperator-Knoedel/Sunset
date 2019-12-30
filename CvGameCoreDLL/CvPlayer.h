@@ -38,8 +38,8 @@ public:
 	DllExport void setupGraphical();
 	DllExport void reset(PlayerTypes eID = NO_PLAYER, bool bConstructorCall = false);
 
-	CvPlayerAI* AI() { return (CvPlayerAI*)(this); }
-	const CvPlayerAI* AI() const { return (const CvPlayerAI*)(this); }
+	__forceinline CvPlayerAI* AI() { return (CvPlayerAI*)(this); }
+	__forceinline const CvPlayerAI* AI() const { return (const CvPlayerAI*)(this); }
 
 protected:
 
@@ -1358,6 +1358,9 @@ public:
 	void makeSpecialUnitValid(SpecialUnitTypes eSpecialUnit);
 
 	int getSatelliteExtraCommerce(CommerceTypes eCommerce) const;
+
+	// Leoreth
+	void verifyCommerceRates(CommerceTypes eCommerce) const;
 
 	bool m_bTurnPlayed;
 

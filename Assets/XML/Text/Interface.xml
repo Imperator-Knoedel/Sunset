@@ -1623,22 +1623,6 @@
 		<Spanish>La peste se ha extendido por</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PLAYER_OPTION_MODDER_1</Tag>
-		<English>Display UHV End Turns</English>
-		<French>Montrer le tour final des VHU</French>
-		<German>EHS Endrunden Anzeigen</German>
-		<Italian>Display UHV End Turns</Italian>
-		<Spanish>Display UHV End Turns</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_PLAYER_OPTION_MODDER_1_HELP</Tag>
-		<English>The turn in which your UHV goals must be completed is displayed even after the discovery of Calendar.</English>
-		<French>Les tours auxquels vos objectifs de VHU doivent &#234;tre accomplis sont montr&#233;s m&#234;me apr&#232;s la d&#233;couverte du calendrier.</French>
-		<German>Die Runde, in der Ihre EHS-Ziele erf&#252;llt werden m&#252;ssen, wird auch nach der Entdeckung des Kalenders angezeigt.</German>
-		<Italian>The turn in which your UHV goals must be completed is displayed even after the discovery of Calendar.</Italian>
-		<Spanish>The turn in which your UHV goals must be completed is displayed even after the discovery of Calendar.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_POPUP_ELECTION_COLLECT_TITHE</Tag>
 		<English>Collect Tithe (Requires %d1 of %d2 Total Votes)</English>
 		<French>Percevoir la d&#238;me (n&#233;cessite %d1 votes sur %d2)</French>
@@ -3191,6 +3175,14 @@
 		<German>[ICON_BULLET]Liefert saubere Energie ([ICON_CLEAN_POWER]) mit dem Bonusgut [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Fornisce energia pulita ([ICON_CLEAN_POWER]) insieme a [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Proporciona energ&#237;a limpia ([ICON_CLEAN_POWER]) con [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_BonusName[\LINK][COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WITH_CLEAN_POWER</Tag>
+		<English>[SPACE]with Power ([ICON_CLEAN_POWER])</English>
+		<French>[SPACE]avec &#233;lectricit&#233; ([ICON_CLEAN_POWER])</French>
+		<German>[SPACE]mit Energie ([ICON_CLEAN_POWER])</German>
+		<Italian>[SPACE]con l'energia ([ICON_CLEAN_POWER])</Italian>
+		<Spanish>[SPACE]con energ&#237;a ([ICON_CLEAN_POWER])</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

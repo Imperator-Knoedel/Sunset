@@ -8721,7 +8721,6 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 		}
 //KNOEDELend
 
-	
 	if (GC.getUnitInfo(eUnit).isGoldenAge())
 	{
 		szBuffer.append(NEWLINE);
@@ -11017,9 +11016,10 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 
 	setYieldChangeHelp(szBuffer, gDLL->getText("TXT_KEY_BUILDING_WATER_PLOTS_ALL_CITIES").c_str(), L": ", L"", kBuilding.getGlobalSeaPlotYieldChangeArray());
 
-	setYieldChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_BUILDING_WITH_POWER").c_str(), kBuilding.getPowerYieldModifierArray(), true);
+	bool bCleanPower = pCity != NULL && pCity->isPower() && !pCity->isDirtyPower();
+	setYieldChangeHelp(szBuffer, L"", L"", gDLL->getText(bCleanPower ? "TXT_KEY_BUILDING_WITH_CLEAN_POWER" : "TXT_KEY_BUILDING_WITH_POWER").c_str(), kBuilding.getPowerYieldModifierArray(), true);
 
-	setCommerceChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_BUILDING_WITH_POWER").c_str(), kBuilding.getPowerCommerceModifierArray(), true);
+	setCommerceChangeHelp(szBuffer, L"", L"", gDLL->getText(bCleanPower ? "TXT_KEY_BUILDING_WITH_CLEAN_POWER" : "TXT_KEY_BUILDING_WITH_POWER").c_str(), kBuilding.getPowerCommerceModifierArray(), true);
 
 	setCommerceChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_BUILDING_PER_CULTURE_LEVEL").c_str(), kBuilding.getCultureCommerceModifierArray(), true);
 
@@ -14406,17 +14406,36 @@ void CvGameTextMgr::setCorporationHelpCity(CvWStringBuffer &szBuffer, Corporatio
 		}
 	}
 
-	int iNumResources = 0;
+	// int iNumResources = 0;
+	// for (int i = 0; i < GC.getNUM_CORPORATION_PREREQ_BONUSES(); ++i)
+	// {
+		// BonusTypes eBonus = (BonusTypes)kCorporation.getPrereqBonus(i);
+		// if (NO_BONUS != eBonus)
+		// {
+			// iNumResources += std::min(12, pCity->getNumBonuses(eBonus));
+		// }
+	// }
+	
+	bool bResources = false;
 	for (int i = 0; i < GC.getNUM_CORPORATION_PREREQ_BONUSES(); ++i)
 	{
 		BonusTypes eBonus = (BonusTypes)kCorporation.getPrereqBonus(i);
-		if (NO_BONUS != eBonus)
+		if (NO_BONUS != eBonus && pCity->getNumBonuses(eBonus) > 0)
 		{
-			iNumResources += std::min(12, pCity->getNumBonuses(eBonus));
+			bResources = true;
+			break;
+		}
+	}
+	// Merijn: Brazil UP display
+	if (pCity->getOwnerINLINE() == BRAZIL && eCorporation == (CorporationTypes)6)
+	{
+		if (pCity->getNumBonuses(BONUS_SUGAR) > 0)
+		{
+			bResources = true;
 		}
 	}
 
-	bool bActive = (pCity->isActiveCorporation(eCorporation) || (bForceCorporation && iNumResources > 0));
+	bool bActive = (pCity->isActiveCorporation(eCorporation) || (bForceCorporation && bResources));
 
 	bool bHandled = false;
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
@@ -14426,12 +14445,7 @@ void CvGameTextMgr::setCorporationHelpCity(CvWStringBuffer &szBuffer, Corporatio
 		if (bActive)
 		{
 			//iYield += (kCorporation.getYieldProduced(i) * iNumResources * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
-			iYield += (kCorporation.getYieldProduced(i) * iNumResources * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
-		}
-
-		if (pCity->getOwnerINLINE() == NETHERLANDS && eCorporation == (CorporationTypes)1)
-		{
-			iYield *= 2;
+			iYield = std::min(25, pCity->getCorporationYieldByCorporation(((YieldTypes)i), eCorporation)); // Merijn: also includes Dutch UP, Rhye - corporation cap
 		}
 
 		if (iYield != 0)
@@ -14442,7 +14456,8 @@ void CvGameTextMgr::setCorporationHelpCity(CvWStringBuffer &szBuffer, Corporatio
 			}
 
 			CvWString szTempBuffer;
-			szTempBuffer.Format(L"%s%d%c", iYield > 0 ? "+" : "", (iYield + 99) / 100, GC.getYieldInfo((YieldTypes)i).getChar());
+			// szTempBuffer.Format(L"%s%d%c", iYield > 0 ? "+" : "", (iYield + 99) / 100, GC.getYieldInfo((YieldTypes)i).getChar());
+			szTempBuffer.Format(L"%s%d%c", iYield > 0 ? "+" : "", iYield, GC.getYieldInfo((YieldTypes)i).getChar());
 			szBuffer.append(szTempBuffer);
 			bHandled = true;
 		}
@@ -14456,12 +14471,7 @@ void CvGameTextMgr::setCorporationHelpCity(CvWStringBuffer &szBuffer, Corporatio
 		if (bActive)
 		{
 			//iCommerce += (kCorporation.getCommerceProduced(i) * iNumResources * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
-			iCommerce += (kCorporation.getCommerceProduced(i) * iNumResources * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100; //Rhye - corporation cap
-		}
-
-		if (pCity->getOwnerINLINE() == NETHERLANDS && eCorporation == (CorporationTypes)1)
-		{
-			iCommerce *= 2;
+			iCommerce = std::min(25, pCity->getCorporationCommerceByCorporation(((CommerceTypes)i), eCorporation)); // Merijn: also includes Dutch and Brazilian UP, Rhye - corporation cap
 		}
 
 		if (iCommerce != 0)
@@ -14472,7 +14482,8 @@ void CvGameTextMgr::setCorporationHelpCity(CvWStringBuffer &szBuffer, Corporatio
 			}
 
 			CvWString szTempBuffer;
-			szTempBuffer.Format(L"%s%d%c", iCommerce > 0 ? "+" : "", (iCommerce + 99) / 100, GC.getCommerceInfo((CommerceTypes)i).getChar());
+			//szTempBuffer.Format(L"%s%d%c", iCommerce > 0 ? "+" : "", (iCommerce + 99) / 100, GC.getCommerceInfo((CommerceTypes)i).getChar());
+			szTempBuffer.Format(L"%s%d%c", iCommerce > 0 ? "+" : "", iCommerce, GC.getCommerceInfo((CommerceTypes)i).getChar());
 			szBuffer.append(szTempBuffer);
 			bHandled = true;
 		}
@@ -14536,6 +14547,16 @@ void CvGameTextMgr::setCorporationHelpCity(CvWStringBuffer &szBuffer, Corporatio
 
 				szBuffer.append(CvWString::format(L"%c", GC.getBonusInfo((BonusTypes)kCorporation.getPrereqBonus(i)).getChar()));
 			}
+		}
+		
+		// Brazil UP display
+		if (pCity->getOwnerINLINE() == BRAZIL && eCorporation == (CorporationTypes)6)
+		{
+			if (!bFirst)
+			{
+				szBuffer.append(L", ");
+			}
+			szBuffer.append(CvWString::format(L"%c", GC.getBonusInfo(BONUS_SUGAR).getChar()));
 		}
 
 		if (bActive)
@@ -17923,6 +17944,14 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			{
 				iBuildingMod += infoBuilding.getCommerceModifier(eCommerceType);
 			}
+			
+			if (city.isPower())
+			{
+				for (int iLoop = 0; iLoop < city.getNumBuilding((BuildingTypes)i); iLoop++)
+				{
+					iBuildingMod += infoBuilding.getPowerCommerceModifier(eCommerceType);
+				}
+			}
 
 			// Leoreth: Himeji Castle effect: defense modifier counts as culture modifier
 			if (eCommerceType == COMMERCE_CULTURE && GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)HIMEJI_CASTLE))
@@ -19923,6 +19952,7 @@ void CvGameTextMgr::setTradeRouteHelp(CvWStringBuffer &szBuffer, int iRoute, CvC
 				{
 					szBuffer.append(NEWLINE);
 					szBuffer.append(gDLL->getText("TXT_KEY_TRADE_ROUTE_MOD_DEFENSIVE_PACT", iNewMod));
+					iModifier += iNewMod;
 				}
 			}
 
