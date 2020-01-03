@@ -112,4 +112,20 @@
 		<Italian>[ICON_BULLET]Can be Airlifted Independent of Airports</Italian>
 		<Spanish>[ICON_BULLET]Can be Airlifted Independent of Airports</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_GIFTED_UNITS_TO_US</Tag>
+		<English>"You have supplied us with weapons."</English>
+		<French>"You have supplied us with weapons."</French>
+		<German>"Ihr habt uns mit Waffen versorgt."</German>
+		<Italian>"You have supplied us with weapons."</Italian>
+		<Spanish>"You have supplied us with weapons."</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_GIFTED_CIVILIANS_TO_US</Tag>
+		<English>"We are grateful for your economic support."</English>
+		<French>"We are grateful for your economic support."</French>
+		<German>"Wir sind dankbar f&#252;r Eure wirtschaftliche Unterst&#252;tzung."</German>
+		<Italian>"We are grateful for your economic support."</Italian>
+		<Spanish>"We are grateful for your economic support."</Spanish>
+	</TEXT>
 </Civ4GameText>

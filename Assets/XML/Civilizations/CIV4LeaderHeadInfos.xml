@@ -471,6 +471,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -587,6 +595,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -1014,6 +1030,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -1130,6 +1154,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -1579,6 +1611,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -1695,6 +1735,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -2124,6 +2172,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -2240,6 +2296,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -2684,6 +2748,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -2800,6 +2872,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -3229,6 +3309,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -3345,6 +3433,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -3783,6 +3879,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -3899,6 +4003,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -4337,6 +4449,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -4453,6 +4573,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -4895,6 +5023,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -5011,6 +5147,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -5440,6 +5584,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -5556,6 +5708,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -5989,6 +6149,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -6105,6 +6273,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -6547,6 +6723,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -6663,6 +6847,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -7108,6 +7300,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -7224,6 +7424,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -7665,6 +7873,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -7781,6 +7997,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -8219,6 +8443,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -8335,6 +8567,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -8777,6 +9017,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -8893,6 +9141,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -9333,6 +9589,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -9413,6 +9677,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_ACCEPTED_STOP_TRADING</MemoryType>
 					<iMemoryAttitudePercent>50</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -9853,6 +10125,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -9969,6 +10249,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -10407,6 +10695,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -10523,6 +10819,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -10960,6 +11264,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -11076,6 +11388,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -11522,6 +11842,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -11638,6 +11966,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -12082,6 +12418,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -12198,6 +12542,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -12633,6 +12985,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -12749,6 +13109,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -13185,6 +13553,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -13301,6 +13677,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -13750,6 +14134,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -13866,6 +14258,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -14312,6 +14712,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -14428,6 +14836,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -14861,6 +15277,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -14977,6 +15401,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -15410,6 +15842,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -15526,6 +15966,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -15968,6 +16416,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -16084,6 +16540,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -16526,6 +16990,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -16642,6 +17114,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -17071,6 +17551,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -17187,6 +17675,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -17629,6 +18125,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -17745,6 +18249,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -18183,6 +18695,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -18299,6 +18819,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -18747,6 +19275,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -18863,6 +19399,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -19299,6 +19843,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -19415,6 +19967,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -19857,6 +20417,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -19973,6 +20541,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -20419,6 +20995,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -20535,6 +21119,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -20977,6 +21569,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -21093,6 +21693,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -21542,6 +22150,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -21658,6 +22274,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -22087,6 +22711,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -22203,6 +22835,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -22648,6 +23288,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -22764,6 +23412,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -23200,6 +23856,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -23316,6 +23980,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -23749,6 +24421,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -23865,6 +24545,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -24305,6 +24993,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -24421,6 +25117,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -24854,6 +25558,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -24970,6 +25682,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -25419,6 +26139,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -25535,6 +26263,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -25995,6 +26731,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -26127,6 +26871,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -26564,6 +27316,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -26682,20 +27442,12 @@
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -27131,6 +27883,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -27249,24 +28009,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -27697,6 +28449,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -27815,24 +28575,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -28269,6 +29021,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -28387,24 +29147,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -28850,6 +29602,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -28968,24 +29728,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryAttitudePercent>15</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -29424,6 +30176,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -29542,24 +30302,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -29987,6 +30739,14 @@
 				<MemoryDecay>
 					<MemoryType>MEMORY_CANCELLED_OPEN_BORDERS</MemoryType>
 					<iMemoryRand>10</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -30549,6 +31309,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -30667,24 +31435,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -31121,6 +31881,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -31237,6 +32005,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -31670,6 +32446,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -31788,24 +32572,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryAttitudePercent>15</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -32244,6 +33020,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -32360,6 +33144,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -32793,6 +33585,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -32909,6 +33709,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -33342,6 +34150,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -33458,6 +34274,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -33891,6 +34715,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -34007,6 +34839,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -34452,6 +35292,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -34568,6 +35416,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -35001,6 +35857,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -35117,6 +35981,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -35550,6 +36422,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -35666,6 +36546,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -36108,6 +36996,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -36224,6 +37120,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -36660,6 +37564,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -36776,6 +37688,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -37222,6 +38142,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -37338,6 +38266,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -37782,6 +38718,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -37898,6 +38842,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -38336,6 +39288,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -38452,6 +39412,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -38888,6 +39856,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -39004,6 +39980,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -39444,6 +40428,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -39560,6 +40552,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -39996,6 +40996,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -40112,6 +41120,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -40550,6 +41566,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -40666,6 +41690,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -41074,6 +42106,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -41190,6 +42230,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -41619,6 +42667,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -41735,6 +42791,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -42168,6 +43232,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -42284,6 +43356,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -42713,6 +43793,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -42829,6 +43917,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -43263,6 +44359,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -43379,6 +44483,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -43821,6 +44933,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -43937,6 +45057,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -44375,6 +45503,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -44491,6 +45627,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -44926,6 +46070,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -45044,24 +46196,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -45492,6 +46636,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -45608,6 +46760,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -46043,6 +47203,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -46159,6 +47327,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -46595,6 +47771,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -46713,24 +47897,16 @@
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -47155,6 +48331,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -47271,6 +48455,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -47705,6 +48897,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -47821,6 +49021,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -48259,6 +49467,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -48375,6 +49591,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -48810,6 +50034,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -48926,6 +50158,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-200</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -49359,6 +50599,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -49475,6 +50723,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -49908,6 +51164,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -50024,6 +51288,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -50457,6 +51729,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -50573,6 +51853,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -51007,6 +52295,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -51087,6 +52383,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_ACCEPTED_STOP_TRADING</MemoryType>
 					<iMemoryAttitudePercent>50</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -51533,6 +52837,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -51649,6 +52961,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -52091,6 +53411,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -52207,6 +53535,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -52643,6 +53979,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -52759,6 +54103,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -53192,6 +54544,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -53308,6 +54668,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -53748,6 +55116,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -53828,6 +55204,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_ACCEPTED_STOP_TRADING</MemoryType>
 					<iMemoryAttitudePercent>50</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -54261,6 +55645,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -54377,6 +55769,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -54817,6 +56217,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -54933,6 +56341,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -55373,6 +56789,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -55489,6 +56913,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -55922,6 +57354,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -56038,6 +57478,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -56480,6 +57928,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -56598,24 +58054,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -57054,6 +58502,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -57172,24 +58628,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>
@@ -57624,6 +59072,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -57740,6 +59196,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -58173,6 +59637,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -58289,6 +59761,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -58725,6 +60205,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -58841,6 +60329,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -59286,6 +60782,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -59402,6 +60906,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -59836,6 +61348,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -59952,6 +61472,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -60382,6 +61910,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -60498,6 +62034,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -60934,6 +62478,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -61050,6 +62602,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -61479,6 +63039,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -61595,6 +63163,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -62031,6 +63607,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -62143,6 +63727,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -62572,6 +64164,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -62688,6 +64288,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -63130,6 +64738,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -63210,6 +64826,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_ACCEPTED_STOP_TRADING</MemoryType>
 					<iMemoryAttitudePercent>50</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -63652,6 +65276,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -63768,6 +65400,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -64210,6 +65850,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -64326,6 +65974,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -64768,6 +66424,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -64884,6 +66548,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -65326,6 +66998,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -65442,6 +67122,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -65884,6 +67572,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -66000,6 +67696,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -66437,6 +68141,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -66553,6 +68265,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -66995,6 +68715,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -67111,6 +68839,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -67552,6 +69288,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -67652,6 +69396,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -68060,6 +69812,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -68176,6 +69936,14 @@
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
+				</MemoryAttitudePercent>
+				<MemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
@@ -68637,6 +70405,14 @@
 					<iMemoryRand>10</iMemoryRand>
 				</MemoryDecay>
 				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryRand>5</iMemoryRand>
+				</MemoryDecay>
+				<MemoryDecay>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
 					<iMemoryRand>100</iMemoryRand>
 				</MemoryDecay>
@@ -68755,24 +70531,16 @@
 					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
+					<MemoryType>MEMORY_GIFTED_UNITS_TO_US</MemoryType>
 					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_STOPPED_TRADING</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_HIRED_TRADE_EMBARGO</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
-				</MemoryAttitudePercent>
-				<MemoryAttitudePercent>
-					<MemoryType>MEMORY_MADE_DEMAND</MemoryType>
-					<iMemoryAttitudePercent>-100</iMemoryAttitudePercent>
+					<MemoryType>MEMORY_GIFTED_CIVILIANS_TO_US</MemoryType>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_TRADED_TECH_TO_US</MemoryType>
-					<iMemoryAttitudePercent>5</iMemoryAttitudePercent>
+					<iMemoryAttitudePercent>10</iMemoryAttitudePercent>
 				</MemoryAttitudePercent>
 				<MemoryAttitudePercent>
 					<MemoryType>MEMORY_VOTED_AGAINST_US</MemoryType>

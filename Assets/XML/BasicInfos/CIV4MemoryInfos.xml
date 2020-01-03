@@ -115,6 +115,14 @@
 			<Description>TXT_KEY_MEMORY_CANCELLED_OPEN_BORDERS</Description>
 		</MemoryInfo>
 		<MemoryInfo>
+			<Type>MEMORY_GIFTED_UNITS_TO_US</Type>
+			<Description>TXT_KEY_MEMORY_GIFTED_UNITS_TO_US</Description>
+		</MemoryInfo>
+		<MemoryInfo>
+			<Type>MEMORY_GIFTED_CIVILIANS_TO_US</Type>
+			<Description>TXT_KEY_MEMORY_GIFTED_CIVILIANS_TO_US</Description>
+		</MemoryInfo>
+		<MemoryInfo>
 			<Type>MEMORY_TRADED_TECH_TO_US</Type>
 			<Description>TXT_KEY_MEMORY_TRADED_TECH_TO_US</Description>
 		</MemoryInfo>

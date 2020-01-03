@@ -569,7 +569,12 @@ def secedeCity(city, iNewOwner, bRelocate):
 	
 def completeCollapse(iPlayer):
 	lCities = utils.getCityList(iPlayer)
-	
+
+	if gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isHasTech(iNationalism):
+		if len(utils.getOwnedCoreCities(iPlayer)) < len(utils.getCityList(iPlayer)):
+			collapseToCore(iPlayer)
+			return
+					
 	# before cities are seceded, downgrade their cottages
 	downgradeCottages(iPlayer)
 	

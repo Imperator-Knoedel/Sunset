@@ -1481,7 +1481,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			if (getCombatFirstStrikes() == 0)	// Leoreth: let cavalry with first strikes flank too (side effects??)
 			//if (true)
 			{
-				if (getDamage() + iAttackerDamage >= maxHitPoints() && GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability())
+				// 1SDAN: Withdraw if win chance is >= 90%
+				if (getDamage() + iAttackerDamage >= maxHitPoints() && (GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability() || (getCombatOdds(this, pDefender) >= 900)))	//KNOEDEL
 				{
 					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
 
@@ -1517,7 +1518,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		{
 			if (pDefender->getCombatFirstStrikes() == 0)
 			{
-				if (std::min(GC.getMAX_HIT_POINTS(), pDefender->getDamage() + iDefenderDamage) > combatLimitAgainst(pDefender))
+				// 1SDAN: Withdraw if win chance is >= 90%
+				if ((std::min(GC.getMAX_HIT_POINTS(), pDefender->getDamage() + iDefenderDamage) > combatLimitAgainst(pDefender)) || (pDefender->getDamage() + iDefenderDamage >= pDefender->maxHitPoints() && 1000 - getCombatOdds(this, pDefender) >= 900))	//KNOEDEL
 				{
 					changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
 					pDefender->setDamage(combatLimitAgainst(pDefender), getOwnerINLINE());
@@ -3608,8 +3610,8 @@ bool CvUnit::canGift(bool bTestVisible, bool bTestTransport)
 		return false;
 	}
 
-	// Leoreth: can only gift units to vassals and defensive pact partners
-	if (!GET_TEAM(pPlot->getTeam()).isVassal(getTeam()) && !GET_TEAM(pPlot->getTeam()).isDefensivePact(getTeam()))
+	// Leoreth: can only gift units to vassals and defensive pact partners	//KNOEDEL: Open Borders should count also
+	if (!GET_TEAM(pPlot->getTeam()).isVassal(getTeam()) && !GET_TEAM(pPlot->getTeam()).isDefensivePact(getTeam()) && !GET_TEAM(pPlot->getTeam()).isOpenBorders(getTeam()))	//KNOEDEL
 	{
 		return false;
 	}
@@ -3703,7 +3705,29 @@ void CvUnit::gift(bool bTestTransport)
 
 	pGiftUnit->convert(this);
 
-	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, (pGiftUnit->getUnitInfo().getProductionCost() / 5));
+//KNOEDELstart
+	int iUnitValue = 0;
+
+	iUnitValue += (pGiftUnit->getUnitInfo().getProductionCost() / 10);
+	iUnitValue += (pGiftUnit->getUnitInfo().getAssetValue() * pGiftUnit->getUnitInfo().getAssetValue());
+	iUnitValue /= ((GET_PLAYER(pGiftUnit->getOwnerINLINE()).getCurrentEra()) + 1);
+	
+	if (pGiftUnit->getUnitInfo().getDefaultUnitAIType() == UNITAI_SPY || pGiftUnit->getUnitInfo().getDefaultUnitAIType() == UNITAI_MISSIONARY)
+	{
+		iUnitValue /= 4;
+	}
+
+	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, (iUnitValue / 2));
+
+	if ((pGiftUnit->getUnitInfo().isMilitaryProduction() == 1) && (GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_getMemoryCount(eOwner, MEMORY_GIFTED_UNITS_TO_US) <= 36))	//36 caps at +3, with 37 it immediately jumps up to to +7
+	{
+		GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changeMemoryCount(eOwner, MEMORY_GIFTED_UNITS_TO_US, iUnitValue);
+	}
+	else if ((pGiftUnit->getUnitInfo().isMilitaryProduction() == 0) && (GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_getMemoryCount(eOwner, MEMORY_GIFTED_CIVILIANS_TO_US) <= 35))	//oddly enough 36 caps at +4
+	{
+		GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changeMemoryCount(eOwner, MEMORY_GIFTED_CIVILIANS_TO_US, iUnitValue);
+	}
+//KNOEDELend
 
 	szBuffer = gDLL->getText("TXT_KEY_MISC_GIFTED_UNIT_TO_YOU", GET_PLAYER(eOwner).getNameKey(), pGiftUnit->getNameKey());
 	gDLL->getInterfaceIFace()->addMessage(pGiftUnit->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO, pGiftUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pGiftUnit->getX_INLINE(), pGiftUnit->getY_INLINE(), true, true);
@@ -7121,6 +7145,7 @@ bool CvUnit::awardSpyExperience(TeamTypes eTargetTeam, EspionageMissionTypes eMi
 
 	iExperience *= 2 * iDifficulty;
 	iExperience /= 100;
+	iExperience++;	//KNOEDEL
 
 	if (iExperience < 100)
 	{

@@ -442,7 +442,7 @@
 			<Description>TXT_KEY_TECH_SEAFARING</Description>
 			<Civilopedia>TXT_KEY_TECH_SEAFARING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<iCost>50</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
@@ -729,7 +729,7 @@
 			<Description>TXT_KEY_TECH_SHIPBUILDING</Description>
 			<Civilopedia>TXT_KEY_TECH_SHIPBUILDING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iCost>60</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>12</iAsset>
@@ -995,7 +995,7 @@
 			<Description>TXT_KEY_TECH_NAVIGATION</Description>
 			<Civilopedia>TXT_KEY_TECH_NAVIGATION_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<iCost>120</iCost>
+			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>16</iAsset>
@@ -1069,8 +1069,8 @@
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
-			<iAsset>20</iAsset>
-			<iPower>3</iPower>
+			<iAsset>18</iAsset>
+			<iPower>2</iPower>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
@@ -1078,11 +1078,11 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>5</iFlavor>
+					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
-					<iFlavor>3</iFlavor>
+					<iFlavor>1</iFlavor>
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
@@ -1494,7 +1494,7 @@
 			<iCost>450</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
-			<iAsset>24</iAsset>
+			<iAsset>20</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>6</iGridX>
@@ -1502,15 +1502,15 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>4</iFlavor>
+					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
-					<iFlavor>3</iFlavor>
+					<iFlavor>1</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_ADMIN</FlavorType>
-					<iFlavor>3</iFlavor>
+					<iFlavor>1</iFlavor>
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
@@ -1782,7 +1782,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>5</iFlavor>
+					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
