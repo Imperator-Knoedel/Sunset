@@ -453,7 +453,7 @@ class UniquePowers:
 						
 			# chance to spawn a worker
 			if (gc.getGame().getGameTurn() <= getTurnForYear(1950)):
-				iRandom = gc.getGame().getSorenRandNum(1, 'random Worker spawn')
+				iRandom = gc.getGame().getSorenRandNum(2, 'random Worker spawn')
 				if iRandom == 0:
 					utils.makeUnit(iWorker, iTargetPlayer, (x, y), 1)
 				

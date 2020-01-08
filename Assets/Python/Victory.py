@@ -926,7 +926,7 @@ def checkTurn(iGameTurn, iPlayer):
 	
 		# first goal: have legendary culture in Paris in 1790 AD
 		if iGameTurn == getTurnForYear(1790):
-			if getCityCulture(iFrance, (55, 50)) >= utils.getTurns(40000):
+			if getCityCulture(iFrance, (55, 50)) >= utils.getTurns(100000):
 				win(iFrance, 0)
 			else:
 				lose(iFrance, 0)
@@ -3843,7 +3843,7 @@ def getUHVHelp(iPlayer, iGoal):
 	elif iPlayer == iFrance:
 		if iGoal == 0:
 			iCulture = getCityCulture(iFrance, (55, 50))
-			aHelp.append(getIcon(iCulture >= utils.getTurns(40000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Paris", iCulture, utils.getTurns(40000))))
+			aHelp.append(getIcon(iCulture >= utils.getTurns(100000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Paris", iCulture, utils.getTurns(100000))))
 		elif iGoal == 1:
 			iEurope, iTotalEurope = countControlledTiles(iFrance, tEuropeTL, tEuropeBR, True)
 			iEasternEurope, iTotalEasternEurope = countControlledTiles(iFrance, tEasternEuropeTL, tEasternEuropeBR, True)

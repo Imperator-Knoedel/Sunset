@@ -443,7 +443,7 @@
 			<bAnimated>1</bAnimated>
 			<fScale>1.5</fScale>
 			<fInterfaceScale>0.46</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Protestant_Church/church.nif</NIF>
+			<NIF>Art/Structures/Buildings/Cathedrals/christian cathedral.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/ProtestantTemple.dds</Button>
 		</BuildingArtInfo>
@@ -453,7 +453,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>2.2</fScale>
 			<fInterfaceScale>0.38</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Protestant_Cathedral/cathedral.nif</NIF>
+			<NIF>Art/Structures/Buildings/Christian_Cathedral/kathedrale.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/ProtestantCathedral.dds</Button>
 		</BuildingArtInfo>
@@ -463,7 +463,7 @@
 			<bAnimated>1</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Protestant_School/College.nif</NIF>
+			<NIF>Art/Structures/Buildings/Monastery/Christian/christian monastery.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/ProtestantMonastery.dds</Button>
 		</BuildingArtInfo>
