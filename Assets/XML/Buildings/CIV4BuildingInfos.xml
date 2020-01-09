@@ -57,6 +57,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<bNeverCapture>1</bNeverCapture>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -87,6 +88,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ZULU_IKHANDA</ArtDefineTag>
 			<bNeverCapture>1</bNeverCapture>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -294,6 +296,7 @@
 			<Strategy>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONUMENT</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -328,6 +331,7 @@
 			<Strategy>TXT_KEY_BUILDING_EGYPTIAN_OBELISK_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_EGYPTIAN_OBELISK</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -373,6 +377,7 @@
 			<Strategy>TXT_KEY_BUILDING_ETHIOPIAN_STELE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ETHIOPIAN_STELE</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -413,6 +418,7 @@
 			<Strategy>TXT_KEY_BUILDING_INDONESIAN_CANDI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INDONESIAN_CANDI</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -451,6 +457,7 @@
 			<Strategy>TXT_KEY_BUILDING_INDIAN_EDICT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INDIAN_EDICT</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -486,6 +493,7 @@
 			<Strategy>TXT_KEY_BUILDING_POLYNESIAN_MALAE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_POLYNESIAN_MALAE</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -526,6 +534,7 @@
 			<Strategy>TXT_KEY_BUILDING_NATIVE_AMERICAN_TOTEM_POLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NATIVE_AMERICAN_TOTEM_POLE</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -1150,6 +1159,7 @@
 			<Strategy>TXT_KEY_BUILDING_THEATRE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_THEATRE</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_LITERATURE</PrereqTech>
 			<iCost>60</iCost>
 			<iConquestProb>50</iConquestProb>
@@ -1184,6 +1194,7 @@
 			<Strategy>TXT_KEY_BUILDING_GREEK_ODEON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GREEK_ODEON</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_LITERATURE</PrereqTech>
 			<iCost>50</iCost>
 			<iConquestProb>50</iConquestProb>
@@ -1223,6 +1234,7 @@
 			<Strategy>TXT_KEY_BUILDING_BYZANTINE_HIPPODROME_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BYZANTINE_HIPPODROME</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_LITERATURE</PrereqTech>
 			<iCost>50</iCost>
 			<iConquestProb>50</iConquestProb>
@@ -1269,6 +1281,7 @@
 			<Strategy>TXT_KEY_BUILDING_CHINESE_PAVILLION_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CHINESE_PAVILLION</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_LITERATURE</PrereqTech>
 			<iCost>50</iCost>
 			<iConquestProb>50</iConquestProb>
@@ -1304,6 +1317,7 @@
 			<Strategy>TXT_KEY_BUILDING_ARENA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1327,6 +1341,7 @@
 			<Strategy>TXT_KEY_BUILDING_MAYAN_BALL_COURT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAYAN_BALL_COURT</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1360,6 +1375,7 @@
 			<Strategy>TXT_KEY_BUILDING_MEXICAN_CHARREADA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MEXICAN_CHARREADA</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1399,6 +1415,7 @@
 			<Strategy>TXT_KEY_BUILDING_BABYLONIAN_GARDEN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BABYLONIAN_GARDEN</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1484,6 +1501,7 @@
 			<Strategy>TXT_KEY_BUILDING_WEAVER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WEAVER</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1542,6 +1560,7 @@
 			<Strategy>TXT_KEY_BUILDING_CONGOLESE_MBWADI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CONGOLESE_MBWADI</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1880,6 +1899,7 @@
 			<Strategy>TXT_KEY_BUILDING_BATH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BATH</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -1925,6 +1945,7 @@
 			<Strategy>TXT_KEY_BUILDING_HARAPPAN_RESERVOIR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HARAPPAN_RESERVOIR</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>50</iCost>
@@ -1965,6 +1986,7 @@
 			<Strategy>TXT_KEY_BUILDING_OTTOMAN_HAMMAM_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_OTTOMAN_HAMMAM</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -2338,6 +2360,7 @@
 			<Strategy>TXT_KEY_BUILDING_PHARMACY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PHARMACY</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_ALCHEMY</PrereqTech>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2385,6 +2408,7 @@
 			<Strategy>TXT_KEY_BUILDING_PERSIAN_APOTHECARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PERSIAN_APOTHECARY</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2453,6 +2477,7 @@
 			<Strategy>TXT_KEY_BUILDING_ARABIAN_ALCHEMIST_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARABIAN_ALCHEMIST</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_ALCHEMY</PrereqTech>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2504,8 +2529,8 @@
 			<Strategy>TXT_KEY_BUILDING_POST_OFFICE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_POST_OFFICE</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_PAPER</PrereqTech>
-			<bNukeImmune>1</bNukeImmune>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2546,8 +2571,8 @@
 			<Strategy>TXT_KEY_BUILDING_INCAN_TAMBO_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INCAN_TAMBO</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_ENGINEERING</PrereqTech>
-			<bNukeImmune>1</bNukeImmune>
 			<iCost>70</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2589,8 +2614,8 @@
 			<Strategy>TXT_KEY_BUILDING_IRANIAN_CARAVANSERAI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_IRANIAN_CARAVANSERAI</ArtDefineTag>
+			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
 			<PrereqTech>TECH_PAPER</PrereqTech>
-			<bNukeImmune>1</bNukeImmune>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2651,6 +2676,7 @@
 			<Strategy>TXT_KEY_BUILDING_WHARF_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WHARF</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_COMPASS</PrereqTech>
 			<bWater>1</bWater>
 			<iCost>120</iCost>
@@ -2702,6 +2728,7 @@
 			<Strategy>TXT_KEY_BUILDING_COFFEEHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COFFEEHOUSE</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_PATRONAGE</PrereqTech>
 			<iCost>100</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -2762,6 +2789,7 @@
 			<Strategy>TXT_KEY_BUILDING_FRENCH_SALON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_SALON</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_PATRONAGE</PrereqTech>
 			<iCost>100</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -2898,6 +2926,7 @@
 			<Strategy>TXT_KEY_BUILDING_CONSTABULARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CONSTABULARY</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			<iAIWeight>25</iAIWeight>
 			<iCost>100</iCost>
@@ -2952,6 +2981,7 @@
 			<Strategy>TXT_KEY_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			<iAIWeight>25</iAIWeight>
 			<iCost>100</iCost>
@@ -3219,6 +3249,7 @@
 			<Strategy>TXT_KEY_BUILDING_CIVIC_SQUARE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CIVIC_SQUARE</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>120</iCost>
@@ -3484,6 +3515,7 @@
 			<Strategy>TXT_KEY_BUILDING_STAR_FORT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STAR_FORT</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>120</iCost>
@@ -3842,7 +3874,7 @@
 			<PrereqTech>TECH_HYDRAULICS</PrereqTech>
 			<bWater>1</bWater>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>120</iCost>
+			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iHealth>-1</iHealth>
@@ -3850,6 +3882,12 @@
 			<iPower>2</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
@@ -3940,6 +3978,7 @@
 			<Strategy>TXT_KEY_BUILDING_OBSERVATORY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_OBSERVATORY</ArtDefineTag>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4006,7 +4045,7 @@
 			<Strategy>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COURTHOUSE</ArtDefineTag>
-			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
+			<FreeStartEra>ERA_DIGITAL</FreeStartEra>
 			<PrereqTech>TECH_SOCIAL_CONTRACT</PrereqTech>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4327,7 +4366,7 @@
 			<PrereqTech>TECH_ENGINE</PrereqTech>
 			<PowerBonus>BONUS_COAL</PowerBonus>
 			<bDirtyPower>1</bDirtyPower>
-			<iCost>120</iCost>
+			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>75</iConquestProb>
@@ -4577,7 +4616,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INDUSTRIAL_PARK</ArtDefineTag>
 			<PrereqTech>TECH_ASSEMBLY_LINE</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>75</iConquestProb>
