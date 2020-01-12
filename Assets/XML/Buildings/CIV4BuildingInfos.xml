@@ -3944,7 +3944,7 @@
 			<Strategy>TXT_KEY_BUILDING_DUTCH_DIKE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DUTCH_DIKE</ArtDefineTag>
-			<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
 			<bWater>1</bWater>
 			<bRiver>1</bRiver>
 			<iCost>200</iCost>
@@ -3962,6 +3962,12 @@
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</RiverPlotYieldChanges>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_AQUEDUCT</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -4802,6 +4808,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
+			<iTradeRouteModifier>50</iTradeRouteModifier>
 			<iAsset>6</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<PowerYieldModifiers>
@@ -4820,7 +4827,7 @@
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</YieldChanges>
 				</BonusYieldChange>
 				<BonusYieldChange>
@@ -4828,7 +4835,7 @@
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</YieldChanges>
 				</BonusYieldChange>
 				<BonusYieldChange>
@@ -4836,7 +4843,7 @@
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</YieldChanges>
 				</BonusYieldChange>
 			</BonusYieldChanges>
@@ -9794,6 +9801,7 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
+			<iCitiesPrereq>8</iCitiesPrereq>
 			<iExperience>4</iExperience>
 			<iMilitaryProductionModifier>50</iMilitaryProductionModifier>
 			<iAsset>8</iAsset>

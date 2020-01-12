@@ -1467,7 +1467,7 @@ def checkTurn(iGameTurn, iPlayer):
 			
 		# second goal: have lengendary culture in Buenos Aires by 1955 AD
 		if isPossible(iArgentina, 1):
-			if getCityCulture(iArgentina, Areas.getCapital(iArgentina)) >= utils.getTurns(40000):
+			if getCityCulture(iArgentina, Areas.getCapital(iArgentina)) >= utils.getTurns(100000):
 				win(iArgentina, 1)
 				
 		if iGameTurn == getTurnForYear(1955):
@@ -4164,7 +4164,7 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(iTradeGold >= utils.getTurns(6000)) + localText.getText("TXT_KEY_VICTORY_TRADE_GOLD", (iTradeGold, utils.getTurns(6000))))
 		elif iGoal == 1:
 			iCulture = getCityCulture(iArgentina, Areas.getCapital(iArgentina))
-			aHelp.append(getIcon(iCulture >= utils.getTurns(40000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Buenos Aires", iCulture, utils.getTurns(40000))))
+			aHelp.append(getIcon(iCulture >= utils.getTurns(100000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Buenos Aires", iCulture, utils.getTurns(100000))))
 		elif iGoal == 2:
 			iGoldenAgeTurns = data.iArgentineGoldenAgeTurns
 			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(48)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 6)))
