@@ -3073,7 +3073,7 @@
 			<Strategy>TXT_KEY_BUILDING_PORTUGUESE_FEITORIA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PORTUGUESE_FEITORIA</ArtDefineTag>
-			<PrereqTech>TECH_LOGISTICS</PrereqTech>
+			<PrereqTech>TECH_OPTICS</PrereqTech>
 			<bWater>1</bWater>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -8081,7 +8081,7 @@
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
-			<iCost>400</iCost>
+			<iCost>300</iCost>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9410,8 +9410,9 @@
 			<ArtDefineTag>ART_DEF_BUILDING_COLOSSUS</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_COLOSSUS</MovieDefineTag>
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
-			<PrereqTech>TECH_BLOOMERY</PrereqTech>
+			<PrereqTech>TECH_GENERALSHIP</PrereqTech>
 			<ObsoleteTech>TECH_GUILDS</ObsoleteTech>
+			<PrereqBonuses>BONUS_FISH</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9471,6 +9472,7 @@
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<ObsoleteTech>TECH_FORTIFICATION</ObsoleteTech>
+			<PrereqBonuses>BONUS_FISH</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9575,17 +9577,18 @@
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			<ObsoleteTech>TECH_GUNPOWDER</ObsoleteTech>
+			<PrereqBonuses>BONUS_FISH</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>350</iCost>
+			<iCost>400</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
-			<iGlobalGreatPeopleRateModifier>50</iGlobalGreatPeopleRateModifier>
+			<iGlobalGreatPeopleRateModifier>75</iGlobalGreatPeopleRateModifier>
 			<iAsset>10</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -9626,12 +9629,13 @@
 				<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			</TechTypes>
 			<ObsoleteTech>TECH_THEOLOGY</ObsoleteTech>
+			<PrereqBonuses>BONUS_FISH</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>350</iCost>
+			<iCost>250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9686,13 +9690,14 @@
 			<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			<ObsoleteTech>TECH_COMPASS</ObsoleteTech>
 			<FreeBuilding>BUILDINGCLASS_LIGHTHOUSE</FreeBuilding>
+			<PrereqBonuses>BONUS_FISH</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bWater>1</bWater>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>200</iCost>
+			<iCost>300</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>10</iMinAreaSize>
@@ -9847,17 +9852,19 @@
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			<ObsoleteTech>TECH_CROP_ROTATION</ObsoleteTech>
+			<PrereqBonuses>BONUS_WINE</PrereqBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>300</iCost>
+			<iCost>250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
-			<iGlobalHealth>2</iGlobalHealth>
+			<iGlobalHurryModifier>-33</iGlobalHurryModifier>
+			<iGlobalHealth>1</iGlobalHealth>
 			<iAsset>8</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>

@@ -928,11 +928,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA1</Tag>
-		<English>Have legendary culture in Paris in 1790 AD</English>
-		<French>Avoir une culture l&#233;gendaire &#224; Paris en 1790 ap. J.-C.</French>
-		<German>Haben Sie im Jahr 1790 n. Chr. legend&#228;re Kultur in Paris</German>
-		<Italian>Have legendary culture in Paris in 1790 AD</Italian>
-		<Spanish>Have legendary culture in Paris in 1790 AD</Spanish>
+		<English>Have at least half-legendary culture in Paris in 1790 AD</English>
+		<French>Avoir une culture half-l&#233;gendaire &#224; Paris en 1790 ap. J.-C.</French>
+		<German>Haben Sie im Jahr 1790 n. Chr. zumindest halb-legend&#228;re Kultur in Paris</German>
+		<Italian>Have at least half-legendary culture in Paris in 1790 AD</Italian>
+		<Spanish>Have at least half-legendary culture in Paris in 1790 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_FRA2_TITLE</Tag>
