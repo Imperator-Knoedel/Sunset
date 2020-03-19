@@ -7518,7 +7518,7 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 	//Rhye - start (modern units cost more)
 //KNOEDELstart	if (getCurrentEra() >= 2) { //medieval
 	iSupport /= 10;
-	iSupport *= (getCurrentEra() + 1);
+	iSupport *= (getCurrentEra() + 2);
 //KNOEDELend	}
 	//Rhye - end
 
