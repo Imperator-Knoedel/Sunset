@@ -167,12 +167,12 @@
 		<EspionageMissionInfo>
 			<Type>ESPIONAGEMISSION_ASSASSINATE</Type>
 			<Description>TXT_KEY_MISSION_ASSASSIN</Description>
-			<iCost>500</iCost>
+			<iCost>1000</iCost>
 			<bIsTwoPhases>1</bIsTwoPhases>
 			<bTargetsCity>1</bTargetsCity>
 			<iDifficultyMod>50</iDifficultyMod>
 			<iDestroyUnitCostFactor>1</iDestroyUnitCostFactor>
-			<iBaseExperience>200</iBaseExperience>
+			<iBaseExperience>250</iBaseExperience>
 		</EspionageMissionInfo>
 		<EspionageMissionInfo>
 			<Type>ESPIONAGEMISSION_BRIBE</Type>

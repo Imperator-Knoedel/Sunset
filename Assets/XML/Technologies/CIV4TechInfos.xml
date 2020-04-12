@@ -4356,7 +4356,7 @@
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
+				<PrereqTech>TECH_SYNTHETICS</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_RADIO</PrereqTech>
@@ -4394,6 +4394,9 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
+			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_RADIO</PrereqTech>
 				<PrereqTech>TECH_PSYCHOLOGY</PrereqTech>

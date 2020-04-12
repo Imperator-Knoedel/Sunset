@@ -7143,7 +7143,7 @@ bool CvUnit::awardSpyExperience(TeamTypes eTargetTeam, EspionageMissionTypes eMi
 	int iExperience = GC.getEspionageMissionInfo(eMission).getBaseExperience();
 	int iDifficulty = (getSpyInterceptPercent(eTargetTeam) * (100 + GC.getEspionageMissionInfo(eMission).getDifficultyMod())) / 100;
 
-	iExperience *= 2 * iDifficulty;
+	iExperience *= 4 * iDifficulty;	//KNOEDEL
 	iExperience /= 100;
 	iExperience++;	//KNOEDEL
 

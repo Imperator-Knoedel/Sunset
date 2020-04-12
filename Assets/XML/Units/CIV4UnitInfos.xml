@@ -11732,7 +11732,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iBombardRate>12</iBombardRate>
+			<iBombardRate>14</iBombardRate>
 			<iAsset>3</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -11821,7 +11821,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iBombardRate>12</iBombardRate>
+			<iBombardRate>14</iBombardRate>
 			<iAsset>3</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -11919,7 +11919,7 @@
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iBombardRate>12</iBombardRate>
+			<iBombardRate>14</iBombardRate>
 			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>8</iPower>
@@ -12009,7 +12009,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iBombardRate>12</iBombardRate>
+			<iBombardRate>14</iBombardRate>
 			<iAsset>3</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
@@ -12098,7 +12098,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iBombardRate>12</iBombardRate>
+			<iBombardRate>16</iBombardRate>
 			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>10</iPower>
@@ -12194,7 +12194,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iBombardRate>12</iBombardRate>
+			<iBombardRate>20</iBombardRate>
 			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>3</iAsset>
 			<iPower>14</iPower>
@@ -12373,7 +12373,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iBombardRate>16</iBombardRate>
+			<iBombardRate>25</iBombardRate>
 			<iCultureGarrison>8</iCultureGarrison>
 			<iAsset>4</iAsset>
 			<iPower>18</iPower>
@@ -12460,7 +12460,7 @@
 					<iUnitCombatCollateralImmune>1</iUnitCombatCollateralImmune>
 				</UnitCombatCollateralImmune>
 			</UnitCombatCollateralImmunes>
-			<iBombardRate>16</iBombardRate>
+			<iBombardRate>28</iBombardRate>
 			<iCultureGarrison>9</iCultureGarrison>
 			<iAsset>5</iAsset>
 			<iPower>24</iPower>
@@ -13834,6 +13834,10 @@
 					<UnitClassUpgradeType>UNITCLASS_TORPEDO_BOAT</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
+				<UnitClassUpgrade>
+					<UnitClassUpgradeType>UNITCLASS_SUBMARINE</UnitClassUpgradeType>
+					<bUnitClassUpgrade>1</bUnitClassUpgrade>
+				</UnitClassUpgrade>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -14495,7 +14499,7 @@
 			<iCollateralDamage>50</iCollateralDamage>
 			<iCollateralDamageLimit>50</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
-			<iBombardRate>8</iBombardRate>
+			<iBombardRate>10</iBombardRate>
 			<iAsset>3</iAsset>
 			<iPower>15</iPower>
 			<UnitMeshGroups>
@@ -15177,7 +15181,7 @@
 			<iCollateralDamage>50</iCollateralDamage>
 			<iCollateralDamageLimit>60</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>5</iCollateralDamageMaxUnits>
-			<iBombardRate>20</iBombardRate>
+			<iBombardRate>22</iBombardRate>
 			<SpecialCargo>SPECIALUNIT_MISSILE</SpecialCargo>
 			<DomainCargo>DOMAIN_AIR</DomainCargo>
 			<iCargo>4</iCargo>
@@ -15295,7 +15299,19 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
+					<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_MISSIONARY_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_SPY_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -15314,6 +15330,9 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
 			<iChanceFirstStrikes>1</iChanceFirstStrikes>
+			<SpecialCargo>SPECIALUNIT_PEOPLE</SpecialCargo>
+			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<iCargo>1</iCargo>
 			<iWithdrawalProb>75</iWithdrawalProb>
 			<iAsset>4</iAsset>
 			<iPower>24</iPower>
