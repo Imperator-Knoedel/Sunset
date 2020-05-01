@@ -485,11 +485,11 @@ class CvRFCEventHandler:
 		
 		if iPlayer < iNumPlayers:
 			dc.onRevolution(iPlayer)
+			cnm.onRevolution(iPlayer)
 			
 		utils.checkSlaves(iPlayer)
 			
-		if iPlayer in [iEgypt]:
-			cnm.onRevolution(iPlayer)
+		# if iPlayer in [iEgypt]: Knoedel: but why tho
 			
 	def onCityGrowth(self, argsList):
 		'City Population Growth'

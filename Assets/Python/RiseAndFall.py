@@ -2855,9 +2855,10 @@ class RiseAndFall:
 			if utils.getHumanID() != iBrazil:
 				utils.makeUnitAI(iRifleman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 		elif iCiv == iCanada:
-			utils.createSettlers(iCiv, 5)
-			utils.makeUnit(iDragoon, iCiv, tPlot, 3)
-			utils.makeUnit(iRifleman, iCiv, tPlot, 5)
+			utils.createSettlers(iCiv, 8)
+			utils.makeUnit(iDragoon, iCiv, tPlot, 5)
+			utils.makeUnit(iRifleman, iCiv, tPlot, 8)
+			utils.makeUnit(iExplorer, iCiv, tPlot, 2)
 			tSeaPlot = self.findSeaPlots(tPlot, 2, iCiv)
 			if tSeaPlot:
 				utils.makeUnit(iSteamship, iCiv, tSeaPlot, 2)

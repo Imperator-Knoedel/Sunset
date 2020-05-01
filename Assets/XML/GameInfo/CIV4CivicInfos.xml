@@ -198,18 +198,23 @@
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Democracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
-			<BuildingHappinessChanges>
-				<BuildingHappinessChange>
-					<BuildingType>BUILDINGCLASS_CIVIC_SQUARE</BuildingType>
-					<iHappinessChange>2</iHappinessChange>
-				</BuildingHappinessChange>
-				<BuildingHappinessChange>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_COURTHOUSE</BuildingType>
-					<iHappinessChange>2</iHappinessChange>
-				</BuildingHappinessChange>
-			</BuildingHappinessChanges>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_CIVIC_SQUARE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_NEWS_PRESS</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
+			<iLargestCityHappiness>3</iLargestCityHappiness>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -424,7 +429,7 @@
 			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Constitution.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iFreeSpecialist>1</iFreeSpecialist>
 			<SpecialistValids>
 				<SpecialistValid>
@@ -432,21 +437,6 @@
 					<bValid>1</bValid>
 				</SpecialistValid>
 			</SpecialistValids>
-			<iLargestCityHappiness>2</iLargestCityHappiness>
-			<BuildingProductionModifiers>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_COURTHOUSE</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_CIVIC_SQUARE</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_NEWS_PRESS</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

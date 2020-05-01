@@ -495,11 +495,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENGLISH_REDCOAT_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], causes collateral damage.</English>
-		<French>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], causes collateral damage.</French>
-		<German>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], causes collateral damage.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], causes collateral damage.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], causes collateral damage.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is stronger when fighting in cities and cheaper to produce.</English>
+		<French>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is stronger when fighting in cities and cheaper to produce.</French>
+		<German>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is stronger when fighting in cities and cheaper to produce.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is stronger when fighting in cities and cheaper to produce.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Redcoat[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is stronger when fighting in cities and cheaper to produce.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EXPLORER_STRATEGY</Tag>
