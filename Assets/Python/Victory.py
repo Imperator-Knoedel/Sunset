@@ -527,8 +527,8 @@ def checkTurn(iGameTurn, iPlayer):
 		# Maya
 		if not pMaya.isReborn():
 		
-			# first goal: discover Calendar by 830AD, 830 because that's 10.0.0.0.0 in their Calendar
-			if iGameTurn == getTurnForYear(830):
+			# first goal: discover Calendar by 40AD, 40AD because 41 is 8.0.0.0.0 in their Calendar
+			if iGameTurn == getTurnForYear(40):
 				expire(iMaya, 0)
 				
 			# second goal: build the Temple of Kukulkan by 1225 AD, because 1224AD is 11.0.0.0.0
@@ -1738,7 +1738,7 @@ def onTechAcquired(iPlayer, iTech):
 				if iPlayer != iLoopPlayer: lose(iLoopPlayer, iGoal)
 				elif checkEraGoal(iLoopPlayer, lEras): win(iLoopPlayer, iGoal)
 				
-	# first Maya goal: discover Calendar by 600 AD
+	# first Maya goal: discover Calendar by 40 AD
 	if iPlayer == iMaya:
 		if not pMaya.isReborn() and isPossible(iMaya, 0):
 			if iTech == iCalendar:

@@ -1052,7 +1052,7 @@ def calculateStability(iPlayer):
 		
 		# worst enemies
 		if pLoopPlayer.getWorstEnemy() == iPlayer:
-			if iLoopScore > iPlayerScore: iRelationStability -= 3
+			if iLoopScore > iPlayerScore: iRelationStability -= 2
 			
 		# wars
 		if tPlayer.isAtWar(iLoopPlayer):
@@ -1086,6 +1086,8 @@ def calculateStability(iPlayer):
 	iRelationEqual = sum(sign(iAttitude) * min(25, abs(iAttitude) / 5) for iAttitude in lEqualAttitudes if abs(iAttitude) > 2)
 
 	iRelationStability = iRelationStronger + iRelationEqual + iRelationWeaker
+	if iRelationStability < 0 and not bIsolationism:
+		iRelationStability /= 2
 		
 	if bIsolationism:
 		if iRelationStability < 0: iRelationStability = 0
