@@ -1455,7 +1455,7 @@ def checkTurn(iGameTurn, iPlayer):
 			
 			# gold from per turn gold trade
 			for iPlayer in range(iNumPlayers):
-				iTradeGold += pArgentina.getGoldPerTurnByPlayer(iPlayer)
+				iTradeGold += pArgentina.getGoldPerTurnByPlayer(iPlayer) * 100
 			
 			data.iArgentineTradeGold += iTradeGold
 			

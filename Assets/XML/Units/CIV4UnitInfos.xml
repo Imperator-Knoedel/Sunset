@@ -5009,6 +5009,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
+			<iChanceFirstStrikes>1</iChanceFirstStrikes>
 			<iConscription>5</iConscription>
 			<iCultureGarrison>10</iCultureGarrison>
 			<iAsset>3</iAsset>
@@ -5090,6 +5091,7 @@
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
+			<iChanceFirstStrikes>1</iChanceFirstStrikes>
 			<iConscription>5</iConscription>
 			<iCultureGarrison>10</iCultureGarrison>
 			<iAsset>3</iAsset>
